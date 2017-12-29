@@ -1,0 +1,22 @@
+{
+    "quizs": [{
+        "title": "desde",
+        "choices": [
+            "dsfdsfdfsd",
+            "dsfsfdf",
+            "fsdfdf"
+        ],
+        "answer": [1, 2],
+        "score": 2
+    }, {
+        "title": "fdsg fdsf ",
+        "choices": [
+            "dsfdsfdfsd",
+            "dsfsfdf",
+            "fsdfdf"
+        ],
+        "answer": 2,
+        "type": "single",
+        "score": 2
+    }]
+}
