@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Web 101</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="imgs/favicon.ico">
+    <link rel="apple-touch-icon" href="imgs/logo.png">
+    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="shortcut icon" type="image/png" href="/imgs/logo-16x16.png" />
+    <link rel="icon" type="image/png" href="/imgs/logo-256x256.png" sizes="256x256" />
+    <link rel="icon" type="image/png" href="/imgs/logo-64x64.png" sizes="64x64" />
+</head>
+
+<body class="gameprog widthflex">
+    <header>
+        <h1>Web 101</h1>
+        <div class="subheading">
+            &nbsp; Par <a href="#">Sawssen Hariz</a></div>
+        <nav>
+            <form action="https://www.google.com/search">
+                <ul>
+                    <li><a href="../index.html">Cours</a></li>
+                    <li><a href="../tp.html">Travaux Pratiques</a></li>
+                    <li><a href="../quiz.html">Evaluations</a></li>
+                    <li> </li>
+                    <li><input name="q" placeholder="Search" size="8" type="search"></li>
+                </ul><input name="hq" value="site:simblob.blogspot.com" type="hidden"></form>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>On suppose qu’un site web est composé de:</p>
+            <ul>
+                <li>Une page d’accueil <code>index.html</code></li>
+                <li>Un dossier <code>Produits</code> contenant la page <code>produits.html</code></li>
+                <li>Un dossier <code>images</code> contenant les images des produits <a href="../imgs/tp/1/salon.png">salon.png</a> et <a href="../imgs/tp/1/salleamanger.png">salleamanger.png</a></li>
+            </ul>
+
+            <p>On vous demande d’écrire le code HTML 5 de la page <code>index.html</code> d’un site web pour réaliser la page suivante en respectant les directives ci-dessous:</p>
+
+            <figure>
+                <img src="../imgs/tp/1/tp1-ex1-screenshot.png" />
+            </figure>
+
+            <p>Sachant que:</p>
+
+            <ul>
+                <li>« Nos Produits » est un lien hypertexte vers la page <code>produits.html</code></li>
+                <li>« Fabrication » est un lien vers la page <code>fabrication.html</code></li>
+                <li>« Nous Contacter » est un lien Email vers la société</li>
+                <li>L’image du pied de la page s’appelle <a href="">fb.png</a> est un lien hypertexte vers le site <a href="htttps://www.facebook.com/">www.facebook.com</a></li>
+            </ul>
+
+            <p>Les éléments de la page <code>index.html</code> ont les caractéristiques suivantes:</p>
+
+
+            <dl>
+                <dt>L’entête de la page</dt>
+                <dd>Est de largeur 600px, de positions 40 px à partir du haut et 60 px à partir de la gauche. Couleur de fond: bleue</dd>
+                <dt>La zone de navigation</dt>
+                <dd>De position 30 px à gauche et 120 à partir du haut, police: Arial de taille 1px</dd>
+                <dt>ul</dt>
+                <dd>Le style des puces: circulaire</dd>
+                <dt>li</dt>
+                <dd>Les items des listes sont de police « serif ». De couleur de fond : #ffffcc. De couleur de contour : #555</dd>
+                <dt>Les liens</dt>
+                <dd>Sont en rouge et itallique. Seront soulignés lorsque l’utilisateur pointe sur le lien</dd>
+                <dt>La section</dt>
+                <dd>Positions : 250px à partir de la gauche et 130 à partir du haut</dd>
+                <dt>Pied de page</dt>
+                <dd>De largeur :600px; hauteur:25px; positions: gauche: 40px; bas :100px; bordure : bleue 2px</dd>
+                <dt>La couleur de fond</dt>
+                <dd>#e6ffff</dd>
+            </dl>
+
+            <p>La page <code>produits.html</code> contient le tableau suivant (de largeur 600px, de couleur de fond: #ffffe6) faisant référence aux deux images <a href="../imgs/tp/1/salon.png">salon.png</a> et <a href="../imgs/tp/1/salleamanger.png">salleamanger.png</a> du répertoire <code>images</code>.</p>
+
+            <figure>
+                <img src="../imgs/tp/1/tp1-ex1-screenshot-2.png" />
+            </figure>
+
+            <p>La page <code>fabrication.html</code> contient un formulaire pour inscrire le nom, prénom, téléphone, ville, produits choisis.</p>
+
+            <figure>
+                <img src="../imgs/tp/1/tp1-ex1-screenshot-3.png" />
+            </figure>
+
+            <table class="table table-hover table-responsive">
+                <thead>
+                    <tr>
+                        <th>Balise</th>
+                        <th>Style</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Form</td>
+                        <td>
+                            marge en haut:10px<br/> marge à gauche:350px<br /> largeur:450px
+                            <br /> espacement:15px
+                            <br /> couleur d’arrière plan:#92cd5c <br /> polices : Georgia, "Times New Roman", Times, serif<br /> taille:14px
+                            <br /> coins arrondis:10px pour les 4 coins
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Legend couleur</td>
+                        <td>
+                            couleur du texte: #384313<br /> taille: 16px<br /> gras
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>fieldset</td>
+                        <td>pas de bordure</td>
+                    </tr>
+                    <tr>
+                        <td>label</td>
+                        <td>Italique</td>
+                    </tr>
+                    <tr>
+                        <td>textarea, select, input</td>
+                        <td>
+                            couleur d’arrière plan:#e4f9a6<br /> pas de bordure<br /> polices: Georgia, "Times New Roman", "serif"<br /> taille:12px
+                            <br /> espacement: 5px<br /> coins arrondis : 10px pour les 4 coins
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>li</td>
+                        <td>
+                            Bordure : 2px solid #e3ebc3<br /> couleur d’arrière plan : #b9cf6a<br /> espacement : 5px<br /> marge en bas : 2px<br /> coins arrondis : 10px pour les 4 coins
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>submit</td>
+                        <td>
+                            couleur d’arrière plan : #384313<br /> pas de bordure<br /> couleur du texte : #ffffff<br /> polices: Georgia, "Times New Roman", Times, serif<br /> taille : 18px<br /> ombre : 0 1px 1px #000000<br /> alignement centre du texte<br /> marge à gauche : 200px<br /> mettre les caractères en majuscule
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lors du passage de la souris sur submit</td>
+                        <td>
+                            couleur d’arrière plan : #1e2506<br /> curseur forme de la main<br /> ombre : 0 1px 1px #c0d576
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Les resources à utiliser pour développer la page <code>fabrication.html</code> sont: <a href="../imgs/tp/1/visa.png">visa.png</a>, <a href="../imgs/tp/1/mastercard.png">mastercard.png</a> et <a href="../imgs/tp/1/Amex.png">Amex.png</a> à déplacer dans le dossier <code>images</code>.</p>
+        </section>
+    </main>
+    <footer>
+        <address> Copyright © 2017-2018 <a href="">Sawssen Hariz</a></span></address>
+    </footer>
+
+</html>

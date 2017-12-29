@@ -945,6 +945,10 @@ ol ol ol li {
     list-style-type: lower-roman;
 }
 
+dd {
+  margin-left: 40px;
+}
+
 figure {
     margin-left: 0em;
     text-align: center;
