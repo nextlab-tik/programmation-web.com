@@ -616,7 +616,8 @@ main>address {
 }
 
 @media (max-width: 600px) {
-    header nav li:last-of-type{
+    header nav li:last-of-type,
+    header nav li:nth-last-child(2){
         display: none
     }
 }

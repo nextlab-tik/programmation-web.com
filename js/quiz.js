@@ -91,7 +91,9 @@ class QuizManager {
 
 function loadQuiz() {
   const quizC = document.getElementById("quiz-container");
-  const quizPath = quizC.dataset.quizPath;
+  const pagePath = window.location.pathname.split('/');
+  const quizPath = pagePath[pagePath.length-1].split('.')[0] + ".json";
+
   fetch(quizPath, {credentials: 'same-origin'}).then((res) => res.json()).then((json) => {
     const quizManager = new QuizManager(json);
     quizManager.insertInto(quizC);
