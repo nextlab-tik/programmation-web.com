@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Web 101</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../imgs/favicon.ico">
+    <link rel="apple-touch-icon" href="../imgs/logo.png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="shortcut icon" type="image/png" href="../imgs/logo-16x16.png" />
+    <link rel="icon" type="image/png" href="../imgs/logo-256x256.png" sizes="256x256" />
+    <link rel="icon" type="image/png" href="../imgs/logo-64x64.png" sizes="64x64" />
+</head>
+
+<body class="gameprog widthflex">
+    <header>
+        <h1>Web 101</h1>
+        <div class="subheading">
+            &nbsp; Par <a href="#">Sawssen Hariz</a></div>
+        <nav>
+            <form action="https://www.google.com/search">
+                <ul>
+                    <li><a href="../index.html">Cours</a></li>
+                    <li><a href="../tp.html">Travaux Pratiques</a></li>
+                    <li><a href="../quiz.html">Evaluations</a></li>
+                    <li> </li>
+                    <li><input name="q" placeholder="Search" size="8" type="search"></li>
+                </ul><input name="hq" value="site:simblob.blogspot.com" type="hidden"></form>
+        </nav>
+    </header>
+    <main>
+        <section>
+
+            <p>Le HTML n’est pas un langage de programmation, mais un langage de “marquage” (<i>markup</i> en anglais). Il permet de “baliser” un document afin de décrire sa structure.</p>
+
+            <h2 id="balises"><a class="anchor" href="#balises">#</a> Les balises</h2>
+
+            <p>Le vocabulaire du langage HTML se compose de quelques 120 balises.</p>
+
+            <p>Quelques balises présentes depuis le début:</p>
+
+            <ul>
+                <li>La balise principale - <code>&lt;html&gt;</code> - racine du document se trouvant au début et à la fin du code.</li>
+                <li>L’en-tête - <code>&lt;head&gt;</code> - contient tous les éléments de l’en-tête d’un document.</li>
+                <li>Le corps - <code>&lt;body&gt;</code> - encadre le corps d’un fichier HTML.</li>
+                <li>L’hyperlien - <code>&lt;a&gt;</code> - qui permet de pointer vers une autre ressource en ligne.</li>
+                <li>Le titre - <code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code> - permettant d’instaurer une structure interne à un document.</li>
+                <li>Le paragraphe - <code>&lt;p&gt;</code> - qui identifie un paragraphe de texte.</li>
+            </ul>
+
+            <p>Un exemple de balise hyperlien:</p>
+
+            <pre class="snippet">&lt;a href="http://example.com"&gt;Un Lien&lt;/a&gt;</pre>
+
+            <h2 id="html-versions"><a class="anchor" href="#html-versions">#</a> Les versions du langage HTML</h2>
+
+            <p>Durant ses 25 années d’existance, le standard HTML a connu diverses évolutions. La première version proposée en 1991 comportait 18 éléments. Différentes versions du standard HTML sont publiées, jusqu’à la version <b>HTML 4.01</b> en 1999.</p>
+
+            <p>S’ensuit une période de stagnation, durant laquelle le groupe de travail HTML du <b>W3C</b> (World Wide Web Consortium) focalise ses efforts sur un nouveau langage, le <b>XHTML</b>, qui s’avère une impasse.</p>
+
+            <p>En 2004, un groupe de travail concurrent se forme, nommé <b>WHATWG</b> (Web Hypertext Application Technology Working Group), rassemblant des représentants de Apple, Mozilla et Opera. Ce groupe élabore le standard <b>HTML5</b> entre 2004-2007. En janvier 2008, la première spécification est publiée, qui est adoptée comme référence par le groupe de travail HTML du W3C.</p>
+
+            <figure>
+              <img src="../imgs/standards-timeline-html-by-cours-web.ch.png" />
+            </figure>
+
+            <h2 id="html5"><a class="anchor" href="#html5">#</a> HTML5</h2>
+
+            <p>Dès 2010, les premiers éléments du HTML5 ont commencé à être supportés par les navigateurs, et des livres sur le HTML commencent à être publiés. Un logo officiel, conçu par l’agence hawaïenne Ocupop, est dévoilé en janvier 2011.</p>
+
+            <p>Ce n’est qu’en 2014 que le HTML5 devient une recommandation stable du W3C, alors que ses fonctionnalités sont implémentées depuis longtemps dans les navigateurs.</p>
+
+            <p>En fin 2016, le W3C rend officielle la version <b>HTML 5.1</b>.</p>
+
+            <p>Actuellement, la spécification HTML est maintenue de manière parallèle par ces deux groupes de travail:</p>
+
+            <ul>
+              <li><a href="https://w3c.github.io/html/">La spécification HTML du <b>W3C</b><a/>.</li>
+                <li><a href="https://html.spec.whatwg.org/multipage/">La spécification HTML du <b>WHATWG</b></a>.</li>
+            </ul>
+
+            <p>Tout comme les pages HTML ou XHTML, les documents HTML5 nécessitent une déclaration Doctype indiquant la méthode standard de rendu par le navigateur. La décaration s’écrit “<code>&lt;!DOCTYPE html&gt;</code>”</p>
+
+            <h2 id="html5-balises-structurantes"><a class="anchor" href="#html5-balises-structurantes">#</a> Balises structurantes</h2>
+
+            <p>Les nouvelles balises structurantes du HTML5:</p>
+
+            <dl>
+              <dt>header</dt>
+              <dd>Section d’introduction d’un article, d’une autre section ou du document entier (en-tête de page).</dd>
+              <dt>section</dt>
+              <dd>Section générique regroupant un même sujet, une même fonctionnalité, de préférence avec un en-tête, ou bien section d’application web.</dd>
+              <dt>article</dt>
+              <dd>Section de contenu indépendante, pouvant être extraite individuellement du document ou syndiquée (flux RSS ou équivalent), sans pénaliser sa compréhension.</dd>
+              <dt>nav</dt>
+              <dd>Section possédant des liens de navigation principaux (au sein du document ou vers d’autres pages).</dd>
+              <dt>aside</dt>
+              <dd>Section dont le contenu est un complément par rapport à ce qui l’entoure, qui n’est pas forcément en lien direct avec le contenu mais qui peut apporter des informations supplémentaires.</dd>
+              <dt>footer</dt>
+              <dd>Section de conclusion d’une section ou d’un article, voire du document entier (pied de page).</dd>
+            </dl>
+
+            <h2 id="div-vs-p"><a class="anchor" href="#div-vs-p">#</a> Pourquoi on ne peut pas mettre de DIV dans un P</h2>
+
+            <p>Historiquement, les éléments HTML peuvent se présenter de deux manières: sous forme de <b>bloc</b> (“block-level” elements) ou sous forme de <b>ligne</b> (“inline” elements).</p>
+
+            <p>Un élément “bloc” va toujours occuper toute la largeur à disposition, contrairement à l’élément “ligne”, qui se limite à la place nécessaire, et tolère des éléments voisins.</p>
+
+            <p>Chaque élément possède un aspect par défaut, mais il est possible d’agir dessus avec la propriété CSS “display”. On peut ainsi modifier simplement l’aspect d’un menu: en mode “display-bloc”, ce sera un menu vertical. En mode “inline”, cela devient un menu horizontal.</p>
+
+            <p>Avec HTML5, ce mode binaire se complexifie, on se retrouve avec toute une liste de catégories de contenu:</p>
+
+            <ul>
+              <li><b>Contenu de flux (Flow content)</b> - correspond de près au mode “block-level”, et s’applique à la majorité des éléments. Notamment: <code>&lt;div&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;blockquote&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;p&gt;</code>…</li>
+              <li><b>Contenu sectionnant (Sectioning content)</b> - les éléments qui définissent des sections: <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code></li>
+              <li><b>Contenu de titre (Heading content)</b> - du contenu agissant comme en-tête: <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> etc.</li>
+              <li><b>Contenu phrasé (Phrasing content)</b> - le texte du document, tout ce qui peut être contenu dans un paragraphe, notamment: <code>&lt;a&gt;</code>, <code>&lt;span&gt;</code>. Attention, <code>&lt;a&gt;</code> appartient à cette catégorie s’il contient seulement du contenu phrasé - sinon il devient Contenu de flux.</li>
+              <li><b>Contenu intégré</b> - <code>&lt;audio&gt;</code>, <code>&lt;canvas&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;iframe&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;math&gt;</code>, <code>&lt;object&gt;</code>, <code>&lt;svg&gt;</code>, <code>&lt;video&gt;</code>…</li>
+              <li><b>Contenu interactif</b> - <code>&lt;button&gt;</code>, <code>&lt;details&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;iframe&gt;</code>, <code>&lt;keygen&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;select&gt;</code>, et <code>&lt;textarea&gt;</code>.</li>
+            </ul>
+
+            <p>Là où cela devient important: certains éléments ne peuvent contenir que du “phrasing content”. C’est le cas pour les balises <code>&lt;p&gt;</code> ou <code>&lt;h1&gt;</code>.<p>
+
+        </section>
+        <nav class="bottom">
+            <a href="../index.html">Web 101</a>
+            <br>
+            <span>←Préc: <a rel="prev" href="web.html">Web</a></span>
+            <span>↑ <a href="../index.html">Sommaire</a></span>
+            <span>Suiv: <a rel="next" href="liste-balises.html">Liste des balises</a>→</span>
+        </nav>
+    </main>
+    <footer>
+        <address> Copyright © 2017-2018 <a href="">Sawssen Hariz</a></span></address>
+    </footer>
+
+    <script src="../js/embed.js"></script>
+
+</html>

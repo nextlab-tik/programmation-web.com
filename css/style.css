@@ -928,8 +928,8 @@ header,
 footer,
 .divider,
 h2 {
-    background-image: url("/~amitp/transparent-blob.png"), url("/~amitp/transparent-blob.png");
-    background-position: 0 0, 16px 16px
+    /*background-image: url("../imgs/transparent-blob.png"), url("../imgs/transparent-blob.png");*/
+    /*background-position: 0 0, 16px 16px;*/
 }
 
 
