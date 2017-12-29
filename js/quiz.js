@@ -11,30 +11,54 @@ class QuizManager {
   }
   toHTML() {
     return `
-    <form class="quiz-board">
+    <form class="quiz-board" class="form">
     ${this.data.quizs.map((q, i) => this.quizToHTML(q, i)).join('')}
-    <input type="submit" value="Verifier" />
-    <div class="quiz-score">Score: <span id="score-current">...</span>/<span id="score-sum">${this.maxScore()}</span></div>
+    <hr/>
+    <div class="row">
+    <div class="col quiz-score font-weight-bold">Score: <span id="score-current">0</span>/<span id="score-sum">${this.maxScore()}</span></div>
+    <div class="col"><input type="submit" value="Verifier" class="btn btn-primary float-right"/></div>
+    </div>
     </form>
     `
   }
 
   quizToHTML(quiz, id) {
-    return `<div class="quiz" id="quiz-${id}">
-    <p class="quiz-title">${quiz.title}</p>
-    <div class="quiz-control">
-      ${quiz.type === "single" ? this.singleChoiceToHTML(quiz, id) :
-      quiz.type === "multiple" || !quiz.type ? this.multiChoicesToHTML(quiz, id) :
-      this.inputToHTML(quiz, id)}
-    </div>
-    </div>`
+    if (!quiz.type || quiz.type === "multiple") {
+      return this.multiChoicesToHTML(quiz, id);
+    } else if (quiz.type === "single") {
+      return this.singleChoiceToHTML(quiz, id);
+    } else {
+      return this.inputToHTML(quiz, id);
+    }
   }
 
   multiChoicesToHTML(quiz, id) {
-    return quiz.choices.map((c, i) => `<input type="checkbox" name="${id}" value="${i}">${c}</input>`).join('');
+    return `<fieldset class="form-group quiz" id="quiz-${id}">
+    <legend class="quiz-title col-form-legend">${quiz.title}</legend>
+    <div class="quiz-control">
+    ${quiz.choices.map((c, i) => `
+    <div class="form-check">
+     <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" value="${i}" name="${id}">${c}
+       </label>
+       </div>
+    `).join('')}
+    </div>
+    </fieldset>`
   }
   singleChoiceToHTML(quiz, id) {
-    return quiz.choices.map((c, i) => `<input type="radio" name="${id}" value="${i}">${c}</input>`).join('');
+    return `<fieldset class="form-group quiz" id="quiz-${id}">
+    <legend class="quiz-title col-form-legend">${quiz.title}</legend>
+    <div class="quiz-control">
+    ${quiz.choices.map((c, i) => `
+    <div class="form-check">
+     <label class="form-check-label">
+      <input class="form-check-input" type="radio" value="${i}" name="${id}">${c}
+       </label>
+       </div>
+    `).join('')}
+    </div>
+    </fieldset>`
   }
   inputToHTML(quiz, id) {
   }
