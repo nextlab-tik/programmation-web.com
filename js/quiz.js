@@ -94,10 +94,15 @@ function loadQuiz() {
   const pagePath = window.location.pathname.split('/');
   const quizPath = pagePath[pagePath.length-1].split('.')[0] + ".json";
 
-  fetch(quizPath, {credentials: 'same-origin'}).then((res) => res.json()).then((json) => {
+  const xhr = new XMLHttpRequest();
+  xhr.overrideMimeType('application/json');
+  xhr.onload = function() {
+    const json = JSON.parse(xhr.responseText);
     const quizManager = new QuizManager(json);
     quizManager.insertInto(quizC);
-  });
+  };
+  xhr.open('GET', quizPath);
+  xhr.send(null);
 }
 
 loadQuiz();
