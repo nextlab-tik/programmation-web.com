@@ -92,7 +92,7 @@ class QuizManager {
 function loadQuiz() {
   const quizC = document.getElementById("quiz-container");
   const quizPath = quizC.dataset.quizPath;
-  fetch(quizPath).then((res) => res.json()).then((json) => {
+  fetch(quizPath, {credentials: 'same-origin'}).then((res) => res.json()).then((json) => {
     const quizManager = new QuizManager(json);
     quizManager.insertInto(quizC);
   });
