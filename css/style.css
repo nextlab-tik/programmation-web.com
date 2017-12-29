@@ -221,8 +221,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    width: 10%;
-    padding: 2px 5px;
+    padding: 4px 10px;
     text-align: center;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 4em;
@@ -230,7 +229,7 @@ header nav ul li {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 header nav ul li a {
