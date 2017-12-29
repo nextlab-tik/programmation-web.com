@@ -23,37 +23,23 @@ class QuizManager {
   }
 
   quizToHTML(quiz, id) {
-    if (!quiz.type || quiz.type === "multiple") {
-      return this.multiChoicesToHTML(quiz, id);
-    } else if (quiz.type === "single") {
-      return this.singleChoiceToHTML(quiz, id);
+    if (!quiz.type || quiz.type === "checkbox" || quiz.type === "radio") {
+      return this.checkQuizToHTML(quiz, id);
     } else {
       return this.inputToHTML(quiz, id);
     }
   }
 
-  multiChoicesToHTML(quiz, id) {
+  checkQuizToHTML(quiz, id) {
     return `<fieldset class="form-group quiz" id="quiz-${id}">
-    <legend class="quiz-title col-form-legend">${quiz.title}</legend>
+    <legend class="quiz-title col-form-legend">${quiz.title}
+      <span class="quiz-score badge badge-secondary float-right">${quiz.score}</span>
+    </legend>
     <div class="quiz-control">
     ${quiz.choices.map((c, i) => `
     <div class="form-check">
      <label class="form-check-label">
-      <input class="form-check-input" type="checkbox" value="${i}" name="${id}">${c}
-       </label>
-       </div>
-    `).join('')}
-    </div>
-    </fieldset>`
-  }
-  singleChoiceToHTML(quiz, id) {
-    return `<fieldset class="form-group quiz" id="quiz-${id}">
-    <legend class="quiz-title col-form-legend">${quiz.title}</legend>
-    <div class="quiz-control">
-    ${quiz.choices.map((c, i) => `
-    <div class="form-check">
-     <label class="form-check-label">
-      <input class="form-check-input" type="radio" value="${i}" name="${id}">${c}
+      <input class="form-check-input" type="${quiz.type || "checkbox"}" value="${i}" name="${id}">${c}
        </label>
        </div>
     `).join('')}
@@ -72,21 +58,28 @@ class QuizManager {
     for (let i = 0; i < this.data.quizs.length; i++) {
       const quiz = this.data.quizs[i];
       let res;
-      if (!quiz.type || quiz.type === "multiple") {
+      let success = false;
+      if (!quiz.type || quiz.type === "checkbox") {
         res = responses.getAll(i);
         if (res.length === quiz.answer.length && res.every((c) => quiz.answer.indexOf(parseInt(c)) > -1)) {
-          score += quiz.score;
+          success = true;
         }
-      } else if (quiz.type === "single" || quiz.type === "number") {
+      } else if (quiz.type === "radio" || quiz.type === "number") {
         res = responses.get(i);
         if (parseInt(res) === quiz.answer) {
-          score += quiz.score;
+          success = true;
         }
       } else {
-        res = responses.get(i);
+        res = responses.get(i).trim();
         if (res === quiz.answer) {
-          score += quiz.score;
+          success = true;
         }
+      }
+      if (success) {
+          score += quiz.score;
+          document.getElementById(`quiz-${i}`).classList.add('has-success');
+        } else {
+          document.getElementById(`quiz-${i}`).classList.remove('has-success');
       }
     }
     return score;
@@ -96,12 +89,13 @@ class QuizManager {
   }
 }
 
-function loadQuiz(quizPath) {
+function loadQuiz() {
   const quizC = document.getElementById("quiz-container");
+  const quizPath = quizC.dataset.quizPath;
   fetch(quizPath).then((res) => res.json()).then((json) => {
     const quizManager = new QuizManager(json);
     quizManager.insertInto(quizC);
   });
 }
 
-loadQuiz("quiz/1.json");
+loadQuiz();

@@ -137,6 +137,13 @@ footer a,
 h2 a {
     color: #f2d9d9
 }
+header a:hover,
+footer a:hover,
+.divider a:hover,
+h2 a:hover {
+    color: #f2d9d9
+}
+
 
 footer a,
 .divider a {
@@ -286,8 +293,9 @@ footer>* {
     margin-right: auto
 }
 
-footer>div>address {
-    display: block
+footer address {
+    display: block;
+    margin-bottom: 0;
 }
 
 footer>div>* {
@@ -608,7 +616,7 @@ main>address {
 }
 
 @media (max-width: 600px) {
-    header nav {
+    header nav li:last-of-type{
         display: none
     }
 }
@@ -971,4 +979,13 @@ aside {
     margin-right: -280px;
     margin-left: 0;
     width: 210px;
+}
+
+
+/*
+ * Quiz CSS
+ */
+
+.has-success .quiz-score {
+  background-color: #28a745;
 }
