@@ -1,0 +1,47 @@
+# Site settings
+title: Web 101
+author: Sawssen Hariz
+email: sawssenhariz@yahoo.fr
+description: "Apprendre à programmer des sites et applications Web en utilisants HTML5, CSS3 et JavaScript"
+baseurl: ""
+url: "https://web101.tik.tn"
+
+source: ./src
+destination: ./www
+includes_dir:    _includes
+exclude: [config.xml, node_modules]
+
+# Build settings
+markdown: kramdown
+# permalink: pretty
+
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: page
+  -
+    scope:
+      path: cours
+    values:
+      layout: cours
+  -
+    scope:
+      path: tp
+    values:
+      layout: tp
+      bootstrap: true
+  -
+    scope:
+      path: quiz
+    values:
+      layout: quiz
+      bootstrap: true
+      quiz: true

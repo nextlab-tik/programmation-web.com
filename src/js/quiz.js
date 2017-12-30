@@ -91,18 +91,26 @@ class QuizManager {
 
 function loadQuiz() {
   const quizC = document.getElementById("quiz-container");
-  const pagePath = window.location.pathname.split('/');
-  const quizPath = pagePath[pagePath.length-1].split('.')[0] + ".json";
+  const quizD = document.getElementById("quiz-json");
 
-  const xhr = new XMLHttpRequest();
-  xhr.overrideMimeType('application/json');
-  xhr.onload = function() {
-    const json = JSON.parse(xhr.responseText);
+  if (quizD) {
+    const json = JSON.parse(quizD.textContent);
     const quizManager = new QuizManager(json);
     quizManager.insertInto(quizC);
-  };
-  xhr.open('GET', quizPath);
-  xhr.send(null);
+  } else {
+    const pagePath = window.location.pathname.split('/');
+    const quizPath = pagePath[pagePath.length-1].split('.')[0] + ".json";
+
+    const xhr = new XMLHttpRequest();
+    xhr.overrideMimeType('application/json');
+    xhr.onload = function() {
+      const json = JSON.parse(xhr.responseText);
+      const quizManager = new QuizManager(json);
+      quizManager.insertInto(quizC);
+    };
+    xhr.open('GET', quizPath);
+    xhr.send(null);
+  }
 }
 
 loadQuiz();

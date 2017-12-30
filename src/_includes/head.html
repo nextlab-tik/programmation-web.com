@@ -1,0 +1,21 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ "imgs/favicon.ico" | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ "imgs/logo.png" | relative_url }}">
+
+    {% if page.bootstrap %}
+      <link rel="stylesheet" type="text/css" href="{{ "/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}">
+    {% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ "/css/style.css" | relative_url }}">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="shortcut icon" type="image/png" href="{{ "/imgs/logo-16x16.png" | relative_url }}" />
+    <link rel="icon" type="image/png" href="{{ "/imgs/logo-256x256.png" | relative_url }}" sizes="256x256" />
+    <link rel="icon" type="image/png" href="{{ "/imgs/logo-64x64.png" | relative_url }}" sizes="64x64" />
+</head>

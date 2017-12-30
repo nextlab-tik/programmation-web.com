@@ -536,6 +536,7 @@ pre.simple,
     box-shadow: none
 }
 
+pre,
 pre.snippet,
 pre.src {
     border-top-style: dashed;
@@ -705,6 +706,11 @@ body.widthflex section>h2 {
 body.widthflex img {
     max-width: 100%;
     height: auto
+}
+
+body.widthflex p > img {
+    display: block;
+    margin: auto;
 }
 
 .TODO {

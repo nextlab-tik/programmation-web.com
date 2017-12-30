@@ -1,0 +1,10 @@
+_site
+.DS_Store
+*.swp
+.jekyll-metadata
+www
+node_modules
+platforms
+plugins
+package.json
+Gemfile.lock

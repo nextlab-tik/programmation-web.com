@@ -1,28 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns   = "http://www.w3.org/ns/widgets"
-    xmlns:gap   = "http://phonegap.com/ns/1.0"
-    id          = "tn.sawssenhariz.radio"
-    versionCode = "10"
-    version     = "1.0.0" >
-  <name>Web 101</name>
-  <description>Apprendre à programmer des sites et applications Web en utilisants HTML5, CSS3 et JavaScript.</description>
-  <author href="https://sawssenhariz.tn" email="sawssenhariz@yahoo.fr">
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="tn.sawssenhariz.radio" version="1.0.0" versionCode="10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Web 101</name>
+    <description>Apprendre à programmer des sites et applications Web en utilisants HTML5, CSS3 et JavaScript.</description>
+    <author email="sawssenhariz@yahoo.fr" href="https://sawssenhariz.tn">
       Sawssen Hariz
   </author>
-  <icon src="imgs/logo-256x256.png" />
-
-  <platform name="ios" />
-  <platform name="android" />
-  <platform name="winphone" />
-
-  <content src="index.html" />
-
-  <!--<preference name="Fullscreen" value="true" />-->
-  <preference name="BackgroundColor" value="0x101F24ff"/>
-
-  <plugin name="cordova-plugin-whitelist" spec="1.*" />
-  <access origin="*" />
-  <allow-intent href="http://*/*" />
-  <allow-intent href="https://*/*" />
-  <allow-intent href="mailto:*" />
+    <icon src="www/imgs/logo-256x256.png" />
+    <platform name="ios" />
+    <platform name="android" />
+    <platform name="winphone" />
+    <content src="index.html" />
+    <preference name="BackgroundColor" value="0x101F24ff" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="mailto:*" />
+    <engine name="android" spec="~6.3.0" />
+    <plugin name="cordova-plugin-whitelist" spec="1.*" />
 </widget>

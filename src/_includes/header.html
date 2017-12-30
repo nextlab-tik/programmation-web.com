@@ -1,0 +1,15 @@
+<header>
+  <h1>{{ site.title }}</h1>
+    <div class="subheading">
+      &nbsp; Par <a href="mailto:{{ site.email }}">{{ site.author }}</a></div>
+    <nav>
+        <form action="https://www.google.com/search">
+            <ul>
+              <li><a href="{{ "/index.html" | relative_url }}">Cours</a></li>
+              <li><a href="{{ "/tp.html" | relative_url  }}">Travaux Pratiques</a></li>
+              <li><a href="{{ "/quiz.html" | relative_url }}">Evaluations</a></li>
+                <li> </li>
+                <li><input name="q" placeholder="Search" size="8" type="search"></li>
+            </ul><input name="hq" value="site:{{ site.url }}" type="hidden"></form>
+    </nav>
+</header>

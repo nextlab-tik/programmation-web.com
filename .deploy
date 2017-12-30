@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -x
+
+# TODO:  dev, production
+ENV=${1:-dev}
+
+if [ -e "Gemfile" ]; then
+	bundle install
+fi
+
+if [ "${ENV}" == "production" ]; then
+	JEKYLL_ENV=production jekyll build
+elif [ "${ENV}" == "android" ]; then
+	JEKYLL_ENV=production jekyll build -b /android_asset/www
+	cordova build android
+else
+	jekyll build
+fi
