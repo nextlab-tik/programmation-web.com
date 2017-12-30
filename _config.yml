@@ -8,7 +8,7 @@ url: "https://web101.tik.tn"
 
 source: ./src
 destination: ./www
-includes_dir:    _includes
+includes_dir: _includes
 exclude: [config.xml, node_modules]
 
 # Build settings
@@ -38,6 +38,7 @@ defaults:
       path: cours
     values:
       layout: cours
+      embed: true
   -
     scope:
       path: ""

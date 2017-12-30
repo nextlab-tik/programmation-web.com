@@ -11,7 +11,12 @@
     {% if page.bootstrap %}
       <link rel="stylesheet" type="text/css" href="{{ "/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}">
     {% endif %}
+
     <link rel="stylesheet" type="text/css" href="{{ "/css/style.css" | relative_url }}">
+
+    {% if page.embed %}
+      <link rel="stylesheet" type="text/css" href="{{ "/css/syntax.css" | relative_url }}">
+    {% endif %}
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
