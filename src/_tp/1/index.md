@@ -8,14 +8,14 @@ On suppose qu’un site web est composé de:
 - Une page d’accueil `index.html`
 - Un dossier `Produits` contenant la page `produits.html`
 - Un dossier `images` contenant les images des produits
-  [salon.png](../imgs/tp/1/salon.png) et
-  [salleamanger.png](../imgs/tp/1/salleamanger.png)
+  [salon.png](solution/images/salon.png) et
+  [salleamanger.png](solution/images/salleamanger.png)
 
 On vous demande d’écrire le code HTML 5 de la page `index.html` d’un
 site web pour réaliser la page suivante en respectant les directives
 ci-dessous:
 
-![](../imgs/tp/1/tp1-ex1-screenshot.png)
+![](assets/tp1-ex1-screenshot.png)
 
 Sachant que:
 
@@ -58,15 +58,15 @@ La couleur de fond
 
 La page `produits.html` contient le tableau suivant (de largeur 600px, de
 couleur de fond: #ffffe6) faisant référence aux deux images
-[salon.png](../imgs/tp/1/salon.png) et
-[salleamanger.png](../imgs/tp/1/salleamanger.png) du répertoire `images`.
+[salon.png](solution/images/salon.png) et
+[salleamanger.png](solution/images/salleamanger.png) du répertoire `images`.
 
-![](../imgs/tp/1/tp1-ex1-screenshot-2.png)
+![](assets/tp1-ex1-screenshot-2.png)
 
 La page `fabrication.html` contient un formulaire pour inscrire le nom, prénom,
 téléphone, ville, produits choisis.
 
-![](../imgs/tp/1/tp1-ex1-screenshot-3.png)
+![](assets/tp1-ex1-screenshot-3.png)
 
 {: .table .table-hover .table-responsive}
 | Balise | Style |
@@ -80,8 +80,7 @@ téléphone, ville, produits choisis.
 | submit | couleur d’arrière plan: #384313<br /> pas de bordure<br /> couleur du texte: #ffffff<br /> polices: Georgia, "Times New Roman", Times, serif<br /> taille: 18px<br /> ombre: 0 1px 1px #000000<br/> alignement centre du texte<br /> marge à gauche: 200px<br /> mettre les caractères en majuscule
 | Lors du passage de la souris sur submit | couleur d’arrière plan: #1e2506<br/> curseur forme de la main<br /> ombre: 0 1px 1px #c0d576
 
-
 Les resources à utiliser pour développer la page `fabrication.html`
-sont: [visa.png](../imgs/tp/1/visa.png),
-[mastercard.png](../imgs/tp/1/mastercard.png) et
-[Amex.png](../imgs/tp/1/Amex.png) à déplacer dans le dossier `images`.
+sont: [visa.png](solution/images/visa.png),
+[mastercard.png](solution/images/mastercard.png) et
+[Amex.png](solution/images/Amex.png) à déplacer dans le dossier `images`.
