@@ -2,8 +2,12 @@
 title: Travaux Pratiques
 ---
 
-### [TP 1: Introduction Web]({{ site.baseurl }}{% link tp/1.md %})
+{% for tp in site.tp %}
 
-Evalouer votre connessance en Web et ses utilisations.
+### [{{ tp.title }}]({{ tp.url | relative_url }})
 
-<p><a href="{{ site.baseurl }}{% link tp/1.md %}" style="color: #00A6E4;">Commancez »</a></p>
+{{ tp.description }}
+
+<p><a href="{{ tp.url | relative_url }}" style="color: #00A6E4;">Commancez »</a></p>
+
+{% endfor %}

@@ -21,6 +21,12 @@ kramdown:
   auto_ids: true
   syntax_highlighter: rouge
 
+collections:
+  tp:
+    output: true
+  quiz:
+    output: true
+
 defaults:
   -
     scope:
@@ -34,13 +40,15 @@ defaults:
       layout: cours
   -
     scope:
-      path: tp
+      path: ""
+      type: tp
     values:
       layout: tp
       bootstrap: true
   -
     scope:
-      path: quiz
+      path: ""
+      type: quiz
     values:
       layout: quiz
       bootstrap: true
