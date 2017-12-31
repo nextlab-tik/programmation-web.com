@@ -1,0 +1,93 @@
+header {
+    width: 600px;
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    background-color: blue;
+}
+
+nav {
+    position: absolute;
+    left: 20px;
+    top: 130px;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    font-family: serif;
+    border: 1px solid #555;
+    background-color: #ffffcc;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+a {
+    text-decoration: none;
+    /* Les liens ne seront plus soulignés */
+    color: red;
+    /* Les liens seront en rouge au lieu de bleu */
+    font-style: italic;
+    /* Les liens seront en italique */
+}
+
+/*a:hover { 
+font-size: 18px;
+} */
+
+a:hover
+/* Quand le visiteur pointe sur le lien */
+
+    {
+    text-decoration: underline;
+    /* Le lien deviendra souligné quand on pointera dessus */
+    color: green;
+    /* Le lien sera écrit en vert quand on pointera dessus */
+}
+
+h1 {
+    font-family: "Adobe Garmond Pro";
+    font-size: 24px;
+    text-align: center;
+}
+
+.rouge {
+    color: red;
+    font-family: Calibri;
+}
+
+section {
+    position: absolute;
+    left: 250px;
+    top: 120px;
+}
+
+h2 {
+    font-family: "Adobe Garmond Pro";
+    font-size: 20px;
+    text-align: center;
+}
+
+footer {
+    width: 600px;
+    height: 25px;
+    position: absolute;
+    left: 40px;
+    bottom: 100px;
+    border-bottom: 2px solid blue;
+    border-right: 2px solid blue;
+    border-left: 2px solid blue;
+    border-top: 2px solid blue;
+}
+
+body {
+    background-color: #e6ffff;
+    font-family: "Times New Roman";
+    font-size: 16px;
+}
