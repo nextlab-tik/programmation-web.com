@@ -3,6 +3,8 @@ title: Web 101
 author: Sawssen Hariz
 email: sawssenhariz@yahoo.fr
 description: "Apprendre à programmer des sites et applications Web en utilisants HTML5, CSS3 et JavaScript"
+logo: "/imgs/logo-256x256.png"
+lang: fr_FR
 baseurl: ""
 url: "https://web101.tik.tn"
 
@@ -14,6 +16,12 @@ exclude: [config.xml, node_modules]
 # Build settings
 markdown: kramdown
 # permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-seo-tag
+  # - jekyll-feed
 
 highlighter: rouge
 kramdown:
@@ -33,6 +41,12 @@ defaults:
       path: ""
     values:
       layout: page
+      seo:
+        type: Course
+      image:
+        path: /imgs/logo-256x256.png
+        height: 256
+        width: 256
   -
     scope:
       path: cours
@@ -46,6 +60,7 @@ defaults:
     values:
       layout: tp
       bootstrap: true
+      embed: true
   -
     scope:
       path: ""

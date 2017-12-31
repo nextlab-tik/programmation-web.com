@@ -9,7 +9,7 @@ if [ -e "Gemfile" ]; then
 fi
 
 if [ "${ENV}" == "production" ]; then
-	JEKYLL_ENV=production jekyll build
+	JEKYLL_ENV=production bundle exec jekyll build
 elif [ "${ENV}" == "android" ]; then
 	JEKYLL_ENV=production jekyll build -b /android_asset/www
 	cordova build android

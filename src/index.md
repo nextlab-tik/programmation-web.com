@@ -1,4 +1,5 @@
 ---
+title: Web 101
 layout: cours
 next: /cours/web.html
 next_title: Introduction Web
