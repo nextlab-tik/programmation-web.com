@@ -1,21 +1,17 @@
 <nav class="bottom">
-  {% if page.prev %}
     <a href="{{ "/index.html" | relative_url }}">{{ site.title }}</a>
-  {% endif %}
   <br>
   <span>
-    {% if page.prev %}
-      ←Préc: <a rel="prev" href="{{ page.prev | relative_url }}">{{ page.prev_title }}</a>
+    {% if page.previous %}
+      ←Préc: <a rel="prev" href="{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a>
     {% endif %}
   </span>
   <span>
-    {% if page.prev %}
       ↑ <a href="{{ "/index.html" | relative_url }}">Sommaire</a>
-    {% endif %}
   </span>
   <span>
     {% if page.next %}
-      Suiv: <a rel="next" href="{{ page.next | relative_url }}">{{ page.next_title }}</a>→
+      Suiv: <a rel="next" href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a>→
     {% endif %}
   </span>
 </nav>

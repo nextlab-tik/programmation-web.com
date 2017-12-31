@@ -1,9 +1,6 @@
 ---
 title: Web
-prev: /index.html
-prev_title: Index
-next: /cours/html5.html
-next_title: HTML5
+permalink: /cours/web.html
 ---
 
 Le web, ou équalement nommé **WWW** (Word Wide Web), est un des services

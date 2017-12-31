@@ -1,9 +1,6 @@
 ---
 title: HTML
-prev: /cours/web.html
-prev_title: Introduction Web
-next: /cours/liste-balises.html
-next_title: Liste des balises
+permalink: /cours/html5.html
 ---
 
 Le HTML n’est pas un langage de programmation, mais un langage de “marquage”

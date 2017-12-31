@@ -1,7 +1,6 @@
 ---
 title: Listes des balises de HTML
-prev: /cours/html5.html
-prev_title: HTML5
+permalink: /cours/liste-balises.html
 ---
 
 Liste des tous les balises HTML disponibles (HTML 5.1):

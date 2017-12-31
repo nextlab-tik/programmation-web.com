@@ -22,7 +22,13 @@ plugins:
   - jekyll-gist
   - jekyll-seo-tag
   - jekyll-relative-links
+  - jekyll-paginate-v2
   # - jekyll-feed
+
+paginate: nil
+paginate_path: nil
+pagination:
+  enabled: false
 
 highlighter: rouge
 kramdown:
@@ -31,6 +37,8 @@ kramdown:
   syntax_highlighter: rouge
 
 collections:
+  cours:
+    output: true
   tp:
     output: true
   quiz:
@@ -50,7 +58,8 @@ defaults:
         width: 256
   -
     scope:
-      path: cours
+      path: ""
+      type: cours
     values:
       layout: cours
       embed: true
