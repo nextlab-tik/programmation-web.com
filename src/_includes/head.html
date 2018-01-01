@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
 
-    {% seo generator=false %}
+    {% seo -%}
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +9,14 @@
     <link rel="apple-touch-icon" href="{{ "imgs/logo.png" | relative_url }}">
 
     {% if page.bootstrap %}
-      <link rel="stylesheet" type="text/css" href="{{ "/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}">
-    {% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ "/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}">
+    {% endif -%}
 
     <link rel="stylesheet" type="text/css" href="{{ "/css/style.css" | relative_url }}">
 
     {% if page.embed %}
-      <link rel="stylesheet" type="text/css" href="{{ "/css/syntax.css" | relative_url }}">
-    {% endif %}
+    <link rel="stylesheet" type="text/css" href="{{ "/css/syntax.css" | relative_url }}">
+    {% endif -%}
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
 

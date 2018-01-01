@@ -1,5 +1,6 @@
 ---
 title: HTML
+chapitre: HTML5
 permalink: /cours/html5.html
 ---
 

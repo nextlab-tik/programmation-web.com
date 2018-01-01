@@ -1,5 +1,6 @@
 ---
-title: Web
+title: Introduction Web
+chapitre: Web
 permalink: /cours/web.html
 ---
 

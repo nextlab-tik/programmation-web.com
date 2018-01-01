@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-{% include head.html %}
+{% include head.html -%}
 
 <body class="gameprog widthflex">
 
-    {% include header.html %}
+    {% include header.html -%}
 
     <main>
       {{ content }}
@@ -13,10 +13,10 @@
 
     {% include footer.html %}
 
-    {% if page.embed %}
+    {%- if page.embed -%}
       <script src="{{ "/js/embed.js" | relative_url }}"></script>
-    {% endif %}
-    {% if page.quiz %}
+    {%- endif %}
+    {% if page.quiz -%}
       <script src="{{ "/js/quiz.js" | relative_url }}"></script>
-    {% endif %}
+    {%- endif %}
 </html>

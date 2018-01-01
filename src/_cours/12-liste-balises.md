@@ -1,5 +1,6 @@
 ---
-title: Listes des balises de HTML
+title: Liste des balises
+chapitre: HTML5
 permalink: /cours/liste-balises.html
 ---
 

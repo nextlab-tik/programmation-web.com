@@ -2,16 +2,16 @@
     <a href="{{ "/index.html" | relative_url }}">{{ site.title }}</a>
   <br>
   <span>
-    {% if page.previous %}
+  {%- if page.previous %}
       ←Préc: <a rel="prev" href="{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a>
-    {% endif %}
+  {% endif -%}
   </span>
   <span>
       ↑ <a href="{{ "/index.html" | relative_url }}">Sommaire</a>
   </span>
   <span>
-    {% if page.next %}
+  {%- if page.next %}
       Suiv: <a rel="next" href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a>→
-    {% endif %}
+  {% endif -%}
   </span>
 </nav>
