@@ -6,7 +6,6 @@ www
 node_modules
 platforms
 plugins
-package.json
 Gemfile.lock
 .bundle
 www
