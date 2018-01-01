@@ -1,0 +1,15 @@
+{
+  "non-interactive": true,
+  "buildCommand": "./.deploy android",
+  "src": {
+    "tagName": "v%s"
+  },
+  "npm": {
+    "publish": false
+  },
+  "github": {
+    "release": true,
+    "tokenRef": "GITHUB_RELEASEIT_TOKEN",
+    "assets": "platforms/android/build/outputs/apk/*.apk"
+  }
+}
