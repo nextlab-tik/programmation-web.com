@@ -11,6 +11,7 @@ developper des sites simples et modernes. On va vous proposes un ensemble des
 exercies et mini-projets pour testez votre connaissance.
 
 
+{% comment %}
 {% assign parts =  site.cours | group_by:'chapitre' %}
 {% for part in parts %}
 
@@ -26,6 +27,7 @@ exercies et mini-projets pour testez votre connaissance.
 {% endfor %}
 
 {% endfor %}
+{% endcomment %}
 
 Web
 ---
