@@ -5,18 +5,19 @@
 
 <body class="gameprog widthflex">
 
-    {% include header.html -%}
+  {% include header.html -%}
 
-    <main>
-      {{ content }}
-    </main>
+  <main>
+    {{ content }}
+  </main>
 
-    {% include footer.html %}
+  {% include footer.html %}
 
-    {%- if page.embed -%}
-      <script src="{{ "/js/embed.js" | relative_url }}"></script>
-    {%- endif %}
-    {% if page.quiz -%}
-      <script src="{{ "/js/quiz.js" | relative_url }}"></script>
-    {%- endif %}
+  {%- if page.embed -%}
+  <script src="{{ "/js/embed.js" | relative_url }}"></script>
+  {%- endif %}
+
+  {% if page.quiz -%}
+  <script src="{{ "/js/quiz.js" | relative_url }}"></script>
+  {%- endif %}
 </html>

@@ -37,14 +37,17 @@ a {
     /* Les liens seront en italique */
 }
 
-/*a:hover { 
-font-size: 18px;
-} */
 
-a:hover
+/*
+a:hover {
+    font-size: 18px;
+}
+*/
+
+
 /* Quand le visiteur pointe sur le lien */
 
-    {
+a:hover {
     text-decoration: underline;
     /* Le lien deviendra souligné quand on pointera dessus */
     color: green;

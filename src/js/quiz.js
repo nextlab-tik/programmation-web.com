@@ -46,8 +46,7 @@ class QuizManager {
     </div>
     </fieldset>`
   }
-  inputToHTML(quiz, id) {
-  }
+  inputToHTML(quiz, id) {}
   handleSubmit(e) {
     e.preventDefault();
     document.getElementById("score-current").textContent = this.getScore();
@@ -76,16 +75,16 @@ class QuizManager {
         }
       }
       if (success) {
-          score += quiz.score;
-          document.getElementById(`quiz-${i}`).classList.add('has-success');
-        } else {
-          document.getElementById(`quiz-${i}`).classList.remove('has-success');
+        score += quiz.score;
+        document.getElementById(`quiz-${i}`).classList.add('has-success');
+      } else {
+        document.getElementById(`quiz-${i}`).classList.remove('has-success');
       }
     }
     return score;
   }
   maxScore() {
-  return this.data.quizs.reduce((cur, quiz) => cur + quiz.score, 0);
+    return this.data.quizs.reduce((cur, quiz) => cur + quiz.score, 0);
   }
 }
 
@@ -99,7 +98,7 @@ function loadQuiz() {
     quizManager.insertInto(quizC);
   } else {
     const pagePath = window.location.pathname.split('/');
-    const quizPath = pagePath[pagePath.length-1].split('.')[0] + ".json";
+    const quizPath = pagePath[pagePath.length - 1].split('.')[0] + ".json";
 
     const xhr = new XMLHttpRequest();
     xhr.overrideMimeType('application/json');

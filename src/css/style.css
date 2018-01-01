@@ -137,13 +137,13 @@ footer a,
 h2 a {
     color: #f2d9d9
 }
+
 header a:hover,
 footer a:hover,
 .divider a:hover,
 h2 a:hover {
     color: #f2d9d9
 }
-
 
 footer a,
 .divider a {
@@ -617,7 +617,7 @@ main>address {
 
 @media (max-width: 600px) {
     header nav li:last-of-type,
-    header nav li:nth-last-child(2){
+    header nav li:nth-last-child(2) {
         display: none
     }
 }
@@ -708,7 +708,7 @@ body.widthflex img {
     height: auto
 }
 
-body.widthflex p > img {
+body.widthflex p>img {
     display: block;
     margin: auto;
 }
@@ -938,7 +938,6 @@ h2 {
     /*background-position: 0 0, 16px 16px;*/
 }
 
-
 ol li {
     list-style-type: decimal;
 }
@@ -952,7 +951,7 @@ ol ol ol li {
 }
 
 dd {
-  margin-left: 40px;
+    margin-left: 40px;
 }
 
 figure {
@@ -972,6 +971,7 @@ nav.bottom span {
     display: inline-block;
     width: 30%;
 }
+
 
 /* A note that should go on the right side of the page, in the margin. */
 
@@ -997,5 +997,5 @@ aside {
  */
 
 .has-success .quiz-score {
-  background-color: #28a745;
+    background-color: #28a745;
 }

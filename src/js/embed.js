@@ -27,6 +27,7 @@ function initPlunker() {
     embedC.classList.add("embed-loaded");
   }
 }
+
 function initCodePen() {
   const embedsC = document.getElementsByClassName("embed-codepen");
   for (const embedC of embedsC) {
