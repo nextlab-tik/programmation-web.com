@@ -50,7 +50,7 @@ de Apple, Mozilla et Opera. Ce groupe élabore le standard **HTML5** entre
 2004-2007. En janvier 2008, la première spécification est publiée, qui est
 adoptée comme référence par le groupe de travail HTML du W3C.
 
-![](../imgs/cours/standards-timeline-html-by-cours-web.ch.png)
+![](assets/imgs/standards-timeline-html-by-cours-web.ch.png)
 
 HTML5
 -----

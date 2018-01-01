@@ -43,4 +43,4 @@ le serveur. On peut nommer comme navigateurs principales dans le marché:
 - **Opera** - développé depuis 1994. Depuis 2013, il est basé sur le même
   moteur de rendu que Chrome
 
-![L’évolution des navigateurs entre 1993 et 2016](../imgs/cours/navigateurs-timeline-by-cours-web.ch.png "L’évolution des navigateurs entre 1993 et 2016")
+![L’évolution des navigateurs entre 1993 et 2016](assets/imgs/navigateurs-timeline-by-cours-web.ch.png "L’évolution des navigateurs entre 1993 et 2016")
