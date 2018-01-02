@@ -4,7 +4,7 @@ chapitre: HTML5
 permalink: /cours/html5.html
 ---
 
-Le HTML n’est pas un langage de programmation, mais un langage de "marquage"
+Le HTML n'est pas un langage de programmation, mais un langage de "marquage"
 (_markup_ en anglais) ou bien de "balises" (_tags_ en anglais).
 Il permet de structurer le contenu d'une page web et lui fournir une
 signification et un but.
@@ -12,20 +12,20 @@ signification et un but.
 Les versions du langage HTML
 ----------------------------
 
-Durant ses 25 années d’existance, le standard HTML a connu diverses évolutions.
+Durant ses 25 années d'existence, le standard HTML a connu diverses évolutions.
 La première version proposée en 1991 comportait 18 éléments. Différentes
-versions du standard HTML sont publiées, jusqu’à la version <b>HTML 4.01</b> en
+versions du standard HTML sont publiées, jusqu'à la version <b>HTML 4.01</b> en
 1999.
 
-S’ensuit une période de stagnation, durant laquelle le groupe de travail HTML
+S'ensuit une période de stagnation, durant laquelle le groupe de travail HTML
 du **W3C** (World Wide Web Consortium) focalise ses efforts sur un nouveau
-langage, le **XHTML**, qui s’avère une impasse.
+langage, le **XHTML**, qui s'avère une impasse.
 
 En 2004, un groupe de travail concurrent se forme, nommé **WHATWG** (Web
 Hypertext Application Technology Working Group), rassemblant des représentants
 de Apple, Mozilla et Opera. Ce groupe élabore le standard **HTML5** entre
 2004-2007. En janvier 2008, la première spécification est publiée, qui est
-adoptée comme référence par le groupe de travail HTML du W3C. Ce n’est qu’en
+adoptée comme référence par le groupe de travail HTML du W3C. Ce n'est qu'en
 2014 que le HTML5 devient une recommandation stable du W3C. En fin 2016, le
 W3C rend officielle la version **HTML 5.1**. La version suivante **HTML 5.2**
 est en cours d'élaborer.
@@ -76,7 +76,7 @@ Les composants principaux de notre élément sont :
 
 Vous pouvez placer des éléments au sein d'autres éléments, c'est ce qu'on
 appelle l'imbrication. Par exemple, si vous souhaitez montrer que votre chat
-est vraiment fâché, vous pouvez placer le mot « vraiment » dans dans un élement
+est vraiment fâché, vous pouvez placer le mot « vraiment » dans dans un élément
 `<strong>`, ce qui signifie que le mot sera mis en avant:
 
 ```html
@@ -86,7 +86,7 @@ est vraiment fâché, vous pouvez placer le mot « vraiment » dans dans un éle
 Toutefois il faut faire attention à ce que les éléments soient bien imbriqués
 les uns dans les autres. Dans l'exemple précédent, on ouvre l'élément `<p>`,
 puis l'élément `<strong>`. Plus loin, on ferme l'élément `<strong>` puis on
-ferme l'élement `<p>`. Si on utilise le code suivant, ce sera incorrect:
+ferme l'élément `<p>`. Si on utilise le code suivant, ce sera incorrect:
 
 ```html
 <p>Mon chat est <strong>vraiment fâché.</p></strong>
@@ -241,7 +241,7 @@ le chemin vers le fichier de l'image.
 
 Nous avons aussi utilisé l'attribut `alt` (pour **alt**ernatif) qui contient un
 texte qui permet de décrire l'image et qui peut être utilisé par les
-utilisateurs qui ne peuvent pas voir l'image en cas ils sont mal-voyants ou en
+utilisateurs qui ne peuvent pas voir l'image en cas ils sont malvoyants ou en
 cas quelque chose s'est mal passé et que l'image n'a pu être affichée. Par
 exemple, cela peut se produire si le chemin vers l'image est incorrect.
 
@@ -280,17 +280,17 @@ Balises structurantes
 ---------------------
 
 HTML5 a ajouté un ensembles des balises dont un ensemble des balises
-structurantes qui permttre de construire un document HTML plus symentique. Ces
-balises n'ou pas un effect visuale dans le document, c'est le role du CSS3.
+structurantes qui permettre de construire un document HTML plus sémantique. Ces
+balises n'ont pas un effet visuel dans le document, c'est le rôle du CSS.
 Les nouvelles balises structurantes du HTML5:
 
 header
-: Section d’introduction d’un article, d’une autre section ou du document
+: Section d'introduction d'un article, d'une autre section ou du document
 entier (en-tête de page).
 
 section
 : Section générique regroupant un même sujet, une même fonctionnalité, de
-préférence avec un en-tête, ou bien section d’application web.
+préférence avec un en-tête, ou bien section d'application web.
 
 article
 : Section de contenu indépendante, pouvant être extraite individuellement du
@@ -299,13 +299,13 @@ compréhension.
 
 nav
 : Section possédant des liens de navigation principaux (au sein du document ou
-vers d’autres pages).
+vers d'autres pages).
 
 aside
-: Section dont le contenu est un complément par rapport à ce qui l’entoure, qui
-n’est pas forcément en lien direct avec le contenu mais qui peut apporter des
+: Section dont le contenu est un complément par rapport à ce qui l'entoure, qui
+n'est pas forcément en lien direct avec le contenu mais qui peut apporter des
 informations supplémentaires.
 
 footer
-: Section de conclusion d’une section ou d’un article, voire du document entier
+: Section de conclusion d'une section ou d'un article, voire du document entier
 (pied de page).
