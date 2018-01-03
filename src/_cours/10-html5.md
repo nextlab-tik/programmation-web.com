@@ -228,6 +228,25 @@ On pourrait faire :
 <p>qui travaillent ensemble...</p>
 ```
 
+#### Liste des descriptions
+
+La liste des descriptions permettre de décrire un terme. Elle est délimitée par
+la balise `<dl>` (**d**escription **l**ist). On utilise la balise `<dt>`
+(**d**escription **t**erm) pour spécifier le terme à définir suivi par
+un balise `<dd>` (**d**escription **d**escription) pour décrire le
+terme. On peut spécifier des multiple des termes par description ou multiple
+description par terme.
+
+```html
+{% include_absolute _cours/demos/description-list.html %}
+```
+
+Le résultat sera:
+
+<p>
+  <iframe height='130' scrolling='no' src='demos/description-list.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
 ### Les images
 
 Pour afficher un image, On utilise la balise `<img>`. Cet élément permet
