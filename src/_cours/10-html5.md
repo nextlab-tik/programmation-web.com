@@ -266,7 +266,10 @@ exemple, cela peut se produire si le chemin vers l'image est incorrect.
 
 ### Les liens
 
-Les liens sont très importants, ce sont eux qui font que le web est une toile sur laquelle on peut naviguer de page en page. Pour créer un lien, il suffit d'utiliser l'élément <a> (le a est un raccourci pour « ancre »). Pour transformer du texte en un lien, suivez ces étapes :
+Les liens sont très importants, ce sont eux qui font que le web est une toile
+sur laquelle on peut naviguer de page en page. Pour créer un lien, il suffit
+d'utiliser l'élément `<a>` (le a est un raccourci pour « ancre »). Pour
+transformer du texte en un lien, suivez ces étapes :
 
 1. Choisissez un texte (ici nous travaillerons avec le texte « Manifeste
    Mozilla ».

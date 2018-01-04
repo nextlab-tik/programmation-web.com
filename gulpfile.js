@@ -30,6 +30,7 @@ const HTMLFiles = [
   '!*/_layouts/**/*',
   '!*/_includes/**/*',
   '!*/_quiz/*.html',
+  '!*/_cours/*.html',
   '!*/vendor/**/*',
   '!www/**/*',
 ];
