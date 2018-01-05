@@ -7,28 +7,232 @@ permalink: /cours/formulaires.html
 Le HTML fournir un ensembles des balises pour construire des formulaires qui
 sont les éléments de base pour développer des pages interactives dont
 l'utilisateur peut saisir des données, cliquer des boutons et sélectionner un
-ensemble des choix. On va démontrer ses utilisations de base dans ce chapitre.
-Le mise en forme des formulaires avec CSS et le traitements dynamiques des ces
-formulaires avec JavaScript seront présentés dans des autres chapitres.
+ensemble des choix. Ces données peuvent être envoyées au serveur web ou
+intercepter et utiliser par la page web en utilisant JavaScript. On va
+démontrer ses utilisations de base dans ce chapitre. Le mise en forme des
+formulaires avec CSS et le traitements dynamiques des ces formulaires avec
+JavaScript seront présentés dans des autres chapitres.
 
-Les éléments de formulaire
---------------------------
+Création d'un formulaire
+------------------------
 
-Les formulaires doivent être délimités par la balise `<form>`. Prenant par
-exemple un formulaire permettant de saisir un texte.
+Les formulaires doivent être délimités par la balise `<form>`. Comme celui-co:
 
 ```html
-<form>
-  <input type="text" />
+<form action="https://example.com/page-traitement" method="post">
 </form>
 ```
 
-On a utilisé la balise `<input>` avec l'attribue `type` équal à "text". La
-balise de saisie `<input>` support des autres types:
+C'est un élément conteneur définissant un formulaire. Pour spécifier la manière
+dont il se comporte, on ajoute les attributs `action` et `method`:
 
-- **password**: Saisir un mot de passe sans afficher ses lettres.
+- **`action`**: définit l'URL de la page ou doivent être envoyées les données
+  collectées par le formulaire.
+- **`method`**: définit ma méthode HTTP utilisée pour envoyer les données
+  ("get" ou "post").
+
+On ajoute ensuite les balises du formulaire. HTML5 a enrichi la liste des ces
+balises pour supporter multiple type de données à saisir et améliorer
+l'intégration avec le système.
+
+On va créer un formulaire simple de contact qui permet le saisir du nom et
+prénom, l'email, le téléphone et le message. Il ne contient que quatre champs
+de texte, chacun ayant un libellé. Le premier est un champ texte pour le saisir
+du nom et prénom, le deuxième est un champ texte qui n'accepte qu'une adresse
+email valide, le troisième est un champ texte pour le saisi du numéro de
+téléphone et finalement un champ de texte de plusieurs lignes pour le saisir du
+message de contact.
+
 ```html
-<input type="password" />
+{% include_absolute _cours/demos/form-contact.html %}
 ```
-- **number**: Saisir un nombre. On peut spécifier le nombre minimal possible et
-le nombre maximal possible à saisir.
+<p>
+  <iframe height='300' scrolling='no' src='demos/form-contact.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
+L'utilisation de la balise `<p>` ici est juste pour structurer notre code et
+séparer visuellement les différents champs sans besoin de CSS. Chaque champ est
+accompagné d'une étiquette (veuillez noter la balise `<label>`). Pour faire la
+relation logique entre le champ et sa étiquette, on utilise l'attribue `for` de
+l'étiquette pour référencer l'identificateur du champ (l'attribue `id`). Un des
+avantage de lier l'étiquette à son élément correspondant est de permettre à
+l'utilisateur de cliquer sur l'étiquette pour activer le champ correspondant.
+
+Les trois premiers champs sont des éléments `<input>` dont on a utilisé
+l'attribue `type` pour spécifier le type de données à saisir. Le HTML5 supporte
+des multiples types dont le type `text` permet le saisir d'une seule ligne de
+texte (nom et prénom dans notre cas) sans contrôle ni validation, le type
+`email` permet de saisir une adresse email qui doit forcement être une adresse
+email valide, le type `tel` permet le saisi d'un numéro de téléphone même que
+le numéro saisi n'est pas validé par ce que la format du numéro des téléphones
+varie beaucoup entre les pays, l'utilisation du champ de type `tel` améliore
+l'intégration avec les téléphone en affichant un clavier virtuel adapté au
+saisi des numéros de téléphone (aussi pour le cas de champ de type `email`).
+
+Le quatrième élément est un champ de texte de plusieurs lignes, on peut
+dimensionner ce champ en nombre de caractères visibles par ligne en utilisant
+l'attribue `cols` et le nombre de lignes visibles en utilisant l'attribue
+`rows`.
+
+Les boutons sont déclarer en utilisant l'élément `<input>` avec le type
+`submit` pour spécifier que ce bouton doit envoyer les données saisis à notre
+serveur et un autre élément de type `reset` pour spécifier que ce bouton doit
+réinitialiser les champs de notre formulaire. Pour changer le contenu de ces
+boutons, on utilise l'attribue `value`.
+
+Notre formulaire manque les attribues `action` et `method` pour spécifier
+l'URL de la page qui va traiter ces informations et la méthode HTTP qu'on va
+utiliser pour les envoyer respectivement. Mais c'est pas tout. Nous sommes
+aussi besoin de donner un nom à nos champs en utilisant l'attribue `name` qui
+contrairement à l'identificateur du champ, le nom du champ sera envoyé au
+serveur avec les données saisis pour qu'il peut les manipulées correctement.
+
+Donc, on va créer un nouveau formulaire utile et fonctionnel qui permettre de
+chercher un terme dans le moteur de recherche Google. Le moteur de recherche
+Google attendre de passer le terme à rechercher avec le nom `q` (query) à
+<https://www.google.com/search> en utilisant la méthode "get".
+
+```html
+{% include_absolute _cours/demos/form-google-search.html %}
+```
+<p>
+  <iframe height='60' scrolling='no' src='demos/form-google-search.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
+Pour le champ texte de saisir du terme, on a utilisé un élément `<input>` de
+type `search`. C'est un élément équivalent au champ de type `text` mais qui
+peut avoir un différent mise en forme dépend du navigateur utilisé. On a nommer
+ce champ `q` en utilisant l'attribue `name` comme le moteur de recherche Google
+attendre le terme à chercher passé avec le nom `q`. Deux nouvelles attribues
+utilisées dans cet élément sont `placeholder` qui permettre de définir le texte
+à afficher en gris dans le champ si il est vide et qui peut être utiliser au
+lieu ou avec l'étiquette. L'autre attribue est `required` qui indique que ce
+champ est obligatoire à saisir avant l'envoie des données au serveur.
+
+On a aussi utilisé l'élément `<button>` au lien du `<input type="submit" />`.
+Ces sont le même. L'élément `<button>` est plus flexible et support la mise en
+forme de sont contenu tant que `<input type="submit" />` ne peut accepter que
+un texte simple dans l'attribue `value` sans des balises de mise en forme.
+
+Élément d'un formulaire
+-----------------------
+
+Le HTML5 contient un nombre riche des éléments du formulaire supportant des
+multiples de types de données à saisir et améliorant l'intégration avec le
+système.
+
+### Champ de texte simple
+
+C'est l'élément le plus basique de saisi. Il permet le saisi d'une seule
+ligne de texte.
+
+```html
+{% include_absolute _cours/demos/form-text.html %}
+```
+<p>
+  <iframe height='40' scrolling='no' src='demos/form-text.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
+### Mot de passe
+
+Il permet le saisi d'une seule lignes des données sensibles (mot de passe)
+
+```html
+{% include_absolute _cours/demos/form-password.html %}
+```
+<p>
+  <iframe height='40' scrolling='no' src='demos/form-password.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
+### Nombre
+
+Il permet le saisi d'un nombre. On peut spécifier le nombre minimal possible
+par l'attribue `min` et le maximal `max` et le pas entre les nombre possible
+`step`
+
+```html
+{% include_absolute _cours/demos/form-nombre.html %}
+```
+<p>
+  <iframe height='40' scrolling='no' src='demos/form-nombre.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
+### Zone de texte
+
+Il permet de saisir un texte de plusieurs lignes. On peut changer ça hauteur
+et sa largeur en nombre des caractères.
+
+```html
+{% include_absolute _cours/demos/form-textarea.html %}
+```
+<p>
+  <iframe height='70' scrolling='no' src='demos/form-textarea.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
+### Étiquette
+
+Il permet de donner un description au champ. On utilise l'attribue `for` pour
+spécifier l'identificateur de l'élément dans il est correspondent.
+
+```html
+{% include_absolute _cours/demos/form-label.html %}
+```
+<p>
+  <iframe height='50' scrolling='no' src='demos/form-label.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
+### Case à cocher
+
+Il permet de sélectionner zéro, un ou multiples des choix. Les cases à cocher
+reliés doivent avoir le même nom mais des différentes valeurs.
+
+```html
+{% include_absolute _cours/demos/form-checkbox.html %}
+```
+<p>
+  <iframe height='120' scrolling='no' src='demos/form-checkbox.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
+### Groupe radio
+
+Il permet de sélectionner zéro ou un seul choix. Les radios de même groupe
+doivent avoir le même nom mais des différentes valeurs.
+
+```html
+{% include_absolute _cours/demos/form-radio.html %}
+```
+<p>
+  <iframe height='80' scrolling='no' src='demos/form-radio.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
+### Bouton d'envoi
+
+### Bouton de réinitialisation
+
+### Select
+
+### Fichier
+
+### Dates et Temps
+
+### Couleur
+
+### Zone de recherche
+
+### Champ email
+
+### Champ URL
+
+### Champ Téléphone
+
+Remarque
+--------
+
+Pendant la conception de votre formulaire, il est important de garder la
+quantité des données à saisir par l'utilisateur le minimal le plus possible.
+Par ce qu'au poit de vue de l'experience utilisateur, plus que vous demandez
+des données, plus vous risquez que l'utilisateur s'en aille. De plus, au poit
+de vue de la sécurite et de la confidentialité, plus que vous stocker des
+données à propos de vos utilisateurs dans vos serveurs plus que vous augmentez
+le dommage en cas d'une faille de sécurité et fuite des données personnels de
+vos utilisateurs.
