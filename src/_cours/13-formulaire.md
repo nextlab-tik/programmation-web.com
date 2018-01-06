@@ -16,7 +16,7 @@ JavaScript seront présentés dans des autres chapitres.
 Création d'un formulaire
 ------------------------
 
-Les formulaires doivent être délimités par la balise `<form>`. Comme celui-co:
+Les formulaires doivent être délimités par la balise `<form>`. Comme celui-ci:
 
 ```html
 <form action="https://example.com/page-traitement" method="post">
@@ -135,7 +135,8 @@ ligne de texte.
 
 ### Mot de passe
 
-Il permet le saisi d'une seule lignes des données sensibles (mot de passe)
+Il permet le saisi d'une seule lignes des données sensibles (mot de passe). Le
+text saisi n'est pas affiché mais des astérisques ou des points.
 
 ```html
 {% include_absolute _cours/demos/form-password.html %}
@@ -183,8 +184,11 @@ spécifier l'identificateur de l'élément dans il est correspondent.
 
 ### Case à cocher
 
-Il permet de sélectionner zéro, un ou multiples des choix. Les cases à cocher
-reliés doivent avoir le même nom mais des différentes valeurs.
+Il permet de sélectionner des multiples de choix dans une liste proposée (soit
+zéro ou un ou multiple choix). Les choix (les bouton radios) doivent appartenir
+au même groupe en les donner le même nom (même valeur de l'attribue `name`)
+mais chaque choix (chaque bouton radio de même groupe) doit avoir une valeur
+différente de l'attribue `value`.
 
 ```html
 {% include_absolute _cours/demos/form-checkbox.html %}
@@ -195,8 +199,10 @@ reliés doivent avoir le même nom mais des différentes valeurs.
 
 ### Groupe radio
 
-Il permet de sélectionner zéro ou un seul choix. Les radios de même groupe
-doivent avoir le même nom mais des différentes valeurs.
+Il permet de sélectionner un seul choix dans une liste proposée. Les choix (les
+bouton radios) doivent appartenir au même groupe en les donner le même nom
+(même valeur de l'attribue `name`) mais chaque choix (chaque bouton radio de
+même groupe) doit avoir une valeur différente de l'attribue `value`.
 
 ```html
 {% include_absolute _cours/demos/form-radio.html %}
@@ -207,32 +213,162 @@ doivent avoir le même nom mais des différentes valeurs.
 
 ### Bouton d'envoi
 
+Il permet l'envoie des données saisis à l'URL spécifié dans l'attribue `action`
+de la formulaire en utilisant la méthode HTTP spécifiée dans l'attribue
+`method` de la formulaire. La création du bouton d'envoi peut être à travers un
+élément `<input>` de type `submit` ou d'un élément `<button>` qui est par
+défaut de type `submit`.
+
+```html
+{% include_absolute _cours/demos/form-submit.html %}
+```
+<p>
+  <iframe height='80' scrolling='no' src='demos/form-submit.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
 ### Bouton de réinitialisation
 
-### Select
+Il permet la réinitialisation des champs de la formulaire.  La création du
+bouton de réinitialisation peut être à travers un élément `<input>` de type
+`reset` ou d'un élément `<button>` de type `reset`.
+
+```html
+{% include_absolute _cours/demos/form-reset.html %}
+```
+<p>
+  <iframe height='80' scrolling='no' src='demos/form-reset.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
+### Liste d'options
+
+Il permet de sélectionner un seul (ou plusieurs) choix dans une liste d’options
+déroulante.  Les choix sont de balise `<option>` avec des différentes valeurs
+de l'attribue `value`. Ils sont tous regroupés dans une balise `<select>`.
+L'attribue `multiple` permet la sélection de multiples des choix dans une liste
+non déroulante.
+
+```html
+{% include_absolute _cours/demos/form-select.html %}
+```
+<p>
+  <iframe height='140' scrolling='no' src='demos/form-select.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
 
 ### Fichier
 
+Il permet de sélectionner un fichier depuis l'appareil d'utilisateur pour
+l'uploader au serveur. L'attribue `enctype` de la formulaire doit être égal à
+"multipart/form-data" pour que la formulaire peut uploader le fichier.
+L'attribue `multiple` permet la sélection des multiples des fichiers.
+L'attribut `accept` peut être utilisé pour définir les types de fichier que le
+contrôle permet de sélectionner sous la forme d'une liste d'extensions de
+fichier ou de types MIME séparés par des virgules.
+
+```html
+{% include_absolute _cours/demos/form-file.html %}
+```
+<p>
+  <iframe height='40' scrolling='no' src='demos/form-file.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
 ### Dates et Temps
+
+Il permet le saisir une dates, un horaires ou les deux en utilisant le type
+`date`, `time`, `datetime-local` respectivement sans fuseau horaire. Aussi, il
+permet le saisir des une semaine d'une année et un mois d'une année en
+utilisant le type `week` et `month` respectivement.  Le navigateur utilisera
+une interface pour améliorer l'expérience utilisateur.  On peut spécifier la
+valeur minimal et la valeur maximal et le pas pour ces champs en utilisant les
+attribues `min`, `max` et `step` respectivement.
+
+```html
+{% include_absolute _cours/demos/form-date-time.html %}
+```
+<p>
+  <iframe height='200' scrolling='no' src='demos/form-date-time.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
+<aside>
+<b>Noté bien:</b>
+Le support des champs de type <code>datetime-local</code>, <code>week</code>
+et <code>month</code> ne sont pas encore supporter par la version bureautique
+du Firefox et Safari.
+</aside>
+
 
 ### Couleur
 
+Il permet le sélection d'un couleur en utilisant un sélecteur des couleurs.
+
+```html
+{% include_absolute _cours/demos/form-color.html %}
+```
+<p>
+  <iframe height='40' scrolling='no' src='demos/form-color.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
 ### Zone de recherche
+
+Permet de saisir une seul ligne du texte. La différence entre ce type et le
+type `texte` est qu'il peut avoir un différent mise en forme dépend du
+navigateur utilisé.
+
+```html
+{% include_absolute _cours/demos/form-search.html %}
+```
+<p>
+  <iframe height='40' scrolling='no' src='demos/form-search.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
 
 ### Champ email
 
+Il permet le saisir d'une seule ou plusieurs adresses électroniques (email) qui
+sera/seront valider par le navigateur.  Le clavier tactile du smartphone sera
+optimisé pour le saisi des email. L'attribue `multiple` permet le saisir
+de multiple des emails séparés par virgule.
+
+```html
+{% include_absolute _cours/demos/form-email.html %}
+```
+<p>
+  <iframe height='40' scrolling='no' src='demos/form-email.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
 ### Champ URL
 
+Il permet le saisir d'un URL absolue (lien web) qui sera valider par le
+navigateur.  Le clavier tactile du smartphone sera optimisé pour le saisi des
+URL.
+
+```html
+{% include_absolute _cours/demos/form-url.html %}
+```
+<p>
+  <iframe height='40' scrolling='no' src='demos/form-url.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
 ### Champ Téléphone
+
+Il permet le saisir d'un numéro de téléphone.  Il ne sera pas valider par le
+navigateur par ce que la format du numéro des téléphones varie beaucoup entre
+les pays. Le clavier tactile du smartphone sera optimisé pour le saisi des
+numéro de téléphone.
+
+```html
+{% include_absolute _cours/demos/form-tel.html %}
+```
+<p>
+  <iframe height='40' scrolling='no' src='demos/form-tel.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
 
 Remarque
 --------
 
 Pendant la conception de votre formulaire, il est important de garder la
 quantité des données à saisir par l'utilisateur le minimal le plus possible.
-Par ce qu'au poit de vue de l'experience utilisateur, plus que vous demandez
-des données, plus vous risquez que l'utilisateur s'en aille. De plus, au poit
-de vue de la sécurite et de la confidentialité, plus que vous stocker des
+Par ce qu'au point de vue de l'expérience utilisateur, plus que vous demandez
+des données, plus vous risquez que l'utilisateur s'en aille. De plus, au point
+de vue de la sécurité et de la confidentialité, plus que vous stocker des
 données à propos de vos utilisateurs dans vos serveurs plus que vous augmentez
 le dommage en cas d'une faille de sécurité et fuite des données personnels de
 vos utilisateurs.
