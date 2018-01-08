@@ -5,7 +5,7 @@
   "indent_with_tabs": false,
   "preserve_newlines": true,
   "max-preserve-newlines": 2,
-  "end_with_newline": true,
+  "end_with_newline": false,
   "wrap-line-length": 120,
   "css": {
     "preserve_newlines": false,
@@ -15,6 +15,6 @@
     "wrap-line-length": 120
   },
   "html": {
-    "wrap-line-length": 120
+    "wrap-line-length": 65
   }
 }
