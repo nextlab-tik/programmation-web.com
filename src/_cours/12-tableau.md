@@ -123,9 +123,9 @@ Remarques
 ---------
 
 Anciennement, la balise `<table>` était utilisée pour mettre en forme la page
-web à cause des limites de CSS et son mal support par les navigateurs.  Mais,
+web à cause des limites de CSS et son mal support par les navigateurs. Mais,
 depuis le HTML5, il est recommandé de ne plus utiliser les tableaux pour la
-mise en forme du page web mais au lieu, il faut utiliser le CSS3 par-ce-que la
+mise en forme du page web mais au lieu, il faut utiliser le CSS3 parce que la
 balise `<table>` n'est pas sensible aux différents écrans (responsive design)
 et demande une structure HTML plus complexe.
 

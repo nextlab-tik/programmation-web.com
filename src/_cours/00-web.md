@@ -4,37 +4,37 @@ chapitre: Web
 permalink: /cours/web.html
 ---
 
-Le web, ou équalement nommé **WWW** (Word Wide Web), est un des services
-d'internet les plus connus:
+Le web, ou également nommé **WWW** (Word Wide Web), est un des services
+d'Internet les plus connus:
 
-- FTP: transfer de fichier
-- IMAP, POP3, SMTP: Le courrier électronique (l'e-mail)
+- FTP: transfert de fichier
+- IMAP, POP3, SMTP: Le courrier électronique (l'email)
 - HTTP: Web (documents hypertextes)
 
-Le web est un systeme permettant d'accesser à un ensemble des documents
-hypertextes en utilisant principalement navigateur. Le web était developpé par
+Le web est un système permettant d'accéder à un ensemble des documents
+hypertextes en utilisant principalement navigateur. Le web était développé par
 Tim Berners-Lee au CERN (Suisse) en 1990.
 
-Un document hypertexte est principalement un document text ecrite en
+Un document hypertexte est principalement un document texte écrit en
 HTML/CSS/JavaScript contenant des unités d'information liées entre elles par
-des hyperliens. Mais, le type du document peut etre aussi un text, audio,
-image, video ou binaire.
+des hyperliens. Mais, le type du document peut être aussi un texte, audio,
+image, vidéo ou binaire.
 
-Les documents en web sont regrouper en ensembles des sites webs identifiés par
-des noms de domaines. Pour acceder un document dans un site web, on saisire le
-URL: le nom de domaine de cet site web et le chemin du document dans la barre
-d'addresse de le navigateur. Examples des sites web populaire:
+Les documents en web sont regrouper en ensembles des sites web identifiés par
+des noms de domaines. Pour accéder à un document dans un site web, on saisi
+l'URL: le nom de domaine de cet site web et le chemin du document dans la barre
+d'adresse de le navigateur. Exemples des sites web populaires:
 
 - [Google](https://google.com)
-- [Wikipedia](https://fr.wikipedia.org/wiki/World_Wide_Web)
+- [Wikipédia](https://fr.wikipedia.org/wiki/World_Wide_Web)
 - [GitHub](https://github.com)
 
-Pour l'echange de ces documents, le web utilise le protocol HTTP (Hypertext
+Pour l'échange de ces documents, le web utilise le protocole HTTP (HyperText
 Transfer Protocol) qui permet la communication entre le client (navigateur) et
 le serveur. On peut nommer comme navigateurs principales dans le marché:
 
 - **Google Chrome** - développé par Google depuis 2008. Il était basé sur le
-  meme moteur de rendu que Safari jusqu'à 2013
+  même moteur de rendu que Safari jusqu'à 2013
 - **Firefox** - développé par Mozilla depuis 2004 comme un successeur de
   **Netscape**
 - **Safari** - développé par Apple depuis 2003

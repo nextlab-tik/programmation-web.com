@@ -137,7 +137,7 @@ ligne de texte.
 ### Mot de passe
 
 Il permet le saisi d'une seule lignes des données sensibles (mot de passe). Le
-text saisi n'est pas affiché mais des astérisques ou des points.
+texte saisi n'est pas affiché mais des astérisques ou des points.
 
 ```html
 {% include_absolute _cours/demos/form-password.html %}

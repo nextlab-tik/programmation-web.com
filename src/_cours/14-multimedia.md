@@ -92,20 +92,20 @@ Les images vectorielles
 
 Les images sont divisés en deux types principales:
 
-- Les images pixelles: dans l'unité est le pixel. Les formats les plus connus
+- Les images pixels: dont l'unité est le pixel. Les formats les plus connus
   sont: **JPEG**, **PNG**, **GIF**, **BMP**. Ces images perdent la qualité
-  quand ils sont agrandis plus que sont tailles originals.
-- Les images vectoriels: dabs l'unité est des éléments géométriques telque un
+  quand ils sont agrandis plus que sont tailles original.
+- Les images vectoriels: dont l'unité est des éléments géométriques tel que un
   rectangle, un cercle,... . Ces images ne perdent pas la qualité quand ils sont
-  agrondis. La format la plus connue est **SVG**.
+  agrandis. La format la plus connue est **SVG**.
 
 La format **SVG** (**S**calable **V**ector **G**raphics) est un format d'image
-vertoriel basée sur le XML dépéloppée par **W3C** depuis 1999. Cette format est
-supportée par la majorité des éditeurs des images vectorielles. Il est utilisé
-dans le web pour structuré des images complexe que le HTML/CSS peut structurer.
-SVG est désigné pour s'intégré bien avec les technologie du web comme le HTML
-et CSS. Il support les animations aussi. La version courrante est **SVG 1.1**.
-La version **SVG 2.0** est en cours de développement.
+vectoriel basé sur la langage XML développé par **W3C** depuis 1999. Cette
+format est supportée par la majorité des éditeurs des images vectorielles. Il
+est utilisé dans le web pour structuré des images complexe que le HTML/CSS peut
+structurer.  SVG est désigné pour d'intégrer bien avec les technologies du web
+comme le HTML et CSS. Il support les animations aussi. La version courante est
+**SVG 1.1**.  La version **SVG 2.0** est en cours de développement.
 
 Pour afficher un fichier SVG, on utilise la balise `<img>`.
 
