@@ -22,5 +22,6 @@ module.exports = {
     "max-len": [1, 120],
     "switch-colon-spacing": ["off", {"after": true, "before": false}],
     "require-jsdoc": "off",
+    "eol-last": "off",
   },
 };

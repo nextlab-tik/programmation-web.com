@@ -19,7 +19,7 @@ class QuizManager {
     <div class="col"><input type="submit" value="Verifier" class="btn btn-primary float-right"/></div>
     </div>
     </form>
-    `
+    `;
   }
 
   quizToHTML(quiz, id) {
@@ -44,7 +44,7 @@ class QuizManager {
        </div>
     `).join('')}
     </div>
-    </fieldset>`
+    </fieldset>`;
   }
   inputToHTML(quiz, id) {}
   handleSubmit(e) {
