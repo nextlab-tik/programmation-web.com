@@ -105,9 +105,10 @@ peut avoir un différent mise en forme dépend du navigateur utilisé. On a nomm
 ce champ `q` en utilisant l'attribut `name` comme le moteur de recherche Google
 attendre le terme à chercher passé avec le nom `q`. Deux nouvelles attributs
 utilisées dans cet élément sont `placeholder` qui permettre de définir le texte
-à afficher en gris dans le champ si il est vide et qui peut être utiliser au
-lieu ou avec l'étiquette. L'autre attribut est `required` qui indique que ce
-champ est obligatoire à saisir avant l'envoie des données au serveur.
+à afficher en gris à moitié transparent dans le champ si il est vide et qui
+peut être utiliser au lieu ou avec l'étiquette. L'autre attribut est `required`
+qui indique que ce champ est obligatoire à saisir avant l'envoie des données au
+serveur.
 
 On a aussi utilisé l'élément `<button>` au lien du `<input type="submit" />`.
 Ces sont le même. L'élément `<button>` est plus flexible et support la mise en
@@ -397,8 +398,15 @@ Un seul élément peut avoir le focus.
 
 ### placeholder
 
-Spécifier le texte à afficher dans le champ en gris quand le champ est vide
-pour données plus des hints à l'utilisateur.
+Spécifier le texte à afficher dans le champ en gris à moitié transparent quand
+le champ est vide pour données plus des hints à l'utilisateur.
+
+```html
+{% include_absolute _cours/demos/form-placeholder.html %}
+```
+<p>
+  <iframe height='40' scrolling='no' src='demos/form-placeholder.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
 
 ### max, min, step
 
