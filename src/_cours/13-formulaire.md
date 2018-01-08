@@ -53,13 +53,13 @@ message de contact.
 L'utilisation de la balise `<p>` ici est juste pour structurer notre code et
 séparer visuellement les différents champs sans besoin de CSS. Chaque champ est
 accompagné d'une étiquette (veuillez noter la balise `<label>`). Pour faire la
-relation logique entre le champ et sa étiquette, on utilise l'attribue `for` de
-l'étiquette pour référencer l'identificateur du champ (l'attribue `id`). Un des
+relation logique entre le champ et sa étiquette, on utilise l'attribut `for` de
+l'étiquette pour référencer l'identificateur du champ (l'attribut `id`). Un des
 avantage de lier l'étiquette à son élément correspondant est de permettre à
 l'utilisateur de cliquer sur l'étiquette pour activer le champ correspondant.
 
 Les trois premiers champs sont des éléments `<input>` dont on a utilisé
-l'attribue `type` pour spécifier le type de données à saisir. Le HTML5 supporte
+l'attribut `type` pour spécifier le type de données à saisir. Le HTML5 supporte
 des multiples types dont le type `text` permet le saisir d'une seule ligne de
 texte (nom et prénom dans notre cas) sans contrôle ni validation, le type
 `email` permet de saisir une adresse email qui doit forcement être une adresse
@@ -71,19 +71,19 @@ saisi des numéros de téléphone (aussi pour le cas de champ de type `email`).
 
 Le quatrième élément est un champ de texte de plusieurs lignes, on peut
 dimensionner ce champ en nombre de caractères visibles par ligne en utilisant
-l'attribue `cols` et le nombre de lignes visibles en utilisant l'attribue
+l'attribut `cols` et le nombre de lignes visibles en utilisant l'attribut
 `rows`.
 
 Les boutons sont déclarer en utilisant l'élément `<input>` avec le type
 `submit` pour spécifier que ce bouton doit envoyer les données saisis à notre
 serveur et un autre élément de type `reset` pour spécifier que ce bouton doit
 réinitialiser les champs de notre formulaire. Pour changer le contenu de ces
-boutons, on utilise l'attribue `value`.
+boutons, on utilise l'attribut `value`.
 
-Notre formulaire manque les attribues `action` et `method` pour spécifier
+Notre formulaire manque les attributs `action` et `method` pour spécifier
 l'URL de la page qui va traiter ces informations et la méthode HTTP qu'on va
 utiliser pour les envoyer respectivement. Mais c'est pas tout. Nous sommes
-aussi besoin de donner un nom à nos champs en utilisant l'attribue `name` qui
+aussi besoin de donner un nom à nos champs en utilisant l'attribut `name` qui
 contrairement à l'identificateur du champ, le nom du champ sera envoyé au
 serveur avec les données saisis pour qu'il peut les manipulées correctement.
 
@@ -102,17 +102,17 @@ Google attendre de passer le terme à rechercher avec le nom `q` (query) à
 Pour le champ texte de saisir du terme, on a utilisé un élément `<input>` de
 type `search`. C'est un élément équivalent au champ de type `text` mais qui
 peut avoir un différent mise en forme dépend du navigateur utilisé. On a nommer
-ce champ `q` en utilisant l'attribue `name` comme le moteur de recherche Google
-attendre le terme à chercher passé avec le nom `q`. Deux nouvelles attribues
+ce champ `q` en utilisant l'attribut `name` comme le moteur de recherche Google
+attendre le terme à chercher passé avec le nom `q`. Deux nouvelles attributs
 utilisées dans cet élément sont `placeholder` qui permettre de définir le texte
 à afficher en gris dans le champ si il est vide et qui peut être utiliser au
-lieu ou avec l'étiquette. L'autre attribue est `required` qui indique que ce
+lieu ou avec l'étiquette. L'autre attribut est `required` qui indique que ce
 champ est obligatoire à saisir avant l'envoie des données au serveur.
 
 On a aussi utilisé l'élément `<button>` au lien du `<input type="submit" />`.
 Ces sont le même. L'élément `<button>` est plus flexible et support la mise en
 forme de sont contenu tant que `<input type="submit" />` ne peut accepter que
-un texte simple dans l'attribue `value` sans des balises de mise en forme.
+un texte simple dans l'attribut `value` sans des balises de mise en forme.
 
 Élément d'un formulaire
 -----------------------
@@ -148,7 +148,7 @@ text saisi n'est pas affiché mais des astérisques ou des points.
 ### Nombre
 
 Il permet le saisi d'un nombre. On peut spécifier le nombre minimal possible
-par l'attribue `min` et le maximal `max` et le pas entre les nombre possible
+par l'attribut `min` et le maximal `max` et le pas entre les nombre possible
 `step`
 
 ```html
@@ -172,7 +172,7 @@ et sa largeur en nombre des caractères.
 
 ### Étiquette
 
-Il permet de donner un description au champ. On utilise l'attribue `for` pour
+Il permet de donner un description au champ. On utilise l'attribut `for` pour
 spécifier l'identificateur de l'élément dans il est correspondent.
 
 ```html
@@ -186,9 +186,9 @@ spécifier l'identificateur de l'élément dans il est correspondent.
 
 Il permet de sélectionner des multiples de choix dans une liste proposée (soit
 zéro ou un ou multiple choix). Les choix (les bouton radios) doivent appartenir
-au même groupe en les donner le même nom (même valeur de l'attribue `name`)
+au même groupe en les donner le même nom (même valeur de l'attribut `name`)
 mais chaque choix (chaque bouton radio de même groupe) doit avoir une valeur
-différente de l'attribue `value`.
+différente de l'attribut `value`.
 
 ```html
 {% include_absolute _cours/demos/form-checkbox.html %}
@@ -201,8 +201,8 @@ différente de l'attribue `value`.
 
 Il permet de sélectionner un seul choix dans une liste proposée. Les choix (les
 bouton radios) doivent appartenir au même groupe en les donner le même nom
-(même valeur de l'attribue `name`) mais chaque choix (chaque bouton radio de
-même groupe) doit avoir une valeur différente de l'attribue `value`.
+(même valeur de l'attribut `name`) mais chaque choix (chaque bouton radio de
+même groupe) doit avoir une valeur différente de l'attribut `value`.
 
 ```html
 {% include_absolute _cours/demos/form-radio.html %}
@@ -213,8 +213,8 @@ même groupe) doit avoir une valeur différente de l'attribue `value`.
 
 ### Bouton d'envoi
 
-Il permet l'envoie des données saisis à l'URL spécifié dans l'attribue `action`
-de la formulaire en utilisant la méthode HTTP spécifiée dans l'attribue
+Il permet l'envoie des données saisis à l'URL spécifié dans l'attribut `action`
+de la formulaire en utilisant la méthode HTTP spécifiée dans l'attribut
 `method` de la formulaire. La création du bouton d'envoi peut être à travers un
 élément `<input>` de type `submit` ou d'un élément `<button>` qui est par
 défaut de type `submit`.
@@ -243,8 +243,8 @@ bouton de réinitialisation peut être à travers un élément `<input>` de type
 
 Il permet de sélectionner un seul (ou plusieurs) choix dans une liste d’options
 déroulante.  Les choix sont de balise `<option>` avec des différentes valeurs
-de l'attribue `value`. Ils sont tous regroupés dans une balise `<select>`.
-L'attribue `multiple` permet la sélection de multiples des choix dans une liste
+de l'attribut `value`. Ils sont tous regroupés dans une balise `<select>`.
+L'attribut `multiple` permet la sélection de multiples des choix dans une liste
 non déroulante.
 
 ```html
@@ -257,9 +257,9 @@ non déroulante.
 ### Fichier
 
 Il permet de sélectionner un fichier depuis l'appareil d'utilisateur pour
-l'uploader au serveur. L'attribue `enctype` de la formulaire doit être égal à
+l'uploader au serveur. L'attribut `enctype` de la formulaire doit être égal à
 "multipart/form-data" pour que la formulaire peut uploader le fichier.
-L'attribue `multiple` permet la sélection des multiples des fichiers.
+L'attribut `multiple` permet la sélection des multiples des fichiers.
 L'attribut `accept` peut être utilisé pour définir les types de fichier que le
 contrôle permet de sélectionner sous la forme d'une liste d'extensions de
 fichier ou de types MIME séparés par des virgules.
@@ -279,7 +279,7 @@ permet le saisir des une semaine d'une année et un mois d'une année en
 utilisant le type `week` et `month` respectivement.  Le navigateur utilisera
 une interface pour améliorer l'expérience utilisateur.  On peut spécifier la
 valeur minimal et la valeur maximal et le pas pour ces champs en utilisant les
-attribues `min`, `max` et `step` respectivement.
+attributs `min`, `max` et `step` respectivement.
 
 ```html
 {% include_absolute _cours/demos/form-date-time.html %}
@@ -324,7 +324,7 @@ navigateur utilisé.
 
 Il permet le saisir d'une seule ou plusieurs adresses électroniques (email) qui
 sera/seront valider par le navigateur.  Le clavier tactile du smartphone sera
-optimisé pour le saisi des email. L'attribue `multiple` permet le saisir
+optimisé pour le saisi des email. L'attribut `multiple` permet le saisir
 de multiple des emails séparés par virgule.
 
 ```html
@@ -359,6 +359,106 @@ numéro de téléphone.
 ```
 <p>
   <iframe height='40' scrolling='no' src='demos/form-tel.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
+Les attributs du formulaire
+----------------------------
+
+### name
+
+Définir le nom de l'élément du formulaire qui sera utilisé lors de l'envoi des
+données saisis au serveur qu'il peut les manipulées correctement. Cet attribut
+est obligatoire au tous champs de saisi dont les données seront envoyées au
+serveur.
+
+### type
+
+Spécifier le type du champ de saisir pour les éléments `<input>` et le type du
+bouton pour l'élément `<button>`.
+
+### value
+
+Spécifier la valeur par défaut du champ.
+
+### autocomplete
+
+Indiquer que le champ peut avoir sa valeur par défaut complétée automatiquement
+par le navigateur en utilisant les valeur anciennement saisies. L'attribut
+`autocomplete` support un ensemble des valeurs permettant de spécifier le type
+de données à compléter, par exemple, la valeur "country-name" indique que la
+navigateur peut compléter le champ par le nom du pays de l'utilisateur.
+La liste complète des valeurs possible est accessible dans [Mozilla Developer
+Network](https://developer.mozilla.org/en-US/docs/Temp_input#attr-autocomplete).
+
+### autofocus
+
+Un attribut booléen pour mettre l'élément en focus lorsque la page est chargée.
+Un seul élément peut avoir le focus.
+
+### placeholder
+
+Spécifier le texte à afficher dans le champ en gris quand le champ est vide
+pour données plus des hints à l'utilisateur.
+
+### max, min, step
+
+Spécifier la valeur maximal, la valeur minimal et le pas entre les valeurs
+possible pour les champs numériques ou des dates et des temps.
+
+### maxlength, minlength
+
+Spécifier la longueur maximal et la longueur minimal du texte saisi pour les
+champs textuels.
+
+### checked, selected
+
+Deux attributs booléens pour spécifier les choix sélectionnés par défaut dans
+une liste liste des cases à cocher ou le choix sélectionné par défaut une liste
+des boutons radios en utilisant l'attribut `checked` et pour spécifier le(s)
+choix sélectionné(s) par défaut dans une liste d'options en utilisant
+l'attribut `selected`.
+
+### required
+
+Indiquer que le saisi des données (avec validation si supporté) dans le champ
+est obligatoire avant l'envoi des données. Dans le cas des boutons radios ou
+des cases à couché ou des options, l'attribut booléen indique que ce choix doit
+être coché/sélectionné. Dans un élément de type fichier, il indique que un
+fichier doit être sélectionné.
+
+### pattern
+
+Spécifier l'expression régulée des valeurs valides à saisir dans les champs
+textuelles. Dans le cas d'un champ d'email ou d'URL, l'attribut est appliqué
+seulement si l'email ou l'URL est déjà de format valide.
+
+Par exemple ou veut limité les emails saisis aux emails du Google Mail (gmail)
+seulement. On a besoin donc d'une expression régulée qui valide si le nom du
+domaine de l'email est "gmail.com", nous ne sommes pas besoin de valider la
+format d'email (le contenu saisi avant '@') car la format est valider avant la
+validation avec le pattern.
+
+```html
+{% include_absolute _cours/demos/form-email-pattern.html %}
+```
+<p>
+  <iframe height='40' scrolling='no' src='demos/form-email-pattern.html' frameborder='no' style='width: 100%;'></iframe>
+</p>
+
+
+### disabled, readonly
+
+Attributs booléens dont `disabled` spécifie que l'élément ne doit pas réagir à
+tous les intéractions d'utilisateur (clic, sélection, ...) et ne doit pas être
+envoyé au serveur tant que `readonly` spécifie que la valeur de l'élément ne
+doit pas être modifiée par l'utilisateur mais sont contenu doit être envoyer au
+serveur.
+
+```html
+{% include_absolute _cours/demos/form-disabled-vs-readonly.html %}
+```
+<p>
+  <iframe height='80' scrolling='no' src='demos/form-disabled-vs-readonly.html' frameborder='no' style='width: 100%;'></iframe>
 </p>
 
 Remarque

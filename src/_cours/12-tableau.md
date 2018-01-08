@@ -45,9 +45,9 @@ Le tableau résultant est:
   <iframe height='90' scrolling='no' src='demos/tableau-head.html' frameborder='no' style='width: 100%;'></iframe>
 </p>
 
-Pour le reste de ce chapitre, on va utiliser l'attribue `border` de la balise
+Pour le reste de ce chapitre, on va utiliser l'attribut `border` de la balise
 `<table>` qui ajoute une bordure entre les éléments du tableau pour les
-identifier plus facilement.  Même que cette attribue est obsolète[^obsolete]
+identifier plus facilement.  Même que cette attribut est obsolète[^obsolete]
 depuis HTML5 en faveur des propretés de CSS, on va l'utiliser comme solution
 temporaire jusqu'à on arrive au chapitre de CSS3. Donc, en remplaçant la
 première ligne du code précèdent `<table>` par `<table border="1">`, le
@@ -61,11 +61,11 @@ Structure Tableau Avancée
 -------------------------
 
 Le HTML nous permettre de fusionner horizontalement les colonnes et
-verticalement les lignes du tableau grâce aux attribues `colspan` et `rowspan`
+verticalement les lignes du tableau grâce aux attributs `colspan` et `rowspan`
 respectivement de les balises `<td>` et `<th>` qui prennent comme valeur le
 nombre des cellules à fusionner. Prenons comme exemple un tableau d'un mini
 emploie du temps avec les séances de cours sont de durée de 2 heures tant que
-les séances TP sans de durée d'une seule heure. Sans les attribues de fusions,
+les séances TP sans de durée d'une seule heure. Sans les attributs de fusions,
 le tableau sera le suivant:
 
 ```html
@@ -77,7 +77,7 @@ le tableau sera le suivant:
 </p>
 
 La solution est de fusionner les deux colonnes des séances de cours en
-utilisant l'attribue `colspan`.
+utilisant l'attribut `colspan`.
 
 
 ```html
@@ -129,7 +129,7 @@ mise en forme du page web mais au lieu, il faut utiliser le CSS3 par-ce-que la
 balise `<table>` n'est pas sensible aux différents écrans (responsive design)
 et demande une structure HTML plus complexe.
 
-La plus part des attribues des balises de tableaux (`<table>`, `<th>`, `<tr>`,
+La plus part des attributs des balises de tableaux (`<table>`, `<th>`, `<tr>`,
 `<td>`, ...) étaient obsolètes[^obsolete] depuis HTML5 en faveur des propretés
 de CSS ou en faveur des autres balises en HTML.
 
