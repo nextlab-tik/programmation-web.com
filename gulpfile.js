@@ -81,6 +81,15 @@ gulp.task('html:prettify', () =>
 // NOTE: requires `npm install` before running!
 gulp.task('copy', function() {
   gulp.src([
+      'node_modules/font-awesome/css/*',
+      '!**/*.map',
+    ])
+    .pipe(gulp.dest(BASE_DIR + 'vendor/font-awesome/css'));
+  gulp.src([
+      'node_modules/font-awesome/fonts/*',
+    ])
+    .pipe(gulp.dest(BASE_DIR + 'vendor/font-awesome/fonts'));
+  gulp.src([
       'node_modules/bootstrap/dist/**/bootstrap.*',
       'node_modules/bootstrap/dist/**/bootstrap.*',
       '!**/bootstrap-theme.*',

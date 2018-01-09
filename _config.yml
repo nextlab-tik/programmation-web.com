@@ -7,6 +7,7 @@ logo: "/imgs/logo-256x256.png"
 lang: fr_FR
 baseurl: ""
 url: "https://web101.tik.tn"
+repo: https://github.com/lejenome/web-101
 
 source: ./src
 destination: ./www

@@ -864,3 +864,29 @@ aside {
 .has-success .quiz-score {
     background-color: #28a745;
 }
+
+
+/*
+ * Social share CSS
+ */
+
+.soc-nav {
+    display: flex;
+    align-items: start;
+    justify-content: right;
+    list-style: none;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.soc-nav li {
+    display: block;
+    margin: 0;
+    padding: 0 10px;
+    position: relative;
+}
+
+.soc-nav li:last-child {
+    margin-left: auto;
+}
