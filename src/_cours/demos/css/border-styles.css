@@ -1,35 +1,44 @@
 div {
-  display: inline-block;
-  height: 100px;
-  width: 100px;
-  margin: 5px;
-  text-align: center;
-  line-height: 3em;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+    line-height: 3em;
 }
+
 .none {
-  border: 3px none black;
+    border: 3px none black;
 }
+
 .solid {
-  border: 3px solid black;
+    border: 3px solid black;
 }
+
 .dotted {
-  border: 3px dotted black;
+    border: 3px dotted black;
 }
+
 .dashed {
-  border: 3px dashed black;
+    border: 3px dashed black;
 }
+
 .double {
-  border: 3px double black;
+    border: 3px double black;
 }
+
 .groove {
-  border: 3px groove black;
+    border: 3px groove black;
 }
+
 .ridge {
-  border: 3px ridge black;
+    border: 3px ridge black;
 }
+
 .inset {
-  border: 3px inset black;
+    border: 3px inset black;
 }
+
 .outset {
-  border: 3px outset black;
+    border: 3px outset black;
 }

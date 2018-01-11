@@ -12,12 +12,12 @@ p {
     border: dashed;
     border-width: 2px 4px;
     /* tous les coins */
-    border-radius: 40px
+    border-radius: 40px;
 }
 
 .third {
     border: dotted;
     border-width: 10px 4px;
     /* top-left-and-bottom-right | top-right-and-bottom-left */
-    border-radius: 10px 40px
+    border-radius: 10px 40px;
 }

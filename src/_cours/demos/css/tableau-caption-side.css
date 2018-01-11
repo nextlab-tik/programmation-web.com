@@ -9,12 +9,12 @@ th {
 }
 
 thead {
-  background-color: tomato;
+    background-color: tomato;
 }
 
 table caption {
-  caption-side: bottom;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1.8em;
+    caption-side: bottom;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.8em;
 }
