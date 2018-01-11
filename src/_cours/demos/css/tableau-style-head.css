@@ -1,0 +1,27 @@
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+tbody tr:nth-child(2n + 1) {
+    background-color: #bbb;
+}
+
+td:hover {
+    background: rgba(200, 200, 0, 0.4);
+}
+
+thead {
+  background-color: tomato;
+  color: white;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}

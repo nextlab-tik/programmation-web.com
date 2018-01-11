@@ -1,0 +1,6 @@
+table {
+  border-spacing: 20px 5px;
+}
+td, th {
+  border: 1px solid black;
+}
