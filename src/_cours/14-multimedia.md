@@ -50,9 +50,9 @@ diffère entre les navigateurs. Les deux formats vidéo principales sont:
 - **WebM**: Un conteneur vidéo développé par Google avec le codage vidéo
   **VP8** ou **VP9** et le codage audio **Vorbis** ou **Opus**. Il est supporté
   par la majorité des navigateurs à l'exception du Safari.
-- **MP4**: Un conteneur vidéo avec le codage vidéo **H.264** et le codage audio
-  **MP3** ou **AAC**. Il est supporté par la majorité des navigateurs avec
-  l'exception du Opera.
+- **MP4**: Un conteneur vidéo avec le codage vidéo **H.264** ou **H.265** et le
+  codage audio **MP3** ou **AAC**. Il est supporté par la majorité des
+  navigateurs avec l'exception du Opera.
 
 Pour fournir plus d'un format de vidéo, on peut utilisé la balise `<source>`
 qui accepte L'URL du vidéo dans l'attribut `src` et le format MIME du vidéo

@@ -60,8 +60,12 @@ Couleur des cellules
 
 On peut changer le couleur des cellules du table.
 
-On va changer le couleur et le margine interne des lignes paires de tableau
-précèdent (0, 2, ...) en utilisant le sélecteur pseudo `:nth-child(an+b)`.
+On va changer le couleur et le margine interne des lignes impaires de tableau
+précèdent (1, 2, ...) en utilisant le sélecteur pseudo `:nth-child(an+b)`.
+L'argument de ce sélecteur est une formule pour spécifier l'ensemble des
+éléments à sélectionner. Pour sélectionner les éléments impaire, le formule
+doit être `2n-1` ou le mot clé alias `odd`. Pour sélectionner les éléments
+paire, le formule doit être `2n` ou le mot clé alias `even`.
 
 Les cellules du tableau comme le reste des autres éléments supporte le pseudo
 classe `:hover` qui sera appliqué quand la souris est au dessus de l'élément.
@@ -114,7 +118,8 @@ tableau. Elle prend deux valeurs:
 - "top": La légende est affichée en haut.
 - "bottom": La légende est affichée en bas.
 
-Les autres valeurs (comme "left", "right", ...) ont étés absolues depuis CSS2.
+Les autres valeurs (comme "left", "right", ...) ont étés absolues depuis CSS2
+en faveur de la propriété `text-align`.
 
 Prenons comme exemple la structure HTML suivante, la légende même définie à
 l'ouverture de l'élément `<table>`, elle sera positionnée en bas en utilisant

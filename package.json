@@ -14,7 +14,18 @@
   "dependencies": {
     "bootstrap": "^4.0.0-beta.3",
     "cordova-android": "~6.3.0",
-    "cordova-plugin-whitelist": "1.*"
+    "cordova-plugin-whitelist": "1.*",
+    "justified-gallery": "^0.1.0",
+    "lg-autoplay": "^1.0.4",
+    "lg-fullscreen": "^1.0.1",
+    "lg-hash": "^1.0.4",
+    "lg-pager": "^1.0.2",
+    "lg-share": "^1.1.0",
+    "lg-thumbnail": "^1.1.0",
+    "lg-video": "^1.2.0",
+    "lg-zoom": "^1.1.0",
+    "lightgallery": "^1.6.6",
+    "lightgallery.js": "^1.0.1"
   },
   "devDependencies": {
     "eslint-config-google": "^0.9.1",
