@@ -1,2 +1,7 @@
 body {
 }
+header h2 {
+  text-transform: capitalize;
+  color: #47a3da;
+  margin: 20px 0;
+}
