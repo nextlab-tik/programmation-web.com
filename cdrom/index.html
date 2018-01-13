@@ -63,10 +63,10 @@
     <div class="tab-pane fade" role="tabpanel" id="tab-diplomes">
       <div class="row">
         <aside class="col-3">
-          <ul class="list-group">
-            <li class="list-group-item">Agrégation</li>
-            <li class="list-group-item">DEO</li>
-          </ul>
+          <div class="list-group" role="tablist">
+            <a href="#" class="list-group-item list-group-item-action" data-toggle="list" role="tab">Agrégation</a>
+            <a href="#" class="list-group-item list-group-item-action" data-toggle="list" role="tab">DEO</a>
+          </div>
         </aside>
         <section class="col-9">
         </section>
@@ -82,19 +82,37 @@
     <div class="tab-pane fade" role="tabpanel" id="tab-cours">
       <div class="row">
         <aside class="col-3">
-          <ul class="list-group nav" role="tablist">
-            <li class="list-group-item"><a href="#cours-asd" class="active show" data-toggle="tab" role="tab">Algorithmes et Structure de Données</a></li>
-            <li class="list-group-item"><a href="#cours-c" data-toggle="tab" role="tab">Programmation C</a></li>
-            <li class="list-group-item"><a href="#cours-algo-avance" data-toggle="tab" role="tab">Algorithmes Avancés</a></li>
-            <li class="list-group-item"><a href="#cours-web" data-toggle="tab" role="tab">HTML et CSS</a></li>
-          </ul>
+          <div class="list-group" role="tablist">
+            <div class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+              Papiers
+              <span class="badge badge-primary badge-pill">3</span>
+            </div>
+            <a href="#cours-asd" class="list-group-item list-group-item-action active show" data-toggle="list" role="tab">Algorithmes et Structure de Données</a>
+            <a href="#cours-c" class="list-group-item list-group-item-action" data-toggle="list" role="tab">Programmation C</a>
+            <a href="#cours-algo-avance" class="list-group-item list-group-item-action" data-toggle="list" role="tab">Algorithmes Avancés</a>
+            <div class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+              Cours en Ligne
+              <span class="badge badge-primary badge-pill">1</span>
+            </div>
+            <a href="#cours-web" class="list-group-item list-group-item-action" data-toggle="list" role="tab">HTML et CSS</a>
+            <div class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+              UVT
+              <span class="badge badge-primary badge-pill">1</span>
+            </div>
+            <a href="#cours-1" class="list-group-item list-group-item-action" data-toggle="list" role="tab">Cours 1</a>
+            <div class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
+              EOT
+              <span class="badge badge-primary badge-pill">1</span>
+            </div>
+            <a href="#cours-2" class="list-group-item list-group-item-action" data-toggle="list" role="tab">Cours 2</a>
+          </div>
         </aside>
         <section class="col-9">
           <div class="tab-content embed-responsive">
             <object data="./cours/CoursAlgoSD2017 Sawssen HARIZ.pdf" id="cours-asd" class="tab-pane fade active show" role="tabpanel" type="application/pdf"></object>
             <object data="./cours/CoursProgrammationC20172018.pdf" id="cours-c" class="tab-pane fade" role="tabpanel" type="application/pdf"></object>
             <object data="./cours/CoursAlgoSD2017 Sawssen HARIZ.pdf" id="cours-algo-avance" class="tab-pane fade" role="tabpanel" type="application/pdf"></object>
-            <object data="./cours/" id="cours-web" class="tab-pane fade" role="tabpanel" type="application/pdf"></object>
+            <iframe src="https://web101.tik.tn/" id="cours-web" class="tab-pane fade" role="tabpanel" type="application/pdf"></iframe>
           </div>
         </section>
       </div>

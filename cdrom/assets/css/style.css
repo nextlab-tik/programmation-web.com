@@ -35,3 +35,59 @@ main section>.embed-responsive {
 main>div>aside {
     max-width: 300px;
 }
+
+a.list-group-item {
+    text-decoration: none;
+    /*font-weight: 600;*/
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+a.list-group-item.active::before {
+    content: '\00B7';
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    left: 0.3em;
+    height: 4px;
+}
+
+div.list-group-item.list-group-item-secondary {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Dark version */
+
+/*
+body {
+    background-color: #1c1d22;
+    background-color: #2a2b30;
+    color: #5c5edc;
+    color: #cecece;
+}
+a.list-group-item,
+a.list-group-item:hover,
+a.list-group-item.active,
+div.list-group-item.list-group-item-secondary {
+    background-color: #1c1d22;
+    border-color: rgba(0, 0, 0, 0.125);
+}
+div.list-group-item.list-group-item-secondary {
+    color: #3b3d4a;
+    color: #5c5edc;
+    font-weight: 700;
+}
+a.list-group-item {
+    color: #ddd;
+}
+a.list-group-item:hover {
+    color: #5c5edc;
+}
+a.list-group-item.active::before {
+    color: #5c5edc;
+}
+*/
