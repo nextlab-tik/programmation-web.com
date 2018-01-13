@@ -9,6 +9,7 @@ const BASE_DIR = 'src/';
 
 const JSFiles = [
   './src/**/*.js',
+  './cdrom/assets/js/**/*.js',
   '!**/*.min.js',
   '!*/vendor/**/*',
   '!www/**/*',
@@ -20,6 +21,7 @@ const CSSFiles = [
   './src/**/*.scss',
   './src/**/*.sass',
   './src/**/*.less',
+  './cdrom/assets/css/**/*.css',
   '!**/*.min.css',
   '!*/vendor/**/*',
   '!www/**/*',
@@ -27,6 +29,7 @@ const CSSFiles = [
 
 const HTMLFiles = [
   './src/**/*.html',
+  './cdrom/*.html',
   '!*/_layouts/**/*',
   '!*/_includes/**/*',
   '!*/_quiz/*.html',

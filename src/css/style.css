@@ -837,7 +837,6 @@ nav.bottom span {
     width: 30%;
 }
 
-
 /* A note that should go on the right side of the page, in the margin. */
 
 aside {
@@ -856,7 +855,6 @@ aside {
     width: 210px;
 }
 
-
 /*
  * Quiz CSS
  */
@@ -864,7 +862,6 @@ aside {
 .has-success .quiz-score {
     background-color: #28a745;
 }
-
 
 /*
  * Social share CSS
