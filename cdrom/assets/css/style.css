@@ -1,7 +1,32 @@
-body {
+html, body {
+  height: 100%;
+  width: 100%;  
 }
 header h2 {
   text-transform: capitalize;
   color: #47a3da;
-  margin: 20px 0;
+  padding: 20px 0;
+  line-height: 40px;
+  height: 80px;  
+}
+header .tabs {
+  margin: 1em 0 2em;
+  height: 2.55em;
+  height: calc(41px);
+  
+}
+
+header {
+  height: calc(80px + 40px + 50px);
+}
+main {
+  height: calc(100% - 80px - 40px - 50px);
+}
+main > div,
+main > div > * ,
+main section > .embed-responsive {
+  height: 100%;
+}
+main > div > aside {
+  max-width: 300px;
 }
