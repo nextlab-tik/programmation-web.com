@@ -47,7 +47,7 @@ message de contact.
 {% include_absolute _cours/demos/form-contact.html %}
 ```
 <p>
-  <iframe height='300' scrolling='no' src='demos/form-contact.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='300' scrolling='no' src='demos/form-contact.html'></iframe>
 </p>
 
 L'utilisation de la balise `<p>` ici est juste pour structurer notre code et
@@ -96,7 +96,7 @@ Google attendre de passer le terme à rechercher avec le nom `q` (query) à
 {% include_absolute _cours/demos/form-google-search.html %}
 ```
 <p>
-  <iframe height='60' scrolling='no' src='demos/form-google-search.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='60' scrolling='no' src='demos/form-google-search.html'></iframe>
 </p>
 
 Pour le champ texte de saisir du terme, on a utilisé un élément `<input>` de
@@ -131,7 +131,7 @@ ligne de texte.
 {% include_absolute _cours/demos/form-text.html %}
 ```
 <p>
-  <iframe height='40' scrolling='no' src='demos/form-text.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='40' scrolling='no' src='demos/form-text.html'></iframe>
 </p>
 
 ### Mot de passe
@@ -143,7 +143,7 @@ texte saisi n'est pas affiché mais des astérisques ou des points.
 {% include_absolute _cours/demos/form-password.html %}
 ```
 <p>
-  <iframe height='40' scrolling='no' src='demos/form-password.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='40' scrolling='no' src='demos/form-password.html'></iframe>
 </p>
 
 ### Nombre
@@ -156,7 +156,7 @@ par l'attribut `min` et le maximal `max` et le pas entre les nombre possible
 {% include_absolute _cours/demos/form-nombre.html %}
 ```
 <p>
-  <iframe height='40' scrolling='no' src='demos/form-nombre.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='40' scrolling='no' src='demos/form-nombre.html'></iframe>
 </p>
 
 ### Zone de texte
@@ -168,7 +168,7 @@ et sa largeur en nombre des caractères.
 {% include_absolute _cours/demos/form-textarea.html %}
 ```
 <p>
-  <iframe height='70' scrolling='no' src='demos/form-textarea.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='70' scrolling='no' src='demos/form-textarea.html'></iframe>
 </p>
 
 ### Étiquette
@@ -180,7 +180,7 @@ spécifier l'identificateur de l'élément dans il est correspondent.
 {% include_absolute _cours/demos/form-label.html %}
 ```
 <p>
-  <iframe height='50' scrolling='no' src='demos/form-label.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='50' scrolling='no' src='demos/form-label.html'></iframe>
 </p>
 
 ### Case à cocher
@@ -195,7 +195,7 @@ différente de l'attribut `value`.
 {% include_absolute _cours/demos/form-checkbox.html %}
 ```
 <p>
-  <iframe height='120' scrolling='no' src='demos/form-checkbox.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='120' scrolling='no' src='demos/form-checkbox.html'></iframe>
 </p>
 
 ### Groupe radio
@@ -209,7 +209,7 @@ même groupe) doit avoir une valeur différente de l'attribut `value`.
 {% include_absolute _cours/demos/form-radio.html %}
 ```
 <p>
-  <iframe height='80' scrolling='no' src='demos/form-radio.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='80' scrolling='no' src='demos/form-radio.html'></iframe>
 </p>
 
 ### Bouton d'envoi
@@ -224,7 +224,7 @@ défaut de type `submit`.
 {% include_absolute _cours/demos/form-submit.html %}
 ```
 <p>
-  <iframe height='80' scrolling='no' src='demos/form-submit.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='80' scrolling='no' src='demos/form-submit.html'></iframe>
 </p>
 
 ### Bouton de réinitialisation
@@ -237,7 +237,7 @@ bouton de réinitialisation peut être à travers un élément `<input>` de type
 {% include_absolute _cours/demos/form-reset.html %}
 ```
 <p>
-  <iframe height='80' scrolling='no' src='demos/form-reset.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='80' scrolling='no' src='demos/form-reset.html'></iframe>
 </p>
 
 ### Liste d'options
@@ -252,7 +252,7 @@ non déroulante.
 {% include_absolute _cours/demos/form-select.html %}
 ```
 <p>
-  <iframe height='140' scrolling='no' src='demos/form-select.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='140' scrolling='no' src='demos/form-select.html'></iframe>
 </p>
 
 ### Fichier
@@ -269,7 +269,7 @@ fichier ou de types MIME séparés par des virgules.
 {% include_absolute _cours/demos/form-file.html %}
 ```
 <p>
-  <iframe height='40' scrolling='no' src='demos/form-file.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='40' scrolling='no' src='demos/form-file.html'></iframe>
 </p>
 
 ### Dates et Temps
@@ -286,7 +286,7 @@ attributs `min`, `max` et `step` respectivement.
 {% include_absolute _cours/demos/form-date-time.html %}
 ```
 <p>
-  <iframe height='200' scrolling='no' src='demos/form-date-time.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='200' scrolling='no' src='demos/form-date-time.html'></iframe>
 </p>
 
 <aside>
@@ -305,7 +305,7 @@ Il permet le sélection d'un couleur en utilisant un sélecteur des couleurs.
 {% include_absolute _cours/demos/form-color.html %}
 ```
 <p>
-  <iframe height='40' scrolling='no' src='demos/form-color.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='40' scrolling='no' src='demos/form-color.html'></iframe>
 </p>
 
 ### Zone de recherche
@@ -318,7 +318,7 @@ navigateur utilisé.
 {% include_absolute _cours/demos/form-search.html %}
 ```
 <p>
-  <iframe height='40' scrolling='no' src='demos/form-search.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='40' scrolling='no' src='demos/form-search.html'></iframe>
 </p>
 
 ### Champ email
@@ -332,7 +332,7 @@ de multiple des emails séparés par virgule.
 {% include_absolute _cours/demos/form-email.html %}
 ```
 <p>
-  <iframe height='40' scrolling='no' src='demos/form-email.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='40' scrolling='no' src='demos/form-email.html'></iframe>
 </p>
 
 ### Champ URL
@@ -345,7 +345,7 @@ URL.
 {% include_absolute _cours/demos/form-url.html %}
 ```
 <p>
-  <iframe height='40' scrolling='no' src='demos/form-url.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='40' scrolling='no' src='demos/form-url.html'></iframe>
 </p>
 
 ### Champ Téléphone
@@ -359,7 +359,7 @@ numéro de téléphone.
 {% include_absolute _cours/demos/form-tel.html %}
 ```
 <p>
-  <iframe height='40' scrolling='no' src='demos/form-tel.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='40' scrolling='no' src='demos/form-tel.html'></iframe>
 </p>
 
 Les attributs du formulaire
@@ -405,7 +405,7 @@ le champ est vide pour données plus des hints à l'utilisateur.
 {% include_absolute _cours/demos/form-placeholder.html %}
 ```
 <p>
-  <iframe height='40' scrolling='no' src='demos/form-placeholder.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='40' scrolling='no' src='demos/form-placeholder.html'></iframe>
 </p>
 
 ### max, min, step
@@ -450,7 +450,7 @@ validation avec le pattern.
 {% include_absolute _cours/demos/form-email-pattern.html %}
 ```
 <p>
-  <iframe height='40' scrolling='no' src='demos/form-email-pattern.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='40' scrolling='no' src='demos/form-email-pattern.html'></iframe>
 </p>
 
 
@@ -466,7 +466,7 @@ serveur.
 {% include_absolute _cours/demos/form-disabled-vs-readonly.html %}
 ```
 <p>
-  <iframe height='80' scrolling='no' src='demos/form-disabled-vs-readonly.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='80' scrolling='no' src='demos/form-disabled-vs-readonly.html'></iframe>
 </p>
 
 Remarque

@@ -23,7 +23,7 @@ du CSS.
 ```
 
 <p>
-  <iframe height='120' scrolling='no' src='demos/css-tableau-border-simple.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='120' scrolling='no' src='demos/css-tableau-border-simple.html'></iframe>
 </p>
 
 On remarque que les bordures sont autour de chacune des cellules. On peut
@@ -36,7 +36,7 @@ spécifier l'espacement horizontalement et verticalement.
 ```
 
 <p>
-  <iframe height='130' scrolling='no' src='demos/tableau-border-spacing.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='130' scrolling='no' src='demos/tableau-border-spacing.html'></iframe>
 </p>
 
 On peut coller ces bordures entre elles afin d'obtenir le même rendu du
@@ -52,7 +52,7 @@ distinctement qui est la valeur par défaut.
 ```
 
 <p>
-  <iframe height='120' scrolling='no' src='demos/tableau-border-collapse.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='120' scrolling='no' src='demos/tableau-border-collapse.html'></iframe>
 </p>
 
 Couleur des cellules
@@ -75,7 +75,7 @@ classe `:hover` qui sera appliqué quand la souris est au dessus de l'élément.
 ```
 
 <p>
-  <iframe height='180' scrolling='no' src='demos/tableau-border-color.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='180' scrolling='no' src='demos/tableau-border-color.html'></iframe>
 </p>
 
 Supposant que l'age de Nouha et Ahmed ne sont pas saisi. Le bordure et le fond
@@ -90,7 +90,7 @@ collées avec la propriété `border-collapse`.
 ```
 
 <p>
-  <iframe height='190' scrolling='no' src='demos/tableau-empty-cell.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='190' scrolling='no' src='demos/tableau-empty-cell.html'></iframe>
 </p>
 
 Mise en Forme de d'en-tête et le pied
@@ -106,7 +106,7 @@ navigateurs.
 ```
 
 <p>
-  <iframe height='180' scrolling='no' src='demos/tableau-style-head.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='180' scrolling='no' src='demos/tableau-style-head.html'></iframe>
 </p>
 
 Les captions
@@ -134,5 +134,5 @@ la propriété `caption-side`:
 ```
 
 <p>
-  <iframe height='220' scrolling='no' src='demos/tableau-caption-side.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='220' scrolling='no' src='demos/tableau-caption-side.html'></iframe>
 </p>

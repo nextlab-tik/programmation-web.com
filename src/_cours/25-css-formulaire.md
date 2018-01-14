@@ -17,7 +17,7 @@ de l'identité de l'utilisateur et quelques informations d'un produit.
 ```
 
 <p>
-  <iframe height='360' scrolling='no' src='demos/formulaire-style.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='360' scrolling='no' src='demos/formulaire-style.html'></iframe>
 </p>
 
 Mise en forme de fieldset
@@ -29,7 +29,7 @@ On commencera par la mise en forme de `<fieldset>` et la légende.
 {% include_absolute _cours/demos/css/formulaire-style-fieldset.css %}
 ```
 <p>
-  <iframe height='360' scrolling='no' src='demos/formulaire-style-fieldset.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='360' scrolling='no' src='demos/formulaire-style-fieldset.html'></iframe>
 </p>
 
 Mise en page du formulaire
@@ -50,7 +50,7 @@ Ensuite, on va mettre en page notre formulaire:
 {% include_absolute _cours/demos/css/formulaire-style-layout.css %}
 ```
 <p>
-  <iframe height='400' scrolling='no' src='demos/formulaire-style-layout.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='400' scrolling='no' src='demos/formulaire-style-layout.html'></iframe>
 </p>
 
 Bouton d'envoi
@@ -77,7 +77,7 @@ coordonnées de décalage de l'ombre en axe x et axe y, le rayon de flou
 {% include_absolute _cours/demos/css/formulaire-style-submit.css %}
 ```
 <p>
-  <iframe height='420' scrolling='no' src='demos/formulaire-style-submit.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='420' scrolling='no' src='demos/formulaire-style-submit.html'></iframe>
 </p>
 
 Validation de contenu
@@ -87,12 +87,12 @@ CSS3 fourni des ensembles des pseudo classes relié au état de validation des
 éléments de la formulaire.
 
 - `:required`: Permet de sélectionner les éléments qui sont mis obligatoires.
-- `:valid`: Permet de sélectionner les éléments qui sont valids.
-- `:invalid`: Permet de sélectionner les éléments qui ne sont pas valids.
+- `:valid`: Permet de sélectionner les éléments qui sont valides.
+- `:invalid`: Permet de sélectionner les éléments qui ne sont pas valides.
 
 ```css
 {% include_absolute _cours/demos/css/formulaire-style-validation.css %}
 ```
 <p>
-  <iframe height='420' scrolling='no' src='demos/formulaire-style-validation.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='420' scrolling='no' src='demos/formulaire-style-validation.html'></iframe>
 </p>

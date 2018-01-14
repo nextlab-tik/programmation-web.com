@@ -62,7 +62,7 @@ Prenons un exemple pour illustrer ces différentes quantités :
 ```
 
 <p>
-  <iframe height='200' scrolling='no' src='demos/box-model.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='200' scrolling='no' src='demos/box-model.html'></iframe>
 </p>
 
 
@@ -108,7 +108,7 @@ Prenons l'exemple suivant:
 ```
 
 <p>
-  <iframe height='500' scrolling='no' src='demos/display-types.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='500' scrolling='no' src='demos/display-types.html'></iframe>
 </p>
 
 Bordure
@@ -118,7 +118,7 @@ La bordure supporte des multiples des styles à travers la propriété
 `border-style` ou comme deuxième argument dans la propriété alias `border`.
 
 <p>
-  <iframe height='500' scrolling='no' src='demos/border-styles.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='500' scrolling='no' src='demos/border-styles.html'></iframe>
 </p>
 
 La propriété `border-radius` permet de créer des bordures arrondis. Elle
@@ -138,7 +138,7 @@ Prenons l'exemple suivant:
 ```
 
 <p>
-  <iframe height='280' scrolling='no' src='demos/border-radius.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='280' scrolling='no' src='demos/border-radius.html'></iframe>
 </p>
 
 
@@ -200,5 +200,5 @@ Prenons l'exemple suivant:
 ```
 
 <p>
-  <iframe height='120' scrolling='yes' src='demos/background-image.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='120' scrolling='yes' src='demos/background-image.html'></iframe>
 </p>

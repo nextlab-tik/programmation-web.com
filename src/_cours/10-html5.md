@@ -83,6 +83,12 @@ est vraiment fâché, vous pouvez placer le mot « vraiment » dans dans un él�
 <p>Mon chat est <strong>vraiment</strong> fâché.</p>
 ```
 
+Ce qui résulte en:
+
+<p>
+  <iframe height='40' scrolling='no' src='demos/balise-strong.html'></iframe>
+</p>
+
 Toutefois il faut faire attention à ce que les éléments soient bien imbriqués
 les uns dans les autres. Dans l'exemple précédent, on ouvre l'élément `<p>`,
 puis l'élément `<strong>`. Plus loin, on ferme l'élément `<strong>` puis on
@@ -91,6 +97,52 @@ ferme l'élément `<p>`. Si on utilise le code suivant, ce sera incorrect:
 ```html
 <p>Mon chat est <strong>vraiment fâché.</p></strong>
 ```
+
+Même qui les navigateurs implémentent des différents algorithmes pour essayer
+de fixer ces erreurs dans les documents HTML avant d'afficher le résultat, il
+faut vérifier la structure du document parce que ces algorithmes ont des
+limites et peut données des résultats différents et inutilisables.
+
+Les éléments peuvent avoir des "attributs".
+
+![](assets/imgs/html-tag-attributes-explication-by-mozilla-mdn.svg)
+
+Les attributs contiennent des informations supplémentaires qui portent sur
+l'élément et qu'on ne souhaite pas afficher avec le contenu. Dans cet exemple,
+l'attribut `class` a comme valeur "note". Les attributs seront très utiles dans
+les chapitres suivants par exemple pour définir le comportement de nos
+formulaires et pour mise en forme de page Web.
+
+Un attribut doit toujours avoir:
+
+- un **nom** (le nom de l'attribut) qui doit séparer par un espace du nom de la
+  balise ou l'attribut précédent (s'il y a des multiples attributs).
+- une **valeur** encadrer par des quotes (") et séparer par un signe égal "="
+  du son nom (le nom de l'attribut). Les attributs booléens ne nécessitent pas
+  une valeur, un exemple d'un attribut booléen est l'attribut `checked`
+  (cocher) de l'élément case à cocher pour spécifier que la case est cochée,
+  cet attribut ne nécessite pas une valeur car sa présence est interprétée
+  comme la valeur vrai au contraire son absence est interprété comme la valeur
+  faux.
+
+Les commentaires dans HTML sont délimités par `<!--` et `-->`. Par exemple:
+
+```html
+<!-- Un texte dans un commentaire -->
+```
+
+Les commentaires peut être dans n'importe qu'elle partie du code HTML mais pas
+dans une balise (entre les chevrons de la balise). Prenons l'exemple:
+
+```html
+{% include_absolute _cours/demos/commentaire.html %}
+```
+
+Le résultat sera:
+
+<p>
+  <iframe height='80' scrolling='no' src='demos/commentaire.html'></iframe>
+</p>
 
 Le document HTML
 ----------------
@@ -171,11 +223,12 @@ contient des éléments pour 6 niveaux de titres : `<h1>`–`<h6>`. La plupart d
 temps, 3-4 niveaux suffisent amplement :
 
 ```html
-<h1>Mon titre principal</h1>
-<h2>Mon titre de section</h2>
-<h3>Mon sous-titre</h3>
-<h4>Mon sous-sous-titre</h4>
+{% include_absolute _cours/demos/balise-h1.html %}
 ```
+
+<p>
+  <iframe height='220' scrolling='no' src='demos/balise-h1.html'></iframe>
+</p>
 
 Vous pouvez ajouter un titre adapté à votre page avec un de ces éléments.
 
@@ -183,11 +236,27 @@ Vous pouvez ajouter un titre adapté à votre page avec un de ces éléments.
 
 Comme expliqué auparavant, les éléments `<p>` sont utilisés pour contenir des
 paragraphes de texte. Vous les utiliserez fréquemment pour placer du texte sur
-une page :
+une page:
 
 ```html
-<p>Voici un paragraphe</p>
+{% include_absolute _cours/demos/balise-p.html %}
 ```
+
+<p>
+  <iframe height='40' scrolling='no' src='demos/balise-p.html'></iframe>
+</p>
+
+Un élément `<p>` placé dans un autre élément de type `<p>` sera interprété
+comme définit au dehors et la paragraphe externe est terminée avant l'ouverture
+de la balise de l'élément `<p>` interne.
+
+```html
+{% include_absolute _cours/demos/balise-p-inside.html %}
+```
+
+<p>
+  <iframe height='100' scrolling='no' src='demos/balise-p-inside.html'></iframe>
+</p>
 
 #### Les listes
 
@@ -200,10 +269,10 @@ fréquemment sont les listes ordonnées et les listes non-ordonnées :
    éléments n'a pas d'importance (par exemple une liste de courses). La balise
    utilisée pour ces listes est l'élément `<ul>` (**ul** signifie **u**nordered
    **l**ist qui signifie liste non-ordonnée en anglais)
-2. Les listes ordonnées sont des listes pour lesquelles l'ordre des éléments
-   est important (par exemple une recette). La balise utilisée pour ces listes
-   est l'élément `<ol>` (**ol** signifie **o**rdered **l**ist qui signifie
-   liste ordonnée en anglais)
+2. **Les listes ordonnées** sont des listes pour lesquelles l'ordre des
+   éléments est important (par exemple une recette). La balise utilisée pour
+   ces listes est l'élément `<ol>` (**ol** signifie **o**rdered **l**ist qui
+   signifie liste ordonnée en anglais)
 
 Chaque élément d'une liste est balisé avec un élément `<li>`.
 
@@ -217,16 +286,33 @@ constructeurs qui travaillent ensemble...</p>
 On pourrait faire :
 
 ```html
-<p>Mozilla est une communauté mondiale composée de</p>
-
-<ul>
-  <li>technologues</li>
-  <li>penseurs</li>
-  <li>constructeurs</li>
-</ul>
-
-<p>qui travaillent ensemble...</p>
+{% include_absolute _cours/demos/balise-ul.html %}
 ```
+
+<p>
+  <iframe height='160' scrolling='no' src='demos/balise-ul.html'></iframe>
+</p>
+
+Une lise ordonnées est similaire:
+
+```html
+{% include_absolute _cours/demos/balise-ol.html %}
+```
+
+<p>
+  <iframe height='80' scrolling='no' src='demos/balise-ol.html'></iframe>
+</p>
+
+Une liste peut être interne dans une liste. On peut aussi mélanger les listes
+des différentes types.
+
+```html
+{% include_absolute _cours/demos/balise-ul-ol.html %}
+```
+
+<p>
+  <iframe height='140' scrolling='no' src='demos/balise-ul-ol.html'></iframe>
+</p>
 
 #### Liste des descriptions
 
@@ -244,7 +330,7 @@ description par terme.
 Le résultat sera:
 
 <p>
-  <iframe height='130' scrolling='no' src='demos/description-list.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='130' scrolling='no' src='demos/description-list.html'></iframe>
 </p>
 
 ### Les images
@@ -255,14 +341,59 @@ utilisée est définie via l'attribut `src` (pour **s**ou**rc**e) qui contient
 le chemin vers le fichier de l'image.
 
 ```html
-<img src="images/firefox-icon.png" alt="Logo de Mozilla">
+{% include_absolute _cours/demos/balise-img.html %}
 ```
+
+<p>
+  <iframe height='440' scrolling='no' src='demos/balise-img.html'></iframe>
+</p>
 
 Nous avons aussi utilisé l'attribut `alt` (pour **alt**ernatif) qui contient un
 texte qui permet de décrire l'image et qui peut être utilisé par les
 utilisateurs qui ne peuvent pas voir l'image en cas ils sont malvoyants ou en
 cas quelque chose s'est mal passé et que l'image n'a pu être affichée. Par
 exemple, cela peut se produire si le chemin vers l'image est incorrect.
+
+L'image affichée dans le document HTML sera de même dimensionne que
+les dimensions réels du fichier image. Les attributs `height` et `width`
+permettent de modifier les dimensions d'affichage en dimensionnant l'image
+par rapport à la hauteur ou la largeur spécifié en pixels ou à la hauteur et la
+largeur spécifié ensemble.
+
+Prenons l'exemple de spécifier un seul dimension, l'autre dimension sera
+calculer relativement au dimension spécifié pour garder la format de l'image
+origine.
+
+```html
+{% include_absolute _cours/demos/balise-img-height.html %}
+```
+
+<p>
+  <iframe height='160' scrolling='no' src='demos/balise-img-height.html'></iframe>
+</p>
+
+Au contraire, si on spécifie les deux dimensions:
+
+```html
+{% include_absolute _cours/demos/balise-img-height-width.html %}
+```
+
+<p>
+  <iframe height='160' scrolling='no' src='demos/balise-img-height-width.html'></iframe>
+</p>
+
+Les navigateurs supportent des multiples des formats des images. Les formats
+images principales et les plus supportés sont:
+
+- **JPEG**: format image compressé avec perte. Standardisé par JPEG (_Joint
+  Photographic Experts Group_). Les extensions sont `.jpg` et `.jpeg`.
+- **PNG** (_Portable Network Graphics_) format image compressé sans perte. Il
+  supporte les images transparents. L'extension est `.png`.
+- **GIF** (_Graphics Interchange Format_) format image compressé sans perte. Il
+  support les images transparents et les animations. Les couleurs sont limités
+  à 8 bits (256 couleurs). L'extension est `.gif`.
+- **BMP** format image non compressé sans perte. L'extension est `.bmp`.
+- **SVG** format image vectoriel standarisé par W3C. L'exntesion est `.svg`.
 
 ### Les liens
 
@@ -288,15 +419,72 @@ transformer du texte en un lien, suivez ces étapes :
 4. Dans cet attribut, ajoutez le lien vers le site vers lequel vous voulez
    diriger les utilisateurs :
 ```html
-<a href="https://www.mozilla.org/fr/about/manifesto/">Manifeste Mozilla</a>
+<a href="https://www.google.com/search/">Google Search</a>
 ```
 
-<aside>
-  <b>Attention</b> à ne pas oublier la partie avec <code>https://</code> ou
-  <code>http://</code> qui représente le protocole utilisé, au début de
-  l'adresse. Une fois que vous avez créé un lien, testez votre page et cliquez
-  dessus pour vous assurez qu'il fonctionne correctement.
-</aside>
+Les références hypertexte sont de différents types:
+
+- **Références externes absolues**: Ces sont des URL absolues vers un
+  ressource dans le Web. Ces URL doivent être composés de la partie protocole
+  (`http://` ou `https://`), de la partie du nom de domaine (p.ex:
+  `google.com`) ou de l'adresse IP (p.ex: `127.0.0.1`), du numéro du port TCP
+  optionnel (`80` par défaut pour `http://` et 443 par défaut pour `https://`)
+  et le chemin vers le ressource Web (page Web, image, ...).
+```html
+<a href="https://www.google.com/search/">Google Search</a>
+```
+  Si le ressource est dans le même site web que la page Web courante, on peut
+  spécifier seulement le chemin absolue du ressource en commençant par `/`.
+```html
+<a href="/fr/contact.html">Contactez Nous</a>
+```
+- **Références externes relatifs**: Ces sont des liens relatives au page Web
+  courante. Par exemple, pour référencer une page Web `contact.html` dont le
+  même dossier que la page courante:
+```html
+<a href="contact.html">Contactez Nous</a>
+<a href="./contact.html">Contactez Nous</a>
+```
+  De même pour référencer une page Web `acceuil.html` dans le dossier parent:
+```html
+<a href="../acceuil.html">Acceuil</a>
+```
+- **Références internes**: Ces sont des références aux éléments HTML dans le
+  même document. Pour référencer un élément, on lui donne un identificateur
+  unique en utilisant l'attribut `id` puis on le référence par son
+  identificateur préfixé par le signe "#".
+
+```html
+<h1 id="titre">Mon titre</h1>
+<a href="#titre">Allez au titre</a>
+```
+
+L'élément `<a>` n'est pas limité à référencer les ressources accessibles par le
+protocole HTTP (`http://` et `https://`). Des autres protocoles sont supportés
+nativement ou à travers des plugins. Ces protocoles sont principalement:
+- `ftp://` (**FTP**) pour accéder au ressources dans les serveurs FTP.
+- `file://` pour accéder au ressources dans le système de fichier de
+  l'appareil dont le navigateur est éxecuté.
+- `mailto:` permettre d'ouvrir le client email pour créer un nouveau email avec
+  l'email de réception  spécifiée. La format du lien est
+  `mailto:<ADRESSE_EMAIL>`. Par exemple, pour créer un lien mailto de
+  destination `contact@exemple.com`:
+```html
+<a href="mailto:contact@exemple.com">Contactez Nous</a>
+```
+- `tel:` pour référencer un numéro de téléphone. Il est supporté par la
+  majorité des navigateurs mobiles. La format du numéro de téléphone doit
+  suivre la spécification [RFC 3966](https://tools.ietf.org/html/3966). Par
+  exemple: pour contacter le numéro de téléphone tunisien 99999999 (qui est de
+  préfixe international +216):
+```html
+<a href="tel:+21699999999">Contactez Nous</a>
+```
+
+L'élément `<a>` peut accepter l'attribut `target` pour spécifier ou sera ouvré
+le lien. La valeur `_blank` permet d'ouvrir le lien dans un nouvel onglet. La
+valeur par défaut `_self` permet d'ouvrir le lien dans le même onglet que la
+page Web courante.
 
 Balises structurantes
 ---------------------

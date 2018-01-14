@@ -3,7 +3,7 @@ title: À propos
 permalink: /cours/about.html
 ---
 
-Ce cours est écrit par Sawssen Hariz pour étre un référence pour ces étudiants.
+Ce cours est écrit par Sawssen Hariz pour être un référence pour ces étudiants.
 
 Ce cours est inspiré par grand nombre des cours et guides en lignes. Je veux
 les citer:

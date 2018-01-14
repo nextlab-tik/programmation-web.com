@@ -7,8 +7,8 @@ permalink: /cours/style-text.html
 Taille de texte
 ---------------
 
-Pour changer la taille d'un text, on utiliser la propriéte `font-size`. Les
-valeurs acceptés par cette proriéte peuvent etre:
+Pour changer la taille d'un texte, on utiliser la propriété `font-size`. Les
+valeurs acceptés par cette propriété peuvent être:
 
 - **En pixels**: détermine la hauteur en pixels de votre texte. Par exemple: `14px`, `16px`...
 
@@ -21,7 +21,7 @@ h1 {
 }
 ```
 
-- **En pourcentage**: spéifier la taille du texte relativement au taille
+- **En pourcentage**: spécifier la taille du texte relativement au taille
 normal. C'est à dire: 100% est le taille normale.
 
 ```css
@@ -52,7 +52,7 @@ dt {
 
 - **En rem**: rem est beaucoup plus facile à utiliser comme unité qu'em car la
 taille du texte dépend de la taille initiale du texte, au lieu de dépendre de
-l'héritage d'un quelconque élement parent.
+l'héritage d'un quelconque élément parent.
 
 Polices
 -------
@@ -86,9 +86,9 @@ strong {
 }
 ```
 
-Les valeurs peuvent etre des nombres de 100, 200 jusqu'à 900 dont 400 est un
-font d'epaisseur normal, 200 est la plus fine et 900 est la plus épaisse. Ou
-des mots clés absolutes ("normal" pour 400, "bold" pour 700).  Ou des mots clés
+Les valeurs peuvent être des nombres de 100, 200 jusqu'à 900 dont 400 est un
+font d'épaisseur normal, 200 est la plus fine et 900 est la plus épaisse. Ou
+des mots clés absolues ("normal" pour 400, "bold" pour 700).  Ou des mots clés
 relatives à l'élément parent ("lighter" pour plus fine, "bolder" pour plus
 épaisse).  Quelques fonts ne supportent que les épaisseurs "normal" et "bold".
 
@@ -153,15 +153,15 @@ a {
 }
 ```
 
-Cette propriéte accepte optionnellement le style et la couleur de la ligne.
-Les valeurs du style de la ligne sont le meme que les valeurs du style de
+Cette propriété accepte optionnellement le style et la couleur de la ligne.
+Les valeurs du style de la ligne sont le même que les valeurs du style de
 bordure.
 
 Indentation
 -----------
 
 La propriété `text-indent` permet de gérer l'indentation du texte. Elle accepte
-des valeurs absolutes (en px) et ds valeurs relative (en % ou em). Une valeur
+des valeurs absolues (en px) et des valeurs relative (en % ou em). Une valeur
 négative permet de décaler le texte vers le gauche.
 
 ```css
@@ -173,9 +173,9 @@ p {
 Espacement
 ----------
 
-La propriété `line-height` permet de gérer la distnce entre les lignes. Elle
-accepte des valeurs absolute (en px) ou relative (sans unité).
+La propriété `line-height` permet de gérer la distance entre les lignes. Elle
+accepte des valeurs absolues (en px) ou relatives (sans unité).
 
 La propriété `letter-spacing` permet de gérer l'espace entre les lettres tant
-que la propriété `word-spacing` permet de gérer l'espace entre les motsdans un
+que la propriété `word-spacing` permet de gérer l'espace entre les mots dans un
 texte.

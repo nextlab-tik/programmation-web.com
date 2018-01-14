@@ -28,7 +28,7 @@ prénom dans la première colonne et son nom dans la deuxième colonne):
 Le tableau résultant est:
 
 <p>
-  <iframe height='70' scrolling='no' src='demos/tableau-simple.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='70' scrolling='no' src='demos/tableau-simple.html'></iframe>
 </p>
 
 On va maintenant ajouter le titre des différentes colonnes du tableau en
@@ -42,7 +42,7 @@ l'exploitation du tableau visuellement.
 Le tableau résultant est:
 
 <p>
-  <iframe height='90' scrolling='no' src='demos/tableau-head.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='90' scrolling='no' src='demos/tableau-head.html'></iframe>
 </p>
 
 Pour le reste de ce chapitre, on va utiliser l'attribut `border` de la balise
@@ -54,7 +54,7 @@ première ligne du code précèdent `<table>` par `<table border="1">`, le
 résultat sera:
 
 <p>
-  <iframe height='90' scrolling='no' src='demos/tableau-head-with-border.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='90' scrolling='no' src='demos/tableau-head-with-border.html'></iframe>
 </p>
 
 Structure Tableau Avancée
@@ -73,7 +73,7 @@ le tableau sera le suivant:
 ```
 
 <p>
-  <iframe height='110' scrolling='no' src='demos/table-without-colspan.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='110' scrolling='no' src='demos/table-without-colspan.html'></iframe>
 </p>
 
 La solution est de fusionner les deux colonnes des séances de cours en
@@ -85,7 +85,7 @@ utilisant l'attribut `colspan`.
 ```
 
 <p>
-  <iframe height='110' scrolling='no' src='demos/table-colspan.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='110' scrolling='no' src='demos/table-colspan.html'></iframe>
 </p>
 
 
@@ -103,7 +103,7 @@ balise `<tbody>`. Prenant l'exemple précèdent avec le groupement des lignes:
 Le tableau résultant est:
 
 <p>
-  <iframe height='120' scrolling='no' src='demos/tableau-thead-tfooter.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='120' scrolling='no' src='demos/tableau-thead-tfooter.html'></iframe>
 </p>
 
 Pour ajouter une légende à un tableau, on utilise la balise `<caption>` après
@@ -116,7 +116,7 @@ l'ouverture de la balise `<table>` ou avant sa fermeture:
 Le tableau résultant est:
 
 <p>
-  <iframe height='120' scrolling='no' src='demos/tableau-caption.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='120' scrolling='no' src='demos/tableau-caption.html'></iframe>
 </p>
 
 Remarques

@@ -120,7 +120,7 @@ utilisant la balise SVG.
 {% include_absolute _cours/demos/image-svg.html %}
 ```
 <p>
-  <iframe height='240' scrolling='no' src='demos/image-svg.html' frameborder='no' style='width: 100%;'></iframe>
+  <iframe height='240' scrolling='no' src='demos/image-svg.html'></iframe>
 </p>
 
 Remarque

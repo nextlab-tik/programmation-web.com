@@ -855,6 +855,16 @@ aside {
     width: 210px;
 }
 
+iframe {
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    border-left: 1px dashed #ccc;
+    border-right: 1px dashed #ccc;
+    overflow: none;
+    padding: 0 10px;
+}
+
 /*
  * Quiz CSS
  */
