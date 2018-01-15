@@ -86,7 +86,7 @@ est vraiment fâché, vous pouvez placer le mot « vraiment » dans dans un él�
 Ce qui résulte en:
 
 <p>
-  <iframe height='40' scrolling='no' src='demos/balise-strong.html'></iframe>
+  <iframe height='40' scrolling='no' src='demos/p-inside-strong.html'></iframe>
 </p>
 
 Toutefois il faut faire attention à ce que les éléments soient bien imbriqués
@@ -475,10 +475,10 @@ nativement ou à travers des plugins. Ces protocoles sont principalement:
 - `tel:` pour référencer un numéro de téléphone. Il est supporté par la
   majorité des navigateurs mobiles. La format du numéro de téléphone doit
   suivre la spécification [RFC 3966](https://tools.ietf.org/html/3966). Par
-  exemple: pour contacter le numéro de téléphone tunisien 99999999 (qui est de
+  exemple: pour contacter le numéro de téléphone tunisien 12345678 (qui est de
   préfixe international +216):
 ```html
-<a href="tel:+21699999999">Contactez Nous</a>
+<a href="tel:+21612345678">Contactez Nous</a>
 ```
 
 L'élément `<a>` peut accepter l'attribut `target` pour spécifier ou sera ouvré
@@ -486,13 +486,235 @@ le lien. La valeur `_blank` permet d'ouvrir le lien dans un nouvel onglet. La
 valeur par défaut `_self` permet d'ouvrir le lien dans le même onglet que la
 page Web courante.
 
+### Les balises textes en ligne
+
+Ces balises sont utilisés pour définir la structure, le style et le sémantique
+du texte. Contrairement aux éléments de structure de texte précédente de type
+"bloc" comme les éléments du paragraphe et de listes, ces éléments peuvent être
+contenus dans un paragraphe et ne cause pas la création d'un nouveau bloc.
+
+#### Mise en forme de texte
+
+Ces éléments sont initialement introduit dans les anciens versions de HTML
+comme des éléments de mise en forme. Ils sont évolues en HTML5 pour présenter
+des significations plus sémantiques parce que les CSS présente la solution
+préférée pour la mise en forme. On va présenter les éléments principales et ses
+significations physique (mise en forme) et sémantique.
+
+L'élément `<b>` (**b**oldface) met en gras le texte. Il est pour prendre
+l'attention de l'utilisateur sans aucune signification d'importance. Par
+exemple, il est utilisé pour mettre en gras le nom d'un produit ou des mots
+clés.
+
+```html
+{% include_absolute _cours/demos/balise-b.html %}
+```
+
+<p>
+  <iframe height='40' scrolling='no' src='demos/balise-b.html'></iframe>
+</p>
+
+L'élément `<i>` (**i**talic) met en italique le texte. Il permet d'indiquer
+qu'une partie de texte est différente que le reste du texte. Par exemple, il
+est utilisé pour mettre en italique une texte écrit en langage étrangère ou un
+terme technique.
+
+```html
+{% include_absolute _cours/demos/balise-i.html %}
+```
+
+<p>
+  <iframe height='40' scrolling='no' src='demos/balise-i.html'></iframe>
+</p>
+
+L'élément `<u>` (**u**nderline) met le texte souligné. Il n'est pas une
+signification sémantique exacte comme les autres éléments mais il peut être
+utilisé pour indiquer par exemple un texte mal écrit.
+
+```html
+{% include_absolute _cours/demos/balise-u.html %}
+```
+
+<p>
+  <iframe height='40' scrolling='no' src='demos/balise-u.html'></iframe>
+</p>
+
+L'élément `<s>` (**s**trikethrough) met le texte grevé. Il permet d'indiquer
+que le texte n'est plus précis ou relié au contexte. Pour indiquer que le texte
+est supprimé par l'utilisateur, on utilise l'élément `<del>` (**del**ete).
+
+```html
+{% include_absolute _cours/demos/balise-s.html %}
+```
+
+<p>
+  <iframe height='40' scrolling='no' src='demos/balise-s.html'></iframe>
+</p>
+
+L'élément `<small>` met le texte à un taille de font plus petit. Il permet
+d'indiquer que le texte est un commentaire ou un note comme un note de droit
+d'auteur ou un note légal.
+
+```html
+{% include_absolute _cours/demos/balise-small.html %}
+```
+
+<p>
+  <iframe height='40' scrolling='no' src='demos/balise-small.html'></iframe>
+</p>
+
+#### Importance Logique
+
+Ces éléments indique un différence de niveau importance de texte dans son
+contexte. Ils peuvent causer des changements de la mise en forme du texte mais
+pas forcement.
+
+L'élément `<strong>` indique que le texte est de haute importance. Par exemple,
+il est utiliser pour présenter un alerte ou un message très sérieux.
+Généralement, le texte sera met en gras.
+
+```html
+{% include_absolute _cours/demos/balise-strong.html %}
+```
+
+<p>
+  <iframe height='40' scrolling='no' src='demos/balise-strong.html'></iframe>
+</p>
+
+L'élément `<mark>` met en évidence un texte pour indiquer son importance dans
+son contexte. Par exemple, il est utilisé pour indiquer le résultat d'un
+recherche ou pour indiquer que le texte est intéressent pour l'utilisateur.
+Généralement, le texte aura un différent couleur du fond.
+
+```html
+{% include_absolute _cours/demos/balise-mark.html %}
+```
+
+<p>
+  <iframe height='40' scrolling='no' src='demos/balise-mark.html'></iframe>
+</p>
+
+L'élément `<em>` (**em**phasis) indique que le texte est de forte accent.
+Généralement, le texte sera met en italique. La combinaison de `<em>` et
+`<strong>` (l'un dans l'autre) augment l'importance du texte.
+
+```html
+{% include_absolute _cours/demos/balise-em.html %}
+```
+
+<p>
+  <iframe height='40' scrolling='no' src='demos/balise-em.html'></iframe>
+</p>
+
+#### Abréviation et Citation
+
+L'élément `<abbr>` permet d'indiquer un abréviation avec son explication en
+utilisant l'attribut `title` que sera affichée dans un tooltip quand le souris
+est ci dessus du texte. Le mise en forme du texte diffère entre les
+navigateurs.
+
+```html
+{% include_absolute _cours/demos/balise-abbr.html %}
+```
+
+<p>
+  <iframe height='40' scrolling='no' src='demos/balise-abbr.html'></iframe>
+</p>
+
+L'élément `<cite>` permet de citer un objet ou un travail par nom ou URL. Par
+exemple, il est utilisé pour citer un livre, un recherche, un film, une
+musique, un jeu ou un site,... . Généralement, le texte est mis en italique.
+
+```html
+{% include_absolute _cours/demos/balise-cite.html %}
+```
+
+<p>
+  <iframe height='40' scrolling='no' src='demos/balise-cite.html'></iframe>
+</p>
+
+L'élément `<q>` (**q**uotation) permet de coter un texte. L'attribut optionnel
+`cite` référence l'URL de source de l'information. Généralement, le texte sera
+délimité par deux côtes. L'élément `<blockquote>` permet de coter un bloc.
+
+```html
+{% include_absolute _cours/demos/balise-q.html %}
+```
+
+<p>
+  <iframe height='40' scrolling='no' src='demos/balise-q.html'></iframe>
+</p>
+
+#### Insertion du code
+
+L'élément `<code>` indique que le texte est un partie de code source d'un
+logiciel. Le texte sera affiché en font monospace.
+
+```html
+{% include_absolute _cours/demos/balise-code.html %}
+```
+
+<p>
+  <iframe height='40' scrolling='no' src='demos/balise-code.html'></iframe>
+</p>
+
+La combinaison de l'élément `<code>` avec l'élément `<pre>` permet d'insérer
+un bloc de code source en gardant les espaces et les retourne la ligne.
+
+```html
+{% include_absolute _cours/demos/balise-pre-code.html %}
+```
+
+<p>
+  <iframe height='80' scrolling='no' src='demos/balise-pre-code.html'></iframe>
+</p>
+
+HTML définit un ensemble d'autres éléments permettant de présenter des
+fragments de texte comme des variables en utilisant `<var>`, des textes saisi
+par l'utilisateur au programme ou un ensemble des commandes en utilisant
+`<kbd>`, le texte générer par un programme en utilisant `<samp>`.
+
+### Les balises universels
+
+Le HTML définit deux éléments universels qui sont général qui n'ont aucune
+signification sémantique ou physique (aucune mise en forme prédéfinie). Ces
+deux éléments sont:
+
+- `<span>`: C'est l'élément en ligne (de contenu phrasé); C'est à dire qui il
+  peut être contenu dans un paragraphe et qu'il ne cause pas la création d'un
+  nouveau bloc. La mise en forme de cet élément est fait par le CSS à travers
+  la définition d'un identificateur unique (l'attribut `id`) ou l'ensemble des
+  classe où il appartient (l'attribut `class`).
+- `<div>`: C'est l'élément bloc; C'est à dire qu'il occupe toute la largeur à
+  disposition et crée une cassure de la ligne visuelle avant et après lui.
+  Aussi, la mise en forme de cet élément est à travers l'attribut `id` ou
+  l'attribut `class`.
+
+Un exemple de l'élément `<span>`:
+
+```html
+{% include_absolute _cours/demos/balise-span.html %}
+```
+<p>
+  <iframe height='40' scrolling='no' src='demos/balise-span.html'></iframe>
+</p>
+
+Un exemple de l'élément `<div>`:
+```html
+{% include_absolute _cours/demos/balise-div.html %}
+```
+<p>
+  <iframe height='80' scrolling='no' src='demos/balise-div.html'></iframe>
+</p>
+
 Balises structurantes
 ---------------------
 
 HTML5 a ajouté un ensembles des balises dont un ensemble des balises
-structurantes qui permettre de construire un document HTML plus sémantique. Ces
-balises n'ont pas un effet visuel dans le document, c'est le rôle du CSS.
-Les nouvelles balises structurantes du HTML5:
+structurantes qui permettre de construire un document HTML plus sémantique et
+ils sont préférés à utiliser au lien de `<div>` quand possible. Ces balises
+n'ont pas un effet visuel dans le document, c'est le rôle du CSS.  Les
+nouvelles balises structurantes du HTML5:
 
 header
 : Section d'introduction d'un article, d'une autre section ou du document

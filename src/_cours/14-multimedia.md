@@ -1,5 +1,5 @@
 ---
-title: Multimedia
+title: Multimédia et Intégration
 chapitre: HTML5
 permalink: /cours/multimedia.html
 ---
@@ -92,12 +92,13 @@ Les images vectorielles
 
 Les images sont divisés en deux types principales:
 
-- Les images pixels: dont l'unité est le pixel. Les formats les plus connus
-  sont: **JPEG**, **PNG**, **GIF**, **BMP**. Ces images perdent la qualité
-  quand ils sont agrandis plus que sont tailles original.
+- Les images pixels: dont l'unité est le pixel. Ils sont définis par un matrice
+  des pixels. Les formats les plus connus sont: **JPEG**, **PNG**, **GIF**,
+  **BMP**. Ces images perdent la qualité quand ils sont agrandis plus que sont
+  tailles original.
 - Les images vectoriels: dont l'unité est des éléments géométriques tel que un
-  rectangle, un cercle,... . Ces images ne perdent pas la qualité quand ils sont
-  agrandis. La format la plus connue est **SVG**.
+  rectangle, un cercle,... . Ces images ne perdent pas la qualité quand ils
+  sont agrandis. La format la plus connue est **SVG**.
 
 La format **SVG** (**S**calable **V**ector **G**raphics) est un format d'image
 vectoriel basé sur la langage XML développé par **W3C** depuis 1999. Cette
@@ -122,6 +123,103 @@ utilisant la balise SVG.
 <p>
   <iframe height='240' scrolling='no' src='demos/image-svg.html'></iframe>
 </p>
+
+Intégration de contenu externe
+------------------------------
+
+À côté de l'intégration des vidéos et audio dans la page Web, le HTML permet
+l'intégration des autres types de ressources (p.ex: PDF, Flash, sous pages Web,
+...) dans un document Web. Cette fonctionnalité était très importante surtout
+avant la standardisation des éléments `<video>` et `<audio>`. Pendant les 90s
+et le début de 2000s, les développeurs web ont utilisé l'élément `<object>` ou
+plus moins l'élément `<embed>` qui permettent d'intégrer des différents types
+de ressources à travers des plugins (comme Adobe PDF Reader, VLC, RealPlayer,
+QuickTime, Windows Media Player, ...) ou des plateformes propriétaire comme
+Adobe Flash (anciennement Macromedia Flash), Java Applets et Microsoft
+Silverlight. Aussi, l'élément `<iframe>`, et ses précédents absolues `<frame>`
+et `<frameset>`, permettent l'intégration des sous page web dans le document
+HTML.
+
+### Intégration des pages Web
+
+On va discuter seulement l'élément `<iframe>` parce que les éléments `<frame>`
+et `<frameset>` sont obsolètes depuis HTML5. Cet élément permet d'intégrer des
+pages web dans le document HTML courant ce qui permet d'intégrer des contenus
+des autres sites Web ou de réutiliser des contenus sans besoin de d'implémenter
+dans chaque page Web. Par exemple, on peut intégrer un vidéo ou un audio
+hébergé dans un fournisseur des services vidéos ou audio (YouTube, Vimeo,
+SoundCloud, ...), ou un système de commentaires (Disqus, ...), ou des cartes
+géographiques (Google Maps, Here, ...), ou des banners d'avertissement (Google
+Adsense, ...).
+
+`<frame>` accepte un multiple des attributs dont les principales sont:
+- `src`: C'est le seul attribut obligatoire. Il permet de spécifier l'URL de la
+  page web à intégrer.
+- `allowfullscreen`: Un attribut booléen pour permettre la page intégrée à
+  entrer le mode plain écran (par exemple: permettre le lecteur vidéo de
+  YouTube de entre le mode plein écran).
+- `frameborder`: Si il est assigné la valeur "1", une bordure sera affichée
+  autour l'élément qui est le défaut comportement. Si il est assigné la valeur
+  "0", aucune bordure sera rendue. Il est recommandé d'utiliser le CSS pour
+  spécifier le mise en forme de la bordure au future.
+- `height` et `width`: Spécifier la hauteur et la largeur de l'élément en
+  pixels.
+- `scrolling`: Spécifier quant le navigateur doit fournir un barre de
+  défilement pour le cadre. Les valeurs possible sont `yes` pour toujours
+  afficher le barre, `no` pour jamais afficher le barre ou `auto` pour afficher
+  le barre seulement quand l'espace fourni pour le cadre n'est pas suffisant
+  pour afficher tout le contenu de la page intégrée.
+
+Prenons les deux exemples suivants d'intégration de vidéo YouTube et d'une
+carte géographique Google Maps dans le document.
+
+```html
+{% include_absolute _cours/demos/balise-iframe-youtube.html %}
+```
+<p>
+  <iframe height='320' scrolling='no' src='demos/balise-iframe-youtube.html'></iframe>
+</p>
+
+```html
+{% include_absolute _cours/demos/balise-iframe-google-maps.html %}
+```
+<p>
+  <iframe height='420' scrolling='no' src='demos/balise-iframe-google-maps.html'></iframe>
+</p>
+
+### Intégrer des autres ressources
+
+Contrairement à l'élément `<iframe>`, `<object>` et `<embed>` permettent
+d'intégrer des autres types de contenu dans le document HTML grâce à des
+plugins propriétaires. Par exemple, on peut intégrer des PDFs, des Flash, des
+Applets Java, des vidéos, des images ou des autres types. On va démontrer
+seulement l'élément `<object>` parce que l'élément `<embed>` est rarement
+utilisé et `<object>` est son successeur.
+
+Les attributs principales de `<object>`:
+- `data`: Spécifier l'URL du ressource à intégrer dans le document.
+- `type`: Spécifier le type MIME du ressource.
+
+Prenons l'exemple d'intégration d'un fichier PDF.
+
+```html
+{% include_absolute _cours/demos/balise-object-pdf.html %}
+```
+
+Notons que l'utilisation de les éléments `<object>` et `<embed>` est rare à
+causes des multiples raisons:
+- Les plateformes propriétaires comme Java Applets et Flash ne sont plus
+  populaires et ils sont en train d'être obsolètes. Java Applets n'est plus
+  supporté depuis Java SE 9. Flash ne sera plus maintenu depuis 2020. Les PDFs
+  sont généralement référencés au lieu d'intégrer dans le document.
+- Les nouveaux éléments de HTML fournirent un meilleur alternatif comme les
+  éléments `<video>`, `<audio>`, ou les nouvelles fonctionnalités de CSS3 et
+  JavaScript (API Web) comme canvas et WebGL.
+- Ces plateformes et plugins propriétaires ne sont pas portables et
+  et ne sont pas accessibles par tous les utilisateurs comme les utilisateurs
+  des smartphones.
+- Le manque d'accessibilité et d'intégration entre le contenu du document HTML
+  et le contenu des ressources externes.
 
 Remarque
 --------
