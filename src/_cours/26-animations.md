@@ -1,5 +1,5 @@
 ---
 title: Animations
-chapitre: CSS3
+chapitre: CSS
 permalink: /cours/animations.html
 ---

@@ -1,6 +1,6 @@
 ---
 title: Mise en forme des formulaires
-chapitre: CSS3
+chapitre: CSS
 permalink: /cours/css-formulaires.html
 ---
 

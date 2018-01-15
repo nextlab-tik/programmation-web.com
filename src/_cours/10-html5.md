@@ -1,13 +1,12 @@
 ---
 title: HTML
-chapitre: HTML5
+chapitre: HTML
 permalink: /cours/html5.html
 ---
 
-Le HTML n'est pas un langage de programmation, mais un langage de "marquage"
+Le HTML (_HyperText Markup Language_) n'est pas un langage de programmation, mais un langage de "marquage"
 (_markup_ en anglais) ou bien de "balises" (_tags_ en anglais).
-Il permet de structurer le contenu d'une page web et lui fournir une
-signification et un but.
+Il permet de structurer le contenu d'une page web selon un format déterminé par le concepteur.
 
 Les versions du langage HTML
 ----------------------------
@@ -28,14 +27,14 @@ de Apple, Mozilla et Opera. Ce groupe élabore le standard **HTML5** entre
 adoptée comme référence par le groupe de travail HTML du W3C. Ce n'est qu'en
 2014 que le HTML5 devient une recommandation stable du W3C. En fin 2016, le
 W3C rend officielle la version **HTML 5.1**. La version suivante **HTML 5.2**
-est en cours d'élaborer.
+est en cours d'élaboration.
 
 ![](assets/imgs/standards-timeline-html-by-cours-web.ch.png)
 
 Les éléments HTML
 -----------------
 
-Le vocabulaire du langage HTML se compose de quelques 120 balises qu'on
+Le vocabulaire du langage HTML se compose plus qu'une centaine de balises qu'on
 assemble autour des différentes parties du contenu pour lui fournir un sens.
 Les balises qui entourent un mot ou une image peuvent former un lien
 hypertexte, mettre le texte en italique, etc. Par exemple, avec la ligne de
@@ -52,6 +51,12 @@ placera dans un élément de paragraphe (`<p>`) :
 <p>Mon chat est fâché</p>
 ```
 
+Si on veut qu'il soit un titre, on le met dans la balise `<h1>`.
+
+```html
+<h1>Mon chat est fâché</h1>
+```
+
 ### Anatomie d'un élément HTML
 
 Regardons de plus près cet élément paragraphe:
@@ -60,16 +65,16 @@ Regardons de plus près cet élément paragraphe:
 
 Les composants principaux de notre élément sont :
 
-- **La balise ouvrante**: celle-ci se compose du nom de l'élément (ici "p"),
+- **La balise ouvrante** : celle-ci se compose du nom de l'élément (ici "p"),
   entre deux chevrons. Cela indique le début de l'élément, où l'endroit à partir
   duquel celui-ci prend effet. Pour notre exemple, cela indique le début du
   paragraphe.
-- **La balise fermante**: ici on a également des chevrons et le nom de
+- **La balise fermante** : ici on a également des chevrons et le nom de
   l'élément, auxquels on ajoute un barre oblique avant le nom de l'élément. Cela
   indique la fin de l'élément. Pour notre exemple, cela indique la fin du
   paragraphe.
-- **Le contenu**: C'est le contenu de l'élément, ici c'est simplement du texte.
-- **L'élément**: Il est composé de la balise ouvrante, de la balise fermante et
+- **Le contenu** : C'est le contenu de l'élément, ici c'est simplement du texte.
+- **L'élément** : Il est composé de la balise ouvrante, de la balise fermante et
   du contenu.
 
 ### Imbriquer des éléments
