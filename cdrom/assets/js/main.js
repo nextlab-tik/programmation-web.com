@@ -1,13 +1,15 @@
 "use strict";
 
-const attestationsGallery = $("#attestations-gallery");
-attestationsGallery.justifiedGallery({
+const galleries = $(".gallery");
+galleries.justifiedGallery({
   border: 6,
 }).on('jg.complete', function() {
-  attestationsGallery.lightGallery({
+  galleries.lightGallery({
+    subHtmlSelectorRelative: true,
     thumbnail: true,
     zoom: true,
     fullscreen: true,
+    video: true,
   });
 });
 
@@ -21,6 +23,8 @@ $('.tabs nav a[data-toggle="tab"]').on('show.bs.tab', function(e) {
   let $currPage;
   if (e.relatedTarget) {
     $currPage = $(e.relatedTarget.hash); // previous active tab
+  } else {
+    $currPage = $("#tab-landing");
   }
 
   isTabChanging = true;

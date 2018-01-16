@@ -28,6 +28,7 @@ main {
 
 main>div,
 main>div>*,
+main>.tab-pane>.row>*,
 main section>.embed-responsive {
     height: 100%;
 }
@@ -58,6 +59,7 @@ a.list-group-item.active::before {
 div.list-group-item.list-group-item-secondary {
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
     background-color: rgba(0, 0, 0, 0.03);
+    font-weight: 700;
 }
 
 /* Tab Pane transition animation */
@@ -171,7 +173,6 @@ div.list-group-item.list-group-item-secondary {
 div.list-group-item.list-group-item-secondary {
     color: #3b3d4a;
     color: #5c5edc;
-    font-weight: 700;
 }
 a.list-group-item {
     color: #ddd;
