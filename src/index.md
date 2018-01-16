@@ -1,14 +1,16 @@
 ---
-title: Web 101
+title: Programmation Web
 ---
 
-Le web est la premiére platforme dans le monde. Il est caratérisé par son
-accessiblité et sa simplisité. Il parmet le développement rapide des sites et
-des applications.
+Le web est la plus grande bibliothèque du monde située sur un réseau mondial.
+Cette bibliothèque est composée de documents de différents types: images,
+textes, vidéos, etc.  Il se base principalement sur le langage HTML mais il est
+mis en forme plus agréable à l'aide du langage de style CSS. Le web est
+dynamisé par le langage JavaScript.
 
-Dans ce série de cours, on va introduire le web, HTML5 et CSS3 à but de
-developper des sites simples et modernes. On va vous proposes un ensemble des
-exercies et mini-projets pour testez votre connaissance.
+Dans ce cours, on va introduire le web, le langage de balisage HTML5 et le
+langage de style CSS3. Ce cours est destiné à tous ceux qui veulent développer
+des sites simples et modernes. Chaque chapitre contient une série d'exercices.
 
 
 {% comment %}

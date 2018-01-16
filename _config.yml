@@ -6,7 +6,7 @@ description: "Apprendre à programmer des sites et applications Web en utilisant
 logo: "/imgs/logo-256x256.png"
 lang: fr_FR
 baseurl: ""
-url: "https://web101.tik.tn"
+url: "https://programmation-web.com"
 repo: https://github.com/lejenome/web-101
 
 source: ./src
