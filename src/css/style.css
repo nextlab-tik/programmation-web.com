@@ -98,7 +98,8 @@ body {
 }
 
 html {
-    background-color: #e4e4e0;
+    /*background-color: #e4e4e0;*/
+    background-color: white;
 }
 
 body {
@@ -765,34 +766,6 @@ h3 *[class^="section-number"] {
     padding: 0;
     border-bottom: none;
     border-top: none;
-}
-
-@media print {
-    @page {
-        size: a4;
-        margin: 1in 0;
-    }
-    body {
-        --font-size: 12pt;
-        --serif: "Book Antiqua", "Times New Roman", serif;
-        --sans-serif: "Helvetica", sans-serif;
-        --monospace: "Courier", "Courier New", monospace;
-    }
-    a {
-        text-decoration: underline;
-    }
-    header,
-    footer,
-    .divider,
-    h2 {
-        text-shadow: none;
-        color: #000;
-        background-image: none;
-        background-color: transparent;
-    }
-    nav {
-        display: none;
-    }
 }
 
 header,

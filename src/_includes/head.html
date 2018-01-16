@@ -23,6 +23,10 @@
 
   <link rel="stylesheet" type="text/css" href="{{ '/vendor/font-awesome/css/font-awesome.min.css' | relative_url }}"/>
 
+  {% if page.print %}
+  <link rel="stylesheet" type="text/css" href="{{ '/css/print.css' | relative_url }}"/>
+  {% endif %}
+
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
   <link rel="shortcut icon" type="image/png" href="{{ '/imgs/logo-16x16.png' | relative_url }}" />
