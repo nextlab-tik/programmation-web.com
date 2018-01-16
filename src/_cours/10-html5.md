@@ -1,44 +1,45 @@
 ---
 title: HTML
 chapitre: HTML
-permalink: /cours/html5.html
+permalink: /cours/html.html
 ---
 
-Le HTML (_HyperText Markup Language_) n'est pas un langage de programmation, mais un langage de "marquage"
-(_markup_ en anglais) ou bien de "balises" (_tags_ en anglais).
-Il permet de structurer le contenu d'une page web selon un format déterminé par le concepteur.
+Le HTML (_HyperText Markup Language_) n'est pas un langage de programmation,
+mais un langage de "marquage" (_markup_ en anglais) ou bien de "balises"
+(_tags_ en anglais). Il permet de structurer le contenu d'une page web selon
+un format déterminé par le concepteur et réalisé par le programmeur Web.
 
 Les versions du langage HTML
 ----------------------------
 
 Durant ses 25 années d'existence, le standard HTML a connu diverses évolutions.
 La première version proposée en 1991 comportait 18 éléments. Différentes
-versions du standard HTML sont publiées, jusqu'à la version <b>HTML 4.01</b> en
+versions du standard HTML sont publiées, jusqu'à la version **HTML 4.01** en
 1999.
 
-S'ensuit une période de stagnation, durant laquelle le groupe de travail HTML
+S'en suit une période de stagnation, durant laquelle le groupe de travail HTML
 du **W3C** (World Wide Web Consortium) focalise ses efforts sur un nouveau
 langage, le **XHTML**, qui s'avère une impasse.
 
 En 2004, un groupe de travail concurrent se forme, nommé **WHATWG** (Web
 Hypertext Application Technology Working Group), rassemblant des représentants
-de Apple, Mozilla et Opera. Ce groupe élabore le standard **HTML5** entre
-2004-2007. En janvier 2008, la première spécification est publiée, qui est
-adoptée comme référence par le groupe de travail HTML du W3C. Ce n'est qu'en
-2014 que le HTML5 devient une recommandation stable du W3C. En fin 2016, le
-W3C rend officielle la version **HTML 5.1**. La version suivante **HTML 5.2**
-est en cours d'élaboration.
+de Apple, Mozilla et Opera. Ce groupe élaborait le standard **HTML5** entre
+2004-2007. En janvier 2008, la première spécification a été publiée. Cette
+spécification a été adoptée comme référence par le groupe de travail HTML du
+W3C. Ce n'est qu'en 2014 que le HTML5 est devenu une recommandation stable du
+W3C. En fin 2016, le W3C a rendu officielle la version **HTML 5.1**. La version
+suivante **HTML 5.2** est en cours d'élaboration.
 
 ![](assets/imgs/standards-timeline-html-by-cours-web.ch.png)
 
 Les éléments HTML
 -----------------
 
-Le vocabulaire du langage HTML se compose plus qu'une centaine de balises qu'on
-assemble autour des différentes parties du contenu pour lui fournir un sens.
-Les balises qui entourent un mot ou une image peuvent former un lien
-hypertexte, mettre le texte en italique, etc. Par exemple, avec la ligne de
-contenu suivante:
+Le vocabulaire du langage HTML se compose de plus qu'une centaine de balises
+qu'on assemble autour des différentes parties du contenu pour lui fournir un
+sens. Les balises qui entourent un mot ou le nom d'une image peuvent former un
+lien hypertexte, mettre le texte en italique, etc. Par exemple, avec la ligne
+de contenu suivante:
 
 ```html
 Mon chat est fâché
@@ -66,23 +67,24 @@ Regardons de plus près cet élément paragraphe:
 Les composants principaux de notre élément sont :
 
 - **La balise ouvrante** : celle-ci se compose du nom de l'élément (ici "p"),
-  entre deux chevrons. Cela indique le début de l'élément, où l'endroit à partir
-  duquel celui-ci prend effet. Pour notre exemple, cela indique le début du
-  paragraphe.
+  entre deux chevrons. Cela indique le début de l'élément, où l'endroit à
+  partir duquel celui-ci prend effet. Pour notre exemple, cela indique le début
+  du paragraphe.
 - **La balise fermante** : ici on a également des chevrons et le nom de
-  l'élément, auxquels on ajoute un barre oblique avant le nom de l'élément. Cela
-  indique la fin de l'élément. Pour notre exemple, cela indique la fin du
+  l'élément, auxquels on ajoute une barre oblique avant le nom de l'élément.
+  Cela indique la fin de l'élément. Pour notre exemple, cela indique la fin du
   paragraphe.
-- **Le contenu** : C'est le contenu de l'élément, ici c'est simplement du texte.
-- **L'élément** : Il est composé de la balise ouvrante, de la balise fermante et
-  du contenu.
+- **Le contenu** : C'est le contenu de l'élément, ici c'est simplement du
+  texte.
+- **L'élément** : Il est composé de la balise ouvrante, de la balise fermante
+  et du contenu.
 
 ### Imbriquer des éléments
 
 Vous pouvez placer des éléments au sein d'autres éléments, c'est ce qu'on
 appelle l'imbrication. Par exemple, si vous souhaitez montrer que votre chat
-est vraiment fâché, vous pouvez placer le mot « vraiment » dans dans un élément
-`<strong>`, ce qui signifie que le mot sera mis en avant:
+est vraiment fâché, vous pouvez placer le mot « vraiment » dans un élément
+`<strong>`, ce qui signifie que le mot sera mis en gras:
 
 ```html
 <p>Mon chat est <strong>vraiment</strong> fâché.</p>
@@ -103,32 +105,55 @@ ferme l'élément `<p>`. Si on utilise le code suivant, ce sera incorrect:
 <p>Mon chat est <strong>vraiment fâché.</p></strong>
 ```
 
-Même qui les navigateurs implémentent des différents algorithmes pour essayer
-de fixer ces erreurs dans les documents HTML avant d'afficher le résultat, il
-faut vérifier la structure du document parce que ces algorithmes ont des
-limites et peut données des résultats différents et inutilisables.
+Même que les navigateurs implémentent différents algorithmes pour essayer de
+fixer ces erreurs dans les documents HTML avant d'afficher le résultat, il faut
+vérifier la structure du document parce que ces algorithmes ont des limites et
+peuvent donner des résultats différents et inutilisables.
+
+### Les balises orphelines
+
+Ce sont des balises qui ont uniquement un indicateur de début. Comme la balise
+:
+
+```html
+<img .../>
+```
+
+### Les attributs
 
 Les éléments peuvent avoir des "attributs".
 
 ![](assets/imgs/html-tag-attributes-explication-by-mozilla-mdn.svg)
 
 Les attributs contiennent des informations supplémentaires qui portent sur
-l'élément et qu'on ne souhaite pas afficher avec le contenu. Dans cet exemple,
-l'attribut `class` a comme valeur "note". Les attributs seront très utiles dans
-les chapitres suivants par exemple pour définir le comportement de nos
-formulaires et pour mise en forme de page Web.
+l'élément et qu'on ne souhaite pas afficher avec le contenu.
+
+**Exemples** :
+- Dans une balise `<a href ="http:...">Nom du lien </a>` l'attribut `href` a
+  comme valeur "http:....".
+- Dans la balise `<img src="...." width="150" height="200">` les trois
+  attributs `src`, `width` et `height` sont des attributs de l'élément img.
+
+Les attributs seront très utiles dans les chapitres suivants par exemple pour
+définir le comportement de nos formulaires et pour les mises en forme de page
+Web.
 
 Un attribut doit toujours avoir:
 
-- un **nom** (le nom de l'attribut) qui doit séparer par un espace du nom de la
-  balise ou l'attribut précédent (s'il y a des multiples attributs).
-- une **valeur** encadrer par des quotes (") et séparer par un signe égal "="
-  du son nom (le nom de l'attribut). Les attributs booléens ne nécessitent pas
-  une valeur, un exemple d'un attribut booléen est l'attribut `checked`
-  (cocher) de l'élément case à cocher pour spécifier que la case est cochée,
-  cet attribut ne nécessite pas une valeur car sa présence est interprétée
-  comme la valeur vrai au contraire son absence est interprété comme la valeur
-  faux.
+- un **nom** (le nom de l'attribut) qui doit être séparé par un espace du nom
+  de la balise ou de l'attribut précédent (s'il y a des multiples attributs).
+- une **valeur** encadrée par des guillemets (") et séparés par un signe égal
+  "=" du son nom (le nom de l'attribut).
+
+L'attribut a alors la syntaxe suivante : `nom = "valeur"`
+
+**Remarque** : Les guillemets peuvent être omises dans HTML5.
+
+Les attributs booléens ne nécessitent pas une valeur, un exemple d'un attribut
+booléen est l'attribut `checked` (coché) de l'élément case à cocher pour
+spécifier que la case est cochée, cet attribut ne nécessite pas une valeur car
+sa présence est interprétée comme la valeur vrai. Au contraire son absence est
+interprété comme la valeur faux.
 
 Les commentaires dans HTML sont délimités par `<!--` et `-->`. Par exemple:
 
@@ -136,8 +161,8 @@ Les commentaires dans HTML sont délimités par `<!--` et `-->`. Par exemple:
 <!-- Un texte dans un commentaire -->
 ```
 
-Les commentaires peut être dans n'importe qu'elle partie du code HTML mais pas
-dans une balise (entre les chevrons de la balise). Prenons l'exemple:
+Les commentaires peuvent exister dans n'importe qu'elle partie du code HTML
+mais pas dans une balise (entre les chevrons de la balise). Prenons l'exemple:
 
 ```html
 {% include_absolute _cours/demos/commentaire.html %}
@@ -185,17 +210,17 @@ anciens navigateurs.
 est parfois appelé l'élément racine.
 
 `<head></head>`
-: l'élément `<head>`. Cet élément est utilisé comme un container pour toutes les
-choses qui font partie de la page HTML mais qui ne sont pas du contenu affiché.
-C'est dans cet élément qu'on mettra des mots-clés, une description de la page
-qui apparaîtra sur les moteurs de recherche, les liens vers les fichiers CSS à
-utiliser pour la mise en forme, les déclarations des jeux de caractères
-(character sets) à utiliser et ainsi de suite.
+: l'élément `<head>`. Cet élément est utilisé comme un conteneur _(container)_
+pour toutes les choses qui font partie de la page HTML mais qui ne sont pas du
+contenu affiché.  C'est dans cet élément qu'on mettra des mots-clés, une
+description de la page qui apparaîtra sur les moteurs de recherche, les liens
+vers les fichiers CSS à utiliser pour la mise en forme, les déclarations des
+jeux de caractères (character sets) à utiliser et ainsi de suite.
 
 `<body></body>`
-: l'élément `<body>`. Cet élément est celui qui contient tout le contenu que vous
-souhaitez afficher pour qu'il soit vu par les visiteurs: cela peut être du
-texte, des images, des vidéos, des jeux, etc.
+: l'élément `<body>`. Cet élément est celui qui contient tout le contenu que
+vous souhaitez afficher pour qu'il soit vu par les visiteurs : cela peut être
+du texte, des images, des vidéos, des fichiers sons, etc.
 
 `<meta charset="utf-8">`
 : Cet élément définit le jeu de caractères qui devrait être utilisé pour le
@@ -208,14 +233,15 @@ l'extrême majorité des cas.
 `<title></title>`
 : Cet élément définit le titre de votre page. C'est ce titre qui apparaîtra sur
 l'onglet lorsque la page sera chargée. C'est également ce titre qui sera
-utilisé pour décrire la page lorsque vous la placez dans vos marques-pages.
+utilisé pour décrire la page lorsque vous la placez dans vos marques-pages ou
+por gérer l'accessibilité au niveau des navigateurs.
 
 Les balises principales
 -----------------------
 
 ### Baliser le texte
 
-Dans cette section, nous verrons quelques-uns des éléments HTML de base pour
+Dans cette section, nous verrons quelques-uns des éléments de base de HTML pour
 baliser le texte.
 
 #### Les titres
@@ -252,7 +278,7 @@ une page:
 </p>
 
 Un élément `<p>` placé dans un autre élément de type `<p>` sera interprété
-comme définit au dehors et la paragraphe externe est terminée avant l'ouverture
+comme définit au dehors et le paragraphe externe est terminée avant l'ouverture
 de la balise de l'élément `<p>` interne.
 
 ```html
@@ -263,23 +289,40 @@ de la balise de l'élément `<p>` interne.
   <iframe height='100' scrolling='no' src='demos/balise-p-inside.html'></iframe>
 </p>
 
+Un élément `<p>` élimine les espaces redondants et les retours à la ligne
+suivante. Pour maintenir des espaces voulus ou bien un retour à la ligne, vous
+pouvez utiliser la balise `<pre>` au lieu de `<p>`.
+
+Exemple :
+
+```html
+{% include_absolute _cours/demos/p-vs-pre.html %}
+```
+
+<p>
+  <iframe height='100' scrolling='no' src='demos/p-vs-pre.html'></iframe>
+</p>
+
 #### Les listes
 
-Une grande partie du contenu sur le Web est présente sous forme de listes. HTML
-a donc des éléments utilisés pour représenter ces listes. Le balisage des
-listes contient toujours au moins deux éléments. Les types de listes utilisés
-fréquemment sont les listes ordonnées et les listes non-ordonnées :
+Une grande partie du contenu sur le Web est présente sous forme de listes à
+puces ou bien listes numérotées. HTML a donc des éléments utilisés pour
+représenter ces listes. Le balisage des listes contient toujours au moins deux
+éléments. Le type de liste et les lignes de listes (les _items_).  Les types de
+listes utilisés fréquemment sont les listes ordonnées et les listes
+non-ordonnées :
 
 1. **Les listes non-ordonnées** sont des listes pour lesquelles l'ordre des
-   éléments n'a pas d'importance (par exemple une liste de courses). La balise
+   éléments n'a pas d'importance (correspondent aux listes à puces). La balise
    utilisée pour ces listes est l'élément `<ul>` (**ul** signifie **u**nordered
    **l**ist qui signifie liste non-ordonnée en anglais)
 2. **Les listes ordonnées** sont des listes pour lesquelles l'ordre des
-   éléments est important (par exemple une recette). La balise utilisée pour
-   ces listes est l'élément `<ol>` (**ol** signifie **o**rdered **l**ist qui
-   signifie liste ordonnée en anglais)
+   éléments est important c'est à dire les listes numérotées. La balise
+   utilisée pour ces listes est l'élément `<ol>` (**ol** signifie **o**rdered
+   **l**ist qui signifie liste ordonnée en anglais)
 
-Chaque élément d'une liste est balisé avec un élément `<li>`.
+Chaque élément d'une liste est balisé avec un élément `<li>` (**l**ist
+**i**tem).
 
 Par exemple, si on souhaite modifier un paragraphe en une liste :
 
@@ -298,7 +341,7 @@ On pourrait faire :
   <iframe height='160' scrolling='no' src='demos/balise-ul.html'></iframe>
 </p>
 
-Une lise ordonnées est similaire:
+Une liste ordonnées est similaire :
 
 ```html
 {% include_absolute _cours/demos/balise-ol.html %}
@@ -309,7 +352,7 @@ Une lise ordonnées est similaire:
 </p>
 
 Une liste peut être interne dans une liste. On peut aussi mélanger les listes
-des différentes types.
+des différents types.
 
 ```html
 {% include_absolute _cours/demos/balise-ul-ol.html %}
@@ -321,18 +364,18 @@ des différentes types.
 
 #### Liste des descriptions
 
-La liste des descriptions permettre de décrire un terme. Elle est délimitée par
-la balise `<dl>` (**d**escription **l**ist). On utilise la balise `<dt>`
-(**d**escription **t**erm) pour spécifier le terme à définir suivi par
-un balise `<dd>` (**d**escription **d**escription) pour décrire le
-terme. On peut spécifier des multiple des termes par description ou multiple
-description par terme.
+La liste des descriptions permettent de décrire un terme. Elle est délimitée
+par la balise `<dl>` (**d**escription **l**ist). On utilise la balise `<dt>`
+(**d**escription **t**erm) pour spécifier le terme à définir suivi par une
+balise `<dd>` (**d**escription **d**escription) pour décrire le terme. On peut
+spécifier des multiple de termes par description ou multiple description par
+terme.
 
 ```html
 {% include_absolute _cours/demos/description-list.html %}
 ```
 
-Le résultat sera:
+Le résultat sera :
 
 <p>
   <iframe height='130' scrolling='no' src='demos/description-list.html'></iframe>
@@ -340,10 +383,10 @@ Le résultat sera:
 
 ### Les images
 
-Pour afficher un image, On utilise la balise `<img>`. Cet élément permet
-d'intégrer une image dans la page, à l'endroit où l'élément apparaît. L'image
-utilisée est définie via l'attribut `src` (pour **s**ou**rc**e) qui contient
-le chemin vers le fichier de l'image.
+Pour afficher un image, on utilise la balise `<img>`. Cet élément permet
+d'intégrer une image dans la page, à l'endroit où l'élément apparaît. La source
+de l'image utilisée est définie via l'attribut `src` (pour **s**ou**rc**e) qui
+contient le chemin vers le fichier de l'image.
 
 ```html
 {% include_absolute _cours/demos/balise-img.html %}
@@ -355,19 +398,20 @@ le chemin vers le fichier de l'image.
 
 Nous avons aussi utilisé l'attribut `alt` (pour **alt**ernatif) qui contient un
 texte qui permet de décrire l'image et qui peut être utilisé par les
-utilisateurs qui ne peuvent pas voir l'image en cas ils sont malvoyants ou en
-cas quelque chose s'est mal passé et que l'image n'a pu être affichée. Par
-exemple, cela peut se produire si le chemin vers l'image est incorrect.
+utilisateurs qui ne peuvent pas voir l'image en cas où ils sont malvoyants ou
+en cas où quelque chose qui s'est mal passée et que l'image n'a pas pu être
+affichée. Par exemple, cela peut se produire si le chemin vers l'image est
+incorrect ou bien le fichier de l'image est supprimé accidentellement.
 
-L'image affichée dans le document HTML sera de même dimensionne que
-les dimensions réels du fichier image. Les attributs `height` et `width`
-permettent de modifier les dimensions d'affichage en dimensionnant l'image
-par rapport à la hauteur ou la largeur spécifié en pixels ou à la hauteur et la
+L'image affichée dans le document HTML sera de même dimensions que les
+dimensions réelles du fichier image. Les attributs `height` et `width`
+permettent de modifier les dimensions d'affichage en dimensionnant l'image par
+rapport à la hauteur ou à la largeur spécifiées en pixels ou à la hauteur et la
 largeur spécifié ensemble.
 
-Prenons l'exemple de spécifier un seul dimension, l'autre dimension sera
-calculer relativement au dimension spécifié pour garder la format de l'image
-origine.
+Prenons l'exemple de spécification d'une seule dimension, l'autre dimension
+sera calculée relativement à la dimension spécifiée pour garder le format de
+l'image origine.
 
 ```html
 {% include_absolute _cours/demos/balise-img-height.html %}
@@ -387,17 +431,18 @@ Au contraire, si on spécifie les deux dimensions:
   <iframe height='160' scrolling='no' src='demos/balise-img-height-width.html'></iframe>
 </p>
 
-Les navigateurs supportent des multiples des formats des images. Les formats
-images principales et les plus supportés sont:
+Les navigateurs supportent de multiple formats d'images. Les principaux formats
+d'images les plus supportés sont:
 
-- **JPEG**: format image compressé avec perte. Standardisé par JPEG (_Joint
-  Photographic Experts Group_). Les extensions sont `.jpg` et `.jpeg`.
+- **JPEG**: format image compressé avec perte. Standardisé par JPEG
+  (_Joint Photographic Experts Group_). Les extensions sont `.jpg` et `.jpeg`.
 - **PNG** (_Portable Network Graphics_) format image compressé sans perte. Il
-  supporte les images transparents. L'extension est `.png`.
+  supporte les images transparentes. L'extension est `.png`.
 - **GIF** (_Graphics Interchange Format_) format image compressé sans perte. Il
-  support les images transparents et les animations. Les couleurs sont limités
-  à 8 bits (256 couleurs). L'extension est `.gif`.
-- **BMP** format image non compressé sans perte. L'extension est `.bmp`.
+  supporte les images transparentes et les animations. Les couleurs sont
+  limitées à 8 bits (256 couleurs). L'extension est `.gif`.
+- **BMP** format image non compressé (_Bit Map_) sans perte. L'extension est
+  `.bmp`.
 - **SVG** format image vectoriel standarisé par W3C. L'exntesion est `.svg`.
 
 ### Les liens
@@ -407,43 +452,42 @@ sur laquelle on peut naviguer de page en page. Pour créer un lien, il suffit
 d'utiliser l'élément `<a>` (le a est un raccourci pour « ancre »). Pour
 transformer du texte en un lien, suivez ces étapes :
 
-1. Choisissez un texte (ici nous travaillerons avec le texte « Manifeste
-   Mozilla ».
+1. Choisissez un texte (ici nous travaillerons avec le texte « Google Search ».
 2. Encadrez le texte dans un élément `<a>`:
 ```html
-<a>Manifeste Mozilla</a>
+<a>Google Search</a>
 ```
 
 3. Fournissez un attribut `href` (**href** correspond à **h**ypertext
    **ref**erence en anglais, ce qui signifie « référence hypertexte » en
    français) pour l'élément `<a>`, de cette façon:
 ```html
-<a href="">Manifeste Mozilla</a>
+<a href="">Google Search</a>
 ```
 
-4. Dans cet attribut, ajoutez le lien vers le site vers lequel vous voulez
-   diriger les utilisateurs :
+4. Dans cet attribut, ajoutez le lien du site vers lequel vous voulez
+   faire diriger les utilisateurs :
 ```html
 <a href="https://www.google.com/search/">Google Search</a>
 ```
 
 Les références hypertexte sont de différents types:
 
-- **Références externes absolues**: Ces sont des URL absolues vers un
+- **Références externes absolues**: Ce sont des URL absolues vers une
   ressource dans le Web. Ces URL doivent être composés de la partie protocole
   (`http://` ou `https://`), de la partie du nom de domaine (p.ex:
   `google.com`) ou de l'adresse IP (p.ex: `127.0.0.1`), du numéro du port TCP
   optionnel (`80` par défaut pour `http://` et 443 par défaut pour `https://`)
-  et le chemin vers le ressource Web (page Web, image, ...).
+  et le chemin vers la ressource Web (page Web, image, ...).
 ```html
 <a href="https://www.google.com/search/">Google Search</a>
 ```
-  Si le ressource est dans le même site web que la page Web courante, on peut
-  spécifier seulement le chemin absolue du ressource en commençant par `/`.
+  Si la ressource est dans le même site web que la page Web courante, on peut
+  spécifier seulement le chemin absolu de la ressource en commençant par `/`.
 ```html
 <a href="/fr/contact.html">Contactez Nous</a>
 ```
-- **Références externes relatifs**: Ces sont des liens relatives au page Web
+- **Références externes relatives**: Ce sont des liens relatifs à la page Web
   courante. Par exemple, pour référencer une page Web `contact.html` dont le
   même dossier que la page courante:
 ```html
@@ -454,7 +498,7 @@ Les références hypertexte sont de différents types:
 ```html
 <a href="../acceuil.html">Acceuil</a>
 ```
-- **Références internes**: Ces sont des références aux éléments HTML dans le
+- **Références internes**: Ce sont des références aux éléments HTML dans le
   même document. Pour référencer un élément, on lui donne un identificateur
   unique en utilisant l'attribut `id` puis on le référence par son
   identificateur préfixé par le signe "#".
@@ -465,20 +509,20 @@ Les références hypertexte sont de différents types:
 ```
 
 L'élément `<a>` n'est pas limité à référencer les ressources accessibles par le
-protocole HTTP (`http://` et `https://`). Des autres protocoles sont supportés
+protocole HTTP (`http://` et `https://`). D'autres protocoles sont supportés
 nativement ou à travers des plugins. Ces protocoles sont principalement:
-- `ftp://` (**FTP**) pour accéder au ressources dans les serveurs FTP.
-- `file://` pour accéder au ressources dans le système de fichier de
-  l'appareil dont le navigateur est éxecuté.
-- `mailto:` permettre d'ouvrir le client email pour créer un nouveau email avec
-  l'email de réception  spécifiée. La format du lien est
-  `mailto:<ADRESSE_EMAIL>`. Par exemple, pour créer un lien mailto de
-  destination `contact@exemple.com`:
+- `ftp://` (**FTP**) pour accéder aux ressources dans les serveurs FTP.
+- `file://` pour accéder aux ressources qui sont dans le système de fichier
+  de l'appareil dont le navigateur est éxecuté.
+- `mailto:` permet d'ouvrir le client e-mail pour créer un nouveau
+   message électronique avec l'email de réception spécifiée. Le format du lien
+   est <code>mailto:&lt;ADRESSE_EMAIL&gt;</code>. Par exemple, pour créer un
+   lien mailto de destination `contact@exemple.com`:
 ```html
 <a href="mailto:contact@exemple.com">Contactez Nous</a>
 ```
 - `tel:` pour référencer un numéro de téléphone. Il est supporté par la
-  majorité des navigateurs mobiles. La format du numéro de téléphone doit
+  majorité des navigateurs mobiles. Le format du numéro de téléphone doit
   suivre la spécification [RFC 3966](https://tools.ietf.org/html/3966). Par
   exemple: pour contacter le numéro de téléphone tunisien 12345678 (qui est de
   préfixe international +216):
@@ -486,30 +530,30 @@ nativement ou à travers des plugins. Ces protocoles sont principalement:
 <a href="tel:+21612345678">Contactez Nous</a>
 ```
 
-L'élément `<a>` peut accepter l'attribut `target` pour spécifier ou sera ouvré
-le lien. La valeur `_blank` permet d'ouvrir le lien dans un nouvel onglet. La
-valeur par défaut `_self` permet d'ouvrir le lien dans le même onglet que la
-page Web courante.
+L'élément `<a>` peut accepter l'attribut `target` pour spécifier où sera
+ouvrert le lien. La valeur `_blank` permet d'ouvrir le lien dans un nouvel
+onglet. La valeur par défaut `_self` permet d'ouvrir le lien dans le même
+onglet que la page Web courante.
 
-### Les balises textes en ligne
+### Les balises textes en ligne (_inline_)
 
-Ces balises sont utilisés pour définir la structure, le style et le sémantique
-du texte. Contrairement aux éléments de structure de texte précédente de type
-"bloc" comme les éléments du paragraphe et de listes, ces éléments peuvent être
-contenus dans un paragraphe et ne cause pas la création d'un nouveau bloc.
+Ces balises sont utilisées pour définir la structure, le style et la sémantique
+du texte. Contrairement aux éléments de structure de texte précédents de type
+"bloc" (comme les éléments du paragraphe et de listes), ces éléments peuvent
+être contenus dans un paragraphe et ne causent pas la création d'un nouveau
+bloc.
 
 #### Mise en forme de texte
 
-Ces éléments sont initialement introduit dans les anciens versions de HTML
-comme des éléments de mise en forme. Ils sont évolues en HTML5 pour présenter
-des significations plus sémantiques parce que les CSS présente la solution
-préférée pour la mise en forme. On va présenter les éléments principales et ses
-significations physique (mise en forme) et sémantique.
+Ces éléments sont initialement introduits dans les anciennes versions de HTML
+comme des éléments de mise en forme. Ils se sont évolués en HTML5 pour
+présenter des significations plus sémantiques et la mise en forme est délaissée
+pour le CSS.  On va présenter les éléments principaux et leurs significations
+physique (de mise en forme) et sémantique.
 
-L'élément `<b>` (**b**oldface) met en gras le texte. Il est pour prendre
-l'attention de l'utilisateur sans aucune signification d'importance. Par
-exemple, il est utilisé pour mettre en gras le nom d'un produit ou des mots
-clés.
+L'élément `<b>` (**b**oldface) met le texte en gras pour attirer l'attention de
+l'utilisateur sans aucune signification d'importance. Par exemple, il est
+utilisé pour mettre en gras le nom d'un produit ou des mots clés.
 
 ```html
 {% include_absolute _cours/demos/balise-b.html %}
@@ -520,9 +564,9 @@ clés.
 </p>
 
 L'élément `<i>` (**i**talic) met en italique le texte. Il permet d'indiquer
-qu'une partie de texte est différente que le reste du texte. Par exemple, il
-est utilisé pour mettre en italique une texte écrit en langage étrangère ou un
-terme technique.
+qu'une partie de texte est différente du reste du texte. Par exemple, il est
+utilisé pour mettre en italique un texte écrit en langage étrangère ou un terme
+technique.
 
 ```html
 {% include_absolute _cours/demos/balise-i.html %}
@@ -532,7 +576,7 @@ terme technique.
   <iframe height='40' scrolling='no' src='demos/balise-i.html'></iframe>
 </p>
 
-L'élément `<u>` (**u**nderline) met le texte souligné. Il n'est pas une
+L'élément `<u>` (**u**nderline) met le texte en mode souligné. Il n'a pas de
 signification sémantique exacte comme les autres éléments mais il peut être
 utilisé pour indiquer par exemple un texte mal écrit.
 
@@ -544,7 +588,7 @@ utilisé pour indiquer par exemple un texte mal écrit.
   <iframe height='40' scrolling='no' src='demos/balise-u.html'></iframe>
 </p>
 
-L'élément `<s>` (**s**trikethrough) met le texte grevé. Il permet d'indiquer
+L'élément `<s>` (**s**trikethrough) met le texte barré. Il permet d'indiquer
 que le texte n'est plus précis ou relié au contexte. Pour indiquer que le texte
 est supprimé par l'utilisateur, on utilise l'élément `<del>` (**del**ete).
 
@@ -556,9 +600,9 @@ est supprimé par l'utilisateur, on utilise l'élément `<del>` (**del**ete).
   <iframe height='40' scrolling='no' src='demos/balise-s.html'></iframe>
 </p>
 
-L'élément `<small>` met le texte à un taille de font plus petit. Il permet
-d'indiquer que le texte est un commentaire ou un note comme un note de droit
-d'auteur ou un note légal.
+L'élément `<small>` met le texte à une taille plus petite. Il permet d'indiquer
+que le texte est un commentaire ou une note comme une note de droit d'auteur ou
+une note légale.
 
 ```html
 {% include_absolute _cours/demos/balise-small.html %}
@@ -570,13 +614,13 @@ d'auteur ou un note légal.
 
 #### Importance Logique
 
-Ces éléments indique un différence de niveau importance de texte dans son
-contexte. Ils peuvent causer des changements de la mise en forme du texte mais
-pas forcement.
+Ces éléments indiquent la différence de niveau d'importance logique du texte
+dans son contexte. Ils peuvent causer des changements de la mise en forme du
+texte mais pas forcément.
 
 L'élément `<strong>` indique que le texte est de haute importance. Par exemple,
-il est utiliser pour présenter un alerte ou un message très sérieux.
-Généralement, le texte sera met en gras.
+il est utilisé pour présenter un alerte ou un message très sérieux.
+Généralement, le texte sera mis en gras.
 
 ```html
 {% include_absolute _cours/demos/balise-strong.html %}
@@ -587,9 +631,9 @@ Généralement, le texte sera met en gras.
 </p>
 
 L'élément `<mark>` met en évidence un texte pour indiquer son importance dans
-son contexte. Par exemple, il est utilisé pour indiquer le résultat d'un
-recherche ou pour indiquer que le texte est intéressent pour l'utilisateur.
-Généralement, le texte aura un différent couleur du fond.
+son contexte. Par exemple, il est utilisé pour indiquer le résultat d'une
+recherche ou pour indiquer que le texte est intéressant pour l'utilisateur.
+Généralement, le texte aura une couleur de fond différente.
 
 ```html
 {% include_absolute _cours/demos/balise-mark.html %}
@@ -599,9 +643,9 @@ Généralement, le texte aura un différent couleur du fond.
   <iframe height='40' scrolling='no' src='demos/balise-mark.html'></iframe>
 </p>
 
-L'élément `<em>` (**em**phasis) indique que le texte est de forte accent.
-Généralement, le texte sera met en italique. La combinaison de `<em>` et
-`<strong>` (l'un dans l'autre) augment l'importance du texte.
+L'élément `<em>` (**em**phasise) indique que le texte est de forte accent.
+Généralement, le texte sera mis en itallique. La combinaison de `<em>` et
+`<strong>` (l'un dans l'autre) augmente l'importance du texte.
 
 ```html
 {% include_absolute _cours/demos/balise-em.html %}
@@ -613,9 +657,9 @@ Généralement, le texte sera met en italique. La combinaison de `<em>` et
 
 #### Abréviation et Citation
 
-L'élément `<abbr>` permet d'indiquer un abréviation avec son explication en
-utilisant l'attribut `title` que sera affichée dans un tooltip quand le souris
-est ci dessus du texte. Le mise en forme du texte diffère entre les
+L'élément `<abbr>` permet d'indiquer une abréviation avec son explication en
+utilisant l'attribut `title` qui sera affichée dans un _tooltip_ quand la
+souris sera dessus du texte. La mise en forme du texte diffère entre les
 navigateurs.
 
 ```html
@@ -627,8 +671,8 @@ navigateurs.
 </p>
 
 L'élément `<cite>` permet de citer un objet ou un travail par nom ou URL. Par
-exemple, il est utilisé pour citer un livre, un recherche, un film, une
-musique, un jeu ou un site,... . Généralement, le texte est mis en italique.
+exemple, il est utilisé pour citer un livre, une recherche, un film, une
+musique, un jeu ou un site, etc. Généralement, le texte est mis en italique.
 
 ```html
 {% include_absolute _cours/demos/balise-cite.html %}
@@ -638,9 +682,10 @@ musique, un jeu ou un site,... . Généralement, le texte est mis en italique.
   <iframe height='40' scrolling='no' src='demos/balise-cite.html'></iframe>
 </p>
 
-L'élément `<q>` (**q**uotation) permet de coter un texte. L'attribut optionnel
-`cite` référence l'URL de source de l'information. Généralement, le texte sera
-délimité par deux côtes. L'élément `<blockquote>` permet de coter un bloc.
+L'élément `<q>` (**q**uotation) permet de mettre un texte entre quôtes.
+L'attribut optionnel `cite` référence l'URL de source de l'information.
+Généralement, le texte sera délimité par deux quôtes. L'élément `<blockquote>`
+permet de quôter un bloc.
 
 ```html
 {% include_absolute _cours/demos/balise-q.html %}
@@ -664,7 +709,7 @@ logiciel. Le texte sera affiché en font monospace.
 </p>
 
 La combinaison de l'élément `<code>` avec l'élément `<pre>` permet d'insérer
-un bloc de code source en gardant les espaces et les retourne la ligne.
+un bloc de code source en gardant les espaces et les retours à la ligne.
 
 ```html
 {% include_absolute _cours/demos/balise-pre-code.html %}
@@ -675,23 +720,23 @@ un bloc de code source en gardant les espaces et les retourne la ligne.
 </p>
 
 HTML définit un ensemble d'autres éléments permettant de présenter des
-fragments de texte comme des variables en utilisant `<var>`, des textes saisi
-par l'utilisateur au programme ou un ensemble des commandes en utilisant
-`<kbd>`, le texte générer par un programme en utilisant `<samp>`.
+fragments de texte comme des variables en utilisant `<var>`, des textes saisis
+par l'utilisateur au programme ou un ensemble de commandes en utilisant
+`<kbd>`, le texte généré par un programme en utilisant `<samp>`.
 
-### Les balises universels
+### Les balises universelles
 
-Le HTML définit deux éléments universels qui sont général qui n'ont aucune
+Le HTML définit deux éléments universels qui sont généraux, qui n'ont aucune
 signification sémantique ou physique (aucune mise en forme prédéfinie). Ces
 deux éléments sont:
 
-- `<span>`: C'est l'élément en ligne (de contenu phrasé); C'est à dire qui il
-  peut être contenu dans un paragraphe et qu'il ne cause pas la création d'un
-  nouveau bloc. La mise en forme de cet élément est fait par le CSS à travers
-  la définition d'un identificateur unique (l'attribut `id`) ou l'ensemble des
-  classe où il appartient (l'attribut `class`).
-- `<div>`: C'est l'élément bloc; C'est à dire qu'il occupe toute la largeur à
-  disposition et crée une cassure de la ligne visuelle avant et après lui.
+- `<span>`: C'est l'élément en ligne (_inline_) (de contenu phrasé) ; C'est à
+  dire qu'il peut être contenu dans un paragraphe et qu'il ne cause pas la
+  création d'un nouveau bloc. La mise en forme de cet élément est faite par le
+  CSS à travers la définition d'un identificateur unique (l'attribut `id`) ou
+  l'ensemble des classes auxquelles il appartient (l'attribut `class`).
+- `<div>`: C'est l'élément bloc ; c'est à dire qu'il occupe toute la largeur à
+  disposition et crée une cassure de la ligne visuelle avant lui et après.
   Aussi, la mise en forme de cet élément est à travers l'attribut `id` ou
   l'attribut `class`.
 
@@ -715,11 +760,11 @@ Un exemple de l'élément `<div>`:
 Balises structurantes
 ---------------------
 
-HTML5 a ajouté un ensembles des balises dont un ensemble des balises
-structurantes qui permettre de construire un document HTML plus sémantique et
-ils sont préférés à utiliser au lien de `<div>` quand possible. Ces balises
-n'ont pas un effet visuel dans le document, c'est le rôle du CSS.  Les
-nouvelles balises structurantes du HTML5:
+HTML5 a ajouté un ensembles de balises dont un ensemble des balises
+structurantes qui permettent de construire un document HTML plus sémantique et
+qui sont préférées à l'utilisation de `<div>` quand c'est possible. Ces balises
+n'ont pas un effet visuel dans le document. C'est le rôle du CSS.
+ Les nouvelles balises structurantes du HTML5:
 
 header
 : Section d'introduction d'un article, d'une autre section ou du document
