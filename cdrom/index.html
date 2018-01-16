@@ -20,16 +20,16 @@
     <h2 class="ml-4">Candidature au poste Maître Technologue <small class="text-muted"> - Sawssen Hariz Abid</small></h2>
     <div class="tabs">
       <nav>
-        <ul class="nav " role="tablist">
-          <li class=""><a class="" data-toggle="tab" role="tab" href="#tab-cv">CV</a></li>
-          <li class=""><a class="" data-toggle="tab" role="tab" href="#tab-diplomes">Diplômes</a></li>
-          <li class=""><a class="" data-toggle="tab" role="tab" href="#tab-activites">Rapport d'activités</a></li>
-          <li class=""><a class="" data-toggle="tab" role="tab" href="#tab-cours">Supports de Cours et de TP</a></li>
-          <li class=""><a class="" data-toggle="tab" role="tab" href="#tab-livres">Livres</a></li>
-          <li class=""><a class="" data-toggle="tab" role="tab" href="#tab-recherches">Travaux Scientifiques</a></li>
-          <li class=""><a class="" data-toggle="tab" role="tab" href="#tab-industriel">Convention Industrielle</a></li>
-          <li class=""><a class="" data-toggle="tab" role="tab" href="#tab-formations">Formations</a></li>
-          <li class=""><a class="" data-toggle="tab" role="tab" href="#tab-attestations">Attestations</a></li>
+        <ul class="nav" role="tablist">
+          <li><a data-toggle="tab" role="tab" href="#tab-cv">CV</a></li>
+          <li><a data-toggle="tab" role="tab" href="#tab-diplomes">Diplômes</a></li>
+          <li><a data-toggle="tab" role="tab" href="#tab-activites">Rapport d'activités</a></li>
+          <li><a data-toggle="tab" role="tab" href="#tab-cours">Supports de Cours et de TP</a></li>
+          <li><a data-toggle="tab" role="tab" href="#tab-livres">Livres</a></li>
+          <li><a data-toggle="tab" role="tab" href="#tab-recherches">Travaux Scientifiques</a></li>
+          <li><a data-toggle="tab" role="tab" href="#tab-industriel">Convention Industrielle</a></li>
+          <li><a data-toggle="tab" role="tab" href="#tab-formations">Formations</a></li>
+          <li><a data-toggle="tab" role="tab" href="#tab-attestations">Attestations</a></li>
         </ul>
       </nav>
     </div>
@@ -123,7 +123,7 @@
             <object data="./cours/CoursProgrammationC20172018.pdf" id="cours-c" class="tab-pane fade" role="tabpanel" type="application/pdf"></object>
             <object data="./cours/Algorithmique Avancee.pdf" id="cours-algo-avance" class="tab-pane fade" role="tabpanel" type="application/pdf"></object>
             <object data="./cours/ATELIERS ALGORITHMIQUE AVANCEE.pdf" id="cours-atelier-algo-avance" class="tab-pane fade" role="tabpanel" type="application/pdf"></object>
-            <iframe src="https://web101.tik.tn/" id="cours-web" class="tab-pane fade" role="tabpanel" type="application/pdf"></iframe>
+            <iframe src="https://programmation-web.com/" id="cours-web" class="tab-pane fade" role="tabpanel"></iframe>
           </div>
         </section>
       </div>
@@ -141,7 +141,7 @@
             <a href="#livre-merise" class="list-group-item list-group-item-action" data-toggle="list" role="tab">Merise</a>
             <div class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
               Livres en Cours
-              <span class="badge badge-primary badge-pill">2</span>
+              <span class="badge badge-primary badge-pill">1</span>
             </div>
             <a href="#livre-annales" class="list-group-item list-group-item-action" data-toggle="list" role="tab">Annales</a>
           </div>
@@ -149,8 +149,8 @@
         <section class="col-9">
           <div class="tab-content embed-responsive">
             <object data="./livres/algorithmique-programmation-C-page-de-garde.pdf" id="livre-algo-c" class="tab-pane fade active show" role="tabpanel" type="application/pdf"></object>
-            <object data="./livres/" id="cours-asd" class="tab-pane fade" role="tabpanel" type="application/pdf"></object>
-            <object data="./livres" id="cours-asd" class="tab-pane fade" role="tabpanel" type="application/pdf"></object>
+            <object data="./livres/merise-couverture.jpg" id="livre-merise" class="tab-pane fade" role="tabpanel" type="image/jpeg"></object>
+            <object data="./livres/annales.pdf" id="livre-annales" class="tab-pane fade" role="tabpanel" type="application/pdf"></object>
           </div>
         </section>
       </div>
@@ -192,11 +192,11 @@
                   <source src="./recherches/imgs/suiveur-solaire-prototype-etudiants.mp4" type="video/mp4">
                 </video>
               </div>
-              <ul class="gallery">
-                <li data-poster="./recherches/imgs/suiveur-solaire-prototype-etudiants.jpg" data-sub-html="Prototype fait par les étudiants" data-html="#video-suiveur-solaire">
+              <div class="gallery">
+                <a href="" data-poster="./recherches/imgs/suiveur-solaire-prototype-etudiants.jpg" data-sub-html="Prototype fait par les étudiants" data-html="#video-suiveur-solaire" class="video-item">
                   <img src="./recherches/imgs/suiveur-solaire-prototype-etudiants.jpg" />
-                </li>
-              </ul>
+                </a>
+              </div>
             </div>
             <object data="./recherches/IdentifiantUnique.pdf" id="papier-identifiant-unique" class="tab-pane fade" role="tabpanel" type="application/pdf"></object>
             <object data="./recherches/IdentifiantUnique-Poster-1.pdf" id="poster-identifiant-unique-1" class="tab-pane fade" role="tabpanel" type="application/pdf"></object>
@@ -215,27 +215,6 @@
     <div class="tab-pane fade" role="tabpanel" id="tab-formations">
       <section class="container">
         <div class="gallery">
-          <a href="./attestations/enseigner-avec-moodle.jpg"><img src="./attestations/enseigner-avec-moodle.jpg" alt="Enseigner avec Moodle - I-FeL" /></a>
-          <a href="./attestations/ifl.jpg"><img src="./attestations/ifl.jpg" alt="Pédagogie et Technologie - I-FeL C1" /></a>
-          <a href="./attestations/ifel3.jpg"><img src="./attestations/ifel3.jpg" alt="Scénarisation d'un cours en Ligne - I-FeL C3" /></a>
-          <a href="./attestations/initiation-aux-mooc.jpg"><img src="./attestations/initiation-aux-mooc.jpg" alt="Initiation aux MOOC / CLOM" /></a>
-          <a href="./attestations/mooc.jpg"><img src="./attestations/mooc.jpg" alt="Initiation aux MOOC / CLOM" /></a>
-          <a href="./attestations/initiation-moodle.jpg"><img src="./attestations/initiation-moodle.jpg" alt="Initiation à l'utilisation de la platforme Moodle" /></a>
-          <a href="./attestations/cd-interactif.jpg"><img src="./attestations/cd-interactif.jpg" alt="CD Intératif" /></a>
-          <a href="./attestations/concentrateur-cylindro-parabolique.jpg"><img src="./attestations/concentrateur-cylindro-parabolique.jpg" /></a>
-          <a href="./attestations/impact-identifiant-unique-systemes-inter-organisationnels.jpg"><img src="./attestations/impact-identifiant-unique-systemes-inter-organisationnels.jpg" /></a>
-          <a href="./attestations/cratt-2017.jpg"><img src="./attestations/cratt-2017.jpg" /></a>
-          <a href="./attestations/raspberry-pi.jpg"><img src="./attestations/raspberry-pi.jpg" /></a>
-          <a href="./attestations/arduino-formation.jpg"><img src="./attestations/arduino-formation.jpg" /></a>
-          <a href="./attestations/arduino-participation.jpg"><img src="./attestations/arduino-participation.jpg" /></a>
-          <a href="./attestations/lotus.jpg"><img src="./attestations/lotus.jpg" /></a>
-          <a href="./attestations/cloud-computing.jpg"><img src="./attestations/cloud-computing.jpg" /></a>
-          <a href="./attestations/cloud-computing-iot-bigdata.jpg"><img src="./attestations/cloud-computing-iot-bigdata.jpg" /></a>
-          <a href="./attestations/java.jpg"><img src="./attestations/java.jpg" /></a>
-          <a href="./attestations/jse7.jpg"><img src="./attestations/jse7.jpg" /></a>
-          <a href="./attestations/jee.jpg"><img src="./attestations/jee.jpg" /></a>
-          <a href="./attestations/python-gtk-django.jpg"><img src="./attestations/python-gtk-django.jpg" /></a>
-          <a href="./attestations/webapp.jpg"><img src="./attestations/webapp.jpg" /></a>
         </div>
       </section>
     </div>
@@ -255,6 +234,7 @@
           <a href="./attestations/initiation-aux-mooc.jpg"><img src="./attestations/initiation-aux-mooc.jpg" alt="Initiation aux MOOC / CLOM" /></a>
           <a href="./attestations/mooc.jpg"><img src="./attestations/mooc.jpg" alt="Initiation aux MOOC / CLOM" /></a>
           <a href="./attestations/initiation-moodle.jpg"><img src="./attestations/initiation-moodle.jpg" alt="Initiation à l'utilisation de la platforme Moodle" /></a>
+          <a href="./attestations/ressources-education-libres.jpg"><img src="./attestations/ressources-education-libres.jpg" alt="" /></a>
           <a href="./attestations/cd-interactif.jpg"><img src="./attestations/cd-interactif.jpg" alt="CD Intératif" /></a>
           <a href="./attestations/concentrateur-cylindro-parabolique.jpg"><img src="./attestations/concentrateur-cylindro-parabolique.jpg" /></a>
           <a href="./attestations/impact-identifiant-unique-systemes-inter-organisationnels.jpg"><img src="./attestations/impact-identifiant-unique-systemes-inter-organisationnels.jpg" /></a>
@@ -262,7 +242,10 @@
           <a href="./attestations/raspberry-pi.jpg"><img src="./attestations/raspberry-pi.jpg" /></a>
           <a href="./attestations/arduino-formation.jpg"><img src="./attestations/arduino-formation.jpg" /></a>
           <a href="./attestations/arduino-participation.jpg"><img src="./attestations/arduino-participation.jpg" /></a>
+          <a href="./attestations/env-arduino.jpg"><img src="./attestations/env-arduino.jpg" /></a>
           <a href="./attestations/lotus.jpg"><img src="./attestations/lotus.jpg" /></a>
+          <a href="./attestations/latex.jpg"><img src="./attestations/latex.jpg" /></a>
+          <a href="./attestations/Attest_SfaxCPC.jpg"><img src="./attestations/Attest_SfaxCPC.jpg" /></a>
           <a href="./attestations/cloud-computing.jpg"><img src="./attestations/cloud-computing.jpg" /></a>
           <a href="./attestations/cloud-computing-iot-bigdata.jpg"><img src="./attestations/cloud-computing-iot-bigdata.jpg" /></a>
           <a href="./attestations/java.jpg"><img src="./attestations/java.jpg" /></a>
@@ -275,15 +258,15 @@
 
     </div>
   </main>
-  <script src="./assets/vendor/jquery/js/jquery.js"></script>
-  <script src="./assets/vendor/bootstrap/js/bootstrap.js"></script>
-  <script src="./assets/vendor/justifiedGallery/jquery.justifiedGallery.min.js"></script>
-  <script src="./assets/vendor/lightgallery/js/lightgallery.js"></script>
-  <script src="./assets/vendor/lg-thumbnail/lg-thumbnail.js"></script>
-  <script src="./assets/vendor/lg-zoom/lg-zoom.js"></script>
-  <script src="./assets/vendor/lg-fullscreen/lg-fullscreen.js"></script>
-  <script src="./assets/vendor/lg-video/lg-video.js"></script>
-  <script src="./assets/js/main.js"></script>
+  <script defer src="./assets/vendor/jquery/js/jquery.js"></script>
+  <script defer src="./assets/vendor/bootstrap/js/bootstrap.js"></script>
+  <script defer src="./assets/vendor/justifiedGallery/jquery.justifiedGallery.min.js"></script>
+  <script defer src="./assets/vendor/lightgallery/js/lightgallery.js"></script>
+  <script defer src="./assets/vendor/lg-thumbnail/lg-thumbnail.js"></script>
+  <script defer src="./assets/vendor/lg-zoom/lg-zoom.js"></script>
+  <script defer src="./assets/vendor/lg-fullscreen/lg-fullscreen.js"></script>
+  <script defer src="./assets/vendor/lg-video/lg-video.js"></script>
+  <script defer src="./assets/js/main.js"></script>
 </body>
 
 </html>

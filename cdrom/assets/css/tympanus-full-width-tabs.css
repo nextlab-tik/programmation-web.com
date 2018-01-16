@@ -1,15 +1,5 @@
 /* Based on tympanus.net Full Width Tabs blueprint */
 
-@font-face {
-    font-family: icomoon;
-    src: url('../fonts/icomoon/icomoon.eot');
-    src: url('../fonts/icomoon/icomoon.eot') format('embedded-opentype'), url('../fonts/icomoon/icomoon.woff') format('woff'), url('../fonts/icomoon/icomoon.ttf') format('truetype'), url('../fonts/icomoon/icomoon.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Icons created with icomoon.io/app */
-
 .tabs {
     position: relative;
     width: 100%;
@@ -104,11 +94,16 @@
     }
 }
 
-@media screen and (max-width: 32em) {
+@media screen and (max-width: 1100px) {
+    header h2.ml-4 {
+        font-size: 1.85em;
+        margin-left: 0 !important;
+    }
     .tabs nav ul,
     .tabs nav ul li a {
-        width: 100%;
-        padding: 0;
+        /*width: 100%;*/
+        padding: 0 2px;
+        font-size: 0.9em;
     }
     .tabs nav ul li {
         margin: 0 0 0 -1px;
