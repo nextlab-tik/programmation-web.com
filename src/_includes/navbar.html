@@ -1,17 +1,29 @@
+{% if page.depth == 0 %}
+  {% assign prefix = '.' %}
+{% else %}
+  {% if page.depth == 1 %}
+    {% assign prefix = '..' %}
+  {% else %}
+    {% if page.depth == 2 %}
+      {% assign prefix = '../..' %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
 <nav class="bottom">
-  <a href="{{ '/index.html' | relative_url }}">{{ site.title }}</a>
+  <a href="{{ '/index.html' | relative_url | prepend:prefix }}">{{ site.title }}</a>
   <br>
   <span>
   {%- if page.previous %}
-      ←Préc: <a rel="prev" href="{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a>
+      ←Préc: <a rel="prev" href="{{ page.previous.url | relative_url | prepend:prefix }}">{{ page.previous.title }}</a>
   {% endif -%}
   </span>
   <span>
-      ↑ <a href="{{ "/index.html" | relative_url }}">Sommaire</a>
+      ↑ <a href="{{ "/index.html" | relative_url | prepend:prefix }}">Sommaire</a>
   </span>
   <span>
   {%- if page.next %}
-      Suiv: <a rel="next" href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a>→
+      Suiv: <a rel="next" href="{{ page.next.url | relative_url | prepend:prefix }}">{{ page.next.title }}</a>→
   {% endif -%}
   </span>
 </nav>

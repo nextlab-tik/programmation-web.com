@@ -1,5 +1,6 @@
 ---
-title: À propos
+title: À Propos
+chapitre:
 permalink: /cours/about.html
 ---
 

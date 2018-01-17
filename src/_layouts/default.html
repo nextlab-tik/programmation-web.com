@@ -13,11 +13,5 @@
 
   {% include footer.html %}
 
-  {%- if page.embed -%}
-  <script src="{{ "/js/embed.js" | relative_url }}"></script>
-  {%- endif %}
-
-  {% if page.quiz -%}
-  <script src="{{ "/js/quiz.js" | relative_url }}"></script>
-  {%- endif %}
+  {% include scripts.html %}
 </html>

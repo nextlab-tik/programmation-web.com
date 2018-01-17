@@ -1,0 +1,19 @@
+{% if page.depth == 0 %}
+  {% assign prefix = '.' %}
+{% else %}
+  {% if page.depth == 1 %}
+    {% assign prefix = '..' %}
+  {% else %}
+    {% if page.depth == 2 %}
+      {% assign prefix = '../..' %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{%- if page.embed -%}
+<script src="{{ "/js/embed.js" | relative_url | prepend:prefix }}"></script>
+{%- endif %}
+
+{% if page.quiz -%}
+<script src="{{ "/js/quiz.js" | relative_url | prepend:prefix }}"></script>
+{%- endif %}

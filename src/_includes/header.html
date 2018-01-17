@@ -1,14 +1,26 @@
+{% if page.depth == 0 %}
+  {% assign prefix = '.' %}
+{% else %}
+  {% if page.depth == 1 %}
+    {% assign prefix = '..' %}
+  {% else %}
+    {% if page.depth == 2 %}
+      {% assign prefix = '../..' %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
 <header>
   <h1>{{ page.title }}</h1>
   <div class="subheading">
-    <a href="{{ "/index.html" | relative_url }}">{{ site.title }}</a>
+    <a href="{{ "/index.html" | relative_url | prepend:prefix }}">{{ site.title }}</a>
   </div>
   <nav>
     <form action="https://www.google.com/search">
       <ul>
-        <li><a href="{{ '/index.html' | relative_url }}">Cours</a></li>
-        <li><a href="{{ '/tp.html' | relative_url  }}">Travaux Pratiques</a></li>
-        <li><a href="{{ '/quiz.html' | relative_url }}">Evaluations</a></li>
+        <li><a href="{{ '/index.html' | relative_url | prepend:prefix }}">Cours</a></li>
+        <li><a href="{{ '/tp.html' | relative_url | prepend:prefix  }}">Travaux Pratiques</a></li>
+        <li><a href="{{ '/quiz.html' | relative_url | prepend:prefix }}">Evaluations</a></li>
         <li> </li>
         <li><input name="q" placeholder="Search" size="8" type="search" /></li>
       </ul>
