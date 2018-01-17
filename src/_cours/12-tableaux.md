@@ -23,7 +23,7 @@ présente une personne (son prénom dans la première colonne et son nom dans la
 deuxième colonne) :
 
 ```html
-{% include_absolute _cours/demos/tableau-simple.html %}
+{% include_relative demos/tableau-simple.html %}
 ```
 
 Le tableau résultant est:
@@ -37,7 +37,7 @@ utilisant la balise `<th>` (**t**able **h**eader) dans une ligne qui simplifie
 l'exploitation du tableau visuellement.
 
 ```html
-{% include_absolute _cours/demos/tableau-head.html %}
+{% include_relative demos/tableau-head.html %}
 ```
 
 Le tableau résultant est:
@@ -70,7 +70,7 @@ séances de TP sont de durée d'une heure. Sans les attributs de fusions, le
 tableau sera le suivant:
 
 ```html
-{% include_absolute _cours/demos/table-without-colspan.html %}
+{% include_relative demos/table-without-colspan.html %}
 ```
 
 <p>
@@ -82,7 +82,7 @@ utilisant l'attribut `colspan`.
 
 
 ```html
-{% include_absolute _cours/demos/table-colspan.html %}
+{% include_relative demos/table-colspan.html %}
 ```
 
 <p>
@@ -99,7 +99,7 @@ la balise `<tbody>`. Prenons l'exemple précédent avec le groupement des lignes
 :
 
 ```html
-{% include_absolute _cours/demos/tableau-thead-tfooter.html %}
+{% include_relative demos/tableau-thead-tfooter.html %}
 ```
 
 Le tableau résultant est:
@@ -112,7 +112,7 @@ Pour ajouter un titre (une légende) à un tableau, on utilise la balise
 `<caption>` après l'ouverture de la balise `<table>` ou avant sa fermeture:
 
 ```html
-{% include_absolute _cours/demos/tableau-caption.html %}
+{% include_relative demos/tableau-caption.html %}
 ```
 
 Le tableau résultant est:

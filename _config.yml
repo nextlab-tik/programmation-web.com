@@ -24,6 +24,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-relative-links
   - jekyll-paginate-v2
+  # - jekyll-toc
   # - jekyll-feed
 
 paginate: nil
@@ -80,3 +81,8 @@ defaults:
       layout: quiz
       bootstrap: true
       quiz: true
+
+toc:
+  min_level: 2
+  max_level: 4
+  type: ol
