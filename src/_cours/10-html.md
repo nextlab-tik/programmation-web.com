@@ -165,7 +165,7 @@ Les commentaires peuvent exister dans n'importe qu'elle partie du code HTML
 mais pas dans une balise (entre les chevrons de la balise). Prenons l'exemple:
 
 ```html
-{% include_absolute _cours/demos/commentaire.html %}
+{% include_relative demos/commentaire.html %}
 ```
 
 Le résultat sera:
@@ -254,7 +254,7 @@ contient des éléments pour 6 niveaux de titres : `<h1>`–`<h6>`. La plupart d
 temps, 3-4 niveaux suffisent amplement :
 
 ```html
-{% include_absolute _cours/demos/balise-h1.html %}
+{% include_relative demos/balise-h1.html %}
 ```
 
 <p>
@@ -270,7 +270,7 @@ paragraphes de texte. Vous les utiliserez fréquemment pour placer du texte sur
 une page:
 
 ```html
-{% include_absolute _cours/demos/balise-p.html %}
+{% include_relative demos/balise-p.html %}
 ```
 
 <p>
@@ -282,7 +282,7 @@ comme définit au dehors et le paragraphe externe est terminée avant l'ouvertur
 de la balise de l'élément `<p>` interne.
 
 ```html
-{% include_absolute _cours/demos/balise-p-inside.html %}
+{% include_relative demos/balise-p-inside.html %}
 ```
 
 <p>
@@ -296,7 +296,7 @@ pouvez utiliser la balise `<pre>` au lieu de `<p>`.
 Exemple :
 
 ```html
-{% include_absolute _cours/demos/p-vs-pre.html %}
+{% include_relative demos/p-vs-pre.html %}
 ```
 
 <p>
@@ -334,7 +334,7 @@ constructeurs qui travaillent ensemble...</p>
 On pourrait faire :
 
 ```html
-{% include_absolute _cours/demos/balise-ul.html %}
+{% include_relative demos/balise-ul.html %}
 ```
 
 <p>
@@ -344,7 +344,7 @@ On pourrait faire :
 Une liste ordonnées est similaire :
 
 ```html
-{% include_absolute _cours/demos/balise-ol.html %}
+{% include_relative demos/balise-ol.html %}
 ```
 
 <p>
@@ -355,7 +355,7 @@ Une liste peut être interne dans une liste. On peut aussi mélanger les listes
 des différents types.
 
 ```html
-{% include_absolute _cours/demos/balise-ul-ol.html %}
+{% include_relative demos/balise-ul-ol.html %}
 ```
 
 <p>
@@ -372,7 +372,7 @@ spécifier des multiple de termes par description ou multiple description par
 terme.
 
 ```html
-{% include_absolute _cours/demos/description-list.html %}
+{% include_relative demos/description-list.html %}
 ```
 
 Le résultat sera :
@@ -389,7 +389,7 @@ de l'image utilisée est définie via l'attribut `src` (pour **s**ou**rc**e) qui
 contient le chemin vers le fichier de l'image.
 
 ```html
-{% include_absolute _cours/demos/balise-img.html %}
+{% include_relative demos/balise-img.html %}
 ```
 
 <p>
@@ -414,7 +414,7 @@ sera calculée relativement à la dimension spécifiée pour garder le format de
 l'image origine.
 
 ```html
-{% include_absolute _cours/demos/balise-img-height.html %}
+{% include_relative demos/balise-img-height.html %}
 ```
 
 <p>
@@ -424,7 +424,7 @@ l'image origine.
 Au contraire, si on spécifie les deux dimensions:
 
 ```html
-{% include_absolute _cours/demos/balise-img-height-width.html %}
+{% include_relative demos/balise-img-height-width.html %}
 ```
 
 <p>
@@ -556,7 +556,7 @@ l'utilisateur sans aucune signification d'importance. Par exemple, il est
 utilisé pour mettre en gras le nom d'un produit ou des mots clés.
 
 ```html
-{% include_absolute _cours/demos/balise-b.html %}
+{% include_relative demos/balise-b.html %}
 ```
 
 <p>
@@ -569,7 +569,7 @@ utilisé pour mettre en italique un texte écrit en langage étrangère ou un te
 technique.
 
 ```html
-{% include_absolute _cours/demos/balise-i.html %}
+{% include_relative demos/balise-i.html %}
 ```
 
 <p>
@@ -581,7 +581,7 @@ signification sémantique exacte comme les autres éléments mais il peut être
 utilisé pour indiquer par exemple un texte mal écrit.
 
 ```html
-{% include_absolute _cours/demos/balise-u.html %}
+{% include_relative demos/balise-u.html %}
 ```
 
 <p>
@@ -593,7 +593,7 @@ que le texte n'est plus précis ou relié au contexte. Pour indiquer que le text
 est supprimé par l'utilisateur, on utilise l'élément `<del>` (**del**ete).
 
 ```html
-{% include_absolute _cours/demos/balise-s.html %}
+{% include_relative demos/balise-s.html %}
 ```
 
 <p>
@@ -605,7 +605,7 @@ que le texte est un commentaire ou une note comme une note de droit d'auteur ou
 une note légale.
 
 ```html
-{% include_absolute _cours/demos/balise-small.html %}
+{% include_relative demos/balise-small.html %}
 ```
 
 <p>
@@ -623,7 +623,7 @@ il est utilisé pour présenter un alerte ou un message très sérieux.
 Généralement, le texte sera mis en gras.
 
 ```html
-{% include_absolute _cours/demos/balise-strong.html %}
+{% include_relative demos/balise-strong.html %}
 ```
 
 <p>
@@ -636,7 +636,7 @@ recherche ou pour indiquer que le texte est intéressant pour l'utilisateur.
 Généralement, le texte aura une couleur de fond différente.
 
 ```html
-{% include_absolute _cours/demos/balise-mark.html %}
+{% include_relative demos/balise-mark.html %}
 ```
 
 <p>
@@ -648,7 +648,7 @@ Généralement, le texte sera mis en itallique. La combinaison de `<em>` et
 `<strong>` (l'un dans l'autre) augmente l'importance du texte.
 
 ```html
-{% include_absolute _cours/demos/balise-em.html %}
+{% include_relative demos/balise-em.html %}
 ```
 
 <p>
@@ -663,7 +663,7 @@ souris sera dessus du texte. La mise en forme du texte diffère entre les
 navigateurs.
 
 ```html
-{% include_absolute _cours/demos/balise-abbr.html %}
+{% include_relative demos/balise-abbr.html %}
 ```
 
 <p>
@@ -675,7 +675,7 @@ exemple, il est utilisé pour citer un livre, une recherche, un film, une
 musique, un jeu ou un site, etc. Généralement, le texte est mis en italique.
 
 ```html
-{% include_absolute _cours/demos/balise-cite.html %}
+{% include_relative demos/balise-cite.html %}
 ```
 
 <p>
@@ -688,7 +688,7 @@ Généralement, le texte sera délimité par deux quôtes. L'élément `<blockqu
 permet de quôter un bloc.
 
 ```html
-{% include_absolute _cours/demos/balise-q.html %}
+{% include_relative demos/balise-q.html %}
 ```
 
 <p>
@@ -701,7 +701,7 @@ L'élément `<code>` indique que le texte est un partie de code source d'un
 logiciel. Le texte sera affiché en font monospace.
 
 ```html
-{% include_absolute _cours/demos/balise-code.html %}
+{% include_relative demos/balise-code.html %}
 ```
 
 <p>
@@ -712,7 +712,7 @@ La combinaison de l'élément `<code>` avec l'élément `<pre>` permet d'insére
 un bloc de code source en gardant les espaces et les retours à la ligne.
 
 ```html
-{% include_absolute _cours/demos/balise-pre-code.html %}
+{% include_relative demos/balise-pre-code.html %}
 ```
 
 <p>
@@ -743,7 +743,7 @@ deux éléments sont:
 Un exemple de l'élément `<span>`:
 
 ```html
-{% include_absolute _cours/demos/balise-span.html %}
+{% include_relative demos/balise-span.html %}
 ```
 <p>
   <iframe height='40' scrolling='no' src='demos/balise-span.html'></iframe>
@@ -751,7 +751,7 @@ Un exemple de l'élément `<span>`:
 
 Un exemple de l'élément `<div>`:
 ```html
-{% include_absolute _cours/demos/balise-div.html %}
+{% include_relative demos/balise-div.html %}
 ```
 <p>
   <iframe height='80' scrolling='no' src='demos/balise-div.html'></iframe>

@@ -118,7 +118,7 @@ On peut aussi intégrer le code SVG directement dans notre code HTML en
 utilisant la balise SVG.
 
 ```html
-{% include_absolute _cours/demos/image-svg.html %}
+{% include_relative demos/image-svg.html %}
 ```
 <p>
   <iframe height='240' scrolling='no' src='demos/image-svg.html'></iframe>
@@ -174,14 +174,14 @@ Prenons les deux exemples suivants d'intégration de vidéo YouTube et d'une
 carte géographique Google Maps dans le document.
 
 ```html
-{% include_absolute _cours/demos/balise-iframe-youtube.html %}
+{% include_relative demos/balise-iframe-youtube.html %}
 ```
 <p>
   <iframe height='320' scrolling='no' src='demos/balise-iframe-youtube.html'></iframe>
 </p>
 
 ```html
-{% include_absolute _cours/demos/balise-iframe-google-maps.html %}
+{% include_relative demos/balise-iframe-google-maps.html %}
 ```
 <p>
   <iframe height='420' scrolling='no' src='demos/balise-iframe-google-maps.html'></iframe>
@@ -203,7 +203,7 @@ Les attributs principales de `<object>`:
 Prenons l'exemple d'intégration d'un fichier PDF.
 
 ```html
-{% include_absolute _cours/demos/balise-object-pdf.html %}
+{% include_relative demos/balise-object-pdf.html %}
 ```
 
 Notons que l'utilisation de les éléments `<object>` et `<embed>` est rare à
@@ -239,5 +239,5 @@ le code d'intégration dans le dialogue du partage du vidéo. Le code suivant es
 le code d'intégration d'un vidéo YouTube:
 
 ```html
-{% include_absolute _cours/demos/video-youtube.html %}
+{% include_relative demos/video-youtube.html %}
 ```

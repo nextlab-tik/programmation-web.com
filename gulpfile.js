@@ -35,6 +35,7 @@ const HTMLFiles = [
   '!*/_quiz/*.html',
   '!*/_cours/*.html',
   '!*/vendor/**/*',
+  '!src/_cours/demos/p-vs-pre.html',
   '!www/**/*',
 ];
 
