@@ -159,7 +159,7 @@ img {
     display: none;
 }
 
-.toc h2.no-chapitre~ol>li a {
+.toc h2.no-chapitre~ol>li>a {
     font-weight: bold;
     font-size: 20px;
     padding: 0;

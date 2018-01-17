@@ -4,10 +4,10 @@ chapitre:
 permalink: /cours/about.html
 ---
 
-Ce cours est écrit par Sawssen Hariz pour être un référence pour ces étudiants.
+Ce cours est écrit par Sawssen Hariz pour être un référence pour les étudiants.
 
-Ce cours est inspiré par grand nombre des cours et guides en lignes. Je veux
-les citer:
+Ce cours est inspiré par un grand nombre des cours et des guides en lignes. Je
+veux citer principalement:
 
 - [Mozilla Developer Network](https://developer.mozilla.org/): C'est le
   ressource numéro 1 dans le monde pour les documentations professionnels des
