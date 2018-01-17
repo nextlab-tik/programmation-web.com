@@ -20,7 +20,6 @@ toc: true
   {% endif %}
 
 <div class="page-break"></div>
-
 <h1 class="chapitre">{{part.name}}</h1>
 
 {% for cours in part.items %}

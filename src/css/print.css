@@ -53,19 +53,26 @@ nav {
     counter-reset: subsubsubsection;
 }
 
+.chapitre {
+    counter-increment: chapitre;
+    counter-reset: section;
+}
+
 .chapitre::before {
     text-transform: initial;
     text-shadow: none;
     display: block;
     text-align: right;
     font-size: 20px;
-    counter-increment: chapitre;
     content: "Chapitre " counter(chapitre, upper-roman) ": ";
 }
 
-h1:not(.chapitre)::before {
+h1:not(.chapitre) {
     counter-increment: section;
-    content: counter(section) " ";
+}
+
+h1:not(.chapitre)::before {
+    content: counter(section) " - ";
 }
 
 /* Pages definition */
@@ -100,6 +107,11 @@ img {
 
 /* Table of Content */
 
+.toc {
+    counter-reset: toc-chapitre;
+    counter-reset: toc-section;
+}
+
 .toc h1 {
     text-align: center;
     font-weight: 900;
@@ -120,8 +132,19 @@ img {
     font-size: 20px;
     padding: 0;
     margin: 0;
+    counter-increment: toc-chapitre;
+    counter-reset: toc-section;
 }
 
 .toc h2::before {
-    content: "Chapitre: ";
+    content: "Chapitre " counter(toc-chapitre) " : ";
+}
+
+.toc>ol>li {
+    list-style: none;
+    counter-increment: toc-section;
+}
+
+.toc>ol>li::before {
+    content: counter(toc-section) ". ";
 }

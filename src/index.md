@@ -13,6 +13,8 @@ Dans ce cours, on va introduire le web, le langage de balisage HTML5 et le
 langage de style CSS3. Ce cours est destiné à tous ceux qui veulent développer
 des sites simples et modernes. Chaque chapitre contient une série d'exercices.
 
+<div class="summary-toc-prefix"></div>
+
 {% include toc.md doc_url=true %}
 
 

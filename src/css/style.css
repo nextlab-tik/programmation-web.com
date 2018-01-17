@@ -768,6 +768,19 @@ h3 *[class^="section-number"] {
     border-top: none;
 }
 
+.summary-toc-prefix~h2 {
+    counter-reset: toc-section;
+}
+
+.summary-toc-prefix~ol>li {
+    list-style: none;
+    counter-increment: toc-section;
+}
+
+.summary-toc-prefix~ol>li::before {
+    content: counter(toc-section) ". ";
+}
+
 header,
 footer,
 .divider,
