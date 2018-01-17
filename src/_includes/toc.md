@@ -7,13 +7,14 @@
 
   <h2>{{part.name}}</h2>
 
-  <ol>
-    {% for cours in part.items %}
-    <li>
-      <a href="{{ cours.url }}">{{ cours.title }}</a>
-      {{ cours.output | toc_only: cours.url }}
-    </li>
-    {% endfor %}
-  </ol>
+{% if include.doc_url %}
+  {% for cours in part.items %}
+  {{ cours.output | toc_only: cours.url }}
+  {% endfor %}
+{% else %}
+  {% for cours in part.items %}
+  {{ cours.output | toc_only }}
+  {% endfor %}
+{% endif %}
 
 {% endfor %}

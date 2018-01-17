@@ -1,7 +1,7 @@
 <header>
-  <h1>{{ site.title }}</h1>
+  <h1>{{ page.title }}</h1>
   <div class="subheading">
-    &nbsp; Par <a href="mailto:{{ site.email }}">{{ site.author }}</a>
+    <a href="{{ "/index.html" | relative_url }}">{{ site.title }}</a>
   </div>
   <nav>
     <form action="https://www.google.com/search">
