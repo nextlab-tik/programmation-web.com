@@ -1,6 +1,6 @@
 ---
 title: Formulaire
-chapitre: HTML5
+chapitre: HTML
 permalink: /cours/formulaires.html
 ---
 

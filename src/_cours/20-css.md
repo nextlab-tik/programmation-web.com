@@ -1,7 +1,7 @@
 ---
 title: Introduction CSS
-chapitre: CSS3
-permalink: /cours/css3.html
+chapitre: CSS
+permalink: /cours/css.html
 ---
 
 Le langage **CSS** (*Feuille de style en cascade*, *Cascading Style Sheets* en

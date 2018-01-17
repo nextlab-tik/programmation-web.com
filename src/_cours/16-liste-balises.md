@@ -1,6 +1,6 @@
 ---
 title: Liste des balises
-chapitre: HTML5
+chapitre: HTML
 permalink: /cours/liste-balises.html
 ---
 

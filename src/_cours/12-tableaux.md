@@ -1,6 +1,6 @@
 ---
 title: Tableaux
-chapitre: HTML5
+chapitre: HTML
 permalink: /cours/tableaux.html
 ---
 

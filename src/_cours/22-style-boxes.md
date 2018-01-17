@@ -1,6 +1,6 @@
 ---
 title: Style des boxes
-chapitre: CSS3
+chapitre: CSS
 permalink: /cours/style-boxes.html
 ---
 

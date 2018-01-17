@@ -1,6 +1,6 @@
 ---
 title: Mise en forme des tableaux
-chapitre: CSS3
+chapitre: CSS
 permalink: /cours/css-tableau.html
 ---
 

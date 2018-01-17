@@ -1,5 +1,5 @@
 ---
 title: Layout
-chapitre: CSS3
+chapitre: CSS
 permalink: /cours/layout.html
 ---

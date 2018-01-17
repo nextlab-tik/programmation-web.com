@@ -33,10 +33,6 @@ nav {
     display: none;
 }
 
-.page-break {
-    page-break-before: always;
-}
-
 .chapitre {
     font-size: 52px;
     font-weight: 900;
@@ -47,7 +43,9 @@ nav {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-body {
+/* Headers Counters */
+
+:root {
     counter-reset: chapitre;
     counter-reset: section;
     counter-reset: subsection;
@@ -67,5 +65,35 @@ body {
 
 h1:not(.chapitre)::before {
     counter-increment: section;
-    content: counter(section, decimal) " ";
+    content: counter(section) " ";
+}
+
+/* Pages definition */
+
+.page-break {
+    page-break-before: always;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
+
+h1+p,
+h2+p,
+h3+p,
+h4+p,
+h5+p,
+h6+p {
+    page-break-before: avoid;
+}
+
+iframe,
+img {
+    page-break-inside: avoid;
 }

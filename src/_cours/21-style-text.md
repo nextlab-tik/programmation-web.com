@@ -1,6 +1,6 @@
 ---
 title: Style de text
-chapitre: CSS3
+chapitre: CSS
 permalink: /cours/style-text.html
 ---
 

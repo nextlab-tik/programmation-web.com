@@ -1,6 +1,6 @@
 ---
 title: Multimédia et Intégration
-chapitre: HTML5
+chapitre: HTML
 permalink: /cours/multimedia.html
 ---
 
