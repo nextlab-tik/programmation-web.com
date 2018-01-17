@@ -186,7 +186,7 @@ HTML complète. Nous allons repartir de l'exemple contenu dans le fichier
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Ma première page web</title>
   </head>
   <body>
@@ -210,19 +210,19 @@ anciens navigateurs.
 est parfois appelé l'élément racine.
 
 `<head></head>`
-: l'élément `<head>`. Cet élément est utilisé comme un conteneur _(container)_
+: l'élément `<head>`. Cet élément est utilisé comme un conteneur (_container_)
 pour toutes les choses qui font partie de la page HTML mais qui ne sont pas du
 contenu affiché.  C'est dans cet élément qu'on mettra des mots-clés, une
 description de la page qui apparaîtra sur les moteurs de recherche, les liens
 vers les fichiers CSS à utiliser pour la mise en forme, les déclarations des
-jeux de caractères (character sets) à utiliser et ainsi de suite.
+jeux de caractères (_character sets_) à utiliser et ainsi de suite.
 
 `<body></body>`
 : l'élément `<body>`. Cet élément est celui qui contient tout le contenu que
 vous souhaitez afficher pour qu'il soit vu par les visiteurs : cela peut être
 du texte, des images, des vidéos, des fichiers sons, etc.
 
-`<meta charset="utf-8">`
+`<meta charset="utf-8" />`
 : Cet élément définit le jeu de caractères qui devrait être utilisé pour le
 document et indique que c'est utf-8. utf-8 regroupe l'ensemble des caractères
 connus utilisés dans les différents langages humains. Généralement utf-8 permet
@@ -234,7 +234,7 @@ l'extrême majorité des cas.
 : Cet élément définit le titre de votre page. C'est ce titre qui apparaîtra sur
 l'onglet lorsque la page sera chargée. C'est également ce titre qui sera
 utilisé pour décrire la page lorsque vous la placez dans vos marques-pages ou
-por gérer l'accessibilité au niveau des navigateurs.
+pour gérer l'accessibilité au niveau des navigateurs.
 
 Les balises principales
 -----------------------
