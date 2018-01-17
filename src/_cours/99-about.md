@@ -10,7 +10,7 @@ les citer:
 
 - [Mozilla Developer Network](https://developer.mozilla.org/): C'est le
   ressource numéro 1 dans le monde pour les documentations professionnels des
-  technologies du web. Pour des informations dans ce cous sont basés sur ces
+  technologies du Web. Pour des informations dans ce cous sont basés sur ces
   documentations. Quelques contenus et photos étaient pris depuis le tutoriel
   du MDN (version français et version anglais).
 - [Cours-Web.ch](https://cours-web.ch/): Quelques contenus dans notre cours est

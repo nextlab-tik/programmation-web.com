@@ -5,8 +5,8 @@ permalink: /cours/multimedia.html
 ---
 
 Avant le HTML5, pour l'ajout du contenu multimédia ou des animations dans une
-page web, les développeurs ont utilisé des plugins embarqués dans la page du
-web comme des plugins des lecteurs vidéos/audio (VLC, RealPlayer, QuickTime,
+page Web, les développeurs ont utilisé des plugins embarqués dans la page du
+Web comme des plugins des lecteurs vidéos/audio (VLC, RealPlayer, QuickTime,
 Windows Media Player, ...) ou des plateformes propriétaire comme Adobe Flash
 (anciennement Macromedia Flash) et Microsoft Silverlight. Ces solutions avons
 des limites comme le manque d'intégration avec le HTML/CSS, problèmes des
@@ -20,7 +20,7 @@ JavaScript.
 Les Vidéos
 ----------
 
-La balise `<video>` permet d'intégrer un vidéo dans la page web. Un exemple
+La balise `<video>` permet d'intégrer un vidéo dans la page Web. Un exemple
 d'un élément vidéo:
 
 ```html
@@ -36,7 +36,7 @@ vidéo (lecture, pause, contrôle du volume).
 - **autoplay**: attribut booléen pour spécifier que le vidéo doit commencer
 automatiquement quand la page est chargée.
 - **preload**: charger le contenu du fichier vidéo en même temps que la page
-  web. La valeur `auto` permet de charge tout le contenu du fichier. La valeur
+  Web. La valeur `auto` permet de charge tout le contenu du fichier. La valeur
   `metadata` (par défaut dans la majorité des navigateurs) permet de charge que
   les données méta du fichier vidéo (longueur du vidéo, ...). La valeur `none`
   permet de ne charger aucun données du vidéo.
@@ -92,19 +92,19 @@ Les images vectorielles
 
 Les images sont divisés en deux types principales:
 
-- Les images pixels: dont l'unité est le pixel. Ils sont définis par un matrice
-  des pixels. Les formats les plus connus sont: **JPEG**, **PNG**, **GIF**,
+- Les images pixels : dont l'unité est le pixel. Ils sont définis par un matrice
+  des pixels. Les formats les plus connus sont : **JPEG**, **PNG**, **GIF**,
   **BMP**. Ces images perdent la qualité quand ils sont agrandis plus que sont
   tailles original.
-- Les images vectoriels: dont l'unité est des éléments géométriques tel que un
+- Les images vectoriels : dont l'unité est des éléments géométriques tel que un
   rectangle, un cercle,... . Ces images ne perdent pas la qualité quand ils
   sont agrandis. La format la plus connue est **SVG**.
 
 La format **SVG** (**S**calable **V**ector **G**raphics) est un format d'image
 vectoriel basé sur la langage XML développé par **W3C** depuis 1999. Cette
 format est supportée par la majorité des éditeurs des images vectorielles. Il
-est utilisé dans le web pour structuré des images complexe que le HTML/CSS peut
-structurer.  SVG est désigné pour d'intégrer bien avec les technologies du web
+est utilisé dans le Web pour structuré des images complexe que le HTML/CSS peut
+structurer.  SVG est désigné pour d'intégrer bien avec les technologies du Web
 comme le HTML et CSS. Il support les animations aussi. La version courante est
 **SVG 1.1**.  La version **SVG 2.0** est en cours de développement.
 
@@ -131,20 +131,20 @@ Intégration de contenu externe
 l'intégration des autres types de ressources (p.ex: PDF, Flash, sous pages Web,
 ...) dans un document Web. Cette fonctionnalité était très importante surtout
 avant la standardisation des éléments `<video>` et `<audio>`. Pendant les 90s
-et le début de 2000s, les développeurs web ont utilisé l'élément `<object>` ou
+et le début de 2000s, les développeurs Web ont utilisé l'élément `<object>` ou
 plus moins l'élément `<embed>` qui permettent d'intégrer des différents types
 de ressources à travers des plugins (comme Adobe PDF Reader, VLC, RealPlayer,
 QuickTime, Windows Media Player, ...) ou des plateformes propriétaire comme
 Adobe Flash (anciennement Macromedia Flash), Java Applets et Microsoft
 Silverlight. Aussi, l'élément `<iframe>`, et ses précédents absolues `<frame>`
-et `<frameset>`, permettent l'intégration des sous page web dans le document
+et `<frameset>`, permettent l'intégration des sous page Web dans le document
 HTML.
 
 ### Intégration des pages Web
 
 On va discuter seulement l'élément `<iframe>` parce que les éléments `<frame>`
 et `<frameset>` sont obsolètes depuis HTML5. Cet élément permet d'intégrer des
-pages web dans le document HTML courant ce qui permet d'intégrer des contenus
+pages Web dans le document HTML courant ce qui permet d'intégrer des contenus
 des autres sites Web ou de réutiliser des contenus sans besoin de d'implémenter
 dans chaque page Web. Par exemple, on peut intégrer un vidéo ou un audio
 hébergé dans un fournisseur des services vidéos ou audio (YouTube, Vimeo,
@@ -154,9 +154,9 @@ Adsense, ...).
 
 `<frame>` accepte un multiple des attributs dont les principales sont:
 - `src`: C'est le seul attribut obligatoire. Il permet de spécifier l'URL de la
-  page web à intégrer.
+  page Web à intégrer.
 - `allowfullscreen`: Un attribut booléen pour permettre la page intégrée à
-  entrer le mode plain écran (par exemple: permettre le lecteur vidéo de
+  entrer le mode plain écran (par exemple : permettre le lecteur vidéo de
   YouTube de entre le mode plein écran).
 - `frameborder`: Si il est assigné la valeur "1", une bordure sera affichée
   autour l'élément qui est le défaut comportement. Si il est assigné la valeur
@@ -230,9 +230,9 @@ Ils y a un grand nombre des vendeurs des services de vidéos en ligne
 ([Soundcloud](https://soundcloud.com/), ...) qui sont gratuites et payantes.
 Ces services permettent d'héberger les vidéos/audio dans ses serveurs sans
 limites de tailles ou de bindwidths. Ces services permettre d'intégrer leurs
-lecteurs vidéos/audio dans vos pages web facilement avec un énormes nombres des
+lecteurs vidéos/audio dans vos pages Web facilement avec un énormes nombres des
 fonctionnalités. Ils sont la solutions la plus préférées pour ajouter des
-contenus multimédias aux sites web.
+contenus multimédias aux sites Web.
 
 Le code d'intégration est fourni par ces services. Par exemple, YouTube fourni
 le code d'intégration dans le dialogue du partage du vidéo. Le code suivant est

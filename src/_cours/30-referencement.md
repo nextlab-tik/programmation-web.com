@@ -11,7 +11,7 @@ souvent associé avec le positionnement.
 Il existe deux types de référencements :
 
 - **Le référencement naturel** consiste à optimiser les différentes pages de
-  son site web afin d'apparaître dans les « top » positions des résultats de
+  son site Web afin d'apparaître dans les « top » positions des résultats de
   moteurs de recherche.
 
 - **Les liens sponsorisés** ou positionnement publicitaire consiste à payer
@@ -42,7 +42,7 @@ Le nombre des utilisateurs du Web est des milliard d'utilisateurs dont la
 plus tard comptent en les moteurs de recherche pour trouver et accéder à
 l'information.
 
-Donc, le référencement web est une étape incontournable pour augmenter le
+Donc, le référencement Web est une étape incontournable pour augmenter le
 nombre de visiteur. Il permet de faire apparaître un site Web suite à des
 requêtes ce qui assure qu'un site donné soit mieux placé que ses concurrents.
 
@@ -68,7 +68,7 @@ référencement des pages d'un site :
 - des liens hypertextes bien pensés,
 - des attributs `alt` pour décrire le contenu des images.
 
-### Le contenu de la page web
+### Le contenu de la page Web
 
 Les moteurs de recherche et les annuaires cherchent avant tout à fournir un
 service de qualité à leurs utilisateurs en leur donnant les résultats les plus
@@ -88,9 +88,9 @@ permet donc d'augmenter l'indice accordé par le moteur au site.
 
 ### Le titre de la page
 
-Il faut veiller à ce que les titres des pages web soient pertinents et
+Il faut veiller à ce que les titres des pages Web soient pertinents et
 contiennent des mots intéressants pour le référencement et qu'ils soient
-différents sur chaque page. Les titres des pages web sont utilisés par les
+différents sur chaque page. Les titres des pages Web sont utilisés par les
 moteurs de recherche pour deux raisons :
 
 – L'indexation des pages
@@ -102,7 +102,7 @@ L'insertion d'un titre se fait comme suit :
 <tilte>le titre de la page</title>
 ```
 
-Le titre doit décrire le plus précisément possible le contenu de la page web et
+Le titre doit décrire le plus précisément possible le contenu de la page Web et
 sa longueur totale recommandée ne doit pas dépasser 60 de caractères soit 6 ou
 7 mots au maximum. Le titre est d'autant plus important qu'il s'agit de
 l'information qui s'affichera dans les favoris de l'internaute, ainsi que dans
@@ -137,7 +137,7 @@ apprécié par les moteurs de recherche.
 
 Les méta données sont des informations situées au sein d'un document afin de le
 décrire. Les métadonnées sont ainsi utilisées par les moteurs de recherche lors
-du référencement de la page web. Grâce à ces balises non affichées, il est
+du référencement de la page Web. Grâce à ces balises non affichées, il est
 ainsi possible de renseigner des informations relatives à la page où au site
 afin de mieux en décrire le contenu, en particulier des informations sur le ou
 les auteur(s) du document, sa limite de validité, la langue utilisée, etc.
@@ -145,7 +145,7 @@ les auteur(s) du document, sa limite de validité, la langue utilisée, etc.
 On appelle ainsi «méta tags» (en français «méta-balises») des balises spéciales
 situées dans l'en-tête du document HTML (c'est-à-dire la balise `<head>`,
 située avant la balise `<body>`), afin de fournir des informations permettant
-aux moteurs de recherche d'indexer la page web.
+aux moteurs de recherche d'indexer la page Web.
 
 **Exemple :**
 
@@ -156,7 +156,7 @@ aux moteurs de recherche d'indexer la page web.
     <title>ISET Sfax</title>
     <meta name="keywords" content="ISET Sfax, INSTITUT SUPERIEUR ETUDES
                 TECHNOLOGIQUES, TUNISIE, Sfax, STUDIES, TUNISIA">
-    <meta name="description" content="Le site web de l'institut superieur des
+    <meta name="description" content="Le site Web de l'institut superieur des
                                       etudes technologiques de Sfax">
   </head>
   <body>
@@ -249,7 +249,7 @@ Elle permet de référencer des informations de droits d'auteur
 
 #### description
 
-Elle permet de décrire le contenu d'une page web par un court texte son contenu
+Elle permet de décrire le contenu d'une page Web par un court texte son contenu
 apparait dans les pages de résultats de certains outils de recherche. Voici
 quelques conseils pour créer la balise méta `description` :
 
@@ -259,7 +259,7 @@ quelques conseils pour créer la balise méta `description` :
   site dans son ensemble
 
 ```html
-<meta name="description" content="Le site web de l'institut superieur des
+<meta name="description" content="Le site Web de l'institut superieur des
                                       etudes technologiques de Sfax">
 ```
 
@@ -270,7 +270,7 @@ la création de la page était automatisée.
 
 #### keywords
 
-Elle permet de décrire le contenu d'une page web par une liste de mots clés.
+Elle permet de décrire le contenu d'une page Web par une liste de mots clés.
 Voici quelques conseils pour créer la balise meta keywords :
 
 - Pour une bonne efficacité on recommande de ne mettre que 5 ou 6 mots par
@@ -312,7 +312,7 @@ l'architecture du site et contenant des pointeurs vers chacune des pages qui le
 constitue.
 
 D'autre part, il est important d'avoir des liens externes pointant vers le site
-web car cela augmente d'une part le trafic et d'autre part la visibilité de ce
+Web car cela augmente d'une part le trafic et d'autre part la visibilité de ce
 site. Certains moteurs de recherches prennent en compte le nombre et la qualité
 des liens pointant vers un site pour caractériser son niveau de pertinence
 (c'est le cas de Google avec son indice appelé _PageRank_).
@@ -333,13 +333,13 @@ Voici un exemple de balise `<img>` avec l'attribut `alt` :
 Le fichier `robots.txt`
 -----------------------
 
-Le mot robot ou encore spider désigne un programme circulant sur le web dédié
-au traitement de documents web en vue de leur indexation et intégration dans le
+Le mot robot ou encore spider désigne un programme circulant sur le Web dédié
+au traitement de documents Web en vue de leur indexation et intégration dans le
 moteur de recherche. Chaque moteur de recherche est caractérisé par un robot.
 
 ### Présentation de `robots.txt`
 
-Sur un site web, on essaie de faire en sorte que ces pages soient indexées au
+Sur un site Web, on essaie de faire en sorte que ces pages soient indexées au
 mieux par les robots des moteurs de recherche. Mais il peut également arriver
 que certaines de ces pages soient confidentielles, (ou en travaux) ou en tout
 cas ils ne doivent pas être diffusés largement sur les moteurs de recherche. Il
@@ -422,9 +422,9 @@ Disallow: /
 ### `sitemap.xml` et `robots.txt`
 
 Afin d'aider les moteurs de recherche (Google, Yahoo,...) à indexer le site
-web, on précise dans le fichier `robots.txt` l'arborescente du site décrite
+Web, on précise dans le fichier `robots.txt` l'arborescente du site décrite
 dans un fichier `sitemap.xml`. Le fichier `sitemap.xml` est un document XML
-permettant notamment de déclarer les URL d'un site web dans l'objectif d'une
+permettant notamment de déclarer les URL d'un site Web dans l'objectif d'une
 indexation par les robots des moteurs de recherche.
 
 On peut ajouter par exemple dans le fichier `robots.txt` l'instruction suivante
@@ -454,8 +454,8 @@ affluents (sites, moteurs de recherche), identification des mots-clés,…
 
 ### WEBTRENDS
 
-Logiciel très répandu chez les hébergeurs de sites web qui permet de visualiser
-et de mesurer la fréquentation de son site web. On trouve aussi des
+Logiciel très répandu chez les hébergeurs de sites Web qui permet de visualiser
+et de mesurer la fréquentation de son site Web. On trouve aussi des
 statistiques (sous formes d'histogrammes et de tableaux) concernant les
 référents et moteurs de recherche qui ont permis d'atteindre un site donné.
 

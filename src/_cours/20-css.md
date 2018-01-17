@@ -93,7 +93,7 @@ exemple sera:
 </p>
 
 On peut aussi séparer notre code CSS de notre code HTML pour permettre la
-réutilisation du code CSS entre des multiples des pages web, faciliter la
+réutilisation du code CSS entre des multiples des pages Web, faciliter la
 maintenance du code et améliorer la lisibilité. Le code CSS sera écrit dans un
 fichier séparer nommé avec une extension `.css`. Pour appliquer le CSS de ce
 fichier aux éléments de notre document HTML, on déclare un élément `<link>` au
@@ -240,7 +240,7 @@ classées en trois catégories:
 - **Unités dépendantes de l'interface:** px
 
 Les unités *absolues* correspondent à ce que l'on connaît de la mise en page
-"papier". Elles sont à éviter sur le web, sauf pour les styles d’impression
+"papier". Elles sont à éviter sur le Web, sauf pour les styles d’impression
 (p.ex. pour spécifier les marges des pages). Comme l'indiquent les inventeurs
 du CSS, Håkon Wium Lie et Bert Bos (dans *Cascading Style Sheets: Designing for
 the Web*):

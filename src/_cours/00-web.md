@@ -29,8 +29,8 @@ l'URL (_Unified Ressource Link_) le nom de domaine du site Web et le
 chemin du document dans la barre d'adresse du navigateur. Exemples des sites
 Web populaires:
 
-- Site de l'ISET Sfax: [www.isetsf.rnu.tn](http://www.isetsf.rnu.tn)
-- L'article Web dans Wikipédia: [fr.wikipedia.org/wiki/World_Wide_Web](https://fr.wikipedia.org/wiki/World_Wide_Web)
+- Site de l'ISET Sfax : [www.isetsf.rnu.tn](http://www.isetsf.rnu.tn)
+- L'article Web dans Wikipédia : [fr.wikipedia.org/wiki/World_Wide_Web](https://fr.wikipedia.org/wiki/World_Wide_Web)
 
 Pour l'échange de ces documents, le Web utilise le protocole HTTP (HyperText
 Transfer Protocol) qui permet la communication entre le client (navigateur) et
@@ -46,7 +46,10 @@ le serveur. On peut nommer comme navigateurs principaux dans le marché:
 - **Opera** - développé depuis 1994. Depuis 2013, il est basé sur le même
   moteur de rendu que Chrome
 
-![L’évolution des navigateurs entre 1993 et 2016](assets/imgs/navigateurs-timeline-by-cours-web.ch.png "L’évolution des navigateurs entre 1993 et 2016")
+<figure>
+  <img src="assets/imgs/navigateurs-timeline-by-cours-web.ch.png" alt="L’évolution des navigateurs entre 1993 et 2016" />
+  <figcaption>L'évolution des navigateurs entre 1993 et 2016. Par <cite><a href="https://cours-web.ch/" target="_blank">cours-web.ch</a></cite></figcaption>
+</figure>
 
 Le fonctionnement du Web
 ------------------------
@@ -55,7 +58,7 @@ Le Web fonctionne suivant l'architecture Client/Serveur où les ordinateurs
 connectés sont des clients et des serveurs.
 
 - **Les clients** correspondent aux appareils connectés sur Internet et aux logiciels utilisés pour
-  consulter les pages Web (par exemples les navigateurs Web: Firefox, Chrome,
+  consulter les pages Web (par exemples les navigateurs Web : Firefox, Chrome,
   ...)
 - **Les serveurs** sont les ordinateurs qui stockent des pages Web, des sites
   ou des applications Web. Lorsqu'un appareil "client" souhaite accéder à une

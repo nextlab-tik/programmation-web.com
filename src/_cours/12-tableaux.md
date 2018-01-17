@@ -90,7 +90,7 @@ utilisant l'attribut `colspan`.
 </p>
 
 
-Le tableau supporte le groupement des lignes en trois sections: l'en-tête en
+Le tableau supporte le groupement des lignes en trois sections : l'en-tête en
 utilisant la balise `<thead>`, le corps en utilisant la balise `<tbody>` et le
 pied en utilisant la balise `<tfooer>` ce qui permet la séparation sémantique
 des lignes du tableau et facilite ses mises en forme. Si ces balises n'étaient

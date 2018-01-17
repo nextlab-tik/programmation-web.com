@@ -6,7 +6,7 @@ permalink: /cours/html.html
 
 Le HTML (_HyperText Markup Language_) n'est pas un langage de programmation,
 mais un langage de "marquage" (_markup_ en anglais) ou bien de "balises"
-(_tags_ en anglais). Il permet de structurer le contenu d'une page web selon
+(_tags_ en anglais). Il permet de structurer le contenu d'une page Web selon
 un format déterminé par le concepteur et réalisé par le programmeur Web.
 
 Les versions du langage HTML
@@ -30,7 +30,10 @@ W3C. Ce n'est qu'en 2014 que le HTML5 est devenu une recommandation stable du
 W3C. En fin 2016, le W3C a rendu officielle la version **HTML 5.1**. La version
 suivante **HTML 5.2** est en cours d'élaboration.
 
-![](assets/imgs/standards-timeline-html-by-cours-web.ch.png)
+<figure>
+  <img src="assets/imgs/standards-timeline-html-by-cours-web.ch.png" alt="L’évolution des standards HTML et CSS entre 1995 et 2015" />
+  <figcaption>L'évolution des standards HTML et CSS entre 1995 et 2015. Par <cite><a href="https://cours-web.ch/" target="_blank">cours-web.ch</a></cite></figcaption>
+</figure>
 
 Les éléments HTML
 -----------------
@@ -62,7 +65,10 @@ Si on veut qu'il soit un titre, on le met dans la balise `<h1>`.
 
 Regardons de plus près cet élément paragraphe:
 
-![Anatomie d'un élément HTML](assets/imgs/html-tag-explication-by-mozilla-mdn.svg)
+<figure>
+  <img src="assets/imgs/html-tag-explication-by-mozilla-mdn.svg" alt="Anatomie d'un élément HTML" />
+  <figcaption>Anatomie d'un élément HTML. Par <cite><a href="https://developer.mozilla.org/" target="_blank">Mozilla Developer Network</a></cite></figcaption>
+</figure>
 
 Les composants principaux de notre élément sont :
 
@@ -123,7 +129,10 @@ Ce sont des balises qui ont uniquement un indicateur de début. Comme la balise
 
 Les éléments peuvent avoir des "attributs".
 
-![](assets/imgs/html-tag-attributes-explication-by-mozilla-mdn.svg)
+<figure>
+  <img src="assets/imgs/html-tag-attributes-explication-by-mozilla-mdn.svg" alt="Les attributs d'une balise HTML" />
+  <figcaption>Les attributs d'une balise HTML. Par <cite><a href="https://developer.mozilla.org/" target="_blank">Mozilla Developer Network</a></cite></figcaption>
+</figure>
 
 Les attributs contiennent des informations supplémentaires qui portent sur
 l'élément et qu'on ne souhaite pas afficher avec le contenu.
@@ -187,7 +196,7 @@ HTML complète. Nous allons repartir de l'exemple contenu dans le fichier
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Ma première page web</title>
+    <title>Ma première page Web</title>
   </head>
   <body>
     <p>Mon chat est <strong>vraiment fâché.</p></strong>
@@ -447,7 +456,7 @@ d'images les plus supportés sont:
 
 ### Les liens
 
-Les liens sont très importants, ce sont eux qui font que le web est une toile
+Les liens sont très importants, ce sont eux qui font que le Web est une toile
 sur laquelle on peut naviguer de page en page. Pour créer un lien, il suffit
 d'utiliser l'élément `<a>` (le a est un raccourci pour « ancre »). Pour
 transformer du texte en un lien, suivez ces étapes :
@@ -482,7 +491,7 @@ Les références hypertexte sont de différents types:
 ```html
 <a href="https://www.google.com/search/">Google Search</a>
 ```
-  Si la ressource est dans le même site web que la page Web courante, on peut
+  Si la ressource est dans le même site Web que la page Web courante, on peut
   spécifier seulement le chemin absolu de la ressource en commençant par `/`.
 ```html
 <a href="/fr/contact.html">Contactez Nous</a>
@@ -524,7 +533,7 @@ nativement ou à travers des plugins. Ces protocoles sont principalement:
 - `tel:` pour référencer un numéro de téléphone. Il est supporté par la
   majorité des navigateurs mobiles. Le format du numéro de téléphone doit
   suivre la spécification [RFC 3966](https://tools.ietf.org/html/3966). Par
-  exemple: pour contacter le numéro de téléphone tunisien 12345678 (qui est de
+  exemple : pour contacter le numéro de téléphone tunisien 12345678 (qui est de
   préfixe international +216):
 ```html
 <a href="tel:+21612345678">Contactez Nous</a>
@@ -772,7 +781,7 @@ entier (en-tête de page).
 
 section
 : Section générique regroupant un même sujet, une même fonctionnalité, de
-préférence avec un en-tête, ou bien section d'application web.
+préférence avec un en-tête, ou bien section d'application Web.
 
 article
 : Section de contenu indépendante, pouvant être extraite individuellement du
