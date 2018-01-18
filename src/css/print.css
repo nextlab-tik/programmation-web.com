@@ -129,7 +129,7 @@ img {
 }
 
 .toc h1::before {
-    content: '';
+    display: none;
 }
 
 .toc h2 {
@@ -171,4 +171,8 @@ img {
 
 .toc h2.no-chapitre~ol>li::before {
     content: none;
+}
+
+.toc h2.no-chapitre~ol>li>ol {
+    display: none;
 }

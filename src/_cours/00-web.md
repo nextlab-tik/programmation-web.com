@@ -44,8 +44,8 @@ le serveur. On peut nommer comme navigateurs principaux dans le marché :
 - **Firefox** - développé par Mozilla depuis 2004 comme un successeur de
   **Netscape**
 - **Safari** - développé par Apple depuis 2003
-- **Microsoft Edge** - développé par Microsoft comme successeur d'**Internet
-  Explorer** développé depuis 1995
+- **Microsoft Edge** - développé par Microsoft comme successeur
+  d'**Internet Explorer** développé depuis 1995
 - **Opera** - développé depuis 1994. Depuis 2013, il est basé sur le même
   moteur de rendu que Chrome
 
