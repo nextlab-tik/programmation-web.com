@@ -749,7 +749,7 @@ deux éléments sont:
   Aussi, la mise en forme de cet élément est à travers l'attribut `id` ou
   l'attribut `class`.
 
-Un exemple de l'élément `<span>`:
+Un exemple de l'élément `<span>` :
 
 ```html
 {% include_relative demos/balise-span.html %}
@@ -759,6 +759,7 @@ Un exemple de l'élément `<span>`:
 </p>
 
 Un exemple de l'élément `<div>`:
+
 ```html
 {% include_relative demos/balise-div.html %}
 ```
@@ -773,7 +774,8 @@ HTML5 a ajouté un ensembles de balises dont un ensemble des balises
 structurantes qui permettent de construire un document HTML plus sémantique et
 qui sont préférées à l'utilisation de `<div>` quand c'est possible. Ces balises
 n'ont pas un effet visuel dans le document. C'est le rôle du CSS.
- Les nouvelles balises structurantes du HTML5:
+
+Les nouvelles balises structurantes du HTML5 :
 
 header
 : Section d'introduction d'un article, d'une autre section ou du document
@@ -800,3 +802,35 @@ informations supplémentaires.
 footer
 : Section de conclusion d'une section ou d'un article, voire du document entier
 (pied de page).
+
+### Structure d'une page Web d'un article
+
+On va démontrer la structure d'une page Web d'un article. Cette page contient :
+
+- en-tête du page : contient le nom du site Web, le logo du site, etc. Cette
+  partie est délimitée par la balise `<header>`.
+- barre de navigation : contient des liens vers la page d'accueils, les
+  différents catégories des articles, la page du contact, etc. Cette partie est
+  délimitée par la balise `<nav>`.
+- pied du page : contient un note légal (le droit d'auteur et le licence de
+  l'article), un lien vers le terme d'utilisation, etc. Cette partie est
+  délimitée par la balise `<footer>`.
+- L'article principale : contient le titre de l'article, les données
+   supplémentaire (date de publication, nom d'auteurs, ...) et le contenu de
+   l'article. Cette partie est délimitée par la balise `<article>`.
+- section complémentaire : contient des liens vers les articles similaires,
+  etc. Cette partie est délimitée par la balise `<aside>`.
+- corps de la page : contient l'article et le section complémentaire. Cette
+  partie est délimitée par la balise `<main>`.
+
+<figure>
+  <img src="assets/imgs/illustrates-article-page-fig-3.1-by-beginning_HTML5_and_CSS3.png" alt="Structure sémentique de page Web d'un article" height="400" />
+  <figcaption>Structure sémantique de page Web d'un article. Par <cite>Beginning HTML5 and CSS3</cite></figcaption>
+</figure>
+
+```html
+{% include_relative demos/demo-article.html %}
+```
+<p>
+  <iframe height='460' scrolling='no' src='demos/demo-article.html'></iframe>
+</p>
