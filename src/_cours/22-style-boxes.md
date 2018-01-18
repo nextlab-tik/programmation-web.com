@@ -17,8 +17,10 @@ Chaque élément d'un document est matérialisé par une boîte qui peut être
 ajustée grâce à des propriétés CSS spécifiques. Ces propriétés peuvent être
 représentées ainsi :
 
-![](assets/imgs/css-box-model-standard-by-mdn.svg)
-
+<figure>
+  <img src="assets/imgs/css-box-model-standard-by-mdn.svg" alt="Modèle de boite en CSS" />
+  <figcaption>Modèle de boite en CSS. Par <cite><a href="https://developer.mozilla.org/" target="_blank">Mozilla Developer Network</a></cite></figcaption>
+</figure>
 
 La boîte de contenu (content)
 : La boîte de contenu à l'endroit où le contenu de l'élément est affiché. Ce
@@ -126,8 +128,12 @@ accepte une valeur en pixels qui va correspondre à la valeur du radius de la
 bordure de tout ou de chaque coin.
 
 ![](assets/imgs/border-radius-by-mdn.png)
+<figure>
+  <img src="assets/imgs/border-radius-by-mdn.png" alt="Les bordures arrondis" />
+  <figcaption>Les bordures arrondis. Par <cite><a href="https://developer.mozilla.org/" target="_blank">Mozilla Developer Network</a></cite></figcaption>
+</figure>
 
-Prenons l'exemple suivant:
+Prenons l'exemple suivant :
 
 ```html
 {% include_absolute _cours/demos/border-radius.html %}
@@ -148,7 +154,7 @@ Couleur et image de fond
 Le fond d'un élément HTML est géré à travers les propriétés `backgroud-*` ou
 leurs propriété alias `backgroud`:
 
-- `background-color`: Gérer la couleur du fond. Il accepte les même valeurs
+- `background-color` : Gérer la couleur du fond. Il accepte les même valeurs
   acceptées par la propriété `color`. La valeur `transparent` permet de rendre
   le fond transparent.
 ```css
@@ -171,22 +177,22 @@ leurs propriété alias `backgroud`:
 }
 ```
 On peut gérer l'image du fond avec les propriétés ci-dessous.
-- `background-position`: Positionner l'image relativement à son élément. La
+- `background-position` : Positionner l'image relativement à son élément. La
   valeur accepte deux arguments pour exprimé la position verticalement et
-  horizontalement. L'argument peut être exprimée en % ou en mot clés: "top",
+  horizontalement. L'argument peut être exprimée en % ou en mot clés : "top",
   "left", "right", "bottom", "center" ou en pixels.
-- `background-repeat`: Gérer comment l'image sera répéter. Pour se répéter en
+- `background-repeat` : Gérer comment l'image sera répéter. Pour se répéter en
   axe vertical en utilise la valeur "repeat-x". Pour se répéter en axe
   horizontal, on utilise la valeur "repeat-y". Pour se répéter dans les deux
   axes, on utilise la valeur "repeat" qui est la valeur par défaut. Pour se ne
   répéter pas, on utilise la valeur "no-repeat".
-- `background-size`: Gérer la taille de l'image. La valeur peut être exprimée
+- `background-size` : Gérer la taille de l'image. La valeur peut être exprimée
   en % pour dimensionner l'image par rapport à la taille de l'élément auquel
   elle est appliquée, ou en pixels ou en utilisant les mots clés "cover" et
   "contain".
-- `background-attachment`: Pour choisir de fixer l'image de fond ou de la faire
+- `background-attachment` : Pour choisir de fixer l'image de fond ou de la faire
   défiler en même temps que l'utilisateur va descendre dans la page. Cette
-  propriété accepte deux valeurs: "fixed" (pour fixer le fond) et "scroll"
+  propriété accepte deux valeurs : "fixed" (pour fixer le fond) et "scroll"
   (valeur par défaut).
 
 Prenons l'exemple suivant:

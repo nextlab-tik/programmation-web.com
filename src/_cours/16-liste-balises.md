@@ -1,6 +1,7 @@
 ---
 title: Liste des balises
 chapitre: HTML
+published: false
 permalink: /cours/liste-balises.html
 ---
 

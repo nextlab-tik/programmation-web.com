@@ -70,10 +70,10 @@ h1 {
 
 Dans cet exemple, nous avons :
 
-* le **sélecteur**: `h1`
+* le **sélecteur** : `h1`
 * le **bloc de déclaration**, qui contient deux déclarations : `color: red;` et
   `text-transform: uppercase;`
-* la première déclaration définit une **propriété**: `color`
+* la première déclaration définit une **propriété** : `color`
 * avec la **valeur** : `red`
 * la seconde déclaration définit la **propriété** `text-transform`
 * avec la **valeur** : `uppercase`
@@ -293,7 +293,7 @@ ci-dessus. Le résultat sera strictement identique.
 
 #### Par leur nom
 
-Il existe quelques 140 couleurs qui sont définies par des mots-clés: on y
+Il existe quelques 140 couleurs qui sont définies par des mots-clés : on y
 trouve des couleurs fondamentales comme
 <span style="padding: 0 0.3em; background:black;color:#fff">black</span>,
 <span style="padding: 0 0.3em; background:blue;color:#fff">blue</span>,

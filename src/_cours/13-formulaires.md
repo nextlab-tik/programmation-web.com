@@ -494,13 +494,6 @@ saisies à notre serveur. Le deuxième bouton et un autre élément de type `res
 pour spécifier que ce bouton doit réinitialiser les champs de notre formulaire.
 Pour changer le contenu de ces boutons, on utilise l'attribut `value`.
 
-Notre formulaire manque les attributs `action` et `method` pour spécifier l'URL
-de la page qui va traiter ces informations et la méthode HTTP qu'on va utiliser
-pour les envoyer respectivement. Mais ce n'est pas tout. Nous avons aussi
-besoin de donner un nom à nos champs en utilisant l'attribut `name` qui,
-contrairement à l'identificateur du champ, le nom du champ sera envoyé au
-serveur avec les données saisies pour qu'il peut les manipuler correctement.
-
 ### Deuxième formulaire
 
 Donc, on va créer un nouveau formulaire utile et fonctionnel qui permettra de

@@ -43,7 +43,7 @@ On peut coller ces bordures entre elles afin d'obtenir le même rendu du
 chapitre précédent en appliquant la propriété `border-collapse` à l'élément
 `<table>`.
 
-La propriété `border-collapse` accepte comme valeur deux valeurs: "collapse"
+La propriété `border-collapse` accepte comme valeur deux valeurs : "collapse"
 pour coller les bordures en une et "separate" pour afficher les bordures
 distinctement qui est la valeur par défaut.
 
@@ -115,8 +115,8 @@ Les captions
 La propriété `caption-side` permet de gérer la position de la légende du
 tableau. Elle prend deux valeurs:
 
-- "top": La légende est affichée en haut.
-- "bottom": La légende est affichée en bas.
+- "top" : La légende est affichée en haut.
+- "bottom" : La légende est affichée en bas.
 
 Les autres valeurs (comme "left", "right", ...) ont étés absolues depuis CSS2
 en faveur de la propriété `text-align`.

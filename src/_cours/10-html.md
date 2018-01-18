@@ -27,8 +27,8 @@ de Apple, Mozilla et Opera. Ce groupe élaborait le standard **HTML5** entre
 2004-2007. En janvier 2008, la première spécification a été publiée. Cette
 spécification a été adoptée comme référence par le groupe de travail HTML du
 W3C. Ce n'est qu'en 2014 que le HTML5 est devenu une recommandation stable du
-W3C. En fin 2016, le W3C a rendu officielle la version **HTML 5.1**. La version
-suivante **HTML 5.2** est en cours d'élaboration.
+W3C. En fin 2017, le W3C a rendu officielle la version **HTML 5.2**. La version
+suivante **HTML 5.3** est en cours d'élaboration.
 
 <figure>
   <img src="assets/imgs/standards-timeline-html-by-cours-web.ch.png" alt="L’évolution des standards HTML et CSS entre 1995 et 2015" />
@@ -807,25 +807,25 @@ footer
 
 On va démontrer la structure d'une page Web d'un article. Cette page contient :
 
-- en-tête du page : contient le nom du site Web, le logo du site, etc. Cette
+- en-tête de page : contient le nom du site Web, le logo, etc. Cette
   partie est délimitée par la balise `<header>`.
-- barre de navigation : contient des liens vers la page d'accueils, les
-  différents catégories des articles, la page du contact, etc. Cette partie est
+- barre de navigation : contient des liens vers la page d'accueil, les
+  différentes catégories des articles, la page du contact, etc. Cette partie est
   délimitée par la balise `<nav>`.
-- pied du page : contient un note légal (le droit d'auteur et le licence de
+- pied de page : contient une note légale (le droit d'auteur et la licence de
   l'article), un lien vers le terme d'utilisation, etc. Cette partie est
   délimitée par la balise `<footer>`.
-- L'article principale : contient le titre de l'article, les données
-   supplémentaire (date de publication, nom d'auteurs, ...) et le contenu de
-   l'article. Cette partie est délimitée par la balise `<article>`.
-- section complémentaire : contient des liens vers les articles similaires,
-  etc. Cette partie est délimitée par la balise `<aside>`.
-- corps de la page : contient l'article et le section complémentaire. Cette
+- L'article principal : contient le titre de l'article, les données
+  supplémentaires (date de publication, noms d'auteurs, ...) et le contenu de
+  l'article. Cette partie est délimitée par la balise `<article>`.
+- section complémentaire : contient des liens vers d'autres contenus.
+  Cette partie est délimitée par la balise `<aside>`.
+- corps de la page : contient l'article et la section complémentaire. Cette
   partie est délimitée par la balise `<main>`.
 
 <figure>
-  <img src="assets/imgs/illustrates-article-page-fig-3.1-by-beginning_HTML5_and_CSS3.png" alt="Structure sémentique de page Web d'un article" height="400" />
-  <figcaption>Structure sémantique de page Web d'un article. Par <cite>Beginning HTML5 and CSS3</cite></figcaption>
+  <img src="assets/imgs/illustrates-article-page-fig-3.1-by-beginning_HTML5_and_CSS3.png" alt="Structure sémentique d'une page Web contenant un article" height="400" />
+  <figcaption>Structure sémantique d'une page Web contenant un article. Par <cite>Beginning HTML5 and CSS3</cite></figcaption>
 </figure>
 
 ```html

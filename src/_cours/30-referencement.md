@@ -22,7 +22,7 @@ Terminologies
 -------------
 
 L'annuaire
-: il fonctionne telle une encyclopédie: les sites sont y classées par thèmes et
+: il fonctionne telle une encyclopédie : les sites sont y classées par thèmes et
 par ordre alphabétique.
 
 Le moteur de recherche

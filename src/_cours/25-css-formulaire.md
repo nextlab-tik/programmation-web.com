@@ -86,9 +86,9 @@ Validation de contenu
 CSS3 fourni des ensembles des pseudo classes relié au état de validation des
 éléments de la formulaire.
 
-- `:required`: Permet de sélectionner les éléments qui sont mis obligatoires.
-- `:valid`: Permet de sélectionner les éléments qui sont valides.
-- `:invalid`: Permet de sélectionner les éléments qui ne sont pas valides.
+- `:required` : Permet de sélectionner les éléments qui sont mis obligatoires.
+- `:valid` : Permet de sélectionner les éléments qui sont valides.
+- `:invalid` : Permet de sélectionner les éléments qui ne sont pas valides.
 
 ```css
 {% include_absolute _cours/demos/css/formulaire-style-validation.css %}

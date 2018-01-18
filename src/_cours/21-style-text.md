@@ -10,7 +10,8 @@ Taille de texte
 Pour changer la taille d'un texte, on utiliser la propriété `font-size`. Les
 valeurs acceptés par cette propriété peuvent être:
 
-- **En pixels**: détermine la hauteur en pixels de votre texte. Par exemple: `14px`, `16px`...
+- **En pixels** : détermine la hauteur en pixels de votre texte. Par exemple:
+  `14px`, `16px`...
 
 ```css
 p {
@@ -21,8 +22,8 @@ h1 {
 }
 ```
 
-- **En pourcentage**: spécifier la taille du texte relativement au taille
-normal. C'est à dire: 100% est le taille normale.
+- **En pourcentage** : spécifier la taille du texte relativement au taille
+normal. C'est à dire : 100% est le taille normale.
 
 ```css
 h2 {
@@ -33,7 +34,7 @@ h3 {
 }
 ```
 
-- **En mot clés**: Les mots sont: xx-small, x-smal, smal, medium, large,
+- **En mot clés** : Les mots sont : xx-small, x-smal, smal, medium, large,
 x-large, xx-large.
 
 ```css
@@ -42,7 +43,7 @@ h1 {
 }
 ```
 
-- **En em**: spécifie la largeur de la lettre "M" avec la police utilisée.
+- **En em** : spécifie la largeur de la lettre "M" avec la police utilisée.
 
 ```css
 dt {
@@ -50,7 +51,7 @@ dt {
 }
 ```
 
-- **En rem**: rem est beaucoup plus facile à utiliser comme unité qu'em car la
+- **En rem** : rem est beaucoup plus facile à utiliser comme unité qu'em car la
 taille du texte dépend de la taille initiale du texte, au lieu de dépendre de
 l'héritage d'un quelconque élément parent.
 
