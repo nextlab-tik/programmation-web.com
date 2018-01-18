@@ -43,11 +43,6 @@ Le HTML5 contient un nombre riche d'éléments de formulaire supportant des
 multiples types de données à saisir et améliorant l'intégration avec le
 système.
 
-### Le label
-
-C'est le message qui sera affiché avant un champs de saisie afin que
-l'utilisateur sache ce qu'il doit saisir.
-
 ### Champ de texte simple
 
 C'est l'élément le plus basique de saisie. Il permet la saisie d'une seule

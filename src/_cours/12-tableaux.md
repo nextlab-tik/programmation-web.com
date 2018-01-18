@@ -52,7 +52,7 @@ identifier plus facilement.  Même que cet attribut est obsolète[^obsolete]
 depuis HTML5 en faveur des propriétés de CSS, on va l'utiliser comme solution
 temporaire jusqu'à ce qu'on arrive au chapitre de CSS3. Donc, en remplaçant la
 première ligne du code précédent `<table>` par `<table border="1">`, le
-résultat sera:
+résultat sera :
 
 <p>
   <iframe height='90' scrolling='no' src='demos/tableau-head-with-border.html'></iframe>

@@ -127,7 +127,6 @@ La propriété `border-radius` permet de créer des bordures arrondis. Elle
 accepte une valeur en pixels qui va correspondre à la valeur du radius de la
 bordure de tout ou de chaque coin.
 
-![](assets/imgs/border-radius-by-mdn.png)
 <figure>
   <img src="assets/imgs/border-radius-by-mdn.png" alt="Les bordures arrondis" />
   <figcaption>Les bordures arrondis. Par <cite><a href="https://developer.mozilla.org/" target="_blank">Mozilla Developer Network</a></cite></figcaption>
