@@ -373,7 +373,7 @@ Disallow: /profile/edit.html
 Disallow: /reset-password.html
 ```
 
-Dans cet exemple:
+Dans cet exemple :
 
 - `User-agent: *` signifie que l'accès est accordé à tous les agents (tous les
   spiders), quels qu'ils soient.

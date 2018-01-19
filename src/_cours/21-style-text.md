@@ -8,9 +8,9 @@ Taille de texte
 ---------------
 
 Pour changer la taille d'un texte, on utiliser la propriété `font-size`. Les
-valeurs acceptés par cette propriété peuvent être:
+valeurs acceptés par cette propriété peuvent être :
 
-- **En pixels** : détermine la hauteur en pixels de votre texte. Par exemple:
+- **En pixels** : détermine la hauteur en pixels de votre texte. Par exemple :
   `14px`, `16px`...
 
 ```css
@@ -111,7 +111,7 @@ Alignement du texte
 
 La propriété text-align contrôle l'alignement du texte, en définissant
 l'alignement à gauche, à droite, ou centré ou justifié ("left", "right",
-"center", ou "justify"):
+"center", ou "justify") :
 
 ```css
 h1 {

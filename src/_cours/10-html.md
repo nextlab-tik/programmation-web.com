@@ -42,7 +42,7 @@ Le vocabulaire du langage HTML se compose de plus qu'une centaine de balises
 qu'on assemble autour des différentes parties du contenu pour lui fournir un
 sens. Les balises qui entourent un mot ou le nom d'une image peuvent former un
 lien hypertexte, mettre le texte en italique, etc. Par exemple, avec la ligne
-de contenu suivante:
+de contenu suivante :
 
 ```html
 Mon chat est fâché
@@ -63,7 +63,7 @@ Si on veut qu'il soit un titre, on le met dans la balise `<h1>`.
 
 ### Anatomie d'un élément HTML
 
-Regardons de plus près cet élément paragraphe:
+Regardons de plus près cet élément paragraphe :
 
 <figure>
   <img src="assets/imgs/html-tag-explication-by-mozilla-mdn.svg" alt="Anatomie d'un élément HTML" />
@@ -90,13 +90,13 @@ Les composants principaux de notre élément sont :
 Vous pouvez placer des éléments au sein d'autres éléments, c'est ce qu'on
 appelle l'imbrication. Par exemple, si vous souhaitez montrer que votre chat
 est vraiment fâché, vous pouvez placer le mot « vraiment » dans un élément
-`<strong>`, ce qui signifie que le mot sera mis en gras:
+`<strong>`, ce qui signifie que le mot sera mis en gras :
 
 ```html
 <p>Mon chat est <strong>vraiment</strong> fâché.</p>
 ```
 
-Ce qui résulte en:
+Ce qui résulte en :
 
 <p>
   <iframe height='40' scrolling='no' src='demos/p-inside-strong.html'></iframe>
@@ -105,7 +105,7 @@ Ce qui résulte en:
 Toutefois il faut faire attention à ce que les éléments soient bien imbriqués
 les uns dans les autres. Dans l'exemple précédent, on ouvre l'élément `<p>`,
 puis l'élément `<strong>`. Plus loin, on ferme l'élément `<strong>` puis on
-ferme l'élément `<p>`. Si on utilise le code suivant, ce sera incorrect:
+ferme l'élément `<p>`. Si on utilise le code suivant, ce sera incorrect :
 
 ```html
 <p>Mon chat est <strong>vraiment fâché.</p></strong>
@@ -147,7 +147,7 @@ Les attributs seront très utiles dans les chapitres suivants par exemple pour
 définir le comportement de nos formulaires et pour les mises en forme de page
 Web.
 
-Un attribut doit toujours avoir:
+Un attribut doit toujours avoir :
 
 - un **nom** (le nom de l'attribut) qui doit être séparé par un espace du nom
   de la balise ou de l'attribut précédent (s'il y a des multiples attributs).
@@ -164,20 +164,20 @@ spécifier que la case est cochée, cet attribut ne nécessite pas une valeur ca
 sa présence est interprétée comme la valeur vrai. Au contraire son absence est
 interprété comme la valeur faux.
 
-Les commentaires dans HTML sont délimités par `<!--` et `-->`. Par exemple:
+Les commentaires dans HTML sont délimités par `<!--` et `-->`. Par exemple :
 
 ```html
 <!-- Un texte dans un commentaire -->
 ```
 
 Les commentaires peuvent exister dans n'importe qu'elle partie du code HTML
-mais pas dans une balise (entre les chevrons de la balise). Prenons l'exemple:
+mais pas dans une balise (entre les chevrons de la balise). Prenons l'exemple :
 
 ```html
 {% include_relative demos/commentaire.html %}
 ```
 
-Le résultat sera:
+Le résultat sera :
 
 <p>
   <iframe height='80' scrolling='no' src='demos/commentaire.html'></iframe>
@@ -189,7 +189,7 @@ Le document HTML
 Pour l'instant nous avons vu quelques éléments HTML de base. Pris séparément,
 ils ne sont pas très utiles. Regardons comment les combiner pour créer une page
 HTML complète. Nous allons repartir de l'exemple contenu dans le fichier
-`index.html`:
+`index.html` :
 
 ```html
 <!DOCTYPE html>
@@ -276,7 +276,7 @@ Vous pouvez ajouter un titre adapté à votre page avec un de ces éléments.
 
 Comme expliqué auparavant, les éléments `<p>` sont utilisés pour contenir des
 paragraphes de texte. Vous les utiliserez fréquemment pour placer du texte sur
-une page:
+une page :
 
 ```html
 {% include_relative demos/balise-p.html %}
@@ -430,7 +430,7 @@ l'image origine.
   <iframe height='160' scrolling='no' src='demos/balise-img-height.html'></iframe>
 </p>
 
-Au contraire, si on spécifie les deux dimensions:
+Au contraire, si on spécifie les deux dimensions :
 
 ```html
 {% include_relative demos/balise-img-height-width.html %}
@@ -441,9 +441,9 @@ Au contraire, si on spécifie les deux dimensions:
 </p>
 
 Les navigateurs supportent de multiple formats d'images. Les principaux formats
-d'images les plus supportés sont:
+d'images les plus supportés sont :
 
-- **JPEG**: format image compressé avec perte. Standardisé par JPEG
+- **JPEG** : format image compressé avec perte. Standardisé par JPEG
   (_Joint Photographic Experts Group_). Les extensions sont `.jpg` et `.jpeg`.
 - **PNG** (_Portable Network Graphics_) format image compressé sans perte. Il
   supporte les images transparentes. L'extension est `.png`.
@@ -462,14 +462,14 @@ d'utiliser l'élément `<a>` (le a est un raccourci pour « ancre »). Pour
 transformer du texte en un lien, suivez ces étapes :
 
 1. Choisissez un texte (ici nous travaillerons avec le texte « Google Search ».
-2. Encadrez le texte dans un élément `<a>`:
+2. Encadrez le texte dans un élément `<a>` :
 ```html
 <a>Google Search</a>
 ```
 
 3. Fournissez un attribut `href` (**href** correspond à **h**ypertext
    **ref**erence en anglais, ce qui signifie « référence hypertexte » en
-   français) pour l'élément `<a>`, de cette façon:
+   français) pour l'élément `<a>`, de cette façon :
 ```html
 <a href="">Google Search</a>
 ```
@@ -480,9 +480,9 @@ transformer du texte en un lien, suivez ces étapes :
 <a href="https://www.google.com/search/">Google Search</a>
 ```
 
-Les références hypertexte sont de différents types:
+Les références hypertexte sont de différents types :
 
-- **Références externes absolues**: Ce sont des URL absolues vers une
+- **Références externes absolues** : Ce sont des URL absolues vers une
   ressource dans le Web. Ces URL doivent être composés de la partie protocole
   (`http://` ou `https://`), de la partie du nom de domaine (p.ex:
   `google.com`) ou de l'adresse IP (p.ex: `127.0.0.1`), du numéro du port TCP
@@ -496,18 +496,18 @@ Les références hypertexte sont de différents types:
 ```html
 <a href="/fr/contact.html">Contactez Nous</a>
 ```
-- **Références externes relatives**: Ce sont des liens relatifs à la page Web
+- **Références externes relatives** : Ce sont des liens relatifs à la page Web
   courante. Par exemple, pour référencer une page Web `contact.html` dont le
-  même dossier que la page courante:
+  même dossier que la page courante :
 ```html
 <a href="contact.html">Contactez Nous</a>
 <a href="./contact.html">Contactez Nous</a>
 ```
-  De même pour référencer une page Web `acceuil.html` dans le dossier parent:
+  De même pour référencer une page Web `acceuil.html` dans le dossier parent :
 ```html
 <a href="../acceuil.html">Acceuil</a>
 ```
-- **Références internes**: Ce sont des références aux éléments HTML dans le
+- **Références internes** : Ce sont des références aux éléments HTML dans le
   même document. Pour référencer un élément, on lui donne un identificateur
   unique en utilisant l'attribut `id` puis on le référence par son
   identificateur préfixé par le signe "#".
@@ -519,14 +519,14 @@ Les références hypertexte sont de différents types:
 
 L'élément `<a>` n'est pas limité à référencer les ressources accessibles par le
 protocole HTTP (`http://` et `https://`). D'autres protocoles sont supportés
-nativement ou à travers des plugins. Ces protocoles sont principalement:
+nativement ou à travers des plugins. Ces protocoles sont principalement :
 - `ftp://` (**FTP**) pour accéder aux ressources dans les serveurs FTP.
 - `file://` pour accéder aux ressources qui sont dans le système de fichier
   de l'appareil dont le navigateur est éxecuté.
 - `mailto:` permet d'ouvrir le client e-mail pour créer un nouveau
    message électronique avec l'email de réception spécifiée. Le format du lien
    est <code>mailto:&lt;ADRESSE_EMAIL&gt;</code>. Par exemple, pour créer un
-   lien mailto de destination `contact@exemple.com`:
+   lien mailto de destination `contact@exemple.com` :
 ```html
 <a href="mailto:contact@exemple.com">Contactez Nous</a>
 ```
@@ -534,7 +534,7 @@ nativement ou à travers des plugins. Ces protocoles sont principalement:
   majorité des navigateurs mobiles. Le format du numéro de téléphone doit
   suivre la spécification [RFC 3966](https://tools.ietf.org/html/3966). Par
   exemple : pour contacter le numéro de téléphone tunisien 12345678 (qui est de
-  préfixe international +216):
+  préfixe international +216) :
 ```html
 <a href="tel:+21612345678">Contactez Nous</a>
 ```
@@ -737,14 +737,14 @@ par l'utilisateur au programme ou un ensemble de commandes en utilisant
 
 Le HTML définit deux éléments universels qui sont généraux, qui n'ont aucune
 signification sémantique ou physique (aucune mise en forme prédéfinie). Ces
-deux éléments sont:
+deux éléments sont :
 
-- `<span>`: C'est l'élément en ligne (_inline_) (de contenu phrasé) ; C'est à
+- `<span>` : C'est l'élément en ligne (_inline_) (de contenu phrasé) ; C'est à
   dire qu'il peut être contenu dans un paragraphe et qu'il ne cause pas la
   création d'un nouveau bloc. La mise en forme de cet élément est faite par le
   CSS à travers la définition d'un identificateur unique (l'attribut `id`) ou
   l'ensemble des classes auxquelles il appartient (l'attribut `class`).
-- `<div>`: C'est l'élément bloc ; c'est à dire qu'il occupe toute la largeur à
+- `<div>` : C'est l'élément bloc ; c'est à dire qu'il occupe toute la largeur à
   disposition et crée une cassure de la ligne visuelle avant lui et après.
   Aussi, la mise en forme de cet élément est à travers l'attribut `id` ou
   l'attribut `class`.
@@ -758,7 +758,7 @@ Un exemple de l'élément `<span>` :
   <iframe height='40' scrolling='no' src='demos/balise-span.html'></iframe>
 </p>
 
-Un exemple de l'élément `<div>`:
+Un exemple de l'élément `<div>` :
 
 ```html
 {% include_relative demos/balise-div.html %}

@@ -96,7 +96,7 @@ exemple sera :
 </p>
 
 On peut aussi séparer notre code CSS de notre code HTML pour permettre la
-réutilisation du code CSS entre de multiples pages web, faciliter la
+réutilisation du code CSS entre de multiples pages Web, faciliter la
 maintenance du code et améliorer la lisibilité. Le code CSS sera écrit dans un
 fichier séparé nommé avec une extension `.css`. Pour appliquer le CSS de ce
 fichier aux éléments de notre document HTML, on déclare un élément `<link>` à
@@ -243,7 +243,7 @@ classées en trois catégories :
 - **Unités dépendantes de l'interface:** px
 
 Les unités *absolues* correspondent à ce que l'on connaît de la mise en page
-"papier". Elles sont à éviter sur le web, sauf pour les styles d’impression
+"papier". Elles sont à éviter sur le Web, sauf pour les styles d’impression
 (p.ex. pour spécifier les marges des pages). Comme l'indiquent les inventeurs
 du CSS, Håkon Wium Lie et Bert Bos (dans *Cascading Style Sheets : Designing
 for the Web*) :
@@ -270,7 +270,7 @@ for the Web*) :
 #### Les pixels
 
 - **Les pixels** (px) : ils ont été pendant longtemps l'unité la plus utilisée
-  en webdesign, autant pour définir des mises en page que pour les tailles de
+  en Webdesign, autant pour définir des mises en page que pour les tailles de
   fontes. On préfère actuellement utiliser des em ou des pourcentages.
 
 
@@ -385,7 +385,7 @@ La saturation et la luminosité sont exprimés en pourcentage.
 - **L - luminosité** : 0% correspond au noir, 100% au blanc. À 50% on obtient
   la luminosité "normale".
 
-Quelques exemples:
+Quelques exemples :
 
 -----|-----:
 `p { color: hsl(0, 100%, 50%) }` | <span style="padding: 0 0.3em; background:hsl(0, 100%, 50%);color:#fff">rouge</span>

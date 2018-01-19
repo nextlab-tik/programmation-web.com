@@ -99,7 +99,7 @@ s'applique à ces boîtes et cela impacte les boîtes environnantes.
 
 Pour cacher un élément, on utilise la valeur "none" de la propriété `display`.
 
-Prenons l'exemple suivant:
+Prenons l'exemple suivant :
 
 ```html
 {% include_absolute _cours/demos/display-types.html %}
@@ -151,7 +151,7 @@ Couleur et image de fond
 ------------------------
 
 Le fond d'un élément HTML est géré à travers les propriétés `backgroud-*` ou
-leurs propriété alias `backgroud`:
+leurs propriété alias `backgroud` :
 
 - `background-color` : Gérer la couleur du fond. Il accepte les même valeurs
   acceptées par la propriété `color`. La valeur `transparent` permet de rendre
@@ -194,7 +194,7 @@ On peut gérer l'image du fond avec les propriétés ci-dessous.
   propriété accepte deux valeurs : "fixed" (pour fixer le fond) et "scroll"
   (valeur par défaut).
 
-Prenons l'exemple suivant:
+Prenons l'exemple suivant :
 
 ```html
 {% include_absolute _cours/demos/background-image.html %}

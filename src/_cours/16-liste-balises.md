@@ -5,7 +5,7 @@ published: false
 permalink: /cours/liste-balises.html
 ---
 
-Liste des tous les balises HTML disponibles (HTML 5.1):
+Liste des tous les balises HTML disponibles (HTML 5.1) :
 
 Eléments de structure d'un document
 -----------------------------------
@@ -26,7 +26,7 @@ Eléments de structure d'un document
 : Définit une section dans un document
 
 
-Nouveaux éléments de structure introduits avec HTML5:
+Nouveaux éléments de structure introduits avec HTML5 :
 
 `<article>`
 : Définit un article (un contenu indépendant)
@@ -132,7 +132,7 @@ Balises de texte
 Listes, Définitions, etc
 ------------------------
 
-Balises pour les listes:
+Balises pour les listes :
 
 `<ol>`
 : Defines an ordered list
@@ -150,7 +150,7 @@ Balises pour les listes:
 : Defines a visible heading for a `<details>` element
 
 
-Balises pour les définitions:
+Balises pour les définitions :
 
 `<dd>`
 : Defines a description/value of a term in a description list
@@ -382,7 +382,7 @@ Autres balises
 Balises obsolètes
 -----------------
 
-Balises qui ne sont plus supportées en HTML5:
+Balises qui ne sont plus supportées en HTML5 :
 
 `<acronym>`
 : Use `<abbr>` instead. Defines an acronym.

@@ -26,7 +26,7 @@ deuxième colonne) :
 {% include_relative demos/tableau-simple.html %}
 ```
 
-Le tableau résultant est:
+Le tableau résultant est :
 
 <p>
   <iframe height='70' scrolling='no' src='demos/tableau-simple.html'></iframe>
@@ -40,7 +40,7 @@ l'exploitation du tableau visuellement.
 {% include_relative demos/tableau-head.html %}
 ```
 
-Le tableau résultant est:
+Le tableau résultant est :
 
 <p>
   <iframe height='90' scrolling='no' src='demos/tableau-head.html'></iframe>
@@ -67,7 +67,7 @@ respectivement des balises `<td>` et `<th>` qui prennent comme valeur le nombre
 des cellules à fusionner. Prenons comme exemple un tableau d'un mini emploie du
 temps avec les séances de cours sont de durée de 2 heures tantdis que les
 séances de TP sont de durée d'une heure. Sans les attributs de fusions, le
-tableau sera le suivant:
+tableau sera le suivant :
 
 ```html
 {% include_relative demos/table-without-colspan.html %}
@@ -102,20 +102,20 @@ la balise `<tbody>`. Prenons l'exemple précédent avec le groupement des lignes
 {% include_relative demos/tableau-thead-tfooter.html %}
 ```
 
-Le tableau résultant est:
+Le tableau résultant est :
 
 <p>
   <iframe height='120' scrolling='no' src='demos/tableau-thead-tfooter.html'></iframe>
 </p>
 
 Pour ajouter un titre (une légende) à un tableau, on utilise la balise
-`<caption>` après l'ouverture de la balise `<table>` ou avant sa fermeture:
+`<caption>` après l'ouverture de la balise `<table>` ou avant sa fermeture :
 
 ```html
 {% include_relative demos/tableau-caption.html %}
 ```
 
-Le tableau résultant est:
+Le tableau résultant est :
 
 <p>
   <iframe height='120' scrolling='no' src='demos/tableau-caption.html'></iframe>

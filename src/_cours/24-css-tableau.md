@@ -113,7 +113,7 @@ Les captions
 ------------
 
 La propriété `caption-side` permet de gérer la position de la légende du
-tableau. Elle prend deux valeurs:
+tableau. Elle prend deux valeurs :
 
 - "top" : La légende est affichée en haut.
 - "bottom" : La légende est affichée en bas.
@@ -123,7 +123,7 @@ en faveur de la propriété `text-align`.
 
 Prenons comme exemple la structure HTML suivante, la légende même définie à
 l'ouverture de l'élément `<table>`, elle sera positionnée en bas en utilisant
-la propriété `caption-side`:
+la propriété `caption-side` :
 
 ```html
 {% include_absolute _cours/demos/tableau-caption-side.html %}

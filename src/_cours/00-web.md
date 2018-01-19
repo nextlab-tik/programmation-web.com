@@ -8,14 +8,14 @@ Le Web est un système permettant d'accéder à un ensemble de documents
 hypertextes en utilisant principalement un navigateur. Le Web était développé
 par Tim Berners-Lee au CERN (Suisse) en 1990.
 
-**Internet :** Un système de communication qui permet aux ordinateurs autour du
+**Internet** : Un système de communication qui permet aux ordinateurs autour du
 monde de communiquer et de s'échanger des informations entre eux.
 
 **Le Web** ou World Wide Web (toile d’araignée mondiale) ou le WWW : est un
 système hypertexte public fonctionnant sur Internet et qui permet de consulter,
 avec un navigateur, des pages mises en ligne dans des sites.
 
-**Hypertexte** : Ensemble de textes et d’autres documents qui peuvent être
+**Hypertexte** : Ensemble de textes et d’autres documents qui peuvent être
 consultés à partir d’un système d’envoi hiérarchisé.
 
 

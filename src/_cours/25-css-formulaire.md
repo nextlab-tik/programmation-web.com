@@ -35,7 +35,7 @@ On commencera par la mise en forme de `<fieldset>` et la légende.
 Mise en page du formulaire
 --------------------------
 
-Ensuite, on va mettre en page notre formulaire:
+Ensuite, on va mettre en page notre formulaire :
 - Harmoniser les lignes grâce à la propriété `width` et `display`.
 - Aérer nos formulaires en utilisant les propriétés `padding` et `margin`.
 - Mettre en forme les étiquettes en utilisant `text-align` et `font-weight`.

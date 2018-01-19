@@ -21,36 +21,36 @@ Les Vidéos
 ----------
 
 La balise `<video>` permet d'intégrer une vidéo dans la page Web. Un exemple
-d'un élément vidéo:
+d'un élément vidéo :
 
 ```html
 <video src="mon-video.mp4" controls></video>
 ```
 
-Les attributs principaux d'élément vidéo sont:
+Les attributs principaux d'élément vidéo sont :
 
-- **src**: l'URL de la vidéo à afficher.
-- **controls**: attribut booléen pour afficher les contrôles de base du lecteur
+- **src** : l'URL de la vidéo à afficher.
+- **controls** : attribut booléen pour afficher les contrôles de base du lecteur
 vidéo (lecture, pause, contrôle du volume).
-- **poster**: L'URL de l'image à afficher jusqu'à l'utilisateur play le vidéo.
-- **autoplay**: attribut booléen pour spécifier que le vidéo doit commencer
+- **poster** : L'URL de l'image à afficher jusqu'à l'utilisateur play le vidéo.
+- **autoplay** : attribut booléen pour spécifier que le vidéo doit commencer
 automatiquement quand la page est chargée.
-- **preload**: charger le contenu du fichier vidéo en même temps que la page
+- **preload** : charger le contenu du fichier vidéo en même temps que la page
   Web. La valeur `auto` permet de charge tout le contenu du fichier. La valeur
   `metadata` (par défaut dans la majorité des navigateurs) permet de charge que
   les données méta du fichier vidéo (longueur du vidéo, ...). La valeur `none`
   permet de ne charger aucun données du vidéo.
-- **loop**: attribut booléen permet de répéter le vidéo en boucle.
-- **muted**: attribut booléen permet de mettre le volume du vidéo en 0.
+- **loop** : attribut booléen permet de répéter le vidéo en boucle.
+- **muted** : attribut booléen permet de mettre le volume du vidéo en 0.
 
 
 Les navigateurs supportent de multiples formats de vidéo. Ce support diffère
-entre les navigateurs. Les deux formats principaux sont:
+entre les navigateurs. Les deux formats principaux sont :
 
-- **WebM**: Un conteneur vidéo développé par Google avec le codage vidéo
+- **WebM** : Un conteneur vidéo développé par Google avec le codage vidéo
   **VP8** ou **VP9** et le codage audio **Vorbis** ou **Opus**. Il est supporté
   par la majorité des navigateurs à l'exception de Safari.
-- **MP4**: Un conteneur vidéo avec le codage vidéo **H.264** ou **H.265** et le
+- **MP4** : Un conteneur vidéo avec le codage vidéo **H.264** ou **H.265** et le
   codage audio **MP3** ou **AAC**. Il est supporté par la majorité des
   navigateurs avec l'exception du Opera.
 
@@ -79,18 +79,18 @@ est limité aux formats audio.
 </audio>
 ```
 
-Les formats principaux d'audio sont:
+Les formats principaux d'audio sont :
 
-- **MP3**: Supporté par la majorité des navigateurs.
-- **WebM**: Utilise le codage audio **Vorbis**. Il est supporté par la majorité
+- **MP3** : Supporté par la majorité des navigateurs.
+- **WebM** : Utilise le codage audio **Vorbis**. Il est supporté par la majorité
   des navigateurs à l'exception de Safari.
-- **OGG**: Supporté principalement par Firefox et Google Chrome. Il peut
+- **OGG** : Supporté principalement par Firefox et Google Chrome. Il peut
   utiliser le codage audio **Opus** ou **Vorbis** ou **FLAC**.
 
 Les images vectorielles
 -----------------------
 
-Les images sont divisées en deux types principaux:
+Les images sont divisées en deux types principaux :
 
 - Les images pixels : dont l'unité est le pixel. Ils sont définis par une
   matrice de pixels. Les formats les plus connus sont : **JPEG**, **PNG**,
@@ -154,18 +154,18 @@ Adsense, ...).
 
 `<frame>` accepte un multiple des attributs dont les principales sont :
 
-- `src`: C'est le seul attribut obligatoire. Il permet de spécifier l'URL de la
+- `src` : C'est le seul attribut obligatoire. Il permet de spécifier l'URL de la
   page Web à intégrer.
-- `allowfullscreen`: Un attribut booléen pour permettre la page intégrée à
+- `allowfullscreen` : Un attribut booléen pour permettre la page intégrée à
   entrer le mode plein écran (par exemple : permettre le lecteur vidéo de
   YouTube d'entrer le mode plein écran).
-- `frameborder`: Si il est assigné la valeur "1", une bordure sera affichée
+- `frameborder` : Si il est assigné la valeur "1", une bordure sera affichée
   autour de l'élément qui est le défaut comportement. S'il est assigné la valeur
   "0", aucune bordure ne sera rendue. Il est recommandé d'utiliser le CSS pour
   spécifier la mise en forme de la bordure au future.
-- `height` et `width`: Spécifier la hauteur et la largeur de l'élément en
+- `height` et `width` : Spécifier la hauteur et la largeur de l'élément en
   pixels.
-- `scrolling`: Spécifié quand le navigateur doit fournir une barre de
+- `scrolling` : Spécifié quand le navigateur doit fournir une barre de
   défilement pour le cadre. Les valeurs possibles sont `yes` pour toujours
   afficher la barre, `no` pour jamais afficher le barre ou `auto` pour afficher
   la barre seulement quand l'espace fourni pour le cadre n'est pas suffisant
@@ -239,7 +239,7 @@ contenus multimédias aux sites Web.
 
 Le code d'intégration est fourni par ces services. Par exemple, YouTube fourni
 le code d'intégration dans le dialogue du partage de vidéo. Le code suivant est
-le code d'intégration d'un vidéo YouTube:
+le code d'intégration d'un vidéo YouTube :
 
 ```html
 {% include_relative demos/video-youtube.html %}

@@ -17,7 +17,7 @@ Création d'un formulaire
 ------------------------
 
 Les formulaires doivent être délimités par la balise `<form>` et `</form>`.
-Comme celui-ci:
+Comme celui-ci :
 
 ```html
 <form action="https://example.com/page-traitement" method="post">
@@ -25,11 +25,11 @@ Comme celui-ci:
 ```
 
 C'est un élément conteneur définissant un formulaire. Pour spécifier la manière
-dont il se comporte, on ajoute les attributs `action` et `method`:
+dont il se comporte, on ajoute les attributs `action` et `method` :
 
-- **`action`**: définit l'URL de la page où doivent être envoyées les données
+- **`action`** : définit l'URL de la page où doivent être envoyées les données
   collectées par le formulaire.
-- **`method`**: définit ma méthode HTTP utilisée pour envoyer les données
+- **`method`** : définit ma méthode HTTP utilisée pour envoyer les données
   ("get" ou "post").
 
 On ajoute ensuite les balises du formulaire. HTML5 a enrichi la liste des ces
