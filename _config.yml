@@ -65,7 +65,7 @@ defaults:
       type: cours
     values:
       layout: cours
-      embed: true
+      embed: false
       depth: 1
   -
     scope:
@@ -74,7 +74,7 @@ defaults:
     values:
       layout: tp
       bootstrap: true
-      embed: true
+      embed: false
       depth: 2
   -
     scope:
