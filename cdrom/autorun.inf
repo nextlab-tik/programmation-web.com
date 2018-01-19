@@ -1,8 +1,7 @@
 [autorun]
 shellexecute=index.html
-icon=logo.ico
 label=Sawssen Hariz Abid
-action=Lancer la Présentation
+action=Lancer la Presentation
 
 [Content]
 MusicFiles=0

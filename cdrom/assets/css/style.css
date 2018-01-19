@@ -108,6 +108,14 @@ main.tab-content>.tab-pane.show {
     height: calc(100% - 2em);
 }
 
+#cours-eot {
+    height: 100%;
+}
+
+#cours-eot .embed-responsive {
+    height: calc(100%);
+}
+
 /* slide */
 
 main.tab-content>.tab-pane-out {
