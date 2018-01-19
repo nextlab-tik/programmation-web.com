@@ -859,6 +859,20 @@ iframe {
     background-color: #28a745;
 }
 
+.quiz-board legend {
+    font-size: 1em;
+    margin: 10px 0 20px;
+    position: relative;
+    padding-right: 1.2em;
+}
+
+.quiz-board legend .quiz-score {
+    float: none;
+    position: absolute;
+    right: 0em;
+    top: 5px;
+}
+
 /*
  * Social share CSS
  */

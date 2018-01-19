@@ -3,6 +3,25 @@
 class QuizManager {
   constructor(data) {
     this.data = data;
+    for (const quiz of this.data.quizs) {
+      if (!quiz.type) {
+        if (quiz.choices && typeof(quiz.answer) === "number") {
+          quiz.type = "radio";
+        } else if (quiz.choices && typeof(quiz.answer) === "object") {
+          quiz.type = "checkbox";
+        } else if (!quiz.choices) {
+          quiz.type = "text";
+        }
+      }
+      if (quiz.type === "radio") {
+        quiz.answer -= 1;
+      } else if (quiz.type === "checkbox") {
+        quiz.answer = quiz.answer.map((a) => a - 1);
+      }
+      if (!quiz.score) {
+        quiz.score = this.data.defaultScore || 1;
+      }
+    }
   }
   insertInto(el) {
     el.innerHTML = this.toHTML();
@@ -23,7 +42,7 @@ class QuizManager {
   }
 
   quizToHTML(quiz, id) {
-    if (!quiz.type || quiz.type === "checkbox" || quiz.type === "radio") {
+    if (quiz.type === "checkbox" || quiz.type === "radio") {
       return this.checkQuizToHTML(quiz, id);
     } else {
       return this.inputToHTML(quiz, id);
@@ -58,7 +77,7 @@ class QuizManager {
       const quiz = this.data.quizs[i];
       let res;
       let success = false;
-      if (!quiz.type || quiz.type === "checkbox") {
+      if (quiz.type === "checkbox") {
         res = responses.getAll(i);
         if (res.length === quiz.answer.length && res.every((c) => quiz.answer.indexOf(parseInt(c)) > -1)) {
           success = true;
