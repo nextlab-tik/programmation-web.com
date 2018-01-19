@@ -20,6 +20,6 @@ title: Evaluations
 
 {{ quiz.description }}
 
-<p><a href="{{ quiz.url | relative_url | prepend:prefix }}" style="color: #00A6E4;">Commancez »</a></p>
+<p><a href="{{ quiz.url | relative_url | prepend:prefix }}" style="color: #00A6E4;">Commencez »</a></p>
 
 {% endfor %}

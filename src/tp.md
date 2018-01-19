@@ -25,7 +25,7 @@ title: Travaux Pratiques
 {{ tp.description }}
 
 <p>
-  <a href="{{ tp.url | relative_url | prepend:prefix }}" style="color: #00A6E4; margin-right: 30px;">Commancez »</a>
+  <a href="{{ tp.url | relative_url | prepend:prefix }}" style="color: #00A6E4; margin-right: 30px;">Commencez »</a>
   <a href="{{ tp.url | replace: 'index.html', 'correction.html' | relative_url | prepend:prefix }}" style="color: #00A6E4;">Correction »</a>
 </p>
 
