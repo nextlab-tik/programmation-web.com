@@ -1,0 +1,10 @@
+[autorun]
+shellexecute=index.html
+icon=logo.ico
+label=Sawssen Hariz Abid
+action=Lancer la Présentation
+
+[Content]
+MusicFiles=0
+PictureFiles=0
+VideoFiles=0
