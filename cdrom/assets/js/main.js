@@ -2,25 +2,25 @@
 
 const galleries = $(".gallery");
 galleries.justifiedGallery({
-  border: 6,
+  border: 6
 }).on('jg.complete', function() {
   galleries.lightGallery({
-    subHtmlSelectorRelative: true,
+    // subHtmlSelectorRelative: true,
     thumbnail: true,
     zoom: true,
     fullscreen: true,
-    video: true,
+    video: true
   });
 });
 
-let isTabChanging = false;
+var isTabChanging = false;
 $('.tabs nav a[data-toggle="tab"]').on('show.bs.tab', function(e) {
   if (isTabChanging) {
     e.preventDefault();
     return;
   }
   const $nextPage = $(e.target.hash); // newly activated tab
-  let $currPage;
+  var $currPage;
   if (e.relatedTarget) {
     $currPage = $(e.relatedTarget.hash); // previous active tab
   } else {

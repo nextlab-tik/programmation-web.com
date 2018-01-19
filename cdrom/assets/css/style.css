@@ -100,6 +100,14 @@ main.tab-content>.tab-pane.show {
     display: inline;
 }
 
+#cours-web {
+    height: 100%;
+}
+
+#cours-web .embed-responsive {
+    height: calc(100% - 2em);
+}
+
 /* slide */
 
 main.tab-content>.tab-pane-out {
