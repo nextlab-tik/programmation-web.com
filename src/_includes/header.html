@@ -22,9 +22,9 @@
         <li><a href="{{ '/tp.html' | relative_url | prepend:prefix  }}">Travaux Pratiques</a></li>
         <li><a href="{{ '/quiz.html' | relative_url | prepend:prefix }}">Evaluations</a></li>
         <li> </li>
-        <li><input name="q" placeholder="Search" size="8" type="search" /></li>
+        <li><input name="q" placeholder="Search" size="8" type="search" maxlength="256" /></li>
       </ul>
-      <input name="hq" value="site:{{ site.url }}" type="hidden" maxlength="256" />
+      <input name="hq" value="site:{{ site.url }}" type="hidden" />
       <input name="filter" value="0" type="hidden" />
     </form>
   </nav>
