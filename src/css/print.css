@@ -1,5 +1,5 @@
 @page {
-    size: a4;
+    size: A4;
     margin: 1in 0;
 }
 
@@ -85,6 +85,7 @@ h1:not(.chapitre):not(.no-chapitre)::before {
 .page-break,
 .no-chapitre~h1 {
     page-break-before: always;
+    break-before: always;
 }
 
 h1,
@@ -94,7 +95,9 @@ h4,
 h5,
 h6 {
     page-break-after: avoid;
+    break-after: avoid-page;
     page-break-inside: avoid;
+    break-inside: avoid-page;
 }
 
 h1+p,
@@ -104,11 +107,13 @@ h4+p,
 h5+p,
 h6+p {
     page-break-before: avoid;
+    break-before: avoid-page;
 }
 
 iframe,
-img {
+figure {
     page-break-inside: avoid;
+    break-inside: avoid-page;
 }
 
 /* Table of Content */
