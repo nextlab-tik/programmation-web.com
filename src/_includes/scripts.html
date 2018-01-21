@@ -17,3 +17,17 @@
 {% if page.quiz -%}
 <script src="{{ "/js/quiz.js" | relative_url | prepend:prefix }}"></script>
 {%- endif %}
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['enableHeartBeatTimer']);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://api.admin.tik.tn/p";
+    _paq.push(['setTrackerUrl', u]);
+    _paq.push(['setSiteId', 12]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u; s.parentNode.insertBefore(g,s);
+  })();
+</script>

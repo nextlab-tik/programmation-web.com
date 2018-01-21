@@ -8,6 +8,9 @@ lang: fr_FR
 baseurl: ""
 url: "https://programmation-web.com"
 repo: https://github.com/lejenome/web-101
+webmaster_verifications:
+  google: S6sLGAfoubJHu5uLGJMU9sOD82LL7APn_EYSZQPOXsE
+  bing: 53107FC985BA81D864CE98CC28D80C1E
 
 source: ./src
 destination: ./www
