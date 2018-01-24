@@ -11,7 +11,7 @@ const JSFiles = [
   './src/**/*.js',
   './cdrom/assets/js/**/*.js',
   '!**/*.min.js',
-  '!*/vendor/**/*',
+  '!**/vendor/**/*',
   '!www/**/*',
   'gulpfile.js',
 ];
@@ -23,7 +23,7 @@ const CSSFiles = [
   './src/**/*.less',
   './cdrom/assets/css/**/*.css',
   '!**/*.min.css',
-  '!*/vendor/**/*',
+  '!**/vendor/**/*',
   '!www/**/*',
 ];
 
@@ -34,7 +34,7 @@ const HTMLFiles = [
   '!*/_includes/**/*',
   '!*/_quiz/*.html',
   '!*/_cours/*.html',
-  '!*/vendor/**/*',
+  '!**/vendor/**/*',
   '!src/_cours/demos/p-vs-pre.html',
   '!www/**/*',
 ];

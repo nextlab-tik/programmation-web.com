@@ -26,6 +26,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-relative-links
   - jekyll-paginate-v2
+  - jekyll-assets
   # - jekyll-toc
   # - jekyll-feed
 
@@ -47,6 +48,8 @@ collections:
     output: true
   quiz:
     output: true
+  assets:
+    ouput: true
 
 defaults:
   -
@@ -92,3 +95,22 @@ toc:
   min_level: 1
   max_level: 4
   type: ol
+
+assets:
+  # cdn: https://cdn.example.com
+  # skip_baseurl_with_cdn: false
+  # skip_prefix_with_cdn: false
+  source_map: false
+  destination: "/assets"
+  compression: true
+  gzip: true
+  prefix: "/assets"
+  # assets:
+  #   - "*.png"
+  #   - "bundle.css"
+  digest: true
+  sources:
+    - "_assets"
+  autoprefixer:
+    browsers:
+      - "last 2 versions"

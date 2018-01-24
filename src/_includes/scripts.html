@@ -11,11 +11,11 @@
 {% endif %}
 
 {%- if page.embed -%}
-<script src="{{ "/js/embed.js" | relative_url | prepend:prefix }}"></script>
+<script src="{{ "js/embed.js" | asset:"@path" | relative_url | prepend:prefix }}"></script>
 {%- endif %}
 
 {% if page.quiz -%}
-<script src="{{ "/js/quiz.js" | relative_url | prepend:prefix }}"></script>
+<script src="{{ "js/quiz.js" | asset:"@path" | relative_url | prepend:prefix }}"></script>
 {%- endif %}
 
 <script type="text/javascript">
