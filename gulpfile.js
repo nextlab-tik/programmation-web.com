@@ -88,11 +88,11 @@ gulp.task('copy', function() {
       'node_modules/font-awesome/css/*',
       '!**/*.map',
     ])
-    .pipe(gulp.dest(BASE_DIR + 'vendor/font-awesome/css'));
+    .pipe(gulp.dest(BASE_DIR + '_assets/vendor/font-awesome/css'));
   gulp.src([
       'node_modules/font-awesome/fonts/*',
     ])
-    .pipe(gulp.dest(BASE_DIR + 'vendor/font-awesome/fonts'));
+    .pipe(gulp.dest(BASE_DIR + '_assets/vendor/font-awesome/fonts'));
   gulp.src([
       'node_modules/bootstrap/dist/**/bootstrap.*',
       'node_modules/bootstrap/dist/**/bootstrap.*',
@@ -101,7 +101,7 @@ gulp.task('copy', function() {
       '!**/*.map',
       '!**/fonts/*',
     ])
-    .pipe(gulp.dest(BASE_DIR + 'vendor/bootstrap'));
+    .pipe(gulp.dest(BASE_DIR + '_assets/vendor/bootstrap'));
 });
 
 gulp.task('html', ['html:prettify']);

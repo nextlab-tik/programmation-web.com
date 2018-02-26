@@ -11,5 +11,8 @@ bootstrap: true
 </section>
 
 <script type="application/json" id="quiz-json">
-  {{ content }}
+{
+  "defaultScore": {{ page.defaultScore }},
+  "quizs": {{ page.quizs | jsonify }}
+}
 </script>

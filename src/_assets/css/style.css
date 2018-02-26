@@ -869,7 +869,7 @@ iframe {
 .quiz-board legend .quiz-score {
     float: none;
     position: absolute;
-    right: 0em;
+    right: 0;
     top: 5px;
 }
 

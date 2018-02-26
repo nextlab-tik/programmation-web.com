@@ -1,173 +1,134 @@
 ---
 title: Quiz 2 - CSS
 description: Évaluer vos connaissances en CSS et les Propriétés CSS.
+defaultScore: 1
+quizs:
+  - title: "Où peut se trouver le code CSS ?"
+    choices:
+      - "Dans l’élément <code>head</code> d'un fichier HTML"
+      - "Dans la déclaration doctype d’un fichier HTML"
+      - "Dans l'attribut <code>style</code> d'un élément HTML"
+      - "Dans l'attribut <code>class</code> d'un élément HTML"
+      - "Dans un fichier CSS externe"
+    answer: [1, 3, 5]
+  - title: "Vous créez une page Web et vous souhaitez appliquer une couleur beige clair à l'arrière-plan. Parmi les techniques suivantes, laquelle devez-vous utiliser ?"
+    choices:
+      - "Utiliser l’attribut HTML <code>bgcolor.</code>"
+      - "Utiliser la balise HTML <code>&lt;font&gt;</code>."
+      - "Utiliser la propriété CSS <code>background-color</code>."
+      - "Utiliser la propriété CSS <code>border-color</code>. "
+    answer: 3
+  - title: "Que désignent les exemples #EEE8AA et #F0E68C ?"
+    choices:
+      - "Des codes hexadécimaux des couleurs"
+      - "Un emplacement réservé au texte"
+      - "Des noms des champs du formulaire Web"
+      - "Aucune des réponses ci‑dessus"
+    answer: 1
+  - title: "Parfois, les couleurs sont exprimées avec des mots et parfois avec des nombres symboliques. Parmi les codes suivants, lesquels désignent le « bleu » ?"
+    choices:
+      - "<code>009</code>"
+      - "<code>#0000FF</code>"
+      - "<code>!008000</code>"
+      - "<code>#00f</code>"
+      - "<code>(128, 128, 128)</code>"
+    answer: [2, 4]
+  - title: "Vous ajoutez une liste à puces dans un document HTML. Vous souhaitez utiliser le carré comme symbole de marquage pour toutes les entrées de la liste. Quel est le code css correct ?"
+    choices:
+      - "<code>li { list-style-type: square; }</code>"
+      - "<code>li { list-type: square; }</code>"
+      - "<code>ul { list-symbol: square; }</code>"
+      - "<code>ul { list-style-type: square; }</code>"
+    answer: 4
+  - title: "Parmi les propositions suivantes, laquelle se rapporte le plus à CSS ?"
+    choices:
+      - "présentation"
+      - "contenu"
+      - "validation"
+      - "scripts"
+    answer: 1
+  - title: "Que pouvez-vous réaliser avec CSS ?"
+    choices:
+      - "créer des bordures arrondies pour les boîtes"
+      - "ajouter des ombres aux boîtes et au texte"
+      - "changer le contenu du texte"
+      - "utiliser plusieurs images pour l’arrière-plan"
+    answer: [1, 2, 4]
+  - title: "Vous souhaitez que votre document HTML référence des styles contenus dans un fichier nommé default.css. Quel balisage devez-vous utiliser dans votre document HTML ?"
+    choices:
+      - "<code>&lt;link css=\"default.css\" rel=\"stylesheet\" type=\"text/css\" /&gt;</code>"
+      - "<code>&lt;link href=\"default.css\" rel=\"stylesheet\" type=\"text/css\" /&gt;</code>"
+      - "<code>&lt;link href=\"default.css\" rel=\"css\" type=\"text/css\" /&gt;</code>"
+      - "<code>&lt;link href=\"defaut.css\" rel=\"stylesheet\" type=\"text/css\" /&gt;</code>"
+    answer: 2
+  - title: "Dans quelle section d’un fichier HTML la balise <code>&lt;link&gt;</code> d’un fichier CSS externe apparaît-elle ?"
+    choices:
+      - "déclaration doctype"
+      - "<code>&lt;head&gt;</code>"
+      - "<code>&lt;body&gt;</code>"
+      - "aucune des réponses ci‑dessus"
+    answer: 2
+  - title: "Comment s’appelle la construction <code>#slogan</code> dans le code suivant ?<pre>#solgan { color: green; }</pre>"
+    choices:
+      - "propriété"
+      - "valeur"
+      - "déclaration"
+      - "sélecteur d’ID"
+    answer: 4
+  - title: "Quels codes CSS devez-vous utiliser pour marquer le texte comme un commentaire ?"
+    choices:
+      - "<code>/* texte */</code>"
+      - "<code>/# texte #/</code>"
+      - "<code>&lt;!-- texte --&gt;</code>"
+      - "<code>&lt;* texte *&gt;</code>"
+    answer: 1
+  - title: "Vous optez pour la famille de polices serif dans un document HTML. Quel code CSS utilisez-vous ?"
+    choices:
+      - "<code>ffamily: serif;</code>"
+      - "<code>font = serif;</code>"
+      - "<code>font-family: Times New Roman;</code>"
+      - "<code>font-family: serif</code>"
+    answer: 4
+  - title: "Quel est le préfixe d’un sélecteur de classe CSS ?"
+    choices:
+      - "signe dièse"
+      - "point"
+      - "barre oblique"
+      - "rien, le préfixe est facultatif"
+    answer: 2
+  - title: "Quel composant du modèle de boîte CSS peut être transparent ou comporter une ligne avec une couleur ou un motif ?"
+    choices:
+      - "marge"
+      - "bordure"
+      - "marge intérieure"
+      - "contenu"
+    answer: 2
+  - title: "Vous avez créé une boîte et vous souhaitez arrondir uniquement l'angle supérieur droit avec un rayon de 30 pixels. Parmi les lignes de code suivantes, laquelle permet de créer cet effet ?"
+    choices:
+      - "<code>border-radius: 30px</code>"
+      - "<code>border-top-right-radius: 30px</code>"
+      - "<code>border-right-radius: 30em</code>"
+      - "<code>border-radius-top-right: 30px</code>"
+    answer: 2
+  - title: "Vous souhaitez ajouter une ombre à l'intérieur d'une boîte. Quel attribut devez-vous utiliser avec la propriété CSS box-shadow ?"
+    choices:
+      - "<code>h-shadow</code>"
+      - "<code>v-shadow</code>"
+      - "<code>spread</code>"
+      - "<code>inset</code>"
+    answer: 4
+  - title: "Quel élément la valeur #808080 affecte-t-elle dans le code suivant ?<pre>box-shadow: 10px 10px 5px #808080;</pre>"
+    choices:
+      - "taille de l'ombre portée"
+      - "couleur de l'ombre portée"
+      - "taille de la boîte"
+      - "couleur de la boîte"
+    answer: 2
+  - title: "Pour appliquer à un élément ou une image une transparence de 75 %, quelle propriété devez-vous utiliser ?"
+    choices:
+      - "<code>opacity: 25</code>"
+      - "<code>opacity: 0.25</code>"
+      - "<code>transparency: 75</code>"
+      - "<code>transparency: 0.75</code>"
+    answer: 2
 ---
-{
-    "defaultScore": 1,
-    "quizs": [{
-        "title": "Où peut se trouver le code CSS ?",
-        "choices": [
-          "Dans l’élément <code>head</code> d'un fichier HTML",
-          "Dans la déclaration doctype d’un fichier HTML",
-          "Dans l'attribut <code>style</code> d'un élément HTML",
-          "Dans l'attribut <code>class</code> d'un élément HTML",
-          "Dans un fichier CSS externe"
-        ],
-        "answer": [1, 3, 5]
-    }, {
-        "title": "Vous créez une page Web et vous souhaitez appliquer une couleur beige clair à l'arrière-plan. Parmi les techniques suivantes, laquelle devez-vous utiliser ?",
-        "choices": [
-          "Utiliser l’attribut HTML <code>bgcolor.</code>",
-          "Utiliser la balise HTML <code>&lt;font&gt;</code>.",
-          "Utiliser la propriété CSS <code>background-color</code>.",
-          "Utiliser la propriété CSS <code>border-color</code>. "
-        ],
-        "answer": 3
-    }, {
-        "title": "Que désignent les exemples #EEE8AA et #F0E68C ?",
-        "choices": [
-
-            "Des codes hexadécimaux des couleurs",
-            "Un emplacement réservé au texte",
-            "Des noms des champs du formulaire Web",
-            "Aucune des réponses ci‑dessus"
-        ],
-        "answer": 1
-    }, {
-        "title": "Parfois, les couleurs sont exprimées avec des mots et parfois avec des nombres symboliques. Parmi les codes suivants, lesquels désignent le « bleu » ?",
-        "choices": [
-          "<code>009</code>",
-          "<code>#0000FF</code>",
-          "<code>!008000</code>",
-          "<code>#00f</code>",
-          "<code>(128, 128, 128)</code>"
-        ],
-        "answer": [2, 4]
-    }, {
-        "title": "Vous ajoutez une liste à puces dans un document HTML. Vous souhaitez utiliser le carré comme symbole de marquage pour toutes les entrées de la liste. Quel est le code css correct ?",
-        "choices": [
-          "<code>li { list-style-type: square; }</code>",
-          "<code>li { list-type: square; }</code>",
-          "<code>ul { list-symbol: square; }</code>",
-          "<code>ul { list-style-type: square; }</code>"
-        ],
-        "answer": 4
-    }, {
-        "title": "Parmi les propositions suivantes, laquelle se rapporte le plus à CSS ?",
-        "choices": [
-            "présentation",
-            "contenu",
-            "validation",
-            "scripts"
-        ],
-        "answer": 1
-    }, {
-        "title": "Que pouvez-vous réaliser avec CSS ?",
-        "choices": [
-            "créer des bordures arrondies pour les boîtes",
-            "ajouter des ombres aux boîtes et au texte",
-            "changer le contenu du texte",
-            "utiliser plusieurs images pour l’arrière-plan"
-        ],
-        "answer": [1, 2, 4]
-    }, {
-        "title": "Vous souhaitez que votre document HTML référence des styles contenus dans un fichier nommé default.css. Quel balisage devez-vous utiliser dans votre document HTML ?",
-        "choices": [
-            "<code>&lt;link css=\"default.css\" rel=\"stylesheet\" type=\"text/css\" /&gt;</code>",
-            "<code>&lt;link href=\"default.css\" rel=\"stylesheet\" type=\"text/css\" /&gt;</code>",
-            "<code>&lt;link href=\"default.css\" rel=\"css\" type=\"text/css\" /&gt;</code>",
-            "<code>&lt;link href=\"defaut.css\" rel=\"stylesheet\" type=\"text/css\" /&gt;</code>"
-        ],
-        "answer": 2
-    }, {
-        "title": "Dans quelle section d’un fichier HTML la balise <code>&lt;link&gt;</code> d’un fichier CSS externe apparaît-elle ?",
-        "choices": [
-            "déclaration doctype",
-            "<code>&lt;head&gt;</code>",
-            "<code>&lt;body&gt;</code>",
-            "aucune des réponses ci‑dessus"
-        ],
-        "answer": 2
-    }, {
-        "title": "Comment s’appelle la construction <code>#slogan</code> dans le code suivant ?<pre>#solgan { color: green; }</pre>",
-        "choices": [
-            "propriété",
-            "valeur",
-            "déclaration",
-            "sélecteur d’ID"
-        ],
-        "answer": 4
-    }, {
-        "title": "Quels codes CSS devez-vous utiliser pour marquer le texte comme un commentaire ?",
-        "choices": [
-            "<code>/* texte */</code>",
-            "<code>/# texte #/</code>",
-            "<code>&lt;!-- texte --&gt;</code>",
-            "<code>&lt;* texte *&gt;</code>"
-        ],
-        "answer": 1
-    }, {
-        "title": "Vous optez pour la famille de polices serif dans un document HTML. Quel code CSS utilisez-vous ?",
-        "choices": [
-            "<code>ffamily: serif;</code>",
-            "<code>font = serif;</code>",
-            "<code>font-family: Times New Roman;</code>",
-            "<code>font-family: serif</code>"
-        ],
-        "answer": 4
-    }, {
-        "title": "Quel est le préfixe d’un sélecteur de classe CSS ?",
-        "choices": [
-            "signe dièse",
-            "point",
-            "barre oblique",
-            "rien, le préfixe est facultatif"
-        ],
-        "answer": 2
-    }, {
-        "title": "Quel composant du modèle de boîte CSS peut être transparent ou comporter une ligne avec une couleur ou un motif ?",
-        "choices": [
-            "marge",
-            "bordure",
-            "marge intérieure",
-            "contenu"
-        ],
-        "answer": 2
-    }, {
-        "title": "Vous avez créé une boîte et vous souhaitez arrondir uniquement l'angle supérieur droit avec un rayon de 30 pixels. Parmi les lignes de code suivantes, laquelle permet de créer cet effet ?",
-        "choices": [
-            "<code>border-radius: 30px</code>",
-            "<code>border-top-right-radius: 30px</code>",
-            "<code>border-right-radius: 30em</code>",
-            "<code>border-radius-top-right: 30px</code>"
-        ],
-        "answer": 2
-    }, {
-        "title": "Vous souhaitez ajouter une ombre à l'intérieur d'une boîte. Quel attribut devez-vous utiliser avec la propriété CSS box-shadow ?",
-        "choices": [
-            "<code>h-shadow</code>",
-            "<code>v-shadow</code>",
-            "<code>spread</code>",
-            "<code>inset</code>"
-        ],
-        "answer": 4
-    }, {
-        "title": "Quel élément la valeur #808080 affecte-t-elle dans le code suivant ?<pre>box-shadow: 10px 10px 5px #808080;</pre>",
-        "choices": [
-            "taille de l'ombre portée",
-            "couleur de l'ombre portée",
-            "taille de la boîte",
-            "couleur de la boîte"
-        ],
-        "answer": 2
-    }, {
-        "title": "Pour appliquer à un élément ou une image une transparence de 75 %, quelle propriété devez-vous utiliser ?",
-        "choices": [
-            "<code>opacity: 25</code>",
-            "<code>opacity: 0.25</code>",
-            "<code>transparency: 75</code>",
-            "<code>transparency: 0.75</code>"
-        ],
-        "answer": 2
-    }]
-}

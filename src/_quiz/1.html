@@ -2,286 +2,223 @@
 title: Quiz 1 - HTML
 description: Évaluer vos connaissances en HTML5, les bases et les différents
     types des éléments HTML.
+defaultScore: 1
+quizs:
+  - title: Parmi les groupes suivants, lequel s’occupe principalement du
+      développement et de la mise à jour de la spécification HTML5 ?
+    choices:
+      - Microsoft
+      - Apple
+      - W3C
+      - Toutes les réponses ci-dessus
+    answer: 3
+  - title: Quels sont les trois composants principaux de la famille HTML5 ?
+    choices:
+      - XML
+      - HTML
+      - CSS
+      - JavaScript
+    answer: [2, 3, 4]
+  - title: Quel outil pouvez-vous utiliser pour valider un fichier HTML5 ?
+    choices:
+      - Service de validation CSS de W3C
+      - Service de validation du balisage W3C
+      - Notepad++
+    answer: 2
+  - titre: "Toutes les affirmations suivantes sur HTML5 sont vraies, sauf :"
+    choices:
+      - Nécessite un serveur
+      - Peut être utilisé pour créer des applications Web et des applications de bureau ou de périphériques
+      - Est indépendant de la plateforme
+      - Est conçu à partir d'une norme ouverte
+    answer: 1
+  - title: Parmi les propositions suivantes, laquelle est un langage de marquage ?
+    choices:
+      - DOM
+      - CSS
+      - JavaScript
+      - HTML
+    answer: 4
+  - title: Parmi les balises suivantes, lesquelles sont obligatoires sur chaque page Web ?
+    choices:
+      - "<code>&lt;html&gt;</code>"
+      - "<code>&lt;head&gt;</code>"
+      - "<code>&lt;title&gt;</code>"
+      - "<code>&lt;body&gt;</code>"
+    answer: [1, 2, 3, 4]
+  - title: "Dans l’exemple de balisage suivant, que désigne <code>href</code> ?<pre>&lt;a href=\"http://www.example.com\"&gt;Ceci est un lien.&lt;/a&gt;</pre>"
+    choices:
+      - "Balise"
+      - "Attribut"
+      - "Valeur"
+      - "Élément"
+    answer: 2
+  - title: "Dans l'exemple de balisage suivant, que désignent les informations placées entre guillemets ?<pre>&lt;a href=\"http://www.example.com\"&gt;Ceci est un lien.&lt;/a&gt;</pre>"
+    choices:
+      - "Balise"
+      - "Attribut"
+      - "Valeur"
+      - "Élément"
+    answer: 3
+  - title: "Parmi les propositions suivantes, laquelle n’est pas un attribut global ?"
+    choices:
+      - "<code>class</code>"
+      - "<code>id</code>"
+      - "<code>mark</code>"
+      - "<code>lang</code>"
+    answer: 3
+  - title: "Parmi les déclarations suivantes, laquelle est la déclaration HTML5 doctype standard ?"
+    choices:
+      - "<code>&lt;!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.exemple.com/TR/xhtml11/DTD/xhtml11.dtd\"&gt;</code>"
+      - "<code>&lt;!DOCTYPE PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.exemple.com/TR/xhtml11/DTD/xhtml11.dtd\"&gt;</code>"
+      - "<code>&lt!DOCTYPE html5&gt;</code>"
+      - "<code>&lt!DOCTYPE html&gt;</code>"
+    answer: 4
+  - title: "Parmi les éléments suivants, lesquels sont nouveaux dans HTML5 ?"
+    choices:
+      - "<code>frameset</code>"
+      - "<code>b</code>"
+      - "<code>nav</code>"
+      - "<code>address</code>"
+    answer: [3, 4]
+  - title: "Quelle est la méthode correcte pour insérer une image dans une page web ?"
+    choices:
+      - "<code>&lt;img src=\"images/green.png\" alt=\"Ballon vert\" /&gt;</code>"
+      - "<code>&lt;img src=\"images/green.png\" title=\"Ballon vert\" /&gt;</code>"
+      - "<code>&lt;img href=\"images/green.png\" alt=\"Ballon vert\" /&gt;</code>"
+      - "<code>&lt;img src=\"images/green.png\" /&gt;</code>"
+    answer: 1
+  - title: "Parmi les propositions suivantes, laquelle est vraie concernant les éléments obsolètes ?"
+    choices:
+      - "Un élément obsolète n’est pas reproduit dans un navigateur Web."
+      - "Le groupe W3C ne recommande pas l'usage d'éléments obsolètes."
+      - "Vous recevrez un message d'erreur si vous essayez de valider une page Web qui contient un élément obsolète. "
+      - "Vous pouvez utiliser un élément obsolète si vous savez que les visiteurs de votre site Web utilisent des navigateurs qui ne sont pas à jour."
+    answer: [2, 3, 4]
+  - title: "Quel élément HTML5 permet de surligner des blocs de texte dans un document HTML ?"
+    choices:
+      - "<code>&lt;mark&gt;</code>"
+      - "<code>&lt;highlight&gt;</code>"
+      - "<code>&lt;emphasis&gt;</code>"
+      - "<code>&lt;yellow&gt;</code>"
+    answer: 1
+  - title: "Parmi les propositions suivantes concernant SVG, laquelle est vraie ?"
+    choices:
+      - "Un fichier SVG est un type d’image JPEG."
+      - "SVG a été mis en place dans HTML5."
+      - "SVG crée des images raster."
+      - "SVG est basé sur le langage XML."
+    answer: 4
+  - title: "Parmi les éléments suivants, lequel n’est pas considéré comme un balisage sémantique ?"
+    choices:
+      - "<code>article</code>"
+      - "<code>section</code>"
+      - "<code>div</code>"
+      - "<code>aside</code>"
+    answer: 3
+  - title: "Quel élément HTML5 définit les sous-sections d’un document, tels que les chapitres, les parties d’une thèse ou parties d’une page Web dont le contenu est distinct ?"
+    choices:
+      - "<code>aside</code>"
+      - "<code>section</code>"
+      - "<code>header</code>"
+      - "<code>article</code>"
+    answer: 2
+  - title: "Vous créez une page Web HTML5 et vous souhaitez inclure vos coordonnées. Quel est l’élément le plus approprié dans cette situation ?"
+    choices:
+      - "<code>address</code>"
+      - "<code>wbr</code>"
+      - "<code>nav</code>"
+      - "<code>article</code>"
+    answer: 1
+  - title: "Parmi les propositions suivantes sur l’élément footer, lesquelles sont vraies ?"
+    choices:
+      - "Il définit le pied de page d’un document ou d’une section."
+      - "Il est conçu pour les liens de navigation."
+      - "Vous ne pouvez définir qu’un seul pied de page par document."
+      - "Il s’affiche toujours au bas d’une page Web."
+    answer: [1]
+  - title: "Vous créez un article de procédure et vous souhaitez afficher les définitions de certains mots clés dans votre article. Quel élément HTML5 devez-vous utiliser pour les définitions ?"
+    choices:
+      - "<code>pre</code>"
+      - "<code>details</code>"
+      - "<code>article</code>"
+      - "<code>aside</code>"
+    answer: 4
+  - title: "Que permet de créer la balise <code>&lt;hr /&gt;</code> ?"
+    choices:
+      - "Un saut de page"
+      - "Une règle horizontale"
+      - "Une césure"
+      - "Un en-tête"
+    answer: 2
+  - title: "Vous souhaitez ajouter un titre avant une table HTML qui doit s’afficher une seule fois. Quelle balise utilisez-vous ?"
+    choices:
+      - "<code>&lt;title&gt;</code>"
+      - "<code>&lt;thead&gt;</code>"
+      - "<code>&lt;caption&gt;</code>"
+      - "<code>&lt;colgroup&gt;</code>"
+    answer: 3
+  - title: "Vous créez un formulaire Web qui doit afficher une réponse pour l’utilisateur lorsqu’il clique sur le bouton Soumettre. Quelle valeur devez-vous utiliser avec l’attribut target pour afficher la réponse dans une nouvelle fenêtre du navigateur sans nom ?"
+    choices:
+      - "<code>_blank</code>"
+      - "<code>_self</code>"
+      - "<code>_parent</code>"
+      - "<code>_top</code>"
+    answer: 1
+  - title: "Vous créez un formulaire Web dans lequel les utilisateurs peuvent joindre des fichiers. Quel attribut devez-vous utiliser avec l’élément input pour limiter les types de fichiers au format vidéo ?"
+    choices:
+      - "<code>form</code>"
+      - "<code>accept</code>"
+      - "<code>list</code>"
+      - "<code>formnovalidate</code>"
+    answer: 2
+  - title: "Vous souhaitez inviter les utilisateurs qui soumettent les informations via le formulaire Web à indiquer leur adresse e-mail. Parmi les lignes de code suivantes, laquelle est correcte ?"
+    choices:
+      - "<code>&lt;input email=\"required\" /&gt;</code>"
+      - "<code>&ltinput email=\"email\" required /&gt;</code>"
+      - "<code>&ltinput type=\"email\" required /&gt;</code>"
+      - "<code>&ltinput type=\"email\" pattern /&gt;</code>"
+    answer: 3
+  - title: "Quel attribut HTML5 offre un format (expression régulière) pour un champ d'entrée qui est utilisé pour valider le contenu du champ ?"
+    choices:
+      - "<code>pattern</code>"
+      - "<code>autofocus</code>"
+      - "<code>required</code>"
+      - "<code>placeholder</code>"
+    answer: 1
+  - title: "Vous créez un formulaire Web qui invite l’utilisateur à entrer un mot de passe. Quel attribut devez-vous utiliser avec l’élément input ?"
+    choices:
+      - "<code>type=\"password\"</code>"
+      - "<code>password=\"required\"</code>"
+      - "<code>type=password</code>"
+      - "<code>password=\"text\"</code>"
+    answer: 1
+  - title: "Quelle syntaxe avec l’attribut pattern devez-vous utiliser pour entrer un code produit composé de trois chiffres, séparés par un tiret et suivis d’une seule lettre en minuscule ?"
+    choices:
+       - "<code>[a-z]{1}-[0-9]{3}</code>"
+       - "<code>[0-9]{3}-[a-z]{1}</code>"
+       - "<code>[A-Z]{3}-[0-9]{1}</code>"
+       - "<code>[0-9]{1}-[a-z]{3}</code>"
+    answer: 2
+  - title: "L’attribut pattern fonctionne avec quels types d’entrée ?"
+    choices:
+      - "<code>image</code>"
+      - "<code>search</code>"
+      - "<code>file</code>"
+      - "<code>text</code>"
+    answer: [2, 4]
+  - title: "Parmi les propositions suivantes, laquelle désigne l’affichage d’un mot clé ou d’un groupe de mots qui décrit la valeur attendue d’un champ d’entrée, et qui disparaît lorsque l’utilisateur renseigne le champ ?"
+    choices:
+      - "<code>label</code>"
+      - "<code>placeholder</code>"
+      - "<code>title</code>"
+      - "<code>email</code>"
+    answer: 2
+  - title: "Parmi les formats suivants, lequel est le format général de l'élément video ?"
+    choices:
+      - "<code>&lt;movie src=\"file.mp4\" width=\"X\" height=\"Y\"&gt;</code>"
+      - "<code>&lt;movie href=\"file.mp4\" width=\"X\" height=\"Y\"&gt;</code>"
+      - "<code>&lt;video src=\"file.mp4\" width=\"X\" height=\"Y\"&gt;</code>"
+      - "<code>&lt;video href=\"file.mp4\" width=\"X\" height=\"Y\"&gt;</code>"
+    answer: 3
 ---
-{
-    "defaultScore": 1,
-    "quizs": [{
-        "title": "Parmi les groupes suivants, lequel s’occupe principalement du développement et de la mise à jour de la spécification HTML5 ?",
-        "choices": [
-            "Microsoft",
-            "Apple",
-            "W3C",
-            "Toutes les réponses ci-dessus"
-        ],
-        "answer": 3
-    }, {
-        "title": "Quels sont les trois composants principaux de la famille HTML5 ?",
-        "choices": [
-            "XML",
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ],
-        "answer": [2, 3, 4]
-    }, {
-        "title": "Quel outil pouvez-vous utiliser pour valider un fichier HTML5 ?",
-        "choices": [
-            "Service de validation CSS de W3C",
-            "Service de validation du balisage W3C",
-            "Notepad++"
-        ],
-        "answer": 2
-    }, {
-        "titre": "Toutes les affirmations suivantes sur HTML5 sont vraies, sauf :",
-        "choices": [
-            "Nécessite un serveur",
-            "Peut être utilisé pour créer des applications Web et des applications de bureau ou de périphériques",
-            "Est indépendant de la plateforme",
-            "Est conçu à partir d'une norme ouverte"
-        ],
-        "answer": 1
-    }, {
-        "title": "Parmi les propositions suivantes, laquelle est un langage de marquage ?",
-        "choices": [
-          "DOM",
-          "CSS",
-          "JavaScript",
-          "HTML"
-        ],
-        "answer": 4
-    }, {
-        "title": "Parmi les balises suivantes, lesquelles sont obligatoires sur chaque page Web ?",
-        "choices": [
-            "<code>&lt;html&gt;</code>",
-            "<code>&lt;head&gt;</code>",
-            "<code>&lt;title&gt;</code>",
-            "<code>&lt;body&gt;</code>"
-        ],
-        "answer": [1, 2, 3, 4]
-    }, {
-        "title": "Dans l’exemple de balisage suivant, que désigne <code>href</code> ?<pre>&lt;a href=\"http://www.example.com\"&gt;Ceci est un lien.&lt;/a&gt;</pre>",
-        "choices": [
-          "Balise",
-          "Attribut",
-          "Valeur",
-          "Élément"
-        ],
-        "answer": 2
-    }, {
-        "title": "Dans l'exemple de balisage suivant, que désignent les informations placées entre guillemets ?<pre>&lt;a href=\"http://www.example.com\"&gt;Ceci est un lien.&lt;/a&gt;</pre>",
-        "choices": [
-          "Balise",
-          "Attribut",
-          "Valeur",
-          "Élément"
-        ],
-        "answer": 3
-    }, {
-        "title": "Parmi les propositions suivantes, laquelle n’est pas un attribut global ?",
-        "choices": [
-          "<code>class</code>",
-          "<code>id</code>",
-          "<code>mark</code>",
-          "<code>lang</code>"
-        ],
-        "answer": 3
-    }, {
-        "title": "Parmi les déclarations suivantes, laquelle est la déclaration HTML5 doctype standard ?",
-        "choices": [
-          "<code>&lt;!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.exemple.com/TR/xhtml11/DTD/xhtml11.dtd\"&gt;</code>",
-          "<code>&lt;!DOCTYPE PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.exemple.com/TR/xhtml11/DTD/xhtml11.dtd\"&gt;</code>",
-          "<code>&lt!DOCTYPE html5&gt;</code>",
-          "<code>&lt!DOCTYPE html&gt;</code>"
-        ],
-        "answer": 4
-    }, {
-        "title": "Parmi les éléments suivants, lesquels sont nouveaux dans HTML5 ?",
-        "choices": [
-          "<code>frameset</code>",
-          "<code>b</code>",
-          "<code>nav</code>",
-          "<code>address</code>"
-        ],
-        "answer": [3, 4]
-    }, {
-        "title": "Quelle est la méthode correcte pour insérer une image dans une page web ?",
-        "choices": [
-          "<code>&lt;img src=\"images/green.png\" alt=\"Ballon vert\" /&gt;</code>",
-          "<code>&lt;img src=\"images/green.png\" title=\"Ballon vert\" /&gt;</code>",
-          "<code>&lt;img href=\"images/green.png\" alt=\"Ballon vert\" /&gt;</code>",
-          "<code>&lt;img src=\"images/green.png\" /&gt;</code>"
-        ],
-        "answer": 1
-    }, {
-        "title": "Parmi les propositions suivantes, laquelle est vraie concernant les éléments obsolètes ?",
-        "choices": [
-            "Un élément obsolète n’est pas reproduit dans un navigateur Web.",
-            "Le groupe W3C ne recommande pas l'usage d'éléments obsolètes.",
-            "Vous recevrez un message d'erreur si vous essayez de valider une page Web qui contient un élément obsolète. ",
-            "Vous pouvez utiliser un élément obsolète si vous savez que les visiteurs de votre site Web utilisent des navigateurs qui ne sont pas à jour."
-        ],
-        "answer": [2, 3, 4]
-    }, {
-        "title": "Quel élément HTML5 permet de surligner des blocs de texte dans un document HTML ?",
-        "choices": [
-            "<code>&lt;mark&gt;</code>",
-            "<code>&lt;highlight&gt;</code>",
-            "<code>&lt;emphasis&gt;</code>",
-            "<code>&lt;yellow&gt;</code>"
-        ],
-        "answer": 1
-    }, {
-        "title": "Parmi les propositions suivantes concernant SVG, laquelle est vraie ?",
-        "choices": [
-            "Un fichier SVG est un type d’image JPEG.",
-            "SVG a été mis en place dans HTML5.",
-            "SVG crée des images raster.",
-            "SVG est basé sur le langage XML."
-        ],
-        "answer": 4
-    }, {
-        "title": "Parmi les éléments suivants, lequel n’est pas considéré comme un balisage sémantique ?",
-        "choices": [
-            "<code>article</code>",
-            "<code>section</code>",
-            "<code>div</code>",
-            "<code>aside</code>"
-        ],
-        "answer": 3
-    }, {
-        "title": "Quel élément HTML5 définit les sous-sections d’un document, tels que les chapitres, les parties d’une thèse ou parties d’une page Web dont le contenu est distinct ?",
-        "choices": [
-            "<code>aside</code>",
-            "<code>section</code>",
-            "<code>header</code>",
-            "<code>article</code>"
-        ],
-        "answer": 2
-    }, {
-        "title": "Vous créez une page Web HTML5 et vous souhaitez inclure vos coordonnées. Quel est l’élément le plus approprié dans cette situation ?",
-        "choices": [
-            "<code>address</code>",
-            "<code>wbr</code>",
-            "<code>nav</code>",
-            "<code>article</code>"
-        ],
-        "answer": 1
-    }, {
-        "title": "Parmi les propositions suivantes sur l’élément footer, lesquelles sont vraies ?",
-        "choices": [
-            "Il définit le pied de page d’un document ou d’une section.",
-            "Il est conçu pour les liens de navigation.",
-            "Vous ne pouvez définir qu’un seul pied de page par document.",
-            "Il s’affiche toujours au bas d’une page Web."
-        ],
-        "answer": [1]
-    }, {
-        "title": "Vous créez un article de procédure et vous souhaitez afficher les définitions de certains mots clés dans votre article. Quel élément HTML5 devez-vous utiliser pour les définitions ?",
-        "choices": [
-            "<code>pre</code>",
-            "<code>details</code>",
-            "<code>article</code>",
-            "<code>aside</code>"
-        ],
-        "answer": 4
-    }, {
-        "title": "Que permet de créer la balise <code>&lt;hr /&gt;</code> ?",
-        "choices": [
-            "Un saut de page",
-            "Une règle horizontale",
-            "Une césure",
-            "Un en-tête"
-        ],
-        "answer": 2
-    }, {
-        "title": "Vous souhaitez ajouter un titre avant une table HTML qui doit s’afficher une seule fois. Quelle balise utilisez-vous ?",
-        "choices": [
-            "<code>&lt;title&gt;</code>",
-            "<code>&lt;thead&gt;</code>",
-            "<code>&lt;caption&gt;</code>",
-            "<code>&lt;colgroup&gt;</code>"
-        ],
-        "answer": 3
-    }, {
-        "title": "Vous créez un formulaire Web qui doit afficher une réponse pour l’utilisateur lorsqu’il clique sur le bouton Soumettre. Quelle valeur devez-vous utiliser avec l’attribut target pour afficher la réponse dans une nouvelle fenêtre du navigateur sans nom ?",
-        "choices": [
-            "<code>_blank</code>",
-            "<code>_self</code>",
-            "<code>_parent</code>",
-            "<code>_top</code>"
-        ],
-        "answer": 1
-    }, {
-        "title": "Vous créez un formulaire Web dans lequel les utilisateurs peuvent joindre des fichiers. Quel attribut devez-vous utiliser avec l’élément input pour limiter les types de fichiers au format vidéo ?",
-        "choices": [
-            "<code>form</code>",
-            "<code>accept</code>",
-            "<code>list</code>",
-            "<code>formnovalidate</code>"
-        ],
-        "answer": 2
-    }, {
-        "title": "Vous souhaitez inviter les utilisateurs qui soumettent les informations via le formulaire Web à indiquer leur adresse e-mail. Parmi les lignes de code suivantes, laquelle est correcte ?",
-        "choices": [
-            "<code>&lt;input email=\"required\" /&gt;</code>",
-            "<code>&ltinput email=\"email\" required /&gt;</code>",
-            "<code>&ltinput type=\"email\" required /&gt;</code>",
-            "<code>&ltinput type=\"email\" pattern /&gt;</code>"
-        ],
-        "answer": 3
-    }, {
-        "title": "Quel attribut HTML5 offre un format (expression régulière) pour un champ d'entrée qui est utilisé pour valider le contenu du champ ?",
-        "choices": [
-            "<code>pattern</code>",
-            "<code>autofocus</code>",
-            "<code>required</code>",
-            "<code>placeholder</code>"
-        ],
-        "answer": 1
-    }, {
-        "title": "Vous créez un formulaire Web qui invite l’utilisateur à entrer un mot de passe. Quel attribut devez-vous utiliser avec l’élément input ?",
-        "choices": [
-            "<code>type=\"password\"</code>",
-            "<code>password=\"required\"</code>",
-            "<code>type=password</code>",
-            "<code>password=\"text\"</code>"
-        ],
-        "answer": 1
-    }, {
-       "title": "Quelle syntaxe avec l’attribut pattern devez-vous utiliser pour entrer un code produit composé de trois chiffres, séparés par un tiret et suivis d’une seule lettre en minuscule ?",
-       "choices": [
-           "<code>[a-z]{1}-[0-9]{3}</code>",
-           "<code>[0-9]{3}-[a-z]{1}</code>",
-           "<code>[A-Z]{3}-[0-9]{1}</code>",
-           "<code>[0-9]{1}-[a-z]{3}</code>"
-       ],
-       "answer": 2
-    }, {
-        "title": "L’attribut pattern fonctionne avec quels types d’entrée ?",
-        "choices": [
-            "<code>image</code>",
-            "<code>search</code>",
-            "<code>file</code>",
-            "<code>text</code>"
-        ],
-        "answer": [2, 4]
-    }, {
-        "title": "Parmi les propositions suivantes, laquelle désigne l’affichage d’un mot clé ou d’un groupe de mots qui décrit la valeur attendue d’un champ d’entrée, et qui disparaît lorsque l’utilisateur renseigne le champ ?",
-        "choices": [
-            "<code>label</code>",
-            "<code>placeholder</code>",
-            "<code>title</code>",
-            "<code>email</code>"
-        ],
-        "answer": 2
-    }, {
-        "title": "Parmi les formats suivants, lequel est le format général de l'élément video ?",
-        "choices": [
-            "<code>&lt;movie src=\"file.mp4\" width=\"X\" height=\"Y\"&gt;</code>",
-            "<code>&lt;movie href=\"file.mp4\" width=\"X\" height=\"Y\"&gt;</code>",
-            "<code>&lt;video src=\"file.mp4\" width=\"X\" height=\"Y\"&gt;</code>",
-            "<code>&lt;video href=\"file.mp4\" width=\"X\" height=\"Y\"&gt;</code>"
-        ],
-        "answer": 3
-    }]
-}
