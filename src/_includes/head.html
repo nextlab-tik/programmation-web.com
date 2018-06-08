@@ -13,7 +13,6 @@
 <head>
   <meta charset="utf-8" />
 
-  {% seo -%}
   <meta name="keywords" content="
          {%- for tag in page.tags -%}
            {{ tag }},
@@ -23,30 +22,26 @@
   <link rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   {% if page.bootstrap %}
-  <link rel="stylesheet" type="text/css" href="{{ 'vendor/bootstrap/css/bootstrap.min.css' | asset:"@path" | relative_url | prepend:prefix }}" />
+  <link rel="stylesheet" type="text/css" href="{{ 'vendor/bootstrap/css/bootstrap.min.css' | prepend:"assets/" | relative_url | prepend:prefix }}" />
   {% endif -%}
 
   {% asset 'css/style.css' @inline %}
 
   {% if page.embed %}
-  <link rel="stylesheet" type="text/css" href="{{ 'vendor/syntax.css' | asset:"@path" | relative_url | prepend:prefix }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ 'vendor/syntax.css' | prepend:"assets/" | relative_url | prepend:prefix }}"/>
   {% endif -%}
 
-  <link rel="stylesheet" type="text/css" href="{{ 'vendor/font-awesome/css/font-awesome.min.css' | asset:"@path" | relative_url | prepend:prefix }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ 'vendor/font-awesome/css/font-awesome.min.css' | prepend:"assets/" | relative_url | prepend:prefix }}"/>
 
   {% if page.print %}
-  <link rel="stylesheet" type="text/css" href="{{ 'css/print.css' | asset:"@path" | relative_url | prepend:prefix }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ 'css/print.css' | prepend:"assets/" | relative_url | prepend:prefix }}"/>
   {% endif %}
 
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-
-  <link rel="shortcut icon" type="image/png" href="{{ 'imgs/logo-16x16.png' | asset:"@path" | relative_url | prepend:prefix }}" />
-  <link rel="icon" type="image/png" href="{{ 'imgs/logo-256x256.png' | asset:"@path" | relative_url | prepend:prefix }}" sizes="256x256" />
-  <link rel="icon" type="image/png" href="{{ 'imgs/logo-64x64.png' | asset:"@path" | relative_url | prepend:prefix }}" sizes="64x64" />
-  <link rel="apple-touch-icon" href="{{ 'imgs/logo-256x256.png' | asset:"@path" | relative_url | prepend:prefix }}" />
+  <link rel="shortcut icon" type="image/png" href="{{ 'imgs/logo-16x16.png' | prepend:"assets/" | relative_url | prepend:prefix }}" />
+  <link rel="icon" type="image/png" href="{{ 'imgs/logo-256x256.png' | prepend:"assets/" | relative_url | prepend:prefix }}" sizes="256x256" />
+  <link rel="icon" type="image/png" href="{{ 'imgs/logo-64x64.png' | prepend:"assets/" | relative_url | prepend:prefix }}" sizes="64x64" />
   <script>
       (function(i, s, o, g, r, a, m) {
           i['GoogleAnalyticsObject'] = r;
