@@ -1,6 +1,6 @@
 ---
 title: À Propos
-chapitre:
+chapitre: Annexe
 permalink: /cours/about.html
 ---
 

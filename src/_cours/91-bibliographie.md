@@ -1,6 +1,6 @@
 ---
 title: Bibliographie
-chapitre:
+chapitre: Annexe
 permalink: /cours/bibliographie.html
 ---
 

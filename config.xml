@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="tn.sawssenhariz.radio" version="1.0.0" versionCode="10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Web 101</name>
+<widget id="tn.sawssenhariz.programmation_web" version="1.0.0" versionCode="10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Programmation Web</name>
     <description>Apprendre à programmer des sites et applications Web en utilisants HTML5, CSS3 et JavaScript.</description>
-    <author email="sawssenhariz@yahoo.fr" href="https://sawssenhariz.tn">
+    <author email="sawssenhariz@yahoo.fr" href="https://programmation-web.com">
       Sawssen Hariz
   </author>
     <icon src="www/imgs/logo-256x256.png" />
