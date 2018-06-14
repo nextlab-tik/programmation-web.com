@@ -6,6 +6,5 @@ www
 node_modules
 platforms
 plugins
-Gemfile.lock
 .bundle
 www
