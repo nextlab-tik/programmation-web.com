@@ -12,7 +12,7 @@ un format déterminé par le concepteur et réalisé par le programmeur Web.
 Les versions du langage HTML
 ----------------------------
 
-Durant ses 25 années d'existence, le standard HTML a connu diverses évolutions.
+Durant ses années d'existence, le standard HTML a connu diverses évolutions.
 La première version proposée en 1991 comportait 18 éléments. Différentes
 versions du standard HTML sont publiées, jusqu'à la version **HTML 4.01** en
 1999.
@@ -63,7 +63,7 @@ Si on veut qu'il soit un titre, on le met dans la balise `<h1>`.
 
 ### Anatomie d'un élément HTML
 
-Regardons de plus près cet élément paragraphe :
+Regardons de plus près cet élément paragraphe `<p>` :
 
 <figure>
   <img src="assets/imgs/html-tag-explication-by-mozilla-mdn.svg" alt="Anatomie d'un élément HTML" />
@@ -131,7 +131,7 @@ Les éléments peuvent avoir des "attributs".
 
 <figure>
   <img src="assets/imgs/html-tag-attributes-explication-by-mozilla-mdn.svg" alt="Les attributs d'une balise HTML" />
-  <figcaption>Les attributs d'une balise HTML. Par <cite><a href="https://developer.mozilla.org/" target="_blank">Mozilla Developer Network</a></cite></figcaption>
+  <figcaption>Les attributs d'une balise HTML</figcaption>
 </figure>
 
 Les attributs contiennent des informations supplémentaires qui portent sur
@@ -170,7 +170,7 @@ Les commentaires dans HTML sont délimités par `<!--` et `-->`. Par exemple :
 <!-- Un texte dans un commentaire -->
 ```
 
-Les commentaires peuvent exister dans n'importe qu'elle partie du code HTML
+Les commentaires peuvent exister dans n'importe quelle partie du code HTML
 mais pas dans une balise (entre les chevrons de la balise). Prenons l'exemple :
 
 ```html
@@ -199,7 +199,7 @@ HTML complète. Nous allons repartir de l'exemple contenu dans le fichier
     <title>Ma première page Web</title>
   </head>
   <body>
-    <p>Mon chat est <strong>vraiment fâché.</p></strong>
+    <p>Mon chat est <strong>vraiment fâché</strong>.</p>
   </body>
 </html>
 ```
@@ -371,7 +371,7 @@ des différents types.
   <iframe height='140' scrolling='no' src='demos/balise-ul-ol.html'></iframe>
 </p>
 
-#### Liste des descriptions
+#### Listes de descriptions
 
 La liste des descriptions permettent de décrire un terme. Elle est délimitée
 par la balise `<dl>` (**d**escription **l**ist). On utilise la balise `<dt>`
@@ -707,7 +707,7 @@ permet de quôter un bloc.
 #### Insertion du code
 
 L'élément `<code>` indique que le texte est un partie de code source d'un
-logiciel. Le texte sera affiché en font monospace.
+logiciel. Le texte sera affiché en fonte monospace.
 
 ```html
 {% include_relative demos/balise-code.html %}
@@ -770,7 +770,7 @@ Un exemple de l'élément `<div>` :
 Balises structurantes
 ---------------------
 
-HTML5 a ajouté un ensembles de balises dont un ensemble des balises
+HTML5 a ajouté un ensembles de balises dont un ensemble de balises
 structurantes qui permettent de construire un document HTML plus sémantique et
 qui sont préférées à l'utilisation de `<div>` quand c'est possible. Ces balises
 n'ont pas un effet visuel dans le document. C'est le rôle du CSS.
@@ -783,7 +783,7 @@ entier (en-tête de page).
 
 section
 : Section générique regroupant un même sujet, une même fonctionnalité, de
-préférence avec un en-tête, ou bien section d'application Web.
+préférence avec une en-tête, ou bien une section d'application Web.
 
 article
 : Section de contenu indépendante, pouvant être extraite individuellement du
@@ -805,7 +805,7 @@ footer
 
 ### Structure d'une page Web d'un article
 
-On va démontrer la structure d'une page Web d'un article. Cette page contient :
+On va montrer la structure d'une page Web d'un article. Cette page contient :
 
 - en-tête de page : contient le nom du site Web, le logo, etc. Cette
   partie est délimitée par la balise `<header>`.
@@ -823,10 +823,14 @@ On va démontrer la structure d'une page Web d'un article. Cette page contient :
 - corps de la page : contient l'article et la section complémentaire. Cette
   partie est délimitée par la balise `<main>`.
 
+### Application
+
 <figure>
   <img src="assets/imgs/illustrates-article-page-fig-3.1-by-beginning_HTML5_and_CSS3.png" alt="Structure sémentique d'une page Web contenant un article" height="400" />
   <figcaption>Structure sémantique d'une page Web contenant un article. Par <cite>Beginning HTML5 and CSS3</cite></figcaption>
 </figure>
+
+**Exemple:** le code HTML suivant permet de rendre la page juste après.
 
 ```html
 {% include_relative demos/demo-article.html %}

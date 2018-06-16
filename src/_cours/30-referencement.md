@@ -18,15 +18,15 @@ Il existe deux types de référencements :
   (aux enchères, donc très coûteux) les moteurs de recherche pour obtenir un
   positionnement dans les espaces réservés à cet effet.
 
-Terminologies
--------------
+Terminologie
+------------
 
 L'annuaire
-: il fonctionne telle une encyclopédie : les sites sont y classées par thèmes et
+: il fonctionne telle une encyclopédie : les sites y sont classés par thème et
 par ordre alphabétique.
 
 Le moteur de recherche
-: c'est un système automatique qui parcoure l'Internet et ajoute les sites et
+: c'est un système automatique qui parcourt l'Internet et ajoute les sites et
 les pages qu'il rencontre à sa base.
 
 Le positionnement
@@ -38,8 +38,8 @@ un mot spécifique)
 Importance du référencement Web
 -------------------------------
 
-Le nombre des utilisateurs du Web est des milliard d'utilisateurs dont la
-plus tard comptent en les moteurs de recherche pour trouver et accéder à
+Le nombre des utilisateurs du Web est des milliards d'utilisateurs dont la
+pluspart comptent en les moteurs de recherche pour trouver et accéder à
 l'information.
 
 Donc, le référencement Web est une étape incontournable pour augmenter le
@@ -78,7 +78,7 @@ s'attacher à créer un contenu consistant et original.
 Un contenu original ne signifie pas un contenu qui n'est proposé par aucun
 autre site, cela serait une mission impossible. En revanche, il est possible de
 traiter un sujet et de lui ajouter une valeur et ceci en approfondissant
-certains points, en l'organisant d'une manière originale et ou en mettant en
+certains points, en l'organisant d'une manière originale et/ou en mettant en
 relation différentes informations.
 
 D'autre part, toujours dans l'objectif de fournir le meilleur contenu aux
@@ -192,7 +192,7 @@ On distingue cinq types de méta tags :
 ```
 
 - Les métas `itemprop`, permettant de définir des métadonnées supplémentaires
-  qui ne sont pas destinés aux navigateurs Web. Ils sont par exemple utilisées
+  qui ne sont pas destinées aux navigateurs Web. Ils sont par exemple utilisées
   pour définir les informations sémantiques pour le protocole
   [Schema.org](https://schema.org/) qui est utilisé par les moteurs de
   recherches comme Google Search pour explorer les sites Web.

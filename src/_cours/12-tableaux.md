@@ -10,8 +10,8 @@ construire des tableaux simples et des tableaux complexes et les mettre en
 formes avec le CSS. Dans ce chapitre, nous allons introduire ces balises HTML.
 Leur présentation par CSS, sera introduite dans le chapitre CSS.
 
-Les bases du Tableau
---------------------
+Les balises de Tableau
+----------------------
 
 Pour structurer un tableau, on utilise la balise `<table>` qui est utilisé
 comme un conteneur (_container_) de toutes les données du tableau et qui

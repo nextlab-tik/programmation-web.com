@@ -1,5 +1,5 @@
 ---
-title: Style de text
+title: Style de texte
 chapitre: CSS
 permalink: /cours/style-text.html
 ---
@@ -34,7 +34,7 @@ h3 {
 }
 ```
 
-- **En mot clés** : Les mots sont : xx-small, x-smal, smal, medium, large,
+- **En mot clés** : Les mots sont : xx-small, x-small, small, medium, large,
 x-large, xx-large.
 
 ```css
@@ -90,11 +90,11 @@ strong {
 Les valeurs peuvent être des nombres de 100, 200 jusqu'à 900 dont 400 est un
 font d'épaisseur normal, 200 est la plus fine et 900 est la plus épaisse. Ou
 des mots clés absolues ("normal" pour 400, "bold" pour 700).  Ou des mots clés
-relatives à l'élément parent ("lighter" pour plus fine, "bolder" pour plus
-épaisse).  Quelques fonts ne supportent que les épaisseurs "normal" et "bold".
+relatifs à l'élément parent ("lighter" pour plus fine, "bolder" pour plus
+épaisse).  Quelques fontes ne supportent que les épaisseurs "normal" et "bold".
 
-Style du font
--------------
+Style de l'écriture: de la fonte
+--------------------------------
 
 La propriété `font-style` détermine si le texte doit être affiché normalement,
 en italique ou en oblique (penché) respectivement grâce à "normal", "italic",
@@ -177,6 +177,6 @@ Espacement
 La propriété `line-height` permet de gérer la distance entre les lignes. Elle
 accepte des valeurs absolues (en px) ou relatives (sans unité).
 
-La propriété `letter-spacing` permet de gérer l'espace entre les lettres tant
-que la propriété `word-spacing` permet de gérer l'espace entre les mots dans un
-texte.
+La propriété `letter-spacing` permet de gérer l'espace entre les lettres
+tantdis que la propriété `word-spacing` permet de gérer l'espace entre les mots
+dans un texte.

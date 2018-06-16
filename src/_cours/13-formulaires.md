@@ -29,11 +29,11 @@ dont il se comporte, on ajoute les attributs `action` et `method` :
 
 - **`action`** : définit l'URL de la page où doivent être envoyées les données
   collectées par le formulaire.
-- **`method`** : définit ma méthode HTTP utilisée pour envoyer les données
+- **`method`** : définit la méthode HTTP utilisée pour envoyer les données
   ("get" ou "post").
 
-On ajoute ensuite les balises du formulaire. HTML5 a enrichi la liste des ces
-balises pour supporter multiple type de données à saisir et a amélioré
+On ajoute ensuite les balises du formulaire. HTML5 a enrichi la liste de ces
+balises pour supporter différents types de données à saisir et a amélioré
 l'intégration avec le système.
 
 Éléments d'un formulaire
@@ -57,7 +57,7 @@ ligne de texte.
 
 ### Mot de passe
 
-Il permet la saisie d'une seule ligne des données sensible à la casse (mot de
+Il permet la saisie d'une seule ligne de données sensible à la casse (mot de
 passe). Le texte saisi n'est pas affiché mais des astérisques ou des points
 seront affichés.
 
@@ -105,13 +105,12 @@ La balise `<label>` permet de décrire le champ à saisir. On utilise l'attribut
   <iframe height='50' scrolling='no' src='demos/form-label.html'></iframe>
 </p>
 
-### Cases à cocher
+### Case à cocher
 
-Il permet de sélectionner des multiples de choix dans une liste proposée (soit
-zéro ou un ou multiple choix). Les choix (les bouton radios) doivent appartenir
-au même groupe en leur donnant le même nom (même valeur de l'attribut `name`)
-mais chaque choix (chaque bouton radio de même groupe) doit avoir une valeur
-différente de l'attribut `value`.
+Elle permet de sélectionner de multiple choix dans une liste proposée (soit
+zéro ou un ou multiple choix). Les choix doivent appartenir au même groupe en
+leur donnant le même nom (même valeur de l'attribut `name`) mais chaque choix
+doit avoir une valeur différente de l'attribut `value`.
 
 ```html
 {% include_relative demos/form-checkbox.html %}
@@ -122,10 +121,10 @@ différente de l'attribut `value`.
 
 ### Groupe radio
 
-Il permet de sélectionner un seul choix dans une liste proposée. Les choix (les
-boutons radios) doivent appartenir au même groupe en leur donnant le même nom
-(même valeur de l'attribut `name`) mais chaque choix (chaque bouton radio de
-même groupe) doit avoir une valeur différente de l'attribut `value`.
+Il permet de sélectionner un seul choix dans une liste proposée. Les choix qui
+sont les boutons radios doivent appartenir au même groupe en leur donnant le
+même nom (même valeur de l'attribut `name`) mais chaque choix (chaque bouton
+radio de même groupe) doit avoir une valeur différente de l'attribut `value`.
 
 ```html
 {% include_relative demos/form-radio.html %}
@@ -167,8 +166,8 @@ d'un élément `<button>` de type `reset`.
 Il permet de sélectionner un seul (ou plusieurs) choix dans une liste d’options
 déroulante. Les choix sont des balises `<option>` avec différentes valeurs de
 l'attribut `value`. Elles sont toutes regroupées dans une balise `<select>`.
-L'attribut `multiple` permet la sélection de multiples des choix dans une liste
-non déroulante.
+L'attribut `multiple` permet la sélection de multiples choix dans une liste non
+déroulante.
 
 ```html
 {% include_relative demos/form-select.html %}
@@ -354,8 +353,8 @@ champs textuels.
 
 ### checked, selected
 
-Deux attributs booléens pour spécifier les choix sélectionnés par défaut dans
-une liste de cases à cocher ou de choix sélectionné dans une liste de boutons
+Deux attributs booléens: pour spécifier les choix sélectionnés par défaut dans
+une liste de cases à cocher ou dans une liste de choix sélectionné, dans une liste de boutons
 radios en utilisant l'attribut `checked` et pour spécifier le(s) choix
 sélectionné(s) par défaut dans une liste d'options en utilisant l'attribut
 `selected`.
@@ -376,10 +375,10 @@ sélectionné(s) par défaut dans une liste d'options en utilisant l'attribut
 
 ### required
 
-Indiquer que la saisie des données (avec validation si supportée) dans le champ
+Indique que la saisie des données (avec validation si supportée) dans le champ
 est obligatoire avant l'envoi des données. Dans le cas des boutons radios ou
-d'une liste des choix, l'attribut booléen indique que un des choix doit être
-coché/sélectionné. Dans le cas des cases à cocher, il indique que ce choix doit
+d'une liste de choix, l'attribut booléen indique que, un des choix doit être
+coché/sélectionné. Dans le cas de cases à cocher, il indique que ce choix doit
 être coché. Dans un élément de type fichier, il indique qu'un fichier doit être
 sélectionné.
 
@@ -396,8 +395,8 @@ Spécifier l'expression régulière des valeurs valides à saisir dans les champ
 textuels. Dans le cas d'un champ d'email ou d'URL, l'attribut est appliqué
 seulement si l'email ou l'URL est déjà de format valide.
 
-Dans le premier exemple, on va limiter le texte saisi à seulement des chiffres
-hexadécimaux. On va utilisé une expression régulière qui accepte seulement des
+Dans le premier exemple, on va limiter le texte saisi seulement à des chiffres
+hexadécimaux. On va utiliser une expression régulière qui accepte seulement des
 chiffres décimaux ('0'...'9') et les lettres 'A' à 'F' en minuscule et en
 majuscule.
 
@@ -469,25 +468,25 @@ Les trois premiers champs sont des éléments `<input>` dont on a utilisé
 l'attribut `type` pour spécifier le type de données à saisir. Le HTML5 supporte
 de différents types :
 
-- le type `text` permet le saisir d'une seule ligne de texte (nom et prénom
+- le type `text` permet de saisir une seule ligne de texte (nom et prénom
   dans notre cas) sans contrôle ni validation,
 - le type `email` permet de saisir une adresse email qui doit forcément être
   une adresse électronique valide,
-- le type `tel` permet la saisi d'un numéro de téléphone malgré il n'y a pas
-  contrôle des numéro de téléphone car ils ne sont pas standard international,
-  l'utilisation du champ de type `tel` améliore l'intégration avec les
-  téléphone en affichant un clavier virtuel adapté au saisi des numéros de
+- le type `tel` permet la saisie d'un numéro de téléphone malgré il n'y a pas
+  contrôle de numéros de téléphone car ils ne sont pas "standard international",
+  L'utilisation du champ de type `tel` améliore l'intégration avec les
+  téléphones en affichant un clavier virtuel adapté à la saisie des numéros de
   téléphone (aussi pour le cas de champ de type `email`).
 - Le quatrième élément est un champ de texte de plusieurs lignes, on peut
   dimensionner ce champ en nombre de caractères visibles par ligne en utilisant
   l'attribut `cols` et le nombre de lignes visibles en utilisant l'attribut
   `rows`.
 
-Les boutons sont déclarés en utilisant l'élément `<input>`. Le premier bouton
-avec le type `submit` pour spécifier que ce bouton doit envoyer les données
-saisies à notre serveur. Le deuxième bouton et un autre élément de type `reset`
-pour spécifier que ce bouton doit réinitialiser les champs de notre formulaire.
-Pour changer le contenu de ces boutons, on utilise l'attribut `value`.
+Les boutons sont des éléments `<input>`. Le premier bouton avec le type
+`submit` pour spécifier que ce bouton doit envoyer les données saisies à notre
+serveur. Le deuxième bouton est un autre élément de type `reset` pour spécifier
+que ce bouton doit réinitialiser les champs de notre formulaire.  Pour changer
+le contenu de ces boutons, on utilise l'attribut `value`.
 
 ### Deuxième formulaire
 
@@ -505,28 +504,28 @@ Google attend de passer le terme à rechercher avec le nom `q` (query) à
 
 Pour le champ texte de saisie du terme, on a utilisé un élément `<input>` de
 type `search`. C'est un élément équivalent au champ de type `text` mais qui
-peut avoir un différent mise en forme dépend du navigateur utilisé. On a nommer
-ce champ `q` en utilisant l'attribut `name` comme le moteur de recherche Google
-attendre le terme à chercher passé avec le nom `q`. Deux nouvelles attributs
-utilisées dans cet élément sont `placeholder` qui permettre de définir le texte
-à afficher en gris à moitié transparent dans le champ si il est vide et qui
-peut être utiliser au lieu ou avec l'étiquette. L'autre attribut est `required`
-qui indique que ce champ est obligatoire à saisir avant l'envoie des données au
+peut avoir une différente mise en forme qui dépend du navigateur utilisé. On a nommé
+ce champ `q` en utilisant l'attribut `name` puisque le moteur de recherche Google
+attend le terme à chercher passé avec le nom `q`. Deux nouveaux attributs
+utilisés dans cet élément sont `placeholder` qui permet de définir le texte
+à afficher en gris à moitié transparent dans le champ s'il est vide et qui
+peut être utilisé au lieu ou avec l'étiquette. L'autre attribut est `required`
+qui indique que ce champ est obligatoire à saisir avant l'envoi des données au
 serveur.
 
 On a aussi utilisé l'élément `<button>` au lieu du `<input type="submit" />`.
-Ce sont ont presque le même rôle. En effet, l'élément `<button>` est plus
+Ils ont presque le même rôle. En effet, l'élément `<button>` est plus
 flexible et supporte la mise en forme de son contenu tandis que
-`<input type="submit" />` ne peut accepter que un texte simple dans l'attribut
+`<input type="submit" />` ne peut accepter qu'un texte simple dans l'attribut
 `value` sans des balises de mise en forme.
 
 Remarque
 --------
 
 Pendant la conception de votre formulaire, il est important de garder la
-quantité des données à saisir par l'utilisateur le minimal le plus possible.
-Parce qu'au point de vue de l'expérience utilisateur, plus que vous demandez
-des données, plus vous risquez que l'utilisateur s'en aille. De plus, de point
+quantité de données à saisir par l'utilisateur le minimum possible,
+parce que par expérience, plus que vous demandez
+de données, plus vous risquez que l'utilisateur s'en aille. De plus, de point
 de vue de la sécurité et de la confidentialité, plus que vous stockez des
 données à propos de vos utilisateurs dans vos serveurs plus que vous augmentez
 le dommage en cas d'une faille de sécurité et fuite des données personnelles de

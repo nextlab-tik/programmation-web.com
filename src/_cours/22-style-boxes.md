@@ -1,5 +1,5 @@
 ---
-title: Style des boxes
+title: Style des boites: boxe
 chapitre: CSS
 permalink: /cours/style-boxes.html
 ---
@@ -72,7 +72,7 @@ Les types de boîte
 ------------------
 
 Tout ce que nous avons vu jusqu'à présent s'applique aux boîtes qui sont des
-blocs. Cependant, il existe d'autres types de boîte en CSS et ceux-ci se
+blocs. Cependant, il existe d'autres types de boîte en CSS qui se
 comportent différemment. Le type de boîte qui s'applique pour un élément est
 déterminé par la propriété `display`. CSS fournit de nombreuses valeurs pour
 cette propriété. Dans cet article, nous nous concentrerons avant tout sur les
@@ -95,7 +95,7 @@ Une boîte `inline-block` (en bloc et en ligne)
 créer de cassure de ligne avant et après. Le contenu reste à l'intérieur de la
 boîte et la boîte ne suit pas les règles de saut à la ligne dicté par le
 contenu en dehors de la boîte. Enfin les propriétés du modèle de boîte
-s'applique à ces boîtes et cela impacte les boîtes environnantes.
+s'appliquent à ces boîtes et cela impacte les boîtes environnantes.
 
 Pour cacher un élément, on utilise la valeur "none" de la propriété `display`.
 
@@ -105,9 +105,13 @@ Prenons l'exemple suivant :
 {% include_absolute _cours/demos/display-types.html %}
 ```
 
+Le fichier `display-types.css` contient :
+
 ```css
 {% include_absolute _cours/demos/css/display-types.css %}
 ```
+
+Le rendu du programme HTML est le suivant :
 
 <p>
   <iframe height='500' scrolling='no' src='demos/display-types.html'></iframe>
@@ -116,15 +120,15 @@ Prenons l'exemple suivant :
 Bordure
 -------
 
-La bordure supporte des multiples des styles à travers la propriété
+La bordure supporte de multiples styles à travers la propriété
 `border-style` ou comme deuxième argument dans la propriété alias `border`.
 
 <p>
   <iframe height='500' scrolling='no' src='demos/border-styles.html'></iframe>
 </p>
 
-La propriété `border-radius` permet de créer des bordures arrondis. Elle
-accepte une valeur en pixels qui va correspondre à la valeur du radius de la
+La propriété `border-radius` permet de créer des bordures arrondies. Elle
+accepte une valeur en pixels qui va correspondre à la valeur du rayon de la
 bordure de tout ou de chaque coin.
 
 <figure>
@@ -168,8 +172,8 @@ leurs propriété alias `backgroud` :
 }
 ```
 - `background-image`: Gérer l'image de fond. Elle accepte comme valeur l'URL de
-  l'image passé à la fonction `url()`. La propriété peut accepter des multiples
-  des images séparées par virgule.
+  l'image passé à la fonction `url()`. La propriété peut accepter de multiples
+  images séparées par virgule.
 ```css
 .a {
     background-image: url(images/mon-image.png);
@@ -177,14 +181,14 @@ leurs propriété alias `backgroud` :
 ```
 On peut gérer l'image du fond avec les propriétés ci-dessous.
 - `background-position` : Positionner l'image relativement à son élément. La
-  valeur accepte deux arguments pour exprimé la position verticalement et
-  horizontalement. L'argument peut être exprimée en % ou en mot clés : "top",
+  valeur accepte deux arguments pour exprimer la position verticalement et
+  horizontalement. L'argument peut être exprimé en `%` ou en mot clés : "top",
   "left", "right", "bottom", "center" ou en pixels.
 - `background-repeat` : Gérer comment l'image sera répéter. Pour se répéter en
-  axe vertical en utilise la valeur "repeat-x". Pour se répéter en axe
+  axe vertical, on utilise la valeur "repeat-x". Pour se répéter en axe
   horizontal, on utilise la valeur "repeat-y". Pour se répéter dans les deux
-  axes, on utilise la valeur "repeat" qui est la valeur par défaut. Pour se ne
-  répéter pas, on utilise la valeur "no-repeat".
+  axes, on utilise la valeur "repeat" qui est la valeur par défaut. Pour ne pas
+  se répéter, on utilise la valeur "no-repeat".
 - `background-size` : Gérer la taille de l'image. La valeur peut être exprimée
   en % pour dimensionner l'image par rapport à la taille de l'élément auquel
   elle est appliquée, ou en pixels ou en utilisant les mots clés "cover" et

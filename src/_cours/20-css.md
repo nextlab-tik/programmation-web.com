@@ -18,12 +18,12 @@ typographique du texte.  La spécification **CSS 2**, publiée en 1998, étend
 considérablement les possibilités théoriques de CSS, avec environ 70 propriétés
 supplémentaires. Suivie par une version révisée, **CSS 2.1**.
 
-Dés la spécification **CSS 3**, CSS a été développée sous la forme de modules
+Dés la spécification **CSS 3**, le langage CSS a été développé sous la forme de modules
 indépendants, dans le but que des modules "prêts" puissent être implémentés
 rapidement par les navigateurs. Cet objectif a été atteint, et de nombreux
 modules sont actuellement bien supportés par les navigateurs et utilisés au
 quotidien (p.ex. *WebFonts*, *Media Queries*, *Flexbox*, *Backgrounds &
-Borders*), alors que d'autres sont encore en développement.  Et au lieu des
+Borders*), alors que d'autres sont encore en développement. En plus au lieu des
 versions du standard, il y aura des documents des modules stables dans chaque 3
 ans (2015, 2018, ...).
 
@@ -34,10 +34,10 @@ ans (2015, 2018, ...).
 
 L'année 2010, qui marque une large adoption du standard HTML5, représente une
 avancée importante pour le CSS 3. C'est en 2010 que le terme "Responsive Web
-Design" fait son apparition, sous la plume d'Ethan Marcotte.
+Design" faisant son apparition, sous la plume d'Ethan Marcotte.
 
 Principes de base
-----------
+-----------------
 
 Le langage CSS permet de définir des règles, qui sont exprimées sous forme de
 couples `propriété: valeur`.
@@ -212,6 +212,8 @@ code HTML suivant :
 Contrairement à la classe, l'identificateur est unique à un seul élément dans
 le document HTML.
 
+### Sélecteurs imbriqués
+
 `E.warning`
 : Sélectionner tout élément E ayant la classe "warning".
 
@@ -253,7 +255,7 @@ for the Web*) :
 - Utilisez les *ems* pour définir les tailles de fonte.
 - Utilisez des unités relatives pour définir la longueur des éléments de mise
   en page.
-- N'utilisez les longueurs absolues uniquement si les caractéristiques
+- N'utilisez les longueurs absolues que si les caractéristiques
   physiques du medium de sortie sont connues.
 
 #### Unités relatives
@@ -279,6 +281,11 @@ Les couleurs CSS
 
 Dans le langage CSS, les couleurs peuvent être exprimées en différentes
 notations :
+
+- par leur nom
+- par un code hexadecimal
+- Rouge, Vert, Bleu
+- RGBA et HSL
 
 ```css
 color: yellow;

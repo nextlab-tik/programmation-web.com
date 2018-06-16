@@ -10,11 +10,11 @@ Web comme des plugins de lecteurs vidéos/audio (VLC, RealPlayer, QuickTime,
 Windows Media Player, ...) ou des plateformes propriétaires comme Adobe Flash
 (anciennement Macromedia Flash) et Microsoft Silverlight. Ces solutions ont des
 limites comme le manque d'intégration avec le HTML/CSS, des problèmes de
-sécurité et de stabilité, et du manque d'accessibilité.
+sécurité, de stabilité et de manque d'accessibilité.
 
 HTML5 a ajouté un support native des contenus multimédia et des animations en
-utilisant un combinaison de HTML5, CSS3 et JavaScript. Dans ce section, on va
-démontrer seulement les fonctionnalités fondamentales du HTML5 sans CSS3 et
+utilisant une combinaison de HTML5, CSS3 et JavaScript. Dans cette section, on
+va démontrer seulement les fonctionnalités fondamentales du HTML5 sans CSS3 et
 JavaScript.
 
 Les Vidéos
@@ -32,16 +32,16 @@ Les attributs principaux d'élément vidéo sont :
 - **src** : l'URL de la vidéo à afficher.
 - **controls** : attribut booléen pour afficher les contrôles de base du lecteur
 vidéo (lecture, pause, contrôle du volume).
-- **poster** : L'URL de l'image à afficher jusqu'à l'utilisateur play le vidéo.
-- **autoplay** : attribut booléen pour spécifier que le vidéo doit commencer
+- **poster** : L'URL de l'image à afficher jusqu'à l'utilisateur dèmarre la vidéo.
+- **autoplay** : attribut booléen pour spécifier que la vidéo doit commencer
 automatiquement quand la page est chargée.
 - **preload** : charger le contenu du fichier vidéo en même temps que la page
-  Web. La valeur `auto` permet de charge tout le contenu du fichier. La valeur
-  `metadata` (par défaut dans la majorité des navigateurs) permet de charge que
-  les données méta du fichier vidéo (longueur du vidéo, ...). La valeur `none`
-  permet de ne charger aucun données du vidéo.
-- **loop** : attribut booléen permet de répéter le vidéo en boucle.
-- **muted** : attribut booléen permet de mettre le volume du vidéo en 0.
+  Web. La valeur `auto` permet de charger tout le contenu du fichier. La valeur
+  `metadata` (par défaut dans la majorité des navigateurs) permet de charger
+  seulement les données méta du fichier vidéo (longueur du vidéo, ...). La
+  valeur `none` permet de ne charger aucune donnée de la vidéo.
+- **loop** : attribut booléen permet de répéter la vidéo en boucle.
+- **muted** : attribut booléen permet de mettre le volume de la vidéo à 0.
 
 
 Les navigateurs supportent de multiples formats de vidéo. Ce support diffère
@@ -92,7 +92,7 @@ Les images vectorielles
 
 Les images sont divisées en deux types principaux :
 
-- Les images pixels : dont l'unité est le pixel. Ils sont définis par une
+- Les images pixels : dont l'unité est le pixel. Elles sont définies par une
   matrice de pixels. Les formats les plus connus sont : **JPEG**, **PNG**,
   **GIF**, **BMP**. Ces images perdent la qualité quand elles sont agrandies
   plus que leur taille originale.
@@ -145,22 +145,22 @@ HTML.
 On va discuter seulement l'élément `<iframe>` parce que les éléments `<frame>`
 et `<frameset>` sont obsolètes depuis HTML5. Cet élément permet d'intégrer des
 pages Web dans le document HTML courant ce qui permet d'intégrer des contenus
-des autres sites Web ou de réutiliser des contenus sans besoin de d'implémenter
-dans chaque page Web. Par exemple, on peut intégrer un vidéo ou un audio
-hébergé dans un fournisseur des services vidéos ou audio (YouTube, Vimeo,
+d'autres sites Web ou de réutiliser des contenus sans besoin de d'implémenter
+dans chaque page Web. Par exemple, on peut intégrer une vidéo ou un audio
+hébergé dans un fournisseur de services vidéos ou audio (YouTube, Vimeo,
 SoundCloud, ...), ou un système de commentaires (Disqus, ...), ou des cartes
 géographiques (Google Maps, Here, ...), ou des banners d'avertissement (Google
 Adsense, ...).
 
-`<frame>` accepte un multiple des attributs dont les principales sont :
+`<frame>` accepte de multiples attributs dont les principaux sont :
 
 - `src` : C'est le seul attribut obligatoire. Il permet de spécifier l'URL de la
   page Web à intégrer.
 - `allowfullscreen` : Un attribut booléen pour permettre la page intégrée à
   entrer le mode plein écran (par exemple : permettre le lecteur vidéo de
   YouTube d'entrer le mode plein écran).
-- `frameborder` : Si il est assigné la valeur "1", une bordure sera affichée
-  autour de l'élément qui est le défaut comportement. S'il est assigné la valeur
+- `frameborder` : S'il est assigné la valeur "1", une bordure sera affichée
+  autour de l'élément qui est le comportement par défault. S'il est assigné la valeur
   "0", aucune bordure ne sera rendue. Il est recommandé d'utiliser le CSS pour
   spécifier la mise en forme de la bordure au future.
 - `height` et `width` : Spécifier la hauteur et la largeur de l'élément en
@@ -199,7 +199,7 @@ l'élément `<object>` parce que l'élément `<embed>` est rarement utilisé et
 
 Les attributs principaux de `<object>` :
 
-- `data` : Spécifie l'URL du ressource à intégrer dans le document.
+- `data` : Spécifie l'URL de la ressource à intégrer dans le document.
 - `type` : Spécifie le type MIME de la ressource.
 
 Prenons l'exemple d'intégration d'un fichier PDF.
@@ -208,18 +208,18 @@ Prenons l'exemple d'intégration d'un fichier PDF.
 {% include_relative demos/balise-object-pdf.html %}
 ```
 
-Notons que l'utilisation de les éléments `<object>` et `<embed>` est rare à
+Notons que l'utilisation de l'élément `<object>` et `<embed>` est rare à
 causes des multiples raisons :
 
 - Les plateformes propriétaires comme Java Applets et Flash ne sont plus
-  populaires et ils sont entrain d'être obsolètes. Java Applets n'est plus
-  supporté depuis Java SE 9. Flash ne sera plus maintenu depuis 2020. Les PDFs
+  populaires et elles sont entrain d'être obsolètes. Java Applets n'est plus
+  supporté depuis Java SE 9. Flash ne sera plus maintenu à partir de 2020. Les PDFs
   sont généralement référencés au lieu d'être intégrés dans le document.
 - Les nouveaux éléments de HTML fourniront une meilleure alternative comme les
   éléments `<video>`, `<audio>`, ou les nouvelles fonctionnalités de CSS3 et
   JavaScript (API Web) comme canvas et WebGL.
 - Ces plateformes et plugins propriétaires ne sont pas portables et
-  et ne sont pas accessibles par tous les utilisateurs comme les utilisateurs
+  ne sont pas accessibles par tous les utilisateurs comme les utilisateurs
   des smartphones.
 - Le manque d'accessibilité et d'intégration entre le contenu du document HTML
   et le contenu des ressources externes.
@@ -227,17 +227,17 @@ causes des multiples raisons :
 Remarque
 --------
 
-Ils y a un grand nombre des vendeurs des services de vidéos en ligne
+Ils y a un grand nombre de vendeurs des services vidéos en ligne
 ([YouTube](https://www.youtube.com/), [Vimeo](https://vimeo.com/),
 [Dailymotion](https://dailymotion.com), ...) et des services d'audio en ligne
-([Soundcloud](https://soundcloud.com/), ...) qui sont gratuites et payantes.
+([Soundcloud](https://soundcloud.com/), ...) qui sont gratuits et payants.
 Ces services permettent d'héberger les vidéos/audio dans leurs serveurs sans
 limites de tailles ou de _bindwidths_. Ces services permettent d'intégrer leurs
 lecteurs vidéos/audio dans vos pages Web facilement avec un énorme nombre de
 fonctionnalités. Ils sont la solution la plus préférée pour ajouter des
 contenus multimédias aux sites Web.
 
-Le code d'intégration est fourni par ces services. Par exemple, YouTube fourni
+Le code d'intégration est fourni par ces services. Par exemple, YouTube fournit
 le code d'intégration dans le dialogue du partage de vidéo. Le code suivant est
 le code d'intégration d'un vidéo YouTube :
 

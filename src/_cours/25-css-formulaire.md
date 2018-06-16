@@ -5,12 +5,12 @@ permalink: /cours/css-formulaires.html
 ---
 
 La formulaire est un élément important de l'interaction avec l'utilisateur. Une
-mise en forme claire et attractive est très nécessaire pour assurer une
-meilleure expérience utilisateur. Dans ce guide, on va étudier un scénario
-d'une formulaire simple et les possibilité de l'améliorer.
+mise en forme claire et attractive est trés nécessaire pour assurer une
+meilleure expérience utilisateur. Dans ce cours, on va étudier un scénario
+d'un formulaire simple et les possibilité de l'améliorer.
 
-Au cours de ce guide, on supposera que la formulaire suivante est pour le saisi
-de l'identité de l'utilisateur et quelques informations d'un produit.
+Au cours de cet paragraphe, on supposera que le formulaire suivant est pour la
+saisie de l'identité de l'utilisateur et quelques informations d'un produit.
 
 ```html
 {% include_absolute _cours/demos/formulaire-style.html %}
@@ -42,8 +42,8 @@ Ensuite, on va mettre en page notre formulaire :
 - Mettre en forme la liste des boutons radios en utilisant `list-style`.
 - Mettre 5 lignes visible dans le champ de texte multi-ligne `<textarea>` en
   utilisant `height` avec l'unité `rem` et déactiver la possibilité de changer
-  le dimension du champ par souris en utilisant la propriété `resize`.
-- Fixer la problème d'alignement vertical de la liste des choix et de champ de
+  les dimensions du champ par souris en utilisant la propriété `resize`.
+- Fixer le problème d'alignement vertical de la liste des choix et de champ de
   texte multi-ligne en utilisant la propriété `vertical-align`.
 
 ```css
@@ -56,22 +56,21 @@ Ensuite, on va mettre en page notre formulaire :
 Bouton d'envoi
 --------------
 
-Comme bonus, on va changer le mise en forme du bouton d'envoi.
+Comme bonus, on va changer la mise en forme du bouton d'envoi.
 
-Le bouton sera aligner à droite en utilisant la propriété `float`.
-L'apparence de bouton sera changer en utilisant les propriétés du fond, de la
+Le bouton sera aligné à droite en utilisant la propriété `float`.
+L'apparence du bouton sera changée en utilisant les propriétés du fond, de la
 bordure et du texte.
 
-On va utilisé le pseudo classe `:hover` pour changer le couleur du fond
+On va utiliser le pseudo classe `:hover` pour changer le couleur du fond
 progressivement en utilisant la propriété `transition`.
 
-Pour ajouter une ombre autour le bouton, on a utilise la propriété `box-shadow`
-qui accepte une liste des définitions d'ombres séparées par des virgules
-chacune contient
-les
+Pour ajouter une ombre autour du bouton, on utilise la propriété `box-shadow`
+qui accepte une liste de définitions d'ombres séparées par des virgules,
+chacune contient les
 coordonnées de décalage de l'ombre en axe x et axe y, le rayon de flou
-(optionnel), le rayon d'étalement (optionnel) et finalement le couleur
-(optionnel).
+(optionnel), le rayon d'étalement (optionnel) et finalement la couleur
+(optionnelle).
 
 ```css
 {% include_absolute _cours/demos/css/formulaire-style-submit.css %}
@@ -83,8 +82,8 @@ coordonnées de décalage de l'ombre en axe x et axe y, le rayon de flou
 Validation de contenu
 ---------------------
 
-CSS3 fourni des ensembles des pseudo classes relié au état de validation des
-éléments de la formulaire.
+CSS3 fournit des ensembles de pseudo classes reliées aux états de validation des
+éléments du formulaire.
 
 - `:required` : Permet de sélectionner les éléments qui sont mis obligatoires.
 - `:valid` : Permet de sélectionner les éléments qui sont valides.
