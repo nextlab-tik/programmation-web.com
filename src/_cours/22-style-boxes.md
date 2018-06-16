@@ -1,5 +1,5 @@
 ---
-title: Style des boites: boxe
+title: Style des boites "boxe"
 chapitre: CSS
 permalink: /cours/style-boxes.html
 ---
