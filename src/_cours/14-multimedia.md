@@ -232,7 +232,7 @@ Ils y a un grand nombre de vendeurs des services vidéos en ligne
 [Dailymotion](https://dailymotion.com), ...) et des services d'audio en ligne
 ([Soundcloud](https://soundcloud.com/), ...) qui sont gratuits et payants.
 Ces services permettent d'héberger les vidéos/audio dans leurs serveurs sans
-limites de tailles ou de _bindwidths_. Ces services permettent d'intégrer leurs
+limites de tailles ou de _bandwidths_. Ces services permettent d'intégrer leurs
 lecteurs vidéos/audio dans vos pages Web facilement avec un énorme nombre de
 fonctionnalités. Ils sont la solution la plus préférée pour ajouter des
 contenus multimédias aux sites Web.
