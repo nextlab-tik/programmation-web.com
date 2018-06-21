@@ -33,6 +33,10 @@ nav {
     display: none;
 }
 
+.reversefootnote {
+    display: none;
+}
+
 .chapitre,
 .no-chapitre~h1 {
     font-size: 52px;
