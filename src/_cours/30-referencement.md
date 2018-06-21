@@ -39,7 +39,7 @@ Importance du référencement Web
 -------------------------------
 
 Le nombre des utilisateurs du Web est des milliards d'utilisateurs dont la
-pluspart comptent en les moteurs de recherche pour trouver et accéder à
+plupart se basent sur les moteurs de recherche pour trouver et accéder à
 l'information.
 
 Donc, le référencement Web est une étape incontournable pour augmenter le
@@ -441,9 +441,9 @@ Les logiciels de mesure d'audience peuvent fournir des informations précieuses
 pour analyser et suivre les effets d'un référencement (nombre de visites,
 profil des visiteurs, mots-clés ...).  En voici quelques uns :
 
-### XITI
+### Google Analytics
 
-Xiti n'est pas un logiciel mais un service Internet qui permet de suivre avec
+Google Analytics n'est pas un logiciel mais un service Internet qui permet de suivre avec
 précisions l'évolution du trafic d'un site Web. Son principal avantage réside
 dans le fait qu'il ne nécessite aucune installation coté serveur. Il suffit
 seulement d'insérer un petit code sur chacune des pages de son site.
@@ -452,16 +452,12 @@ Les statistiques proposés sont facilement exploitables et certaines
 vous permettent de mesurer l'impact de votre référencement : analyse des sites
 affluents (sites, moteurs de recherche), identification des mots-clés,…
 
-### WEBTRENDS
+### Matomo (Piwik)
 
 Logiciel très répandu chez les hébergeurs de sites Web qui permet de visualiser
 et de mesurer la fréquentation de son site Web. On trouve aussi des
 statistiques (sous formes d'histogrammes et de tableaux) concernant les
 référents et moteurs de recherche qui ont permis d'atteindre un site donné.
-
-Voici un URL présentant la majorité des logiciels de mesure d'audience avec un
-comparatif : [comparatif
-logiciels](http://forum.webrankinfo.com/comparatif-logiciels-mesure-audience-votre-avis-t21209.html)
 
 **Remarque :**
 

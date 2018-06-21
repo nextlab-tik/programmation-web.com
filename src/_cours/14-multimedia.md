@@ -143,7 +143,7 @@ HTML.
 ### Intégration des pages Web
 
 On va discuter seulement l'élément `<iframe>` parce que les éléments `<frame>`
-et `<frameset>` sont obsolètes depuis HTML5. Cet élément permet d'intégrer des
+et `<frameset>` sont obsolètes depuis HTML 5.0 . Cet élément permet d'intégrer des
 pages Web dans le document HTML courant ce qui permet d'intégrer des contenus
 d'autres sites Web ou de réutiliser des contenus sans besoin de d'implémenter
 dans chaque page Web. Par exemple, on peut intégrer une vidéo ou un audio
@@ -213,7 +213,7 @@ causes des multiples raisons :
 
 - Les plateformes propriétaires comme Java Applets et Flash ne sont plus
   populaires et elles sont entrain d'être obsolètes. Java Applets n'est plus
-  supporté depuis Java SE 9. Flash ne sera plus maintenu à partir de 2020. Les PDFs
+  supporté depuis Java SE 9. Les PDFs
   sont généralement référencés au lieu d'être intégrés dans le document.
 - Les nouveaux éléments de HTML fourniront une meilleure alternative comme les
   éléments `<video>`, `<audio>`, ou les nouvelles fonctionnalités de CSS3 et

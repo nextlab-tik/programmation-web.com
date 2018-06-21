@@ -99,7 +99,7 @@ Mise en Forme de d'en-tête et du pied
 -------------------------------------
 
 L'en-tête et le pied du tableau ont des mises en forme prédéfinies mais qui
-peuvent différenier selon les navigateurs. On va définir notre propre mise en
+peuvent se différencier selon les navigateurs. On va définir notre propre mise en
 forme pour le tableau de l'exemple précédent qui sera le même entre tous les
 navigateurs.
 

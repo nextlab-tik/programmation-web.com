@@ -45,20 +45,20 @@ lien hypertexte, mettre le texte en italique, etc. Par exemple, avec la ligne
 de contenu suivante :
 
 ```html
-Mon chat est fâché
+J'aime le Web
 ```
 
 Si vous souhaitez indiquer que ce texte fait partie d'un paragraphe, on le
 placera dans un élément de paragraphe (`<p>`) :
 
 ```html
-<p>Mon chat est fâché</p>
+<p>J'aime le Web</p>
 ```
 
 Si on veut qu'il soit un titre, on le met dans la balise `<h1>`.
 
 ```html
-<h1>Mon chat est fâché</h1>
+<h1>J'aime le Web</h1>
 ```
 
 ### Anatomie d'un élément HTML
@@ -88,12 +88,12 @@ Les composants principaux de notre élément sont :
 ### Imbriquer des éléments
 
 Vous pouvez placer des éléments au sein d'autres éléments, c'est ce qu'on
-appelle l'imbrication. Par exemple, si vous souhaitez montrer que votre chat
-est vraiment fâché, vous pouvez placer le mot « vraiment » dans un élément
+appelle l'imbrication. Par exemple, si vous souhaitez montrer que vous aimez
+beaucoup le web, vous pouvez placer le mot « beaucoup » dans un élément
 `<strong>`, ce qui signifie que le mot sera mis en gras :
 
 ```html
-<p>Mon chat est <strong>vraiment</strong> fâché.</p>
+<p>J'aime <strong>beaucoup</strong> le Web</p>
 ```
 
 Ce qui résulte en :
@@ -108,7 +108,7 @@ puis l'élément `<strong>`. Plus loin, on ferme l'élément `<strong>` puis on
 ferme l'élément `<p>`. Si on utilise le code suivant, ce sera incorrect :
 
 ```html
-<p>Mon chat est <strong>vraiment fâché.</p></strong>
+<p>J'aime <strong>beaucoup le Web</p></strong>
 ```
 
 Même que les navigateurs implémentent différents algorithmes pour essayer de
@@ -199,7 +199,7 @@ HTML complète. Nous allons repartir de l'exemple contenu dans le fichier
     <title>Ma première page Web</title>
   </head>
   <body>
-    <p>Mon chat est <strong>vraiment fâché</strong>.</p>
+    <p>J'aime <strong>beaucoup</strong> le Web.</p>
   </body>
 </html>
 ```

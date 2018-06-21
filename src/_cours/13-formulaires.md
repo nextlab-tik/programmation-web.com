@@ -353,11 +353,13 @@ champs textuels.
 
 ### checked, selected
 
-Deux attributs booléens: pour spécifier les choix sélectionnés par défaut dans
-une liste de cases à cocher ou dans une liste de choix sélectionné, dans une liste de boutons
-radios en utilisant l'attribut `checked` et pour spécifier le(s) choix
-sélectionné(s) par défaut dans une liste d'options en utilisant l'attribut
-`selected`.
+Deux attributs booléens:
+
+- pour spécifier les choix sélectionnés par défaut dans une liste de cases à
+  cocher ou dans une liste de choix sélectionné ou encore dans une liste de
+  boutons radios en utilisant l'attribut `checked`
+- pour spécifier le(s) choix sélectionné(s) par défaut dans une liste d'options
+  en utilisant l'attribut `selected`.
 
 ```html
 {% include_relative demos/form-checked.html %}
