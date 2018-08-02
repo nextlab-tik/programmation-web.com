@@ -457,6 +457,9 @@ section li {
     -webkit-hyphens: auto;
     hyphens: auto;
 }
+section dd {
+    text-align: justify;
+}
 
 nav,
 figure,

@@ -92,8 +92,8 @@ Les images vectorielles
 
 Les images sont divisées en deux types principaux :
 
-- Les images pixels : dont l'unité est le pixel. Elles sont définies par une
-  matrice de pixels. Les formats les plus connus sont : **JPEG**, **PNG**,
+- Les images pixels (`raster`) : dont l'unité est le pixel. Elles sont définies par une
+  matrice de pixels (`bitmap`). Les formats les plus connus sont : **JPEG**, **PNG**,
   **GIF**, **BMP**. Ces images perdent la qualité quand elles sont agrandies
   plus que leur taille originale.
 - Les images vectorielles : dont l'unité est celle des éléments géométriques
@@ -142,17 +142,17 @@ HTML.
 
 ### Intégration des pages Web
 
-On va discuter seulement l'élément `<iframe>` parce que les éléments `<frame>`
+On va discuter seulement l'élément `<iframe>` parceque les éléments `<frame>`
 et `<frameset>` sont obsolètes depuis HTML 5.0 . Cet élément permet d'intégrer des
 pages Web dans le document HTML courant ce qui permet d'intégrer des contenus
-d'autres sites Web ou de réutiliser des contenus sans besoin de d'implémenter
+d'autres sites Web ou de réutiliser des contenus sans besoin de l'implémenter
 dans chaque page Web. Par exemple, on peut intégrer une vidéo ou un audio
 hébergé dans un fournisseur de services vidéos ou audio (YouTube, Vimeo,
 SoundCloud, ...), ou un système de commentaires (Disqus, ...), ou des cartes
 géographiques (Google Maps, Here, ...), ou des banners d'avertissement (Google
 Adsense, ...).
 
-`<frame>` accepte de multiples attributs dont les principaux sont :
+`<iframe>` accepte de multiples attributs dont les principaux sont :
 
 - `src` : C'est le seul attribut obligatoire. Il permet de spécifier l'URL de la
   page Web à intégrer.

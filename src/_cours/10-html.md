@@ -778,12 +778,8 @@ n'ont pas un effet visuel dans le document. C'est le rôle du CSS.
 Les nouvelles balises structurantes du HTML5 :
 
 header
-: Section d'introduction d'un article, d'une autre section ou du document
+: Section d'introduction d'un article, d'une nouvelle section ou du document
 entier (en-tête de page).
-
-section
-: Section générique regroupant un même sujet, une même fonctionnalité, de
-préférence avec une en-tête, ou bien une section d'application Web.
 
 article
 : Section de contenu indépendante, pouvant être extraite individuellement du
@@ -802,6 +798,12 @@ informations supplémentaires.
 footer
 : Section de conclusion d'une section ou d'un article, voire du document entier
 (pied de page).
+
+section
+: Section générique regroupant un même sujet, une même fonctionnalité, de
+préférence avec une en-tête. Il est recommandé de ne l'utiliser que s'il n'y a
+pas d'élément sémantique plus spécifique (parmis les éléments ci-dessus
+indiqués) pour représenter le contenu.
 
 ### Structure d'une page Web d'un article
 

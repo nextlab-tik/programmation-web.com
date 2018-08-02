@@ -1,18 +1,18 @@
 ---
 title: Quiz 1 - HTML
-description: Évaluer vos connaissances en HTML5, les bases et les différents
+description: Évaluer les connaissances en HTML5, les bases et les différents
     types des éléments HTML.
 defaultScore: 1
 quizs:
   - title: Parmi les groupes suivants, lequel s’occupe principalement du
-      développement et de la mise à jour de la spécification HTML5 ?
+      développement et de la mise à jour des spécifications HTML ?
     choices:
       - Microsoft
-      - Apple
+      - Mozilla
       - W3C
       - Toutes les réponses ci-dessus
     answer: 3
-  - title: Quels sont les trois composants principaux de la famille HTML5 ?
+  - title: Quels sont les principales technologies utilisées par HTML5 ?
     choices:
       - XML
       - HTML
@@ -23,14 +23,15 @@ quizs:
     choices:
       - Service de validation CSS de W3C
       - Service de validation du balisage W3C
+      - Validator.nu
       - Notepad++
-    answer: 2
-  - titre: "Toutes les affirmations suivantes sur HTML5 sont vraies, sauf :"
+    answer: [2, 3]
+  - title: "Toutes les affirmations suivantes sur HTML5 sont vraies, sauf :"
     choices:
       - Nécessite un serveur
-      - Peut être utilisé pour créer des applications Web et des applications de bureau ou de périphériques
-      - Est indépendant de la plateforme
-      - Est conçu à partir d'une norme ouverte
+      - Peut être utilisé pour créer des applications Web et Mobile
+      - Est multi-plateforme
+      - Est un standard ouvert
     answer: 1
   - title: Parmi les propositions suivantes, laquelle est un langage de marquage ?
     choices:
@@ -39,7 +40,7 @@ quizs:
       - JavaScript
       - HTML
     answer: 4
-  - title: Parmi les balises suivantes, lesquelles sont obligatoires sur chaque page Web ?
+  - title: Parmi les balises suivantes, lesquelles sont obligatoires par le standard HTML ?
     choices:
       - "<code>&lt;html&gt;</code>"
       - "<code>&lt;head&gt;</code>"
@@ -60,13 +61,6 @@ quizs:
       - "Valeur"
       - "Élément"
     answer: 3
-  - title: "Parmi les propositions suivantes, laquelle n’est pas un attribut global ?"
-    choices:
-      - "<code>class</code>"
-      - "<code>id</code>"
-      - "<code>mark</code>"
-      - "<code>lang</code>"
-    answer: 3
   - title: "Parmi les déclarations suivantes, laquelle est la déclaration HTML5 doctype standard ?"
     choices:
       - "<code>&lt;!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.exemple.com/TR/xhtml11/DTD/xhtml11.dtd\"&gt;</code>"
@@ -76,24 +70,24 @@ quizs:
     answer: 4
   - title: "Parmi les éléments suivants, lesquels sont nouveaux dans HTML5 ?"
     choices:
-      - "<code>frameset</code>"
-      - "<code>b</code>"
-      - "<code>nav</code>"
-      - "<code>address</code>"
+      - "<code>iframe</code>"
+      - "<code>strong</code>"
+      - "<code>section</code>"
+      - "<code>header</code>"
     answer: [3, 4]
-  - title: "Quelle est la méthode correcte pour insérer une image dans une page web ?"
+  - title: "Quelle est la méthode la plus correcte pour insérer une image dans une page web ?"
     choices:
-      - "<code>&lt;img src=\"images/green.png\" alt=\"Ballon vert\" /&gt;</code>"
-      - "<code>&lt;img src=\"images/green.png\" title=\"Ballon vert\" /&gt;</code>"
-      - "<code>&lt;img href=\"images/green.png\" alt=\"Ballon vert\" /&gt;</code>"
-      - "<code>&lt;img src=\"images/green.png\" /&gt;</code>"
+      - "<code>&lt;img src=\"images/monimage.jpg\" alt=\"Ma photo\" /&gt;</code>"
+      - "<code>&lt;img src=\"images/monimage.jpg\" title=\"Ma photo\" /&gt;</code>"
+      - "<code>&lt;img href=\"images/monimage.jpg\" alt=\"Ma photo\" /&gt;</code>"
+      - "<code>&lt;img src=\"images/monimage.jpg\" /&gt;</code>"
     answer: 1
   - title: "Parmi les propositions suivantes, laquelle est vraie concernant les éléments obsolètes ?"
     choices:
-      - "Un élément obsolète n’est pas reproduit dans un navigateur Web."
+      - "Un élément obsolète n’est plus pris en charge par un navigateur Web."
       - "Le groupe W3C ne recommande pas l'usage d'éléments obsolètes."
       - "Vous recevrez un message d'erreur si vous essayez de valider une page Web qui contient un élément obsolète. "
-      - "Vous pouvez utiliser un élément obsolète si vous savez que les visiteurs de votre site Web utilisent des navigateurs qui ne sont pas à jour."
+      - "Le navigateur affiche une alerte quand on ouvre la page."
     answer: [2, 3, 4]
   - title: "Quel élément HTML5 permet de surligner des blocs de texte dans un document HTML ?"
     choices:
@@ -116,14 +110,14 @@ quizs:
       - "<code>div</code>"
       - "<code>aside</code>"
     answer: 3
-  - title: "Quel élément HTML5 définit les sous-sections d’un document, tels que les chapitres, les parties d’une thèse ou parties d’une page Web dont le contenu est distinct ?"
+  - title: "Quel élément HTML5 définit une section d’un document ayant un contexte bien déterminé ?"
     choices:
       - "<code>aside</code>"
       - "<code>section</code>"
       - "<code>header</code>"
       - "<code>article</code>"
-    answer: 2
-  - title: "Vous créez une page Web HTML5 et vous souhaitez inclure vos coordonnées. Quel est l’élément le plus approprié dans cette situation ?"
+    answer: 4
+  - title: "Quel est l’élément le plus approprié pour introduire des coordonnées dans une page Web ?"
     choices:
       - "<code>address</code>"
       - "<code>wbr</code>"
@@ -134,10 +128,10 @@ quizs:
     choices:
       - "Il définit le pied de page d’un document ou d’une section."
       - "Il est conçu pour les liens de navigation."
-      - "Vous ne pouvez définir qu’un seul pied de page par document."
+      - "On peut définir plusieurs pieds de page dans un même document."
       - "Il s’affiche toujours au bas d’une page Web."
-    answer: [1]
-  - title: "Vous créez un article de procédure et vous souhaitez afficher les définitions de certains mots clés dans votre article. Quel élément HTML5 devez-vous utiliser pour les définitions ?"
+    answer: [1, 3]
+  - title: "Pour afficher des informations complémentaires dans un article, quel élément HTML5 est le plus convenable à utiliser ?"
     choices:
       - "<code>pre</code>"
       - "<code>details</code>"
@@ -158,48 +152,48 @@ quizs:
       - "<code>&lt;caption&gt;</code>"
       - "<code>&lt;colgroup&gt;</code>"
     answer: 3
-  - title: "Vous créez un formulaire Web qui doit afficher une réponse pour l’utilisateur lorsqu’il clique sur le bouton Soumettre. Quelle valeur devez-vous utiliser avec l’attribut target pour afficher la réponse dans une nouvelle fenêtre du navigateur sans nom ?"
-    choices:
-      - "<code>_blank</code>"
-      - "<code>_self</code>"
-      - "<code>_parent</code>"
-      - "<code>_top</code>"
-    answer: 1
-  - title: "Vous créez un formulaire Web dans lequel les utilisateurs peuvent joindre des fichiers. Quel attribut devez-vous utiliser avec l’élément input pour limiter les types de fichiers au format vidéo ?"
+  - title: "Quel attribut permet de spécifier le format de fichiers à joindre dans un formulaire ?"
     choices:
       - "<code>form</code>"
       - "<code>accept</code>"
       - "<code>list</code>"
       - "<code>formnovalidate</code>"
     answer: 2
-  - title: "Vous souhaitez inviter les utilisateurs qui soumettent les informations via le formulaire Web à indiquer leur adresse e-mail. Parmi les lignes de code suivantes, laquelle est correcte ?"
+  - title: "Quelle ligne de code à utiliser pour saisir l'e-mail d'un utilisateur ?"
     choices:
       - "<code>&lt;input email=\"required\" /&gt;</code>"
       - "<code>&ltinput email=\"email\" required /&gt;</code>"
       - "<code>&ltinput type=\"email\" required /&gt;</code>"
       - "<code>&ltinput type=\"email\" pattern /&gt;</code>"
     answer: 3
-  - title: "Quel attribut HTML5 offre un format (expression régulière) pour un champ d'entrée qui est utilisé pour valider le contenu du champ ?"
+  - title: "Quel attribut à utiliser pour introduire une expression régulière pour vérifier un champ d'entrée ?"
     choices:
       - "<code>pattern</code>"
       - "<code>autofocus</code>"
       - "<code>required</code>"
       - "<code>placeholder</code>"
     answer: 1
-  - title: "Vous créez un formulaire Web qui invite l’utilisateur à entrer un mot de passe. Quel attribut devez-vous utiliser avec l’élément input ?"
+  - title: "Quelle ligne de code la plus convenable à utiliser pour saisir un mot de passe ?"
     choices:
       - "<code>type=\"password\"</code>"
       - "<code>password=\"required\"</code>"
       - "<code>type=password</code>"
       - "<code>password=\"text\"</code>"
     answer: 1
-  - title: "Quelle syntaxe avec l’attribut pattern devez-vous utiliser pour entrer un code produit composé de trois chiffres, séparés par un tiret et suivis d’une seule lettre en minuscule ?"
+  - title: "On veut vérifier l'exactitude d'un nombre hexadécimal de longeur maximale de quatre positions et préfixé par le caractère <code>x</code>. Quelle est la proposition correcte ?"
     choices:
-       - "<code>[a-z]{1}-[0-9]{3}</code>"
-       - "<code>[0-9]{3}-[a-z]{1}</code>"
-       - "<code>[A-Z]{3}-[0-9]{1}</code>"
-       - "<code>[0-9]{1}-[a-z]{3}</code>"
-    answer: 2
+      - "<code>[x-X][0,9a,f]{4}</code>"
+      - "<code>[xX][0-9,a-f,A-F]{1-4}</code>"
+      - "<code>[xX][0-9a-fA-F]{1,4}</code>"
+      - "<code>{xX}[0-9a-fA-F]{4}</code>"
+    answer: 3
+  - title: "Qulles sont les lignes de code permettant de vérifier un e-mail de type GMail ?"
+    choices:
+      - '<code>&lt;input type="email" pattern=".*@gmail\.com" /&gt;</code>'
+      - '<code>&lt;input type="text" pattern=".*@gmail\.com" /&gt;</code>'
+      - '<code>&lt;input type="email" pattern="[a-zA-Z0-9_.+-]+@gmail\.com" /&gt;</code>'
+      - '<code>&lt;input type="email" endwith="@gmail.com" /&gt;</code>'
+    answer: [1, 3]
   - title: "L’attribut pattern fonctionne avec quels types d’entrée ?"
     choices:
       - "<code>image</code>"
@@ -207,27 +201,27 @@ quizs:
       - "<code>file</code>"
       - "<code>text</code>"
     answer: [2, 4]
-  - title: "Parmi les propositions suivantes, laquelle désigne l’affichage d’un mot clé ou d’un groupe de mots qui décrit la valeur attendue d’un champ d’entrée, et qui disparaît lorsque l’utilisateur renseigne le champ ?"
+  - title: "Parmi les propositions suivantes, laquelle permet d'afficher un message describtif du contenu à saisir si le champ est vide ?"
     choices:
       - "<code>label</code>"
       - "<code>placeholder</code>"
       - "<code>title</code>"
-      - "<code>email</code>"
+      - "<code>alt</code>"
     answer: 2
-  - title: "Parmi les formats suivants, lequel est le format général de l'élément video ?"
+  - title: "Parmi les formats suivants, lequel est le format général de l'élément vidéo ?"
     choices:
       - "<code>&lt;movie src=\"file.mp4\" width=\"X\" height=\"Y\"&gt;</code>"
       - "<code>&lt;movie href=\"file.mp4\" width=\"X\" height=\"Y\"&gt;</code>"
       - "<code>&lt;video src=\"file.mp4\" width=\"X\" height=\"Y\"&gt;</code>"
       - "<code>&lt;video href=\"file.mp4\" width=\"X\" height=\"Y\"&gt;</code>"
     answer: 3
-  - title: "Quel nouvel attribut en HTML5 affiche une aide en gris dans la zone de saisie d'une balise input ?"
+  - title: "Quel attribut en HTML qui affiche une info-bulle contextuelle relative à un champ input ?"
     choices:
-      - "<code>hint</code>"
-      - "<code>coption</code>"
+      - "<code>title</code>"
+      - "<code>caption</code>"
       - "<code>legend</code>"
       - "<code>placeholder</code>"
-    answer: 4
+    answer: 1
   - title: "Comment couper un mot trop long ?"
     choices:
       - "<code>&amp;nbsp;</code>"
@@ -249,7 +243,7 @@ quizs:
       - '<code>target="page_blank"</code>'
       - '<code>target="windows.open"</code>'
     answer: 2
-  - title: "Dans un formulaire, quelle méthode transfère les données en les ajoutant à l'URL ?"
+  - title: "Dans un formulaire, quelle méthode transfère les données en les affichant avec l'URL ?"
     choices:
       - "<code>ADD-TO-URL</code>"
       - "<code>GET</code>"
