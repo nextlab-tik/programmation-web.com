@@ -13,6 +13,7 @@ class QuizManager {
           quiz.type = "text";
         }
       }
+      quiz.answerOriginal = quiz.answer;
       if (quiz.type === "radio") {
         quiz.answer -= 1;
       } else if (quiz.type === "checkbox") {
@@ -72,7 +73,7 @@ class QuizManager {
     <button class="btn btn-success show-answer mt-3" data-answer="${id}" data-toggle="collapse" data-target="#answer-${id}" aria-expanded="false">Afficher Réponse</button>
     <div class="answer collapse mt-3" data-answer="${id}" id="answer-${id}">
      <div class="card card-body">
-      Réponse(s) : ${quiz.answer}
+      Réponse(s) : ${quiz.answerOriginal}
       ${quiz.help ? `
         <hr />
           ${quiz.help}
