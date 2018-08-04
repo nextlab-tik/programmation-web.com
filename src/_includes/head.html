@@ -39,6 +39,10 @@
   <link rel="stylesheet" type="text/css" href="{{ 'css/print.css' | prepend:"assets/" | relative_url | prepend:prefix }}"/>
   {% endif %}
 
+  {% if page.quiz -%}
+  <link rel="stylesheet" type="text/css" href="{{ 'css/quiz_print.css' | prepend:"assets/" | relative_url | prepend:prefix }}"/>
+  {% endif %}
+
   <link rel="shortcut icon" type="image/png" href="{{ 'imgs/logo-16x16.png' | prepend:"assets/" | relative_url | prepend:prefix }}" />
   <link rel="icon" type="image/png" href="{{ 'imgs/logo-256x256.png' | prepend:"assets/" | relative_url | prepend:prefix }}" sizes="256x256" />
   <link rel="icon" type="image/png" href="{{ 'imgs/logo-64x64.png' | prepend:"assets/" | relative_url | prepend:prefix }}" sizes="64x64" />

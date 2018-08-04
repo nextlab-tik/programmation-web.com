@@ -1,0 +1,14 @@
+@media only print {
+    header {
+        border: none;
+    }
+    header nav {
+        display: none;
+    }
+    .show-answer {
+        display: none;
+    }
+    .form-footer {
+        display: none;
+    }
+}

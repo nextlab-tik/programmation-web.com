@@ -35,10 +35,12 @@ class QuizManager {
     return `
     <form class="quiz-board" class="form">
     ${this.data.quizs.map((q, i) => this.quizToHTML(q, i)).join('')}
-    <hr/>
-    <div class="row">
-    <div class="col quiz-score font-weight-bold">Score: <span id="score-current">0</span>/<span id="score-sum">${this.maxScore()}</span></div>
-    <div class="col"><input type="submit" value="Verifier" class="btn btn-primary float-right"/></div>
+    <div class="form-footer">
+      <hr/>
+      <div class="row">
+        <div class="col quiz-score font-weight-bold">Score: <span id="score-current">0</span>/<span id="score-sum">${this.maxScore()}</span></div>
+        <div class="col"><input type="submit" value="Verifier" class="btn btn-primary float-right"/></div>
+      </div>
     </div>
     </form>
     `;
@@ -61,7 +63,8 @@ class QuizManager {
     ${quiz.choices.map((c, i) => `
     <div class="form-check">
      <label class="form-check-label">
-      <input class="form-check-input" type="${quiz.type || "checkbox"}" value="${i}" name="${id}">${c}
+      <input class="form-check-input" type="${quiz.type || "checkbox"}" value="${i}" name="${id}">
+      <span class="ml-2">${c}</span>
        </label>
        </div>
     `).join('')}
