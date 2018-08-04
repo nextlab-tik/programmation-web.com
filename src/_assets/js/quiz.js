@@ -23,10 +23,13 @@ class QuizManager {
       }
     }
   }
+  handleClicks(evt) {
+  }
   insertInto(el) {
     el.innerHTML = this.toHTML();
     this.form = el.getElementsByClassName("quiz-board")[0];
-    this.form.addEventListener("submit", this.handleSubmit.bind(this));
+    this.form.addEventListener("submit", evt => this.handleSubmit(evt));
+    this.form.addEventListener("click", evt => this.handleClicks(evt));
   }
   toHTML() {
     return `
@@ -62,6 +65,16 @@ class QuizManager {
        </label>
        </div>
     `).join('')}
+    </div>
+    <button class="btn btn-success show-answer mt-3" data-answer="${id}" data-toggle="collapse" data-target="#answer-${id}" aria-expanded="false">Afficher Réponse</button>
+    <div class="answer collapse mt-3" data-answer="${id}" id="answer-${id}">
+     <div class="card card-body">
+      Réponse(s) : ${quiz.answer}
+      ${quiz.help ? `
+        <hr />
+          ${quiz.help}
+      ` : '' }
+     </div>
     </div>
     </fieldset>`;
   }

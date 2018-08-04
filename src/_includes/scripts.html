@@ -15,5 +15,7 @@
 {%- endif %}
 
 {% if page.quiz -%}
+<script src="{{ 'vendor/jquery/jquery.min.js' | prepend:"assets/" | relative_url | prepend:prefix }}"></script>
+<script src="{{ 'vendor/bootstrap/js/bootstrap.min.js' | prepend:"assets/" | relative_url | prepend:prefix }}"></script>
 <script src="{{ "js/quiz.js" | prepend:"assets/" | relative_url | prepend:prefix }}"></script>
 {%- endif %}
