@@ -233,6 +233,10 @@ le document HTML.
 : Sélectionner tout élément de type F qui est l'élément suivant direct de tout
 élément de type E.
 
+**Remarque :** Il existe d'autres sélécteurs en CSS3 que vous pouvez consulter
+dont le site [MDN web
+docs](https://developer.mozilla.org/fr/docs/Web/CSS/S%C3%A9lecteurs_CSS)
+
 Les unités CSS
 --------------
 

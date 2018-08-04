@@ -39,7 +39,7 @@ quizs:
       - CSS
       - JavaScript
       - HTML
-    answer: 4
+    answer: [4]
   - title: Parmi les balises suivantes, lesquelles sont obligatoires par le standard HTML ?
     choices:
       - "<code>&lt;html&gt;</code>"
@@ -82,13 +82,17 @@ quizs:
       - "<code>&lt;img href=\"images/monimage.jpg\" alt=\"Ma photo\" /&gt;</code>"
       - "<code>&lt;img src=\"images/monimage.jpg\" /&gt;</code>"
     answer: 1
-  - title: "Parmi les propositions suivantes, laquelle est vraie concernant les éléments obsolètes ?"
+  - title: "Parmi les propositions suivantes, laquelles sont vraies concernant les éléments obsolètes ?"
     choices:
       - "Un élément obsolète n’est plus pris en charge par un navigateur Web."
       - "Le groupe W3C ne recommande pas l'usage d'éléments obsolètes."
       - "Vous recevrez un message d'erreur si vous essayez de valider une page Web qui contient un élément obsolète. "
       - "Le navigateur affiche une alerte quand on ouvre la page."
     answer: [2, 3, 4]
+    help:
+      - Un élément obsolète est pris en charge selon la décision du vendeur du navigateur.
+      - Les navigateurs sont silencieux en versles éléments obsolètes ou les erreurs de syntaxe.
+      - Les validateurs (les analyseurs) en ligne générent des erreurs lors de la rencontre d'un élément obsolète.
   - title: "Quel élément HTML5 permet de surligner des blocs de texte dans un document HTML ?"
     choices:
       - "<code>&lt;mark&gt;</code>"
@@ -117,7 +121,7 @@ quizs:
       - "<code>header</code>"
       - "<code>article</code>"
     answer: 4
-  - title: "Quel est l’élément le plus approprié pour introduire des coordonnées dans une page Web ?"
+  - title: "Quel est l’élément le plus approprié pour introduire des coordonnées personnelles dans une page Web ?"
     choices:
       - "<code>address</code>"
       - "<code>wbr</code>"
@@ -152,6 +156,28 @@ quizs:
       - "<code>&lt;caption&gt;</code>"
       - "<code>&lt;colgroup&gt;</code>"
     answer: 3
+  - title: "Pour fusioner deux colonnes successives, quel code parmis les lignes suivantes à utiliser ?"
+    choices:
+      - '<code>&lt;tr colspan="2"&gt;</code>'
+      - '<code>&lt;tr rowspan="2"&gt;</code>'
+      - '<code>&lt;td colspan="2"&gt;</code>'
+      - '<code>&lt;td merge="2"&gt;</code>'
+    answer: 3
+  - title: "Pour fusioner deux lignes successives, quel code parmis les lignes suivantes à utiliser ?"
+    choices:
+      - '<code>&lt;tr colspan="2"&gt;</code>'
+      - '<code>&lt;tr rowspan="2"&gt;</code>'
+      - '<code>&lt;td colspan="2"&gt;</code>'
+      - '<code>&lt;td merge="2"&gt;</code>'
+    answer: []
+  - title: "Dans un tableau HTML, lesquelles des balises ne sont pas obligatoires ?"
+    choices:
+      - th
+      - td
+      - tr
+      - tbody
+      - caption
+    answer: [1, 4, 5]
   - title: "Quel attribut permet de spécifier le format de fichiers à joindre dans un formulaire ?"
     choices:
       - "<code>form</code>"
@@ -187,12 +213,19 @@ quizs:
       - "<code>[xX][0-9a-fA-F]{1,4}</code>"
       - "<code>{xX}[0-9a-fA-F]{4}</code>"
     answer: 3
-  - title: "Qulles sont les lignes de code permettant de vérifier un e-mail de type GMail ?"
+  - title: "Quelles sont les lignes de code permettant de vérifier un e-mail de type Gmail ?"
     choices:
       - '<code>&lt;input type="email" pattern=".*@gmail\.com" /&gt;</code>'
       - '<code>&lt;input type="text" pattern=".*@gmail\.com" /&gt;</code>'
       - '<code>&lt;input type="email" pattern="[a-zA-Z0-9_.+-]+@gmail\.com" /&gt;</code>'
       - '<code>&lt;input type="email" endwith="@gmail.com" /&gt;</code>'
+    answer: [1, 3]
+  - title: "Pour saisir une note comprise entre 0 et 20 avec un pas de 0.25, lesquelles des lignes de code à utiliser parmis les suivantes ?"
+    choices:
+      - '<code>&lt;input type="number" step="0.25" min="0" max="20" /&gt;</code>'
+      - '<code>&lt;input type="decimal" step="0.25" min="0" max="20" /&gt;</code>'
+      - '<code>&lt;input type="number" step=0.25 min=0 max=20 /&gt;</code>'
+      - '<code>&lt;input type="float" mod="4" min="0" max="20" /&gt;</code>'
     answer: [1, 3]
   - title: "L’attribut pattern fonctionne avec quels types d’entrée ?"
     choices:
@@ -236,6 +269,13 @@ quizs:
       - "<code>&lt;textarea&gt;</code>"
       - "<code>&lt;textbox&gt;</code>"
     answer: [3]
+  - title: "Pour permettre à l'utilisateur de sélectionner différents choix, quels sont les segments corrects parmis les suivants ?"
+    choices:
+      - '<code>&lt;option multiple&gt;</code>'
+      - '<code>&lt;select multiple&gt;</code>'
+      - '<code>&lt;select options&gt;</code>'
+      - '<code>&lt;option name="group1"&gt;</code>'
+    answer: [2]
   - title: "Quel attribut utiliser pour ouvrir une page dans une nouvelle fenêtre ?"
     choices:
       - '<code>target="new()"</code>'

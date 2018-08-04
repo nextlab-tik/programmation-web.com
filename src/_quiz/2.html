@@ -40,7 +40,7 @@ quizs:
       - "<code>#00f</code>"
       - "<code>(128, 128, 128)</code>"
     answer: [2, 4]
-  - title: "Vous ajoutez une liste à puces dans un document HTML. Vous souhaitez utiliser le carré comme symbole de marquage pour toutes les entrées de la liste. Quel est le code css correct ?"
+  - title: "Vous ajoutez une liste à puces dans un document HTML. Vous souhaitez utiliser le carré comme symbole de marquage pour toutes les entrées de la liste. Quel est le code CSS correct ?"
     choices:
       - "<code>li { list-style-type: square; }</code>"
       - "<code>li { list-type: square; }</code>"
@@ -61,20 +61,28 @@ quizs:
       - "changer le contenu du texte"
       - "utiliser plusieurs images pour l’arrière-plan"
     answer: [1, 2, 4]
-  - title: "Vous souhaitez que votre document HTML référence des styles contenus dans un fichier nommé default.css. Quel balisage devez-vous utiliser dans votre document HTML ?"
+  - title: "Vous souhaitez que votre document HTML référence des styles contenus dans un fichier nommé default.css. Quels balisages pouvez-vous utiliser dans votre document HTML ?"
     choices:
       - "<code>&lt;link css=\"default.css\" rel=\"stylesheet\" type=\"text/css\" /&gt;</code>"
       - "<code>&lt;link href=\"default.css\" rel=\"stylesheet\" type=\"text/css\" /&gt;</code>"
       - "<code>&lt;link href=\"default.css\" rel=\"css\" type=\"text/css\" /&gt;</code>"
-      - "<code>&lt;link href=\"defaut.css\" rel=\"stylesheet\" type=\"text/css\" /&gt;</code>"
-    answer: 2
-  - title: "Dans quelle section d’un fichier HTML la balise <code>&lt;link&gt;</code> d’un fichier CSS externe apparaît-elle ?"
+      - "<code>&lt;link href=\"default.css\" rel=\"stylesheet\" /&gt;</code>"
+    answer: [2, 4]
+  - title: "Quelle est la section la plus recommandée d’un fichier HTML pour insérer la balise <code>&lt;link&gt;</code> d’un fichier CSS externe ?"
     choices:
       - "déclaration doctype"
       - "<code>&lt;head&gt;</code>"
       - "<code>&lt;body&gt;</code>"
       - "aucune des réponses ci‑dessus"
     answer: 2
+  - title: "Quelles sont les utilisations possibles de la balise <code>lt;link&gt;</code> ?"
+    choices:
+      - '<code>&lt;link href="https://monsite.com/" rel="author" /&gt;</code>'
+      - '<code>&lt;link href="main.js" rel="script" /&gt;</code>'
+      - '<code>&lt;link href="style.css" rel="stylesheet" /&gt;</code>'
+      - '<code>&lt;link href="page2.html" rel="next" /&gt;</code>'
+      - '<code>&lt;link href="favicon.ico" rel="icon"&gt;</code>'
+    answer: [1, 3, 4, 5]
   - title: "Comment s’appelle la construction <code>#slogan</code> dans le code suivant ?<pre>#solgan { color: green; }</pre>"
     choices:
       - "propriété"
@@ -82,13 +90,13 @@ quizs:
       - "déclaration"
       - "sélecteur d’ID"
     answer: 4
-  - title: "Quels codes CSS devez-vous utiliser pour marquer le texte comme un commentaire ?"
+  - title: "Quel(s) code(s) CSS devez-vous utiliser pour marquer le texte comme un commentaire ?"
     choices:
       - "<code>/* texte */</code>"
       - "<code>/# texte #/</code>"
       - "<code>&lt;!-- texte --&gt;</code>"
-      - "<code>&lt;* texte *&gt;</code>"
-    answer: 1
+      - "<code>// texte</code>"
+    answer: [1]
   - title: "Vous optez pour la famille de polices serif dans un document HTML. Quel code CSS utilisez-vous ?"
     choices:
       - "<code>ffamily: serif;</code>"
@@ -103,21 +111,23 @@ quizs:
       - "barre oblique"
       - "rien, le préfixe est facultatif"
     answer: 2
-  - title: "Quel composant du modèle de boîte CSS peut être transparent ou comporter une ligne avec une couleur ou un motif ?"
+  - title: "Quel composant du modèle de boîte CSS peut être transparent ou comportant une ligne avec une couleur ou un motif ?"
     choices:
       - "marge"
       - "bordure"
       - "marge intérieure"
       - "contenu"
     answer: 2
-  - title: "Vous avez créé une boîte et vous souhaitez arrondir uniquement l'angle supérieur droit avec un rayon de 30 pixels. Parmi les lignes de code suivantes, laquelle permet de créer cet effet ?"
+  - title: "Vous avez créé une boîte et vous souhaitez arrondir uniquement l'angle supérieur droit avec un rayon de 30 pixels. Parmi les lignes de code suivantes, lesquelles permettent de créer cet effet ?"
     choices:
       - "<code>border-radius: 30px</code>"
       - "<code>border-top-right-radius: 30px</code>"
+      - "<code>border-radius: 0 30px 0 0</code>"
       - "<code>border-right-radius: 30em</code>"
+      - "<code>border-radius: 30px 0 0 0</code>"
       - "<code>border-radius-top-right: 30px</code>"
-    answer: 2
-  - title: "Vous souhaitez ajouter une ombre à l'intérieur d'une boîte. Quel attribut devez-vous utiliser avec la propriété CSS box-shadow ?"
+    answer: [2, 3]
+  - title: "Vous souhaitez ajouter une ombre à l'intérieur d'une boîte. Quel attribut devez-vous utiliser avec la propriété CSS <code>box-shadow</code> ?"
     choices:
       - "<code>h-shadow</code>"
       - "<code>v-shadow</code>"
@@ -159,10 +169,20 @@ quizs:
       - "<code>alt->img { ......}</code>"
       - "<code>alt | img { ...... }</code>"
     answer: 2
-  - title: "La propriété CSS <code>p.ville {display: block ; }</code>"
+  - title: "Comment sélectionner tous les liens internes dans le document ?"
     choices:
-      - "bloque le défilement de <code>p.ville</code>"
-      - "modifie le type de l'élément <code>p.ville</code> en bloc"
-      - "affiche le bloc <code>p.ville</code>"
-      - "bloque l'affichage de <code>p.ville</code>"
+      - "<code>a:intern</code>"
+      - "<code>a[href*=#]</code>"
+      - "<code>a[href^=#]</code>"
+      - "Aucun des choix précédents"
+    answer: 3
+  - title: "La propriété CSS <code>p {display: block ; }</code>"
+    choices:
+      - "bloque le défilement de <code>p</code>"
+      - "modifie le type de l'élément <code>p</code> en bloc"
+      - "affiche le bloc <code>p</code>"
+      - "bloque l'affichage de <code>p</code>"
+      - "ne fait rien"
+    answer: 2
+    help: "L'élément <code>p</code> est élément bloc"
 ---
