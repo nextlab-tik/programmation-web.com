@@ -21,12 +21,16 @@ markdown: kramdown
 # permalink: pretty
 
 plugins:
+  - jekyll-sitemap
   - jekyll-gist
+  - jekyll-seo-tag
   - jekyll-relative-links
   - jekyll-paginate-v2
   - jekyll-assets
+  # - jekyll-toc
+  # - jekyll-feed
 
-paginate: off
+paginate: nil
 paginate_path: nil
 pagination:
   enabled: false
@@ -98,20 +102,20 @@ assets:
   # skip_prefix_with_cdn: false
   source_map: false
   destination: "/assets"
+  compression: true
+  gzip: true
   prefix: "/assets"
-  compression: false
   # assets:
   #   - "*.png"
   #   - "bundle.css"
+  digest: true
   sources:
     - "_assets"
   autoprefixer:
     browsers:
       - "last 2 versions"
-  defaults:
-    js:
-      integrity: false
-    css:
-      integrity: false
-    img:
-      integrity: false
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
