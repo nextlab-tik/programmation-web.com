@@ -13,10 +13,11 @@ class QuizManager {
           quiz.type = "text";
         }
       }
-      quiz.answerOriginal = quiz.answer;
       if (quiz.type === "radio") {
+        quiz.answerDisplay = quiz.answer;
         quiz.answer -= 1;
       } else if (quiz.type === "checkbox") {
+        quiz.answerDisplay = quiz.answer.length ? quiz.answer.join(', ') : 'Ø';
         quiz.answer = quiz.answer.map((a) => a - 1);
       }
       if (!quiz.score) {
@@ -29,13 +30,15 @@ class QuizManager {
   insertInto(el) {
     el.innerHTML = this.toHTML();
     this.form = el.getElementsByClassName("quiz-board")[0];
-    this.form.addEventListener("submit", evt => this.handleSubmit(evt));
-    this.form.addEventListener("click", evt => this.handleClicks(evt));
+    this.form.addEventListener("submit", (evt) => this.handleSubmit(evt));
+    this.form.addEventListener("click", (evt) => this.handleClicks(evt));
   }
   toHTML() {
     return `
     <form class="quiz-board" class="form">
+    <ol style="padding-left: 0">
     ${this.data.quizs.map((q, i) => this.quizToHTML(q, i)).join('')}
+    </ol>
     <div class="form-footer">
       <hr/>
       <div class="row">
@@ -56,7 +59,7 @@ class QuizManager {
   }
 
   checkQuizToHTML(quiz, id) {
-    return `<fieldset class="form-group quiz" id="quiz-${id}">
+    return `<li><fieldset class="form-group quiz" id="quiz-${id}">
     <legend class="quiz-title col-form-legend">${quiz.title}
       <span class="quiz-score badge badge-secondary float-right">${quiz.score}</span>
     </legend>
@@ -70,17 +73,17 @@ class QuizManager {
        </div>
     `).join('')}
     </div>
-    <button class="btn btn-success show-answer mt-3" data-answer="${id}" data-toggle="collapse" data-target="#answer-${id}" aria-expanded="false">Afficher Réponse</button>
+    <button type="button" class="btn btn-success show-answer mt-3" data-answer="${id}" data-toggle="collapse" data-target="#answer-${id}" aria-expanded="false">Afficher Réponse</button>
     <div class="answer collapse mt-3" data-answer="${id}" id="answer-${id}">
      <div class="card card-body">
-      Réponse(s) : ${quiz.answerOriginal}
+      Réponse(s) : ${quiz.answerDisplay}
       ${quiz.help ? `
         <hr />
           ${quiz.help}
       ` : '' }
      </div>
     </div>
-    </fieldset>`;
+    </fieldset></li>`;
   }
   inputToHTML(quiz, id) {}
   handleSubmit(e) {
