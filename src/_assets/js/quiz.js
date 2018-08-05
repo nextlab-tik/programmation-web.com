@@ -65,12 +65,10 @@ class QuizManager {
     </legend>
     <div class="quiz-control">
     ${quiz.choices.map((c, i) => `
-    <div class="form-check">
-     <label class="form-check-label">
-      <input class="form-check-input" type="${quiz.type || "checkbox"}" value="${i}" name="${id}">
-      <span class="ml-2">${c}</span>
-       </label>
-       </div>
+      <div class="custom-control custom-${quiz.type || "checkbox" }">
+        <input type="${quiz.type || "checkbox" }" class="custom-control-input" value="${i}" name="${id}" id="quiz-${id}-${i}">
+        <label class="custom-control-label ml-2" for="quiz-${id}-${i}">${c}</label>
+      </div>
     `).join('')}
     </div>
     <button type="button" class="btn btn-success show-answer mt-3" data-answer="${id}" data-toggle="collapse" data-target="#answer-${id}" aria-expanded="false">Afficher Réponse</button>
