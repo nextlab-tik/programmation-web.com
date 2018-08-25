@@ -223,67 +223,121 @@ quizs:
     answer: 1
   - title: "On veut avoir un table dont les lignes paires sont en gris. Quelle(s) sont le(s) ligne(s) correcte(s) parmis les suivantes?"
     choices:
-      - "table tr:nth(even) { background-color: gray; }"
-      - "table tr:nth-child(even) { background-color: gray; }"
-      - "table tr:nth-child(n + 2) { background-color: gray; }"
-      - "table tr:nth-child(2n) { background-color: gray; }"
+      - "<code>table tr:nth(even) { background-color: gray; }</code>"
+      - "<code>table tr:nth-child(even) { background-color: gray; }</code>"
+      - "<code>table tr:nth-child(n + 2) { background-color: gray; }</code>"
+      - "<code>table tr:nth-child(2n) { background-color: gray; }</code>"
     answer: [2, 4]
   - title: "On veut colorer en gris la deuxième et la troisième colonne de chaque ligne de numéro impair dans le corps d'un tableau. Quelles sont les lignes de code correctes parmis les suivantes ?"
     choices:
-      - "tbody tr:nth-child(odd) td:nth-child(2),<br> tbody tr:nth-child(odd) td:nth-child(3) { <br>&nbsp;&nbsp;background-color: gray; <br>}"
-      - "tbody tr:nth-child(2*n + 1) td:nth-child(2), tbody tr:nth-child(2*n + 1) td:nth-child(3) { background-color: gray; }"
-      - "tbody tr:nth-child(2n + 1) td:nth-child(2, 3) { background-color: gray; }"
-      - "tbody tr:nth-child(2n + 1) td:nth-child(2), td:nth-child(3) { background-color: gray; }"
-      - "tbody tr:nth-child(2n + 1) td:nth-child(2), tbody tr:nth-child(odd) td:nth-child(3) { background-color: gray; }"
+      - |
+        <pre><code>tbody tr:nth-child(odd) td:nth-child(2),
+        tbody tr:nth-child(odd) td:nth-child(3) {
+            background-color: gray;
+        }</code></pre>
+      - |
+        <pre><code>tbody tr:nth-child(2*n + 1) td:nth-child(2),
+        tbody tr:nth-child(2*n + 1) td:nth-child(3) {
+            background-color: gray;
+        }</code></pre>
+      - |
+        <pre><code>tbody tr:nth-child(2n + 1) td:nth-child(2, 3) {
+            background-color: gray;
+        }</code></pre>
+      - |
+        <pre><code>tbody tr:nth-child(2n + 1) td:nth-child(2), td:nth-child(3) {
+            background-color: gray;
+        }</code></pre>
+      - |
+        <pre><code>tbody tr:nth-child(2n + 1) td:nth-child(2),
+        tbody tr:nth-child(odd) td:nth-child(3) {
+            background-color: gray;
+        }</code></pre>
     answer: [1, 5]
   - title: "On veut appliquer le couleur rouge dans la dernière colonne de la première ligne d'un tableau. Quelles sont les lignes de code à utiliser ?"
     choices:
-      - "tr:nth-child(1) td:nth-child(-1) { background-color: red; }"
-      - "tr:nth-child(first) td:nth-child(last) { background-color: red; }"
-      - "tr:nth-child(1) td:nth-last-child(1) { background-color: red; }"
-      - "tr:first-child td:last-child { background-color: red; }"
+      - "<code>tr:nth-child(1) td:nth-child(-1) { background-color: red; }</code>"
+      - "<code>tr:nth-child(first) td:nth-child(last) { background-color: red; }</code>"
+      - "<code>tr:nth-child(1) td:nth-last-child(1) { background-color: red; }</code>"
+      - "<code>tr:first-child td:last-child { background-color: red; }</code>"
     answer: [3, 4]
   - title: "Dans un formulaire, on veut avoir la largeur des labels de 2 cm et celles des champs à saisir en 4 cm. Quelles sont les lignes de code correctes ?"
     choices:
-      - "label { width: 2cm; }  text { width: 4cm; }"
-      - "label { width: 2cm; }  input, textarea { width: 4cm; }"
-      - "legend { width: 2cm; } input { width: 4cm; }"
-      - "label { width: 20mm; }  input, textarea { width: 40mm; }"
-      - "label { width: 0.2em; }  input, textarea { width: 0.4em; }"
+      - |
+        <pre><code>label { width: 2cm; }
+        text { width: 4cm; }</code></pre>
+      - |
+        <pre><code>label { width: 2cm; }
+        input, textarea { width: 4cm; }</code></pre>
+      - |
+        <pre><code>legend { width: 2cm; }
+        input { width: 4cm; }</code></pre>
+      - |
+        <pre><code>label { width: 20mm; }
+        input, textarea { width: 40mm; }</code></pre>
+      - |
+        <pre><code>label { width: 0.2em; }
+        input, textarea { width: 0.4em; }</code></pre>
     answer: [2, 4]
   - title: "On veut ajouter le caractère '*' à gauche des champs obligatoires. Quelle(s) est/sont la/les ligne(s) de code correcte(s) ?"
     choices:
-      - ":required::before { content: '*'; }"
-      - ":not(:optional)::before { content: '*'; }"
-      - ":required::left { content: '*'; }"
-      - "[required]::before { content: '*'; }"
+      - "<code>:required::before { content: '*'; }</code>"
+      - "<code>:not(:optional)::before { content: '*'; }</code>"
+      - "<code>:required::left { content: '*'; }</code>"
+      - "<code>[required]::before { content: '*'; }</code>"
     answer: [1]
   - title: "On veut changer le fond d'un champ de saisie en vert lorsqu'il devient valide. Quelle est la ligne de code correcte ?"
     choices:
-      - ":valid { background-color: green; }"
-      - ":not(:invalid) { background-color: green; }"
-      - "input:valid, textarea:valid { background-color: green; }"
-      - "[input,textarea]:valid { background-color: green; }"
+      - "<code>:valid { background-color: green; }</code>"
+      - "<code>:not(:invalid) { background-color: green; }</code>"
+      - "<code>input:valid, textarea:valid { background-color: green; }</code>"
+      - "<code>[input,textarea]:valid { background-color: green; }</code>"
     answer: 3
   - title: "On veut colorer les légendes des fieldsets dont tous les champs sont valides en bleu. Quelle ligne de code est correcte ?"
     choices:
-      - "fieldset:valid > legend { color: blue; }"
-      - "fieldset :valid ::legend { color: blue; }"
-      - "legend:valid { color: blue; }"
+      - "<code>fieldset:valid > legend { color: blue; }</code>"
+      - "<code>fieldset :valid ::legend { color: blue; }</code>"
+      - "<code>legend:valid { color: blue; }</code>"
     answer: 1
   - title: "On veut changer la largeur d'un bouton de 50 px à 100 px lorsque le curseur est positionné sur le boutton avec un temps de transition d'une seconde. Quelles sont les lignes de code correspondantes ?"
     choices:
-      - "button { width: 50px; transition: 1s; } button:hover { width: 100px; }"
-      - "button { width: 50px;  } button:hover { transition: 1s; width: 100px; }"
-      - "button { width: 50px; transition: width 1s; } button:hover { width: 100px; }"
-      - "button { width: 50px; transition-duration: 1s; } button:hover { width: 100px; }"
-      - "button { width: 50px; transition-delay: 1s; } button:hover { width: 100px; }"
+      - |
+        <pre><code>button { width: 50px; transition: 1s; }
+        button:hover { width: 100px; }</code></pre>
+      - |
+        <pre><code>button { width: 50px;  }
+        button:hover { transition: 1s; width: 100px; }</code></pre>
+      - |
+        <pre><code>button { width: 50px; transition: width 1s; }
+        button:hover { width: 100px; }</code></pre>
+      - |
+        <pre><code>button { width: 50px; transition-duration: 1s; }
+        button:hover { width: 100px; }</code></pre>
+      - |
+        <pre><code>button { width: 50px; transition-delay: 1s; }
+        button:hover { width: 100px; }</code></pre>
     answer: [1, 3, 4]
   - title: "On veut changer le fond d'un bouton en bleu aprés une second du déplacement de la souris dessus et regagne son état initial instantanément lorsque la souris est retirée. Quelles sont les lignes de code correctes ?"
     choices:
-      - "button { transition-delay:  1s; } button:hover { backgroud-color: blue; }"
-      - "button:hover { transition-delay:  1s; backgroud-color: blue; }"
-      - "button:hover { transition-duration:  1s; transition-timing-function: step-end; backgroud-color: blue; }"
-      - "button { transition-delay:  1s; transition-type: mouse-on; } button:hover { backgroud-color: blue; }"
+      - |
+        <pre><code>button { transition-delay:  1s; }
+        button:hover { backgroud-color: blue; }</code></pre>
+      - |
+        <pre><code>button:hover {
+            transition-delay: 1s;
+            backgroud-color: blue;
+        }</code></pre>
+      - |
+        <pre><code>button:hover {
+            transition-duration: 1s;
+            transition-timing-function: step-end;
+            backgroud-color: blue;
+        }</code></pre>
+      - |
+        <pre><code>button {
+            transition-delay: 1s;
+            transition-type: mouse-on;
+        }
+        button:hover { backgroud-color: blue; }</code></pre>
     answer: [2, 3]
 ---
