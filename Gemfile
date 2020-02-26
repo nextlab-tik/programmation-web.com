@@ -11,9 +11,9 @@ group :jekyll_plugins do
     gem "jekyll-relative-links"
     gem "jekyll-paginate-v2"
     # gem "jekyll-toc"
-    gem "jekyll-assets"
+    gem "jekyll-assets", ">= 3.0.6"
 end
 
-gem "nokogiri"
+gem "nokogiri", ">= 1.10.8"
 gem "uglifier"
 gem "autoprefixer-rails"
