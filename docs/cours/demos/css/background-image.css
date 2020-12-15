@@ -1,0 +1,7 @@
+body {
+    background-color: yellow;
+    background-image: url("../../assets/imgs/web101.png");
+    background-repeat: repeat-x;
+    background-size: auto 50%;
+    background-attachment: fixed;
+}

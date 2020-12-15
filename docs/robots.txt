@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://programmation-web.com/sitemap.xml

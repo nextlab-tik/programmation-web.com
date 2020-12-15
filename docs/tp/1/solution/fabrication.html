@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Vente Mobilier</title>
+  <link rel="stylesheet" type="text/css" href="fabrication.css" />
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>Votre identité</legend>
+      <ul>
+        <li>
+          <label>Nom</label>
+          <input id=nom name=nom type=text placeholder="Prénom et nom">
+        </li>
+        <li>
+          <label>Email</label>
+          <input id=email name=email type=email placeholder="exemple@domaine.com">
+        </li>
+        <li>
+          <label>Téléphone</label>
+          <input id=telephone name=telephone type=tel>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>Produit demandé </legend>
+      <ol>
+        <li>
+          <label>Description</label>
+          <textarea id="description" name="description" rows="5" cols="50"></textarea>
+        </li>
+        <li>
+          <label>Quantité demandée</label>
+          <input id="quantite" name=quantite type=text>
+        </li>
+        <li>
+          <label>Ville</label>
+          <select name="ville">
+                      <option>Sfax</option>
+                      <option>Tunis</option>
+                      <option>Sousse</option>
+                      <option>Nabeul</option>
+                      <option>Tozeur</option>
+                    </select>
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset>
+      <legend>Carte Bancaire</legend>
+      <ol>
+        <li>
+          <fieldset>
+            <legend>Type de carte bancaire</legend>
+            <input name=type_de_carte type=radio><img src="visa.png" />
+            <input name=type_de_carte type=radio><img src="Amex.png" />
+            <input name=type_de_carte type=radio><img src="mastercard.png" />
+          </fieldset>
+        </li>

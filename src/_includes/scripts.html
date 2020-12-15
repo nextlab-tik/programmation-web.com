@@ -1,11 +1,11 @@
 {% if page.depth == 0 %}
-  {% assign prefix = '.' %}
+  {% assign prefix = './assets' %}
 {% else %}
   {% if page.depth == 1 %}
-    {% assign prefix = '..' %}
+    {% assign prefix = '../assets' %}
   {% else %}
     {% if page.depth == 2 %}
-      {% assign prefix = '../..' %}
+      {% assign prefix = '../../assets' %}
     {% endif %}
   {% endif %}
 {% endif %}
@@ -26,9 +26,9 @@
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
-    var u="https://api.admin.tik.tn/p";
+    var u="https://p.tik.website/p";
     _paq.push(['setTrackerUrl', u]);
-    _paq.push(['setSiteId', 12]);
+    _paq.push(['setSiteId', 21]);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u; s.parentNode.insertBefore(g,s);
   })();

@@ -1,11 +1,11 @@
 {% if page.depth == 0 %}
-  {% assign prefix = '.' %}
+  {% assign prefix = './assets' %}
 {% else %}
   {% if page.depth == 1 %}
-    {% assign prefix = '..' %}
+    {% assign prefix = '../assets' %}
   {% else %}
     {% if page.depth == 2 %}
-      {% assign prefix = '../..' %}
+      {% assign prefix = '../../assets' %}
     {% endif %}
   {% endif %}
 {% endif %}
@@ -29,7 +29,9 @@
   <link rel="stylesheet" type="text/css" href="{{ 'vendor/bootstrap/css/bootstrap.min.css' | asset:"@path" | relative_url | prepend:prefix }}" />
   {% endif -%}
 
+  <style>
   {% asset 'css/style.css' @inline %}
+  </style>
 
   {% if page.embed %}
   <link rel="stylesheet" type="text/css" href="{{ 'vendor/syntax.css' | asset:"@path" | relative_url | prepend:prefix }}"/>

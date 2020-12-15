@@ -13,7 +13,7 @@ webmaster_verifications:
   bing: 53107FC985BA81D864CE98CC28D80C1E
 
 source: ./src
-destination: ./www
+destination: ./docs
 includes_dir: _includes
 exclude: [config.xml, node_modules]
 
@@ -25,7 +25,7 @@ plugins:
   - jekyll-gist
   - jekyll-seo-tag
   - jekyll-relative-links
-  - jekyll-paginate-v2
+  # - jekyll-paginate-v2
   - jekyll-assets
   # - jekyll-toc
   # - jekyll-feed
@@ -104,7 +104,9 @@ assets:
   destination: "/assets"
   compression: true
   gzip: true
-  prefix: "/assets"
+  cdn:
+    baseurl: true
+    destination: "/assets"
   # assets:
   #   - "*.png"
   #   - "bundle.css"

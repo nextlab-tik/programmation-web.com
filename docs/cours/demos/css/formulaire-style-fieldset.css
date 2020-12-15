@@ -1,0 +1,12 @@
+legend {
+    font-size: large;
+    font-weight: bold;
+    color: tomato;
+}
+
+fieldset {
+    border: 1px dashed gray;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 15px;
+}

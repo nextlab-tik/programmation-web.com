@@ -2,9 +2,10 @@ _site
 .DS_Store
 *.swp
 .jekyll-metadata
-www
-node_modules
+/www/
+/node_modules/
 platforms
 plugins
-.bundle
-www
+/.bundle/
+/www/
+/vendor/
