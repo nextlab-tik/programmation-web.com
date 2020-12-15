@@ -4,6 +4,11 @@ set -x
 # TODO:  dev, production
 ENV=${1:-dev}
 
+if [ -d "www" ]; then
+	echo "using www/ folder"
+	exit
+fi
+
 if [ -e "Gemfile" ]; then
 	bundle install --path .bundle/gems --deployment
 fi

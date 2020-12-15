@@ -13,7 +13,7 @@ webmaster_verifications:
   bing: 53107FC985BA81D864CE98CC28D80C1E
 
 source: ./src
-destination: ./docs
+destination: ./www
 includes_dir: _includes
 exclude: [config.xml, node_modules]
 
