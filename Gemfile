@@ -15,7 +15,7 @@ group :jekyll_plugins do
   # gem "jekyll-paginate", '~> 1.1.0'
 end
 
-gem "nokogiri"
+gem "nokogiri", ">= 1.13.2"
 gem "uglifier"
 gem "autoprefixer-rails"
 gem "kramdown-parser-gfm"
