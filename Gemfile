@@ -11,7 +11,7 @@ group :jekyll_plugins do
   gem "jekyll-relative-links", '~> 0.6.1'
   # gem "jekyll-paginate-v2"
   # gem "jekyll-toc"
-  gem "jekyll-assets"
+  gem "jekyll-assets", ">= 3.0.0"
   # gem "jekyll-paginate", '~> 1.1.0'
 end
 
